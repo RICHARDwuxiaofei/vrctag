@@ -15,6 +15,14 @@ import zipfile
 import xml.etree.ElementTree as ET
 
 HERE = Path(__file__).resolve().parent
+SOURCE_URL = 'https://makerworld.com.cn/zh/models/203011-vrcming-pai-diao-pai'
+LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+ATTRIBUTION = ('Adapted from VRC名牌吊牌 by WiseWolf. Source: '+SOURCE_URL+
+               '. License: CC BY-NC-SA 4.0 ('+LICENSE_URL+'). '
+               'Adaptation and generator: RICHARDwuxiaofei. Changes: separated color parts, '
+               'generated text, multicolor export, repositioned dot, half-height text, '
+               'flat rim and optional avatar display. Noncommercial use; share adaptations '
+               'under the same license. No endorsement implied. Third-party assets retain their rights.')
 STATUS_COLORS = {'online': '#2ED319', 'join me': '#00B8FF',
                  'busy': '#C80928', 'ask me': '#E97C03', 'offline': '#737F8D'}
 
@@ -98,6 +106,10 @@ def export_3mf(bpy, parts, path, title):
         return ET.SubElement(parent, '{'+namespace+'}'+tag, attributes or {})
     root = ET.Element('{'+namespace+'}model', {'unit':'millimeter', '{http://www.w3.org/XML/1998/namespace}lang':'en-US'})
     sub(root, 'metadata', {'name':'Title'}).text = title
+    for key,value in {'Designer':'WiseWolf', 'Description':ATTRIBUTION,
+                      'Copyright': 'Original model by WiseWolf; adaptation by RICHARDwuxiaofei',
+                      'LicenseTerms':LICENSE_URL}.items():
+        sub(root, 'metadata', {'name':key}).text = value
     sub(root, 'metadata', {'name':'BambuStudio:3mfVersion'}).text = '1'
     resources = sub(root, 'resources')
     materials = sub(resources, 'basematerials', {'id':'1'})
@@ -130,6 +142,7 @@ def export_3mf(bpy, parts, path, title):
         archive.writestr('3D/3dmodel.model', ET.tostring(root,encoding='utf-8',xml_declaration=True))
         archive.writestr('Metadata/model_settings.config', config)
         archive.writestr('Metadata/project_settings.config', json.dumps(project))
+        archive.writestr('Metadata/ATTRIBUTION.txt', ATTRIBUTION)
 
 
 def slicer_metadata(root, title):
@@ -265,6 +278,8 @@ def generate(name, status, output_dir, font_path='', open_template=True,
     folder = candidate
     folder.mkdir(parents=True)
     scene = bpy.context.scene
+    scene['attribution'] = ATTRIBUTION
+    scene['license'] = LICENSE_URL
     scene.unit_settings.system = 'METRIC'
     scene.unit_settings.scale_length = .001
     scene.unit_settings.length_unit = 'MILLIMETERS'
@@ -290,6 +305,9 @@ def generate(name, status, output_dir, font_path='', open_template=True,
     (Path(output_dir).resolve()/'latest_result.json').write_text(json.dumps({'folder':str(folder),'name':name,'status':status},ensure_ascii=False,indent=2),encoding='utf-8')
     if only_3mf:
         (folder/'PRINTING.txt').unlink()
+    else:
+        with (folder/'PRINTING.txt').open('a',encoding='utf-8') as notes:
+            notes.write('\nAttribution and license:\n'+ATTRIBUTION+'\n')
     print('NAMETAG_RESULT='+json.dumps({'folder':str(folder)},ensure_ascii=False),flush=True)
     return folder
 

@@ -2,6 +2,10 @@
 
 Generate printable VRC-style name tags with custom text and multicolor 3MF export. No name is preset.
 
+## Attribution and license
+
+Adapted from **[VRC名牌吊牌 by WiseWolf](https://makerworld.com.cn/zh/models/203011-vrcming-pai-diao-pai)** under **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**. Credit the original creator, use noncommercially, and distribute model adaptations under the same license. This version changes the rim, text relief and dot placement and adds automated text, multicolor export and display options. See [ATTRIBUTION.md](ATTRIBUTION.md) and [LICENSE](LICENSE). WiseWolf does not endorse this project.
+
 ## Setup
 
 Requires Windows, Python 3 with tkinter, and Blender 4.2 or newer.

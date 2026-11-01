@@ -2,7 +2,7 @@
 from pathlib import Path
 import zipfile
 import xml.etree.ElementTree as ET
-from name_tag_generator import slicer_metadata
+from name_tag_generator import slicer_metadata, ATTRIBUTION, LICENSE_URL
 
 ROOT = Path(__file__).resolve().parent.parent
 for source in ROOT.glob('*/*.3mf'):
@@ -16,6 +16,8 @@ for source in ROOT.glob('*/*.3mf'):
         ns = 'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'
         ET.register_namespace('', ns)
         ET.SubElement(root, '{'+ns+'}metadata', {'name': 'BambuStudio:3mfVersion'}).text = '1'
+        ET.SubElement(root, '{'+ns+'}metadata', {'name': 'Description'}).text = ATTRIBUTION
+        ET.SubElement(root, '{'+ns+'}metadata', {'name': 'LicenseTerms'}).text = LICENSE_URL
         config, project = slicer_metadata(root, source.stem)
         import json
         with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as dst:
@@ -25,4 +27,5 @@ for source in ROOT.glob('*/*.3mf'):
             dst.writestr('3D/3dmodel.model', ET.tostring(root, encoding='utf-8', xml_declaration=True))
             dst.writestr('Metadata/model_settings.config', config)
             dst.writestr('Metadata/project_settings.config', json.dumps(project))
+            dst.writestr('Metadata/ATTRIBUTION.txt', ATTRIBUTION)
     print(target)
