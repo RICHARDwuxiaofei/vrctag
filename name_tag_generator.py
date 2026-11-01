@@ -15,10 +15,22 @@ import zipfile
 import xml.etree.ElementTree as ET
 
 HERE = Path(__file__).resolve().parent
+STATUS_COLORS = {'online': '#2ED319', 'join me': '#00B8FF',
+                 'busy': '#C80928', 'ask me': '#E97C03', 'offline': '#737F8D'}
+
+def resolve_color(status, selection='auto'):
+    key = status.strip().lower()
+    key = {'dnd': 'busy', 'do not disturb': 'busy', 'away': 'ask me', 'active': 'online'}.get(key, key)
+    value = STATUS_COLORS.get(key, STATUS_COLORS['online']) if selection == 'auto' else STATUS_COLORS.get(selection, selection)
+    if not re.fullmatch(r'#[0-9a-fA-F]{6}', value):
+        raise ValueError('Select a status color or enter a #RRGGBB color.')
+    return tuple(int(value[i:i+2], 16)/255 for i in (1,3,5))
+
 DEFAULTS = {
     'name': '', 'status': 'online', 'output_dir': str(HERE),
     'blender': 'blender',
     'font': r'C:\Windows\Fonts\msyhbd.ttc',
+    'status_color': 'auto', 'only_3mf': True, 'use_icon': False, 'icon_path': '',
 }
 
 def load_settings():
@@ -51,7 +63,7 @@ def make_text(bpy, name, text, x, y, width, height, font, mat):
     curve.body = text
     curve.font = font
     curve.size = 10
-    curve.extrude = .5
+    curve.extrude = .25
     curve.resolution_u = 16
     curve.fill_mode = 'BOTH'
     obj = bpy.data.objects.new(name, curve)
@@ -155,10 +167,45 @@ def slicer_metadata(root, title):
                'filament_diameter': ['1.75'] * len(colors)}
     return ET.tostring(config, encoding='utf-8', xml_declaration=True), project
 
-def generate(name, status, output_dir, font_path='', open_template=True):
+def add_avatar_icon(bpy, path):
+    """Circular center crop for Blender display only, never a printable part."""
+    import math
+    image = bpy.data.images.load(str(Path(path).resolve()), check_existing=False)
+    image.pack()
+    radius, cx, cy, count = 18.4, 21.92, 21.92, 128
+    verts = [(cx, cy, 2.01)] + [(cx+radius*math.cos(i*2*math.pi/count), cy+radius*math.sin(i*2*math.pi/count), 2.01) for i in range(count)]
+    faces = [(0, i+1, (i+1)%count+1) for i in range(count)]
+    mesh = bpy.data.meshes.new('Avatar_Icon')
+    mesh.from_pydata(verts, [], faces)
+    uv = mesh.uv_layers.new()
+    width, height = image.size
+    for loop in mesh.loops:
+        v = mesh.vertices[loop.vertex_index].co
+        uv.data[loop.index].uv = (.5+(v.x-cx)/(2*radius)*min(1,height/width), .5+(v.y-cy)/(2*radius)*min(1,width/height))
+    obj = bpy.data.objects.new('Avatar_Icon_Display_Only', mesh)
+    bpy.context.collection.objects.link(obj)
+    material = bpy.data.materials.new('Avatar_Image')
+    material.use_nodes = True
+    nodes = material.node_tree.nodes
+    tex = nodes.new('ShaderNodeTexImage')
+    tex.image = image
+    shader = nodes.get('Principled BSDF')
+    material.node_tree.links.new(tex.outputs['Color'], shader.inputs['Base Color'])
+    material.node_tree.links.new(tex.outputs['Alpha'], shader.inputs['Alpha'])
+    obj.data.materials.append(material)
+    return obj
+
+
+def generate(name, status, output_dir, font_path='', open_template=True,
+             status_color='auto', only_3mf=True, icon_path=''):
     import bpy
     import bmesh
     name, status = validate(name, status)
+    color = resolve_color(status, status_color)
+    if icon_path and only_3mf:
+        raise ValueError('Avatar images require full export (Blender file). Turn off 3MF only.')
+    if icon_path and not Path(icon_path).is_file():
+        raise ValueError('Select an existing avatar image.')
     if open_template:
         template = HERE / 'nametag_template.blend'
         if not template.is_file():
@@ -166,7 +213,7 @@ def generate(name, status, output_dir, font_path='', open_template=True):
         bpy.ops.wm.open_mainfile(filepath=str(template))
     # The template supplies the already separated, checked rim and base.
     for obj in list(bpy.data.objects):
-        if obj.name.startswith(('Name_', 'State_')):
+        if obj.name.startswith(('Name_', 'State_', 'Avatar_Icon')):
             bpy.data.objects.remove(obj, do_unlink=True)
     rim, base, dot = [bpy.data.objects[n] for n in ('White_Rim','Black_Base','Online_Status_Dot')]
     fonts = [f for f in bpy.data.fonts if f.name != 'Bfont' and f.packed_file]
@@ -182,11 +229,19 @@ def generate(name, status, output_dir, font_path='', open_template=True):
     base.data.materials.clear()
     base.data.materials.append(mat('Black',(.035,.035,.035)))
     text, name_scale = make_text(bpy,'Name_Text',name,46.4,22,55,8.4,font,yellow)
-    state, status_scale = make_text(bpy,'State_Text',status,57,13.2,43,5.9,font,white)
-    color = {'online':(.015,.65,.18), 'offline':(.35,.35,.35), 'busy':(.9,.04,.04), 'dnd':(.9,.04,.04), 'away':(1,.6,.02)}.get(status.casefold(),(.015,.65,.18))
+    state, status_scale = make_text(bpy,'State_Text',status,54,13.2,46,5.9,font,white)
+    # Left edge aligns with the name; the dot sits immediately before status text.
+    from mathutils import Vector
+    points = [dot.matrix_world @ v.co for v in dot.data.vertices]
+    center_x = (min(p.x for p in points)+max(p.x for p in points))/2
+    center_y = (min(p.y for p in points)+max(p.y for p in points))/2
+    dot.location += Vector((48.9-center_x, 16.15-center_y, 0))
+    bpy.context.view_layer.update()
     dot.data.materials.clear()
     dot.data.materials.append(mat('Status_Color',color))
     parts = [rim,base,text,state,dot]
+    if icon_path:
+        add_avatar_icon(bpy, icon_path)
     checks = []
     for obj in parts:
         obj.hide_set(False)
@@ -213,7 +268,7 @@ def generate(name, status, output_dir, font_path='', open_template=True):
     scene.unit_settings.system = 'METRIC'
     scene.unit_settings.scale_length = .001
     scene.unit_settings.length_unit = 'MILLIMETERS'
-    for obj, filename in zip(parts,('01_White_Rim.stl','02_Black_Base.stl','03_Name.stl','04_Status.stl','05_Status_Dot.stl')):
+    for obj, filename in ([] if only_3mf else zip(parts,('01_White_Rim.stl','02_Black_Base.stl','03_Name.stl','04_Status.stl','05_Status_Dot.stl'))):
         bpy.ops.object.select_all(action='DESELECT')
         obj.select_set(True)
         bpy.context.view_layer.objects.active = obj
@@ -224,12 +279,17 @@ def generate(name, status, output_dir, font_path='', open_template=True):
         for area in screen.areas:
             if area.type == 'VIEW_3D':
                 area.spaces.active.shading.color_type = 'MATERIAL'
-    bpy.ops.file.pack_all()
-    bpy.ops.wm.save_as_mainfile(filepath=str(folder/(stem+'.blend')))
+                if icon_path: area.spaces.active.shading.type = 'MATERIAL'
+    if not only_3mf:
+        bpy.ops.file.pack_all()
+        bpy.ops.wm.save_as_mainfile(filepath=str(folder/(stem+'.blend')))
     report = {'name':name,'status':status,'size_mm':[109.05,43.84,3.6],'parts':checks,'name_scale':name_scale,'status_scale':status_scale}
-    (folder/'mesh_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    if not only_3mf:
+        (folder/'mesh_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     (folder/'PRINTING.txt').write_text(f'Name: {name}\nStatus: {status}\nOpen the 3MF as a project in Creality Print and load filament colors.\nMap colors to actual CFS filaments before printing. Choose printer and material settings, slice and inspect the preview.\nSTL has no color: import all five files as parts of one object.\nThis model is designed for multicolor printing, not separate snap-fit assembly.\nInspect thin strokes when using long text.\n', encoding='utf-8')
     (Path(output_dir).resolve()/'latest_result.json').write_text(json.dumps({'folder':str(folder),'name':name,'status':status},ensure_ascii=False,indent=2),encoding='utf-8')
+    if only_3mf:
+        (folder/'PRINTING.txt').unlink()
     print('NAMETAG_RESULT='+json.dumps({'folder':str(folder)},ensure_ascii=False),flush=True)
     return folder
 
@@ -239,6 +299,9 @@ def launch_worker(settings, name, status, output_dir):
     if not blender.is_file():
         raise FileNotFoundError('Blender not found. Select blender.exe in the window.')
     command = [str(blender),'--background','--python-exit-code','1','--python',str(Path(__file__).resolve()),'--','--worker','--name',name,'--status',status,'--output',output_dir,'--font',settings.get('font','')]
+    command += ['--status-color', settings.get('status_color', 'auto')]
+    if not settings.get('only_3mf', True): command.append('--full-export')
+    if settings.get('use_icon', False): command += ['--icon', settings.get('icon_path', '')]
     env = dict(os.environ, PYTHONIOENCODING='utf-8', PYTHONUTF8='1')
     result = subprocess.run(command,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,encoding='utf-8',errors='replace',env=env,creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
     logs = Path(output_dir)/'last_generation.log'
@@ -257,8 +320,8 @@ def gui():
     settings = load_settings()
     root = tk.Tk()
     root.title('VRC Tag Generator')
-    root.geometry('650x355')
-    root.minsize(580,355)
+    root.geometry('720x560')
+    root.minsize(680,560)
     frame = ttk.Frame(root,padding=20)
     frame.pack(fill='both',expand=True)
     frame.columnconfigure(1,weight=1)
@@ -269,7 +332,7 @@ def gui():
     for row,label,var in [(0,'Name',name_var),(1,'Status',status_var),(2,'Output folder',out_var),(3,'Blender',blender_var)]:
         ttk.Label(frame,text=label).grid(row=row,column=0,sticky='w',pady=8,padx=(0,12))
         if row==1:
-            widget=ttk.Combobox(frame,textvariable=var,values=['online','offline','busy','away','dnd'])
+            widget=ttk.Combobox(frame,textvariable=var,values=['online','join me','ask me','busy','offline'])
         else:
             widget=ttk.Entry(frame,textvariable=var)
         widget.grid(row=row,column=1,sticky='ew',pady=8)
@@ -281,15 +344,58 @@ def gui():
         if path:blender_var.set(path)
     ttk.Button(frame,text='Browse',command=choose_out).grid(row=2,column=2,padx=(8,0))
     ttk.Button(frame,text='Browse',command=choose_blender).grid(row=3,column=2,padx=(8,0))
-    ttk.Label(frame,text='3MF includes five aligned parts and automatic filament assignments.\nWhite rim and status text share a filament. STL and Blender files are also saved.',wraplength=560).grid(row=4,column=0,columnspan=3,sticky='w',pady=8)
+    color_var = tk.StringVar(value=settings['status_color'])
+    only_var = tk.BooleanVar(value=settings['only_3mf'])
+    icon_var = tk.BooleanVar(value=settings['use_icon'] and not settings['only_3mf'])
+    icon_path_var = tk.StringVar(value=settings['icon_path'])
+    ttk.Label(frame,text='Status dot color').grid(row=4,column=0,sticky='w')
+    ttk.Combobox(frame,textvariable=color_var,values=['auto',*STATUS_COLORS]).grid(row=4,column=1,sticky='ew',pady=8)
+    swatch = tk.Label(frame,width=5)
+    swatch.grid(row=4,column=2)
+    def update_swatch(*args):
+        try:
+            rgb = resolve_color(status_var.get(),color_var.get())
+            swatch.configure(bg='#'+''.join(f'{round(c*255):02x}' for c in rgb))
+        except ValueError: swatch.configure(bg='gray')
+    color_var.trace_add('write',update_swatch)
+    status_var.trace_add('write',update_swatch)
+    update_swatch()
+    def choose_color():
+        from tkinter import colorchooser
+        picked = colorchooser.askcolor(parent=root)[1]
+        if picked: color_var.set(picked)
+    ttk.Button(frame,text='Custom color',command=choose_color).grid(row=5,column=2)
+    def toggle_export():
+        if only_var.get(): icon_var.set(False)
+        icon_check.configure(state='disabled' if only_var.get() else 'normal')
+        toggle_icon()
+    def toggle_icon():
+        mode = 'normal' if icon_var.get() and not only_var.get() else 'disabled'
+        icon_entry.configure(state=mode)
+        icon_button.configure(state=mode)
+    ttk.Checkbutton(frame,text='3MF only (no STL, Blender or reports)',variable=only_var,command=toggle_export).grid(row=5,column=0,columnspan=2,sticky='w',pady=8)
+    icon_check = ttk.Checkbutton(frame,text='Avatar image (Blender display only)',variable=icon_var,command=toggle_icon)
+    icon_check.grid(row=6,column=0,columnspan=3,sticky='w',pady=8)
+    icon_entry = ttk.Entry(frame,textvariable=icon_path_var)
+    icon_entry.grid(row=7,column=0,columnspan=2,sticky='ew')
+    def choose_icon():
+        selected = filedialog.askopenfilename(title='Avatar image',filetypes=[('Images','*.png *.jpg *.jpeg *.webp *.bmp'),('All files','*.*')])
+        if selected: icon_path_var.set(selected)
+    icon_button = ttk.Button(frame,text='Browse',command=choose_icon)
+    icon_button.grid(row=7,column=2)
+    toggle_export()
+    ttk.Label(frame,text='Colors: online / join me / ask me / busy, or a custom #RRGGBB.\nAvatar images are packed into Blender files, not printable 3MF.',wraplength=650).grid(row=8,column=0,columnspan=3,sticky='w',pady=8)
     progress=tk.StringVar(value='Ready')
-    ttk.Label(frame,textvariable=progress).grid(row=6,column=0,columnspan=3,sticky='w',pady=8)
+    ttk.Label(frame,textvariable=progress,wraplength=650).grid(row=10,column=0,columnspan=3,sticky='w',pady=8)
     import queue
     completed=queue.Queue()
     def generate_clicked():
         try:
             name,status=validate(name_var.get(),status_var.get())
             current = dict(settings,name=name,status=status,output_dir=out_var.get(),blender=blender_var.get())
+            current.update(status_color=color_var.get(), only_3mf=only_var.get(),use_icon=icon_var.get(),icon_path=icon_path_var.get())
+            resolve_color(status,current['status_color'])
+            if current['use_icon'] and not Path(current['icon_path']).is_file(): raise ValueError('Select an existing avatar image.')
             if not current['output_dir'].strip():raise ValueError('Select an output folder.')
             (HERE/'settings.json').write_text(json.dumps(current,ensure_ascii=False,indent=2),encoding='utf-8')
         except Exception as error:
@@ -310,7 +416,7 @@ def gui():
         except queue.Empty:pass
         root.after(150,poll)
     button=ttk.Button(frame,text='Generate',command=generate_clicked)
-    button.grid(row=5,column=0,columnspan=3,sticky='ew',pady=8)
+    button.grid(row=9,column=0,columnspan=3,sticky='ew',pady=8)
     root.after(150,poll)
     root.mainloop()
 
@@ -322,11 +428,15 @@ def main():
     parser.add_argument('--status',default='online')
     parser.add_argument('--output')
     parser.add_argument('--font',default='')
+    parser.add_argument('--status-color',default='auto')
+    parser.add_argument('--full-export',action='store_true')
+    parser.add_argument('--icon',default='')
     parsed=parser.parse_args(args)
     if parsed.worker:
-        generate(parsed.name,parsed.status,parsed.output,parsed.font)
+        generate(parsed.name,parsed.status,parsed.output,parsed.font,status_color=parsed.status_color,only_3mf=not parsed.full_export,icon_path=parsed.icon)
     elif parsed.name:
         settings=load_settings()
+        settings.update(status_color=parsed.status_color,only_3mf=not parsed.full_export,use_icon=bool(parsed.icon),icon_path=parsed.icon)
         print(launch_worker(settings,parsed.name,parsed.status,parsed.output or settings['output_dir']))
     else:
         gui()
