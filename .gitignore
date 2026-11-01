@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+settings.json
+last_generation.log
+latest_result.json
+*.blend1
+*.blend2
+*.stl
+*.3mf
+*/
