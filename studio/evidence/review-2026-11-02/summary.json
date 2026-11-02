@@ -1,0 +1,18 @@
+{
+  "matrix": {
+    "total": 43,
+    "pass": 42,
+    "fail": 1
+  },
+  "fontParseMs": 522.16,
+  "nodeCaseMs": {
+    "median": 25.55,
+    "max": 56.45
+  },
+  "packages": 31,
+  "packageChecksPass": 31,
+  "packageChecksFail": 0,
+  "syntheticNote": "Intentionally reversed disconnected shell is accepted by both current aggregate-volume validators; structural PASS is not proof of printable orientation per shell",
+  "python": "3.14.7",
+  "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43"
+}

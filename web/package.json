@@ -7,7 +7,8 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "test": "node --import tsx --test --test-isolation=none tests/*.test.ts",
-    "check": "tsc -b"
+    "check": "tsc -b",
+    "test:review": "node --import tsx tests/review-matrix.ts"
   },
   "dependencies": {
     "fflate": "^0.8.2",
