@@ -1,3 +1,5 @@
+import {validateMesh} from "./mesh-validation";
+export {validateMesh} from "./mesh-validation";
 import * as THREE from "three";
 import type { Font } from "opentype.js";
 export type Vec3 = [number, number, number];
@@ -311,54 +313,13 @@ export function buildDesign(c: Config, base: Base, font: Font): Design {
     const part = makeText(text, font, name, color, h, y, base, d);
     if (part) d.parts.push(part);
   }
+  if(d.errors.length)return d;
   for (const p of d.parts) {
     const report = validateMesh(p);
     if (!report.valid)
       d.errors.push(
-        `${p.name}: 网格无效 (${report.badEdges} 条异常边，${report.degenerate} 个退化面)。`,
+        `${p.name}: 网格无效 (${report.badEdges} 条异常边，${report.degenerate} 个退化面；${report.issues.join("; ")})。`,
       );
   }
   return d;
-}
-export function validateMesh(p: Part) {
-  const edges = new Map<string, { count: number; balance: number }>();
-  let volume = 0,
-    degenerate = 0;
-  if (
-    !p.vertices.length ||
-    !p.triangles.length ||
-    p.vertices.some((v) => v.length !== 3 || v.some((n) => !Number.isFinite(n)))
-  )
-    return { valid: false, badEdges: 0, degenerate: 1, volume: 0 };
-  for (const t of p.triangles) {
-    if (
-      t.length !== 3 ||
-      t.some((i) => !Number.isInteger(i) || i < 0 || i >= p.vertices.length)
-    ) {
-      degenerate++;
-      continue;
-    }
-    const [a, b, c] = t.map((i) => new THREE.Vector3(...p.vertices[i]));
-    const area = b.clone().sub(a).cross(c.clone().sub(a)).length();
-    if (area < 1e-9) degenerate++;
-    volume += a.dot(b.clone().cross(c)) / 6;
-    for (let j = 0; j < 3; j++) {
-      const u = t[j],
-        v = t[(j + 1) % 3],
-        key = u < v ? `${u},${v}` : `${v},${u}`;
-      const e = edges.get(key) ?? { count: 0, balance: 0 };
-      e.count++;
-      e.balance += u < v ? 1 : -1;
-      edges.set(key, e);
-    }
-  }
-  const badEdges = [...edges.values()].filter(
-    (e) => e.count !== 2 || e.balance !== 0,
-  ).length;
-  return {
-    valid: !badEdges && !degenerate && volume > 1e-7,
-    badEdges,
-    degenerate,
-    volume,
-  };
 }

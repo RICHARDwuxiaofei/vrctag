@@ -3,6 +3,8 @@ import json, math, sys, zipfile
 from collections import defaultdict
 from pathlib import Path
 import xml.etree.ElementTree as ET
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from mesh_validation import validate_mesh
 NS={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
 def validate(path):
     with zipfile.ZipFile(path) as z:
@@ -27,18 +29,9 @@ def validate(path):
             verts=[tuple(float(v.attrib[k]) for k in 'xyz') for v in mesh.find('m:vertices',NS)]
             assert all(math.isfinite(n) for v in verts for n in v)
             tris=[tuple(int(t.attrib[k]) for k in ['v1','v2','v3']) for t in mesh.find('m:triangles',NS)]
-            edges=defaultdict(list); volume=0
-            for t in tris:
-                assert len(set(t))==3 and all(0<=i<len(verts) for i in t)
-                a,b,c=[verts[i] for i in t]
-                u=[b[i]-a[i] for i in range(3)];v=[c[i]-a[i] for i in range(3)]
-                cross=(u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0])
-                assert sum(n*n for n in cross)>1e-16
-                volume+=(a[0]*(b[1]*c[2]-b[2]*c[1])+a[1]*(b[2]*c[0]-b[0]*c[2])+a[2]*(b[0]*c[1]-b[1]*c[0]))/6
-                for i,j in zip(t,t[1:]+t[:1]): edges[tuple(sorted((i,j)))].append(1 if i<j else -1)
-            assert all(len(e)==2 and sum(e)==0 for e in edges.values())
-            assert volume>0
-            parts.append({'name':obj.attrib['name'],'vertices':len(verts),'triangles':len(tris),'volumeMm3':volume,'closedOriented':True,'bounds':[[min(v[k] for v in verts),max(v[k] for v in verts)] for k in range(3)]})
+            report=validate_mesh(verts,tris)
+            if not report['valid']:raise ValueError(obj.attrib['name']+': '+str(report['issues']))
+            parts.append({'name':obj.attrib['name'],'vertices':len(verts),'triangles':len(tris),'volumeMm3':report['volume'],'closedOriented':True,'shells':report['shells'],'bounds':[[min(v[k] for v in verts),max(v[k] for v in verts)] for k in range(3)]})
         for item in root.find('m:build',NS): assert item.attrib['objectid'] in objects
         return {'file':str(path),'status':'PASS','unit':'millimeter','parts':parts,'slicerImport':'NOT_TESTED'}
 if __name__=='__main__':
