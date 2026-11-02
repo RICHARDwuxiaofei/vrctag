@@ -1,0 +1,76 @@
+[
+  {
+    "name": "fflate",
+    "version": "0.8.3",
+    "license": "MIT",
+    "source": "https://github.com/101arrowz/fflate"
+  },
+  {
+    "name": "opentype.js",
+    "version": "1.3.4",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git://github.com/opentypejs/opentype.js.git"
+    }
+  },
+  {
+    "name": "react",
+    "version": "19.3.1",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/react/react.git",
+      "directory": "packages/react"
+    }
+  },
+  {
+    "name": "react-dom",
+    "version": "19.3.1",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/react/react.git",
+      "directory": "packages/react-dom"
+    }
+  },
+  {
+    "name": "scheduler",
+    "version": "0.28.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/react/react.git",
+      "directory": "packages/scheduler"
+    }
+  },
+  {
+    "name": "three",
+    "version": "0.180.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/mrdoob/three.js"
+    }
+  },
+  {
+    "name": "tiny-inflate",
+    "version": "1.0.3",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git://github.com/devongovett/tiny-inflate.git"
+    },
+    "note": "Included in opentype.js distribution bundle"
+  },
+  {
+    "name": "string.prototype.codepointat",
+    "version": "0.2.1",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/mathiasbynens/String.prototype.codePointAt.git"
+    },
+    "note": "Included in opentype.js distribution bundle"
+  }
+]

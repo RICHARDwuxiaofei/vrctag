@@ -55,7 +55,11 @@ for obj in collection.objects:
     if obj.type=='MESH':obj.select_set(True)
 bpy.context.view_layer.objects.active=bpy.data.objects['Plate_Body']
 bpy.ops.wm.save_as_mainfile(filepath='/home/nagikokoro/CODE/vrctag/studio/vrc-tag-original.blend')
+for obj in bpy.context.selected_objects:
+    obj.scale=(0.001,0.001,0.001)
 bpy.ops.export_scene.gltf(filepath='/home/nagikokoro/CODE/vrctag/web/public/assets/base.glb',use_selection=True,export_format='GLB')
+for obj in bpy.context.selected_objects:
+    obj.scale=(1,1,1)
 report=[]
 parts=[]
 for obj in collection.objects:
@@ -64,5 +68,5 @@ for obj in collection.objects:
     report.append({'name':obj.name,'nonManifoldEdges':sum(not e.is_manifold for e in bm.edges),'volumeMm3':bm.calc_volume(signed=True),'dimensionsMm':list(obj.dimensions)})
     bm.free()
     parts.append({'name':obj.name,'vertices':[list(v.co) for v in obj.data.vertices],'triangles':[list(p.vertices) for p in obj.data.polygons]})
-print('STUDIO_JSON:'+json.dumps({'parts':parts,'validation':report,'layout':{'unit':'millimeter','front':'+Z','size':[120,38,4],'textLeft':-22,'textWidth':72,'textZ':3,'relief':0.8}}))
+print('STUDIO_JSON:'+json.dumps({'parts':parts,'validation':report,'layout':{'unit':'millimeter','front':'+Z','size':[120,38,4],'textLeft':-22,'textWidth':72,'textZ':3,'relief':0.8,'textRules':{'alignment':'left','name':{'height':10,'centerY':4,'heightWithPronouns':8,'centerYWithPronouns':7},'pronouns':{'height':3.7,'centerY':-1.5},'status':{'height':4,'centerY':-10.5},'minimumHeight':2.4,'warningHeight':4.5,'maxCharacters':120}}}))
 

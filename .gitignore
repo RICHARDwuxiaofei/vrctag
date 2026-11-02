@@ -20,3 +20,6 @@ web/node_modules/
 web/dist/
 web/test-results/
 web/playwright-report/
+
+*.tsbuildinfo
+!studio/evidence/*.3mf

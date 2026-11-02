@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "test": "Avatar upload does not alter any printable mesh, colors, metadata, or archive entries",
+  "sameEntries": true,
+  "allEntryBytesIdentical": true,
+  "avatarInPackage": false
+}

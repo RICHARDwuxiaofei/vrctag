@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Plate_Body",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 12747.916350828422
+  },
+  {
+    "name": "Avatar_Back",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 361.65313378087734
+  },
+  {
+    "name": "Avatar_Frame",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 163.2461990111968
+  },
+  {
+    "name": "Status_Dot",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 19.620939768396056
+  },
+  {
+    "name": "Name",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 136.56423473821306
+  },
+  {
+    "name": "Status_Text",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 13.047441190543836
+  }
+]

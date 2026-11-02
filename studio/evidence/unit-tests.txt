@@ -1,0 +1,22 @@
+
+> vrc-tag-studio@0.1.0 test
+> node --import tsx --test --test-isolation=none tests/*.test.ts
+
+✔ GLB loads with original parts and physical meter bounds (8.689388ms)
+✔ closed printable text: Amy (18.182177ms)
+✔ closed printable text: Nagikokoro (28.698643ms)
+✔ closed printable text: A Very Long English Display Name (29.774028ms)
+✔ closed printable text: 小凪心 (15.462367ms)
+✔ closed printable text: ナギココロ (12.342474ms)
+✔ closed printable text: Nagi_心こんにちは (16.942714ms)
+✔ optional pronouns, centering, friend material isolation, independent color (84.055ms)
+✔ invalid, unsupported, too-small text never produces successful export (54.158941ms)
+✔ 3MF package has millimeter assembly, colors, independent parts and metadata (84.253984ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1186.372446

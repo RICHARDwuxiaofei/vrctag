@@ -1,0 +1,19 @@
+
+> vrc-tag-studio@0.1.0 build
+> tsc -b && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 33 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                          0.54 kB │ gzip:   0.36 kB
+dist/assets/studio.worker-5iVzAn5B.js  254.90 kB
+dist/assets/index-B8stOEmG.css           9.79 kB │ gzip:   2.88 kB
+dist/assets/index-2ncJ1ZwI.js          732.84 kB │ gzip: 198.95 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.51s
