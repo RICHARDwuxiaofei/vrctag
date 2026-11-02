@@ -146,7 +146,7 @@ function App() {
       160,
     );
     return () => clearTimeout(timer);
-  }, [configKey, workerGeneration]);
+  }, [config, workerGeneration]);
   const beginExport = () => {
     if (
       exportRequest.current ||
