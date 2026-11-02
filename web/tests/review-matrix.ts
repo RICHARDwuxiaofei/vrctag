@@ -1,6 +1,5 @@
 // Bounded diagnostics; records failures without modifying product code.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
-import { execFileSync } from "node:child_process";
 import { performance } from "node:perf_hooks";
 import opentype from "opentype.js";
 import {
@@ -188,9 +187,9 @@ results.push({
   scope: "Synthetic validator diagnostic; not confirmed normal UI output",
 });
 const result = {
-  testedSourceCommit: execFileSync("git", ["rev-parse", "HEAD"], {
-    encoding: "utf8",
-  }).trim(),
+  testedSourceCommit:
+    process.env.SOURCE_COMMIT ??
+    "unrecorded (set SOURCE_COMMIT when recording evidence)",
   date: "2026-11-03 Asia/Hong_Kong",
   fontParseMs: +fontParseMs.toFixed(2),
   summary: {
