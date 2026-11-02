@@ -8,3 +8,15 @@ latest_result.json
 *.stl
 *.3mf
 */
+
+# Independently authored studio; old desktop files remain in place.
+!/web/
+!/web/**/
+!/studio/
+!/studio/**/
+!/docs/
+!/docs/**/
+web/node_modules/
+web/dist/
+web/test-results/
+web/playwright-report/
