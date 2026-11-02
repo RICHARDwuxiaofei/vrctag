@@ -16,10 +16,17 @@ def inside_triangle(p,t):
 def intersects(a,b,shared):
  n=cross(sub(a[1],a[0]),sub(a[2],a[0]));nl=norm(n)
  if nl<EPS:return False
- if all(abs(dot(n,sub(p,a[0]))/nl)<EPS for p in b):
+ distances=[dot(n,sub(p,a[0]))/nl for p in b]
+ if all(d>EPS for d in distances)or all(d<-EPS for d in distances):return False
+ if all(abs(d)<EPS for d in distances):
   axis=max(range(3),key=lambda k:abs(n[k]));aa=[tuple(v for k,v in enumerate(p)if k!=axis)for p in a];polygon=[tuple(v for k,v in enumerate(p)if k!=axis)for p in b]
   def orient(p,q,r):return (q[0]-p[0])*(r[1]-p[1])-(q[1]-p[1])*(r[0]-p[0])
   sign=1 if orient(*aa)>0 else -1
+  # Separating axes discard disjoint triangulation caps before polygon clipping.
+  for polygon_a,polygon_b in[(aa,polygon),(polygon,aa)]:
+   direction=1 if orient(*polygon_a)>0 else -1
+   for edge in range(3):
+    if max(direction*orient(polygon_a[edge],polygon_a[(edge+1)%3],point)for point in polygon_b)<=1e-10:return False
   for i in range(3):
    if not polygon:break
    p,q=aa[i],aa[(i+1)%3];out=[]
@@ -82,7 +89,6 @@ def validate_mesh(vertices,tris):
    if boxes[j][0][0]>boxes[i][0][1]+EPS:break
    if not overlaps(boxes[i],boxes[j]):continue
    shared=[vertices[k]for k in tris[i]if k in tris[j]]
-   if len(shared)>=2:continue
    budget+=1
    if budget>3000000:r['issues'].append('intersection budget exceeded');return r
    if intersects(raw[i],raw[j],shared):r['intersections']+=1;r['issues'].append(f'intersecting triangles {i}/{j}');return r

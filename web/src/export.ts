@@ -1,4 +1,4 @@
-import {materialPlan}from "./materials";
+import { materialPlan } from "./materials";
 import { strToU8, zipSync } from "fflate";
 import { validateMesh, type Design, type Config } from "./model";
 const escape = (s: string) =>
@@ -19,10 +19,16 @@ export function export3mf(d: Design, c: Config): Uint8Array {
   if (d.errors.length || !d.parts.length)
     throw new Error(d.errors.join("\n") || "没有可导出的网格");
   // Validate the exact rounded coordinates that will be serialized, not a higher-precision proxy.
-  const parts=d.parts.map(p=>({...p,vertices:p.vertices.map(v=>v.map(n=>Number(n.toFixed(6))) as [number,number,number])}));
-  for(const p of parts)if(!validateMesh(p).valid)throw new Error(`拒绝导出无效网格：${p.name}`);
-  const plan=materialPlan(c,parts);
-  const colors=plan.palette;
+  const parts = d.parts.map((p) => ({
+    ...p,
+    vertices: p.vertices.map(
+      (v) => v.map((n) => Number(n.toFixed(6))) as [number, number, number],
+    ),
+  }));
+  for (const p of parts)
+    if (!validateMesh(p).valid) throw new Error(`拒绝导出无效网格：${p.name}`);
+  const plan = materialPlan(c, parts);
+  const colors = plan.palette;
   if (colors.some((c) => !/^#[0-9A-F]{6}$/.test(c)))
     throw new Error("无效颜色");
   const objects = parts
@@ -42,7 +48,17 @@ export function export3mf(d: Design, c: Config): Uint8Array {
         '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>',
       ),
       "3D/3dmodel.model": xml(model),
-      "Metadata/printing.json":strToU8(JSON.stringify({...plan,unit:'millimeter',requiresSlicerFilamentAssignment:true},null,2)),
+      "Metadata/printing.json": strToU8(
+        JSON.stringify(
+          {
+            ...plan,
+            unit: "millimeter",
+            requiresSlicerFilamentAssignment: true,
+          },
+          null,
+          2,
+        ),
+      ),
       "Metadata/design.json": strToU8(
         JSON.stringify({ version: 1, ...c }, null, 2),
       ),

@@ -24,3 +24,4 @@ web/playwright-report/
 *.tsbuildinfo
 !studio/evidence/*.3mf
 !studio/evidence/review-2026-11-02/*.3mf
+!studio/evidence/fixes-2026-11-03/*.3mf
