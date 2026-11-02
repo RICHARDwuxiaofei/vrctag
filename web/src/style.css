@@ -757,3 +757,4 @@ footer > span:last-child {
     transition: none !important;
   }
 }
+.print-settings{margin-top:20px;border-top:1px solid #405344;padding-top:16px}.print-settings>label{font-size:12px;display:block;margin-bottom:9px}.print-settings select{height:38px}.print-toggle{margin-top:12px;display:flex!important;gap:8px;align-items:center;color:#b9cca9}.print-settings details{font-size:11px;color:#a4b69a;margin:14px 0}.print-settings summary{cursor:pointer}.filament-colors{display:flex;gap:15px;margin:15px 0}.filament-colors label{font-size:10px}.filament-colors input{display:block;width:42px;height:28px;border:0;padding:0;margin-top:5px;background:none}.material-mapping{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.material-mapping label{font-size:10px;overflow:hidden}.material-mapping select{height:30px;margin-top:5px;font-size:10px}

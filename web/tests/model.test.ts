@@ -37,7 +37,7 @@ for (const name of [
     for (const p of d.parts) assert(validateMesh(p).valid, p.name);
     const namePart = d.parts.find((p) => p.name === "Name")!;
     assert(Math.max(...namePart.vertices.map((v) => v[0])) <= 50.0001);
-    assert(Math.min(...namePart.vertices.map((v) => v[0])) >= -22.0001);
+    assert(Math.min(...namePart.vertices.map((v) => v[0])) >= base.layout.textLeft-0.0001);
   });
 test("optional pronouns, centering, friend material isolation, independent color", () => {
   const d = buildDesign(defaults, base, font);
@@ -66,8 +66,8 @@ test("optional pronouns, centering, friend material isolation, independent color
       .vertices.map((v) => v[1]);
     return (Math.min(...ys) + Math.max(...ys)) / 2;
   };
-  assert.equal(nameY(d), 4);
-  assert.equal(nameY(custom), 7);
+  assert.equal(nameY(d), base.layout.textRules.name.centerY);
+  assert.equal(nameY(custom), base.layout.textRules.name.centerYWithPronouns);
   for (const status of Object.keys(statuses))
     assert.equal(
       buildDesign(

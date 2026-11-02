@@ -1,3 +1,4 @@
+import {sampledStroke}from "./printability";
 import {validateMesh} from "./mesh-validation";
 export {validateMesh} from "./mesh-validation";
 import * as THREE from "three";
@@ -12,6 +13,7 @@ export interface Part {
 export interface Base {
   parts: Part[];
   layout: {
+    avatar?:{center:number[];radius:number;frameWidth:number;dotCenter:number[];dotRadius:number};
     unit: string;
     front: string;
     size: number[];
@@ -44,6 +46,9 @@ export const statuses = {
 };
 export type Status = keyof typeof statuses;
 export interface Config {
+  printMode?:"cfs4"|"visual";
+  filamentColors?:string[];
+  materialSlots?:Record<string,number>;
   displayName: string;
   friend: boolean;
   status: Status;
@@ -52,6 +57,7 @@ export interface Config {
   pronouns: string;
 }
 export const defaults: Config = {
+  printMode:"cfs4",
   displayName: "Nagikokoro",
   friend: false,
   status: "Online",
@@ -66,6 +72,7 @@ export interface Design {
   warnings: string[];
   errors: string[];
   textHeights: Record<string, number>;
+  strokeScreening?:Record<string,number>;
 }
 export function geometry(p: Part) {
   const g = new THREE.BufferGeometry();
@@ -189,7 +196,7 @@ function append(target: Part, p: Part) {
 }
 function makeText(
   text: string,
-  font: Font,
+  font: Pick<Font,"charToGlyph"|"unitsPerEm">,
   name: string,
   color: string,
   height: number,
@@ -199,8 +206,9 @@ function makeText(
 ): Part | null {
   if (!text.trim()) return null;
   const merged: Part = { name, color, vertices: [], triangles: [] };
+  const outlines:THREE.Vector2[][][]=[];
   let x = 0;
-  for (const char of text) {
+  for (const char of text.normalize("NFC")) {
     const glyph = font.charToGlyph(char);
     if (glyph.index === 0) {
       design.errors.push(`字体不支持字符「${char}」，请替换后导出。`);
@@ -235,6 +243,7 @@ function makeText(
     }
     const shapes = shapePath.toShapes(true);
     if (shapes.length) {
+      outlines.push(shapes.flatMap(shape=>{const p=shape.extractPoints(8);return [p.shape,...p.holes];}));
       append(merged, extrudeShapes(shapes, base.layout.relief, name, color));
     }
     x += ((glyph.advanceWidth ?? 1000) / font.unitsPerEm) * 100 + 2; // modest tracking preserves separate glyph shells
@@ -252,6 +261,8 @@ function makeText(
   );
   const actual = (maxY - minY) * scale;
   design.textHeights[name] = actual;
+  const strokes=outlines.map(p=>sampledStroke(p,scale)).filter((n):n is number=>n!==null);
+  if(strokes.length){const thin=Math.min(...strokes);(design.strokeScreening??={})[name]=thin;if(thin<.4)design.warnings.push(`${name} 采样细笔画约 ${thin.toFixed(2)} mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。`);}
   if (actual < base.layout.textRules.minimumHeight)
     design.errors.push(
       `${name} 缩放后仅 ${actual.toFixed(1)} mm 高，请缩短文字。`,
@@ -267,7 +278,7 @@ function makeText(
   ]);
   return merged;
 }
-export function buildDesign(c: Config, base: Base, font: Font): Design {
+export function buildDesign(c: Config, base: Base, font: Pick<Font,"charToGlyph"|"unitsPerEm">): Design {
   const d: Design = { parts: [], warnings: [], errors: [], textHeights: {} };
   if (!c.displayName.trim()) d.errors.push("请输入显示名称。");
   if (
@@ -292,14 +303,14 @@ export function buildDesign(c: Config, base: Base, font: Font): Design {
       c.displayName,
       c.friend ? "#ffd45d" : "#f3f6ed",
       hasPronouns ? rules.name.heightWithPronouns : rules.name.height,
-      hasPronouns ? rules.name.centerYWithPronouns : rules.name.centerY,
+      hasPronouns ? (c.customStatus.trim()?rules.name.centerYWithPronouns:5.5) : (c.customStatus.trim()?rules.name.centerY:0),
     ],
     [
       "Pronouns",
       c.pronouns,
       "#bdcbc6",
       rules.pronouns.height,
-      rules.pronouns.centerY,
+      c.customStatus.trim()?rules.pronouns.centerY:-5.5,
     ],
     [
       "Status_Text",

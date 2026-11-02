@@ -63,18 +63,20 @@ export function Preview({
       camera.updateProjectionMatrix();
     });
     resize.observe(el);
-    let frame = 0;
+    let frame = 0,frames=0;
     const tick = () => {
       frame = requestAnimationFrame(tick);
       controls.update();
       renderer.render(scene, camera);
+      if(++frames%30===0)el.dataset.previewResources=JSON.stringify(renderer.info.memory);
     };
     tick();
     return () => {
       cancelAnimationFrame(frame);
       resize.disconnect();
       controls.dispose();
-      renderer.dispose();
+      renderer.renderLists.dispose();
+      renderer.dispose();renderer.forceContextLoss();cameraRef.current=null;controlsRef.current=null;
       renderer.domElement.remove();
       sceneRef.current = null;
     };
@@ -125,6 +127,7 @@ export function Preview({
     if (!scene) return;
     let disposed = false;
     let mesh: THREE.Mesh | undefined;
+    let sourceImage:HTMLImageElement|undefined;
     const canvas = document.createElement("canvas");
     canvas.width = canvas.height = 512;
     const ctx = canvas.getContext("2d")!;
@@ -133,14 +136,14 @@ export function Preview({
       const texture = new THREE.CanvasTexture(canvas);
       texture.colorSpace = THREE.SRGBColorSpace;
       mesh = new THREE.Mesh(
-        new THREE.CircleGeometry(11.95, 96),
+        (()=>{const back=design?.parts.find(p=>p.name==='Avatar_Back');if(!back)return new THREE.CircleGeometry(14.95,96);const z=Math.max(...back.vertices.map(v=>v[2]));const top={...back,triangles:back.triangles.filter(t=>t.every(i=>Math.abs(back.vertices[i][2]-z)<1e-5)),vertices:back.vertices.map(([x,y])=>[x,y,3.84] as [number,number,number])};const g=geometry(top);g.setAttribute('uv',new THREE.Float32BufferAttribute(top.vertices.flatMap(([x,y])=>[(x+41)/30+.5,y/30+.5]),2));return g;})(),
         new THREE.MeshBasicMaterial({ map: texture }),
       );
-      mesh.position.set(-42, 0, 3.84);
+      // Avatar geometry already uses model coordinates, including the dot recess.
       scene.add(mesh);
     };
     if (avatar) {
-      const image = new Image();
+      const image = new Image();sourceImage=image;
       image.onload = () => {
         const size = Math.min(image.width, image.height);
         ctx.drawImage(
@@ -171,6 +174,7 @@ export function Preview({
     }
     return () => {
       disposed = true;
+      if(sourceImage){sourceImage.onload=null;sourceImage.src="";}
       if (mesh) {
         scene.remove(mesh);
         mesh.geometry.dispose();
@@ -179,7 +183,7 @@ export function Preview({
         material.dispose();
       }
     };
-  }, [avatar]);
+  }, [avatar,design]);
   return (
     <div ref={host} className="canvas-host">
       {failure && (
