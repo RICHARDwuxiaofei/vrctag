@@ -2,7 +2,7 @@
 
 ## 独立原创部分
 
-本次从无网格的 Blender 场景建立胶囊实体：自定 120 × 38 mm、3 mm 厚底板，96 段圆形头像结构及状态点。Blender 原场景只有相机/灯光，没有导入 nametag_template.blend、旧网格、旧拓扑、旧顶点、布尔结果或尺寸。未打开第三方参考模型。建模脚本保存在 studio/scripts/build_model.py，源文件为 studio/vrc-tag-original.blend。
+本次从无网格的 Blender 场景建立胶囊实体：自定 120 × 38 mm、3 mm 厚底板，96 段圆形头像结构及状态点。Blender 原场景只有相机/灯光，没有导入 nametag_template.blend、旧网格、旧拓扑、旧顶点、布尔结果或尺寸。未打开第三方参考模型。建模脚本保存在 studio/scripts/model_geometry.py，便携入口 studio/scripts/build_model.py，源文件为 studio/vrc-tag-original.blend。
 
 web/src 的界面、文字挤出、网格校验、3MF 装配写入及 Worker 由本次独立实现。没有阅读或复制旧 Python 生成器的实质实现。基础网格来自本次 Blender 导出的 base.json；GLB 是同一原创几何。截图仅用于观察胶囊、头像、状态点、名字和小字的布局，没有打包任何截图、官方 Logo、人物、游戏背景或官方纹理。
 
@@ -23,13 +23,15 @@ web/src 的界面、文字挤出、网格校验、3MF 装配写入及 Worker 由
 | tiny-inflate | https://github.com/foliojs/tiny-inflate | 1.0.3（见实际依赖清单） | MIT，opentype.js 内嵌依赖 |
 | string.prototype.codepointat | https://github.com/mathiasbynens/String.prototype.codePointAt | 0.2.1（见实际依赖清单） | MIT，opentype.js 内嵌 polyfill |
 | fflate | https://github.com/101arrowz/fflate | 0.8.3 | MIT，客户端 ZIP |
-| Noto Sans CJK SC Bold | https://github.com/notofonts/noto-cjk/tree/main/Sans/OTF/SimplifiedChinese | 官方 OTF，2026-11-02 取得 | SIL OFL 1.1，中英日文字形；未修改字体 |
+| Noto Sans CJK SC Bold | https://github.com/notofonts/noto-cjk/tree/main/Sans/OTF/SimplifiedChinese | 官方 OTF，2026-11-02 取得 | SIL OFL 1.1，中英日文字形；保留原件，派生子集另行重命名 |
 
 运行时许可证副本在 web/public/licenses/，构建后也会包含；字体许可证在 web/public/assets/OFL-Noto.txt。精确解析结果见 runtime-dependencies.json 与 package-lock.json（优先于上表中内嵌依赖的说明版本）。
 
 字体下载地址：https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Bold.otf
 
 字体 SHA-256：`b5f0d1a190a7f9b43c310a8850630af12553df32c4c050543f9059732d9b4c0a`。
+
+2026-11-03：新增 `studio/scripts/build_font.mjs`，将全部 44,810 个原 cmap 支持码点分为 103 个按需 OTF。派生字体内部族名重命名为 `VRCStudioSubset`，保留源版权与 OFL，common 分块并非完整字体。原 OTF 未删除。来源许可证仍适用于所有派生字体，绝不覆盖第一方代码/模型。详见字体覆盖测试和 fixes-2026-11-03/font-coverage.json。
 
 字体官方许可：https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE 。分发时必须保留 OFL；不将字体的许可覆盖到整个项目。
 

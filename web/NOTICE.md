@@ -4,6 +4,6 @@ The independently authored VRC Tag Studio application and original model are sep
 
 Root LICENSE and ATTRIBUTION.md are preserved without alteration for the legacy desktop generator, adapted template, and historical works. No third-party rights are removed or relicensed. The root notice contains broad historical language; this scope note records provenance and the owner's pending decision, not legal clearance or an assertion that existing license grants can be revoked. Clarify the repository's final license scope before public commercial distribution.
 
-Bundled Noto Sans CJK font: SIL OFL 1.1; see public/assets/OFL-Noto.txt. Runtime libraries retain their own MIT notices, copied into public/licenses/. Full dependency provenance is in ../docs/SOURCES.md and package-lock.json.
+Bundled original Noto Sans CJK font and renamed VRCStudioSubset derived OTF chunks: SIL OFL 1.1; original copyright and license retained; see public/assets/OFL-Noto.txt. Runtime libraries retain their own MIT notices, copied into public/licenses/. Full dependency provenance is in ../docs/SOURCES.md and package-lock.json.
 
 This project is an independent fan-style design tool, not an official VRChat product. No official logos, textures, account API, or third-party screenshot content are bundled.

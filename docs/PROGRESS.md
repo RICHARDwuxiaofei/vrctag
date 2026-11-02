@@ -15,3 +15,9 @@ Plan: original 120 × 38 mm capsule, 3 mm body; coplanar interfaces for relief c
 8. PASS: 10/10 automated tests, TypeScript, production build, desktop/mobile GUI, actual downloaded JSON and reset. Production subpath /vrctag/ loaded with a plain static file server.
 9. PASS: provenance/runtime notices, source and build isolation, deployment examples and acceptance matrix. Root legacy rights unchanged.
 10. PARTIAL: all deliverables present; real Creality Print / OrcaSlicer import and physical print NOT_TESTED because software/hardware absent. No deployment or main merge.
+
+## 2026-11-03 PR #1 修复
+
+F-01 壳体方向/空腔/交叉检查，F-02 头像错误隔离，Blender 30mm 头像/1mm 框/7mm 状态点/5.2mm Pronouns，四槽材料映射，Worker/导出快照与本地字体分块已完成。代码检查点 974e13c。TypeScript/build PASS，单元测试 23/23，原诊断 43/43，Python 回归 6/6，独立 3MF 35/35，真实浏览器桌面/窄视口及故障恢复 PASS。
+
+完整证据、原样 XSD 编译限制、Blender 后台退出问题及切片 NOT_TESTED 见 [修复报告](FIXES-2026-11-03.md)。保留 Draft PR，不自动合并/部署/Release。

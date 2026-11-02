@@ -1,0 +1,183 @@
+{
+  "source": "3MF Consortium Core specification Appendix B.1.1; spec blob 8bd3d83575ba53b80aa0d83d16c0c7d37c5a3523",
+  "coreSchemaSHA256": "fd918d607915ec70a9fe14876f96aae250790d5ba40cbaf65c4e21bdb5658bb9",
+  "xmlSchemaSHA256": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c",
+  "scope": "Model XML only; INT_MAX repetition compiled as unbounded with separately enforced total XML nodes < 1,000,000 (stricter than every 2,147,483,647 occurrence bound). No other schema normalization. Not slicer certification or full OPC certification. Unmodified-schema compiler run remains BLOCKED.",
+  "results": [
+    {
+      "file": "browser-cfs4.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "browser-f02-after-avatar.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "browser-f02-before.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "browser-snapshot-A.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "browser-visual.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "custom-color-independent.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "no-status-no-pronouns.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Ask-Me-false.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Ask-Me-true.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Busy-false.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Busy-true.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Join-Me-false.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Join-Me-true.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Offline-false.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Offline-true.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Online-false.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "palette-Online-true.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "pronouns-22.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "pronouns-23.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "pronouns-24.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "pronouns-25.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "pronouns-26.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "pronouns-27.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-0.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-1.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-10.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-11.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-2.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-3.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-4.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-5.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-6.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-7.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-8.3mf",
+      "status": "PASS",
+      "errors": ""
+    },
+    {
+      "file": "text-9.3mf",
+      "status": "PASS",
+      "errors": ""
+    }
+  ]
+}

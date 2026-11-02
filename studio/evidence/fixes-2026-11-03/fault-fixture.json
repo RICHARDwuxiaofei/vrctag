@@ -1,0 +1,5 @@
+{
+  "purpose": "local static subpath and failed resource recovery",
+  "initiallyMissing": "assets/fonts/common.0a19946948d0.otf",
+  "liveSiteUnaffected": true
+}
