@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Independent double-precision closed shell, containment and intersection checks (mm)."""
 import math
 from collections import defaultdict

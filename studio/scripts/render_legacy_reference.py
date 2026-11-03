@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """REFERENCE ONLY: render the preserved legacy template without saving or exporting it.
 Its render remains subject to WiseWolf attribution/CC BY-NC-SA 4.0. Never use
 these objects, vertices or rendered pixels as input to the production builder.

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import catalog from "./styles.catalog.json";
 export type StyleDefinition = Omit<
   (typeof catalog.styles)[number],

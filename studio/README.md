@@ -1,5 +1,7 @@
 # Style model sources
 
+> 最新授权与验收：独立软件 MIT、Native/初版独立模型 CC BY 4.0；Classic 保留原 NC-SA 范围待确认。以下较早的“最终许可待定”记录只描述历史检查点。见 [许可证迁移](../docs/LICENSE_MIGRATION.md) 和根 LICENSE_SCOPE.md。
+
 Current sources: [classic.blend](classic.blend) (**Large Avatar**, 134×52×4 mm) and [native.blend](native.blend) (**VRChat Style**, 118×40×3.6 mm). Front +Z, horizontal +X, up +Y, flat back Z=0; Blender scale 0.001 m/BU. Names/pronouns/status text remain browser-generated, not baked into sources. See [current acceptance](../docs/CLASSIC-LARGE-AVATAR-2026-11-03.md).
 
 Classic was rebuilt after inspecting the WiseWolf-origin legacy template **only as a visual reference**. Its new analytic medallion/shouldered-panel outline, separate perimeter rim, 44 mm avatar, new layout and five closed base parts replace the mistaken first-web-capsule reference. No legacy mesh data is imported or reused. Similarity/design licensing risk remains unresolved; see [provenance](../docs/SOURCES.md). Native geometry/source/layout are unchanged from `8be7020`.

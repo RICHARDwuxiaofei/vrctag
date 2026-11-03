@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 /** Reproducible OFL font partitioning. Run node studio/scripts/build_font.mjs. */
 import { createHash } from "node:crypto";
 import { createRequire } from "node:module";

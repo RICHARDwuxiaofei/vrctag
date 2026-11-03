@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { readFile, writeFile, copyFile } from "node:fs/promises";
 const root = new URL("../../", import.meta.url);
 const catalog = JSON.parse(

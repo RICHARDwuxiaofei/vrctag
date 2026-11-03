@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/check-static.mjs",
     "test": "node --import tsx --test --test-isolation=none tests/*.test.ts",
     "check": "tsc -b",
     "test:review": "node --import tsx tests/review-matrix.ts"
@@ -25,5 +25,7 @@
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "vite": "^7.1.12"
-  }
+  },
+  "license": "MIT",
+  "author": "RICHARDwuxiaofei"
 }

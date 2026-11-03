@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Bounded, resumable independent audits. Shard to keep each local run short."""
 import argparse,json
 from pathlib import Path

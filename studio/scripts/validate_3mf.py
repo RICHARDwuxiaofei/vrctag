@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Independent package, triangle topology, orientation and bounds validation. No slicer claim."""
 import json, math, sys, zipfile
 from collections import defaultdict
@@ -9,6 +11,7 @@ NS={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
 def validate(path):
     with zipfile.ZipFile(path) as z:
         assert z.testzip() is None
+        assert len(z.namelist())==len(set(z.namelist())), "Duplicate ZIP members"
         content=ET.fromstring(z.read('[Content_Types].xml'))
         rels=ET.fromstring(z.read('_rels/.rels'))
         assert any(r.attrib['Target']=='/3D/3dmodel.model' for r in rels)
@@ -19,6 +22,13 @@ def validate(path):
         objects={o.attrib['id']:o for o in resources.findall('m:object',NS)}
         materials=resources.find('m:basematerials',NS)
         assert materials is not None
+        import re
+        assert all(re.fullmatch(r'#[0-9a-fA-F]{8}',m.attrib['displaycolor'])for m in materials)
+        printing=json.loads(z.read('Metadata/printing.json'))if 'Metadata/printing.json'in z.namelist()else None
+        if printing:
+            assert len(printing['palette'])==len(materials)
+            assert [v.upper()+'FF'for v in printing['palette']]==[m.attrib['displaycolor'].upper()for m in materials]
+            assert len({p['name']for p in printing['parts']})==len(printing['parts'])
         parts=[]
         for oid,obj in objects.items():
             mesh=obj.find('m:mesh',NS)
@@ -27,6 +37,11 @@ def validate(path):
                 continue
             assert obj.attrib['pid']==materials.attrib['id']
             assert 0<=int(obj.attrib['pindex'])<len(materials)
+            if printing:
+                entries=[p for p in printing['parts']if p['name']==obj.attrib.get('name')]
+                assert len(entries)==1, 'Printing part metadata must identify every mesh exactly once'
+                assert entries[0]['slot']==int(obj.attrib['pindex']), 'Printing slot disagrees with the actual mesh material'
+                assert entries[0]['color'].upper()+'FF'==materials[int(obj.attrib['pindex'])].attrib['displaycolor'].upper()
             verts=[tuple(float(v.attrib[k]) for k in 'xyz') for v in mesh.find('m:vertices',NS)]
             assert all(math.isfinite(n) for v in verts for n in v)
             tris=[tuple(int(t.attrib[k]) for k in ['v1','v2','v3']) for t in mesh.find('m:triangles',NS)]
@@ -52,8 +67,10 @@ def validate(path):
                 for component in obj.find('m:components',NS):walk(component.attrib['objectid'],multiply(transform,matrix(component.attrib.get('transform'))),ancestors|{oid})
         build=root.find('m:build',NS);assert len(build)==1,'Studio export requires one assembled build item'
         for item in build:walk(item.attrib['objectid'],matrix(item.attrib.get('transform')),set())
+        from collections import Counter
+        assert Counter(leaves)==Counter(p['name']for p in parts), 'Assembly must use each independent mesh once'
         bounds=[[min(v[k]for v in world),max(v[k]for v in world)]for k in range(3)]
-        printing=json.loads(z.read('Metadata/printing.json'))if 'Metadata/printing.json'in z.namelist()else None
+        assert all(lo>=-1e-5 for lo,hi in bounds), 'Studio assembly must remain on the nonnegative print bed'
         if printing and printing['mode']=='cfs4':assert len(materials)==4 and len(printing['parts'])==len(parts)
         return {'file':str(path),'status':'PASS','unit':'millimeter','parts':parts,'assemblyParts':leaves,'worldBoundsMm':bounds,'worldSizeMm':[b-a for a,b in bounds],'materialEntries':len(materials),'printing':printing,'slicerImport':'NOT_TESTED'}
 if __name__=='__main__':

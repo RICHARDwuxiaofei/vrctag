@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import type { Vector2 } from "three";
 /** Conservative screening from vector scanline spans, not a certified minimum-wall algorithm. */
 export function sampledStroke(contours: Vector2[][], scale: number) {

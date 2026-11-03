@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { getStyle } from "./styles";
 import { materialPlan } from "./materials";
 import { strToU8, zipSync } from "fflate";

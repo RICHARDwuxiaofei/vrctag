@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 // Bounded diagnostics; records failures without modifying product code.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { performance } from "node:perf_hooks";
@@ -18,7 +20,7 @@ if (!["classic", "native"].includes(reviewStyle))
   throw Error("Unknown diagnostic style");
 const expectedName = reviewStyle === "classic" ? "#edc448" : "#f3f6ed";
 const out = new URL(
-  "../../studio/evidence/classic-large-avatar-2026-11-03/",
+  process.env.VRC_TEST_EVIDENCE_URL ?? "../../studio/evidence/classic-large-avatar-2026-11-03/",
   import.meta.url,
 );
 mkdirSync(out, { recursive: true });

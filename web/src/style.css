@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: MIT
+ * Copyright (c) 2026 RICHARDwuxiaofei */
 * {
   box-sizing: border-box;
 }
@@ -581,6 +583,8 @@ select + input {
 }
 footer {
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   justify-content: space-between;
   color: #688074;
   font-size: 9px;
@@ -592,7 +596,10 @@ footer small {
   letter-spacing: 0.5px;
 }
 footer > span:last-child {
-  font-size: 8px;
+  font-size: 11px;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 .webgl-error {
   margin: 70px 25px;
@@ -742,7 +749,7 @@ footer > span:last-child {
     line-height: 1.8;
   }
   footer > span:last-child {
-    display: none;
+    display: block;
   }
   footer small {
     display: block;
@@ -887,4 +894,10 @@ footer > span:last-child {
   font-size: 11px;
   margin-top: 12px;
   color: #c6dca7;
+}
+
+footer a {
+  color: #b7c6bd;
+  line-height: 1.8;
+  text-underline-offset: 3px;
 }

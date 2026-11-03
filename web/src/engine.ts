@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { buildDesign, type Base, type Config, type Design } from "./model";
 import { export3mf } from "./export";
 import type { Font } from "opentype.js";

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { getStyle, defaultStyleId } from "./styles";
 import { sampledStroke } from "./printability";
 import { validateMesh } from "./mesh-validation";

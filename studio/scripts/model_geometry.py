@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Original style-driven analytic solids; no legacy imports. sRGB palette is shared with web."""
 import bpy, bmesh, math
 

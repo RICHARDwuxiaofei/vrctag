@@ -3,12 +3,13 @@
 新版独立网页在 [web/](web/README.md)，当前 Classic / Large Avatar 与 Native / VRChat Style 源在 [studio/](studio/README.md)。客户端建模和多色 3MF 导出均在浏览器运行；部署只需要静态文件。
 
 - [开发与使用](web/README.md)
-- [最新大头像 Classic 验收与三栏对照](docs/CLASSIC-LARGE-AVATAR-2026-11-03.md)
+- [本轮 Beta 验收](docs/BETA_ACCEPTANCE.md)
+- [大头像 Classic 历史验收与三栏对照](docs/CLASSIC-LARGE-AVATAR-2026-11-03.md)
 - [历史验收与限制](docs/ACCEPTANCE.md)
 - [模型、代码来源与许可证边界](docs/SOURCES.md)
 - [Caddy / Nginx / GitHub Pages 部署说明](docs/STATIC_DEPLOY.md)
 
-**许可边界：**旧版的根 LICENSE、ATTRIBUTION 和第三方资源原样保留。新版原创部分的最终许可由仓库拥有者之后决定，本次未选择新许可证或移除任何第三方权利。Classic 参考旧作造型后的设计许可风险尚未厘清，独立写网格并不等于权利已获确认。请同时阅读 [web/NOTICE.md](web/NOTICE.md)。
+**许可边界（2026-11-04）：**独立软件采用 MIT；Native 与第一份独立模型采用 CC BY 4.0。Classic 因参考 WiseWolf 整体造型而保留原 CC BY-NC-SA 4.0 范围，暂不授予 CC BY 4.0。旧 Python/模板、Noto 和第三方库保持各自原许可。历史 CC 授权不追溯撤销。见 [路径级范围](LICENSE_SCOPE.md)、[迁移报告](docs/LICENSE_MIGRATION.md) 与 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
 ---
 

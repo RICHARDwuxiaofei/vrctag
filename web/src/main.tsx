@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { styles, getStyle } from "./styles";
 import { parseConfig, configDocument } from "./config";
 import { materialPlan, defaultFilamentColors } from "./materials";
@@ -782,9 +784,18 @@ function App() {
         </div>
         <footer>
           <span>
-            VRC TAG STUDIO <small>· 独立设计，灵感来自虚拟世界</small>
+            VRC TAG STUDIO{" "}
+            <small>· © 2026 RICHARDwuxiaofei · 非 VRChat 官方产品</small>
           </span>
-          <span>LOCAL FIRST. MADE PERSONAL.</span>
+          <span>
+            <a
+              href="licenses/PROJECT-NOTICE.txt"
+              target="_blank"
+              rel="noreferrer"
+            >
+              代码 MIT · Native CC BY 4.0 · Classic 许可例外 ↗
+            </a>
+          </span>
         </footer>
       </main>
     </>

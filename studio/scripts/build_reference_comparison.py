@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Assemble unchanged Blender render pixels into review sheets (Pillow, dev only).
 Reference renders stay outside web/public and retain WiseWolf's attribution.
 This is a technical comparison, never an AI-generated depiction of the models.

@@ -1,5 +1,7 @@
 # VRC Tag Studio
 
+> 最新授权与验收：独立软件 MIT、Native/初版独立模型 CC BY 4.0；Classic 保留原 NC-SA 范围待确认。以下较早的“最终许可待定”记录只描述历史检查点。见 [许可证迁移](../docs/LICENSE_MIGRATION.md) 和根 LICENSE_SCOPE.md。
+
 静态、浏览器本地的名牌设计工具。React + TypeScript + Vite + Three.js。新应用不读取仓库根目录的 Python 生成器或旧 Blender 模板。
 
 ## 开发与构建

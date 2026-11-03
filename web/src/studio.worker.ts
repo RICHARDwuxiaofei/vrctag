@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { getStyle } from "./styles";
 import { FontStore } from "./font-store";
 import { type Base } from "./model";

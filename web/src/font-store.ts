@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import opentype, { type Font } from "opentype.js";
 export interface FontManifest {
   unitsPerEm: number;

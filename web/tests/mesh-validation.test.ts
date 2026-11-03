@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { validateMesh, type Part, type Vec3 } from "../src/model.ts";

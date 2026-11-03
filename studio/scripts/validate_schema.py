@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Optional offline XSD audit using installed lxml and user-supplied official schemas."""
 import argparse,json,hashlib,zipfile
 from pathlib import Path

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { defaults, statuses, type Config } from "./model";
 import { getStyle } from "./styles";
 export function parseConfig(input: unknown): Config {

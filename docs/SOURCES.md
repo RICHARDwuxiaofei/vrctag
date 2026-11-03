@@ -1,5 +1,7 @@
 # 来源与许可证边界
 
+> 最新授权与验收：独立软件 MIT、Native/初版独立模型 CC BY 4.0；Classic 保留原 NC-SA 范围待确认。以下较早的“最终许可待定”记录只描述历史检查点。见 [许可证迁移](LICENSE_MIGRATION.md) 和根 LICENSE_SCOPE.md。
+
 ## 初版历史记录（不代表当前 Classic）
 
 初版阶段从无网格的 Blender 场景建立胶囊实体：自定 120 × 38 mm、3 mm 厚底板，96 段圆形头像结构及状态点。Blender 原场景只有相机/灯光，没有导入 nametag_template.blend、旧网格、旧拓扑、旧顶点、布尔结果或尺寸。未打开第三方参考模型。建模脚本保存在 studio/scripts/model_geometry.py，便携入口 studio/scripts/build_model.py，源文件为 studio/vrc-tag-original.blend。

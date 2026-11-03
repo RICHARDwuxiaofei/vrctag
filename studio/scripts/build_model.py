@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """blender --background --python studio/scripts/build_model.py [-- --root /checkout --style classic]
 Original geometry only; CLI resets its own background scene. Live MCP calls build_model directly.
 """

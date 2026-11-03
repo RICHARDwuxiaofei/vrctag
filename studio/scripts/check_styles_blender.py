@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Read-only source/geometry acceptance; temporary Boolean audits are not saved."""
 import bpy,bmesh,itertools
 

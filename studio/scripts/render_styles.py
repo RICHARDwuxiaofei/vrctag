@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Reproducible neutral Blender evidence. Demo text is never saved into editable sources."""
 import bpy, math
 from mathutils import Vector

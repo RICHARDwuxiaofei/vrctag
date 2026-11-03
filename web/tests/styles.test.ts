@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
@@ -20,7 +22,7 @@ const font = opentype.parse(
   ),
 );
 const out = new URL(
-  "../../studio/evidence/classic-large-avatar-2026-11-03/",
+  process.env.VRC_TEST_EVIDENCE_URL ?? "../../studio/evidence/classic-large-avatar-2026-11-03/",
   import.meta.url,
 );
 mkdirSync(out, { recursive: true });

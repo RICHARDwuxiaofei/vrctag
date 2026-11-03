@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
 // Optional audit with the installed JDK; official schemas stay unmodified.
 import java.nio.file.*;import java.io.*;import java.util.zip.*;import javax.xml.XMLConstants;import javax.xml.validation.*;import javax.xml.transform.stream.StreamSource;import org.w3c.dom.ls.*;import org.w3c.dom.bootstrap.DOMImplementationRegistry;
 class Validate3MF {

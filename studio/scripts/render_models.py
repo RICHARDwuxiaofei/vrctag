@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 RICHARDwuxiaofei
 """Optional Blender CLI evidence renderer; prepare validated demo JSON with npm test first.
 blender --background --python studio/scripts/render_models.py [-- --style classic]
 Demo geometry is never saved to model sources. CLI clean shutdown remains environment-dependent.
