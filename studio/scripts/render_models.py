@@ -14,8 +14,8 @@ styles=[s for s in catalog['styles']if not a.style or s['id']==a.style]
 if not styles:raise ValueError('Unknown style')
 for style in styles:
     bpy.ops.wm.open_mainfile(filepath=str(root/'studio'/(style['id']+'.blend')))
-    prepare_camera(style,str(root))
+    prepare_camera(style,str(root),save_source=False,normalized=True)
     for variant in ['default','friend-pronouns']:
-        design=json.loads((root/'studio/evidence/dual-style-2026-11-03'/(style['id']+'-'+variant+'-design.json')).read_text())
+        design=json.loads((root/'studio/evidence/classic-large-avatar-2026-11-03'/(style['id']+'-'+variant+'-design.json')).read_text())
         render_design(style,str(root),design,variant)
     print('Saved views:',style['id'])

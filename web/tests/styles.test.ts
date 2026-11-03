@@ -20,7 +20,7 @@ const font = opentype.parse(
   ),
 );
 const out = new URL(
-  "../../studio/evidence/dual-style-2026-11-03/",
+  "../../studio/evidence/classic-large-avatar-2026-11-03/",
   import.meta.url,
 );
 mkdirSync(out, { recursive: true });
@@ -63,32 +63,49 @@ for (const style of styles) {
       )) {
         assert(
           Math.min(...p.vertices.map((v) => v[0])) >=
-            base.layout.textLeft - 1e-6,
+            (p.name === "Status_Text"
+              ? (base.layout.statusTextLeft ?? base.layout.textLeft)
+              : base.layout.textLeft) -
+              1e-6,
         );
         assert(
           Math.max(...p.vertices.map((v) => v[0])) <=
-            base.layout.textLeft + base.layout.textWidth + 1e-6,
+            (p.name === "Status_Text"
+              ? (base.layout.statusTextLeft ?? base.layout.textLeft) +
+                (base.layout.statusTextWidth ?? base.layout.textWidth)
+              : base.layout.textLeft + base.layout.textWidth) +
+              1e-6,
         );
         assert(
           Math.min(...p.vertices.map((v) => v[2])) >= base.layout.textZ - 1e-6,
         );
       }
-      const outline = base.parts
-        .find((p) => p.name === "Plate_Body")!
-        .vertices.filter((v) => Math.abs(v[2]) < 1e-6);
+      // Test the actual triangulated support surface, including concave shoulders.
+      const body = base.parts.find((p) => p.name === "Plate_Body")!;
+      const top = body.triangles.filter((t) =>
+        t.every(
+          (i) => Math.abs(body.vertices[i][2] - base.layout.textZ) < 1e-5,
+        ),
+      );
+      const supported = (x: number, y: number) =>
+        top.some((t) => {
+          const p = t.map((i) => body.vertices[i]);
+          const cross = p.map((a, i) => {
+            const b = p[(i + 1) % 3];
+            return (b[0] - a[0]) * (y - a[1]) - (b[1] - a[1]) * (x - a[0]);
+          });
+          return (
+            cross.every((v) => v >= -1e-5) || cross.every((v) => v <= 1e-5)
+          );
+        });
       for (const part of d.parts.filter((p) =>
         ["Name", "Pronouns", "Status_Text"].includes(p.name),
-      )) {
+      ))
         for (const [x, y] of part.vertices)
-          for (let i = 0; i < outline.length; i++) {
-            const a = outline[i],
-              b = outline[(i + 1) % outline.length];
-            assert(
-              (b[0] - a[0]) * (y - a[1]) - (b[1] - a[1]) * (x - a[0]) >= -1e-5,
-              "Text must remain on the actual convex plate footprint",
-            );
-          }
-      }
+          assert(
+            supported(x, y),
+            "Every text vertex must have an actual plate support triangle",
+          );
       const texts = d.parts.filter((p) =>
         ["Name", "Pronouns", "Status_Text"].includes(p.name),
       );
@@ -185,12 +202,7 @@ for (const style of styles) {
     gltf.scene.traverse((o) => {
       if (o instanceof THREE.Mesh) names.push(o.name);
     });
-    assert.deepEqual(names.sort(), [
-      "Avatar_Back",
-      "Avatar_Frame",
-      "Plate_Body",
-      "Status_Dot",
-    ]);
+    assert.deepEqual(names.sort(), base.parts.map((p) => p.name).sort());
     const bounds = new THREE.Box3()
       .setFromObject(gltf.scene)
       .getSize(new THREE.Vector3());
@@ -268,4 +280,38 @@ test("Native two-line centers match the manually calibrated 30% plate-height rhy
       ) < 1e-6,
     );
   }
+});
+
+test("Classic large medallion, separate white rim and status lane are genuinely different from Native", () => {
+  const c = getStyle("classic"),
+    n = getStyle("native"),
+    b = bases.get(c.id)!;
+  assert.equal(c.layout.avatar.radius, 22);
+  assert.equal(n.layout.avatar.radius, 16);
+  assert((c.layout.avatar.radius * 2) / c.layout.size[1] > 0.84);
+  assert(b.parts.some((p) => p.name === "Plate_Rim"));
+  assert(!bases.get(n.id)!.parts.some((p) => p.name === "Plate_Rim"));
+  const d = buildDesign(
+    { ...defaults, styleId: c.id, pronouns: "They/Them" },
+    b,
+    font,
+  );
+  assert.deepEqual(d.errors, []);
+  const plan = materialPlan({ ...defaults, styleId: c.id }, d.parts);
+  for (const name of ["Plate_Rim", "Avatar_Frame"])
+    assert.equal(plan.parts.find((p) => p.name === name)!.color, "#E7E8EC");
+  assert.equal(
+    plan.parts.find((p) => p.name === "Name")!.color,
+    c.colors.Name.toUpperCase(),
+  );
+  const status = d.parts.find((p) => p.name === "Status_Text")!;
+  assert(
+    Math.min(...status.vertices.map((v) => v[0])) >
+      c.layout.avatar.dotCenter[0] + c.layout.avatar.dotRadius,
+  );
+  const restored = parseConfig({
+    ...defaults,
+    materialSlots: { Plate_Rim: 2 },
+  });
+  assert.equal(restored.materialSlots!.Plate_Rim, 2);
 });

@@ -13,16 +13,20 @@ test("GLB loads with original parts and physical meter bounds", async () => {
   gltf.scene.traverse((o) => {
     if (o instanceof THREE.Mesh) parts.push(o.name);
   });
-  assert.deepEqual(parts.sort(), [
-    "Avatar_Back",
-    "Avatar_Frame",
-    "Plate_Body",
-    "Status_Dot",
-  ]);
+  assert.deepEqual(
+    parts.sort(),
+    [
+      "Plate_Rim",
+      "Avatar_Back",
+      "Avatar_Frame",
+      "Plate_Body",
+      "Status_Dot",
+    ].sort(),
+  );
   const bounds = new THREE.Box3()
     .setFromObject(gltf.scene)
     .getSize(new THREE.Vector3());
-  assert(Math.abs(bounds.x - 0.12) < 1e-6);
-  assert(Math.abs(bounds.z - 0.038) < 1e-6);
+  assert(Math.abs(bounds.x - 0.134) < 1e-6);
+  assert(Math.abs(bounds.z - 0.052) < 1e-6);
   assert(Math.abs(bounds.y - 0.004) < 1e-6);
 });

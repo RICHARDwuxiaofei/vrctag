@@ -4,68 +4,105 @@
     {
       "id": "classic",
       "name": "Classic",
-      "label": "经典胶囊",
-      "description": "圆润胶囊 · 小头像与厚边框",
+      "label": "Large Avatar",
+      "description": "大头像圆盘 · 白色肩框与黑色分件底板",
       "baseFile": "styles/classic/base.json",
       "thumbnail": "assets/styles/classic/front.png",
       "geometry": {
-        "leftCenter": -41,
-        "rightCenter": 41,
-        "leftRadius": 19,
-        "rightRadius": 19,
-        "bodyTop": 3,
-        "avatarTop": 3.8,
+        "family": "medallion-panel",
+        "leftCenter": -40,
+        "rightCenter": 59,
+        "leftRadius": 26,
+        "rightRadius": 9,
+        "panelHalfHeight": 17,
+        "rightEdge": 68,
+        "rimWidth": 1.7,
+        "rimTop": 3.0,
+        "bodyTop": 2.6,
+        "avatarTop": 3.5,
         "frameTop": 4,
-        "dotTop": 4
+        "dotTop": 3.4
       },
       "colors": {
-        "Plate_Body": "#24262a",
-        "Avatar_Back": "#4a4d54",
-        "Avatar_Frame": "#9ca2aa",
-        "Name": "#f3f6ed",
+        "Plate_Body": "#1c1d21",
+        "Avatar_Back": "#383a40",
+        "Avatar_Frame": "#e7e8ec",
+        "Name": "#edc448",
         "Friend_Name": "#ffd45d",
-        "Pronouns": "#c6c8ce",
-        "Status_Text": "#c6c8ce",
-        "Avatar_Placeholder": "#b8bbc2"
+        "Pronouns": "#e7e8ec",
+        "Status_Text": "#e7e8ec",
+        "Avatar_Placeholder": "#b8bbc2",
+        "Plate_Rim": "#e7e8ec"
       },
       "layout": {
         "unit": "millimeter",
         "front": "+Z",
-        "size": [120, 38, 4],
-        "textLeft": -22,
-        "textWidth": 72,
-        "textZ": 3,
+        "size": [
+          134,
+          52,
+          4
+        ],
+        "textLeft": -12,
+        "textWidth": 70,
+        "textZ": 2.6,
         "relief": 0.8,
         "avatar": {
-          "center": [-42, 0],
-          "radius": 12,
-          "frameWidth": 2,
-          "dotCenter": [-29, -11],
-          "dotRadius": 2.5
+          "center": [
+            -40,
+            0
+          ],
+          "radius": 22,
+          "frameWidth": 1.5,
+          "dotCenter": [
+            -10,
+            -8.4
+          ],
+          "dotRadius": 3
         },
         "textRules": {
           "alignment": "left",
           "name": {
-            "height": 10,
-            "centerY": 4,
-            "heightWithPronouns": 8,
-            "centerYWithPronouns": 7,
+            "height": 10.5,
+            "centerY": 4.5,
+            "heightWithPronouns": 9.5,
+            "centerYWithPronouns": 8.5,
             "centerYWithoutStatus": 0,
-            "centerYWithPronounsWithoutStatus": 5.5
+            "centerYWithPronounsWithoutStatus": 5
           },
           "pronouns": {
-            "height": 3.7,
-            "centerY": -1.5,
-            "centerYWithoutStatus": -5.5
+            "height": 4.8,
+            "centerY": 0.8,
+            "centerYWithoutStatus": -5
           },
           "status": {
-            "height": 4,
-            "centerY": -10.5
+            "height": 4.5,
+            "centerY": -8.4
           },
           "minimumHeight": 2.4,
           "warningHeight": 4.5,
           "maxCharacters": 120
-        }
+        },
+        "statusTextLeft": -4.5,
+        "statusTextWidth": 62.5
+      },
+      "printing": {
+        "palette": [
+          "Plate_Body",
+          "Avatar_Frame",
+          "NameColor",
+          "auto"
+        ],
+        "slots": {
+          "Plate_Body": 0,
+          "Plate_Rim": 1,
+          "Avatar_Back": 0,
+          "Avatar_Frame": 1,
+          "Status_Dot": 3,
+          "Name": 2,
+          "Pronouns": 1,
+          "Status_Text": 1
+        },
+        "friendNameSlot": 2
       }
     },
     {
@@ -98,16 +135,26 @@
       "layout": {
         "unit": "millimeter",
         "front": "+Z",
-        "size": [118, 40, 3.6],
+        "size": [
+          118,
+          40,
+          3.6
+        ],
         "textLeft": -18,
         "textWidth": 67,
         "textZ": 2.8,
         "relief": 0.8,
         "avatar": {
-          "center": [-40, 0],
+          "center": [
+            -40,
+            0
+          ],
           "radius": 16,
           "frameWidth": 0.7,
-          "dotCenter": [-27, -10],
+          "dotCenter": [
+            -27,
+            -10
+          ],
           "dotRadius": 3.6
         },
         "textRules": {

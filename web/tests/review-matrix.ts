@@ -13,10 +13,23 @@ import {
   type Vec3,
 } from "../src/model.ts";
 import { export3mf } from "../src/export.ts";
-const out = new URL("../../studio/evidence/dual-style-2026-11-03/", import.meta.url);
+const reviewStyle = process.env.REVIEW_STYLE ?? "classic";
+if (!["classic", "native"].includes(reviewStyle))
+  throw Error("Unknown diagnostic style");
+const expectedName = reviewStyle === "classic" ? "#edc448" : "#f3f6ed";
+const out = new URL(
+  "../../studio/evidence/classic-large-avatar-2026-11-03/",
+  import.meta.url,
+);
 mkdirSync(out, { recursive: true });
 const base: Base = JSON.parse(
-  readFileSync(new URL("../public/assets/base.json", import.meta.url), "utf8"),
+  readFileSync(
+    new URL(
+      `../public/assets/styles/${reviewStyle}/base.json`,
+      import.meta.url,
+    ),
+    "utf8",
+  ),
 );
 const raw = readFileSync(
   new URL("../public/assets/NotoSansCJKsc-Bold.otf", import.meta.url),
@@ -33,7 +46,7 @@ function check(
   expected: boolean,
   extra?: (d: ReturnType<typeof buildDesign>) => boolean,
 ) {
-  const c = { ...defaults, ...patch },
+  const c = { ...defaults, styleId: reviewStyle, ...patch },
     start = performance.now();
   try {
     const d = buildDesign(c, base, font);
@@ -56,7 +69,8 @@ function check(
       warnings: d.warnings,
       exportError,
     });
-    if (bytes) writeFileSync(new URL(id + ".3mf", out), bytes);
+    if (bytes)
+      writeFileSync(new URL(`${reviewStyle}-review-${id}.3mf`, out), bytes);
   } catch (e) {
     results.push({
       id,
@@ -90,7 +104,7 @@ for (const [status, color] of Object.entries(statuses))
       (d) =>
         d.parts.find((p) => p.name === "Status_Dot")?.color === color &&
         d.parts.find((p) => p.name === "Name")?.color ===
-          (friend ? "#ffd45d" : "#f3f6ed"),
+          (friend ? "#ffd45d" : expectedName),
     );
 for (const pronouns of [
   "",
@@ -130,7 +144,7 @@ for (const [id, patch] of Object.entries({
   nonColor: { dotColor: "not-a-color" },
 }))
   check(id, patch, false);
-const p = buildDesign(defaults, base, font).parts[0];
+const p = buildDesign({ ...defaults, styleId: reviewStyle }, base, font).parts[0];
 const defects: Record<string, Part> = {
   open: { ...p, triangles: p.triangles.slice(1) },
   reversed: {
@@ -204,7 +218,10 @@ const result = {
     "No self-intersection or minimum-stroke certification",
   ],
 };
-writeFileSync(new URL("matrix.json", out), JSON.stringify(result, null, 2));
+writeFileSync(
+  new URL(`matrix-${reviewStyle}.json`, out),
+  JSON.stringify(result, null, 2),
+);
 console.log(JSON.stringify(result, null, 2));
 // An intentionally invalid synthetic diagnostic; never a real tag.
 let exploitRejected = false;

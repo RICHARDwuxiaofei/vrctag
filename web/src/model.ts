@@ -28,6 +28,8 @@ export interface Base {
     size: number[];
     textLeft: number;
     textWidth: number;
+    statusTextLeft?: number;
+    statusTextWidth?: number;
     textZ: number;
     relief: number;
     textRules: {
@@ -286,7 +288,10 @@ function makeText(
     maxY = Math.max(...ys);
   const scale = Math.min(
     height / (maxY - minY),
-    base.layout.textWidth / (maxX - minX),
+    (name === "Status_Text"
+      ? (base.layout.statusTextWidth ?? base.layout.textWidth)
+      : base.layout.textWidth) /
+      (maxX - minX),
   );
   const actual = (maxY - minY) * scale;
   design.textHeights[name] = actual;
@@ -310,7 +315,10 @@ function makeText(
       `${name} 高 ${actual.toFixed(1)} mm；细笔画可能小于 0.4 mm，请检查切片。`,
     );
   merged.vertices = merged.vertices.map(([vx, vy, vz]) => [
-    base.layout.textLeft + (vx - minX) * scale,
+    (name === "Status_Text"
+      ? (base.layout.statusTextLeft ?? base.layout.textLeft)
+      : base.layout.textLeft) +
+      (vx - minX) * scale,
     cy + (vy - (minY + maxY) / 2) * scale,
     base.layout.textZ + vz,
   ]);

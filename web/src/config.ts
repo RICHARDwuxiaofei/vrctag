@@ -62,6 +62,7 @@ export function parseConfig(input: unknown): Config {
       if (
         ![
           "Plate_Body",
+          "Plate_Rim",
           "Avatar_Back",
           "Avatar_Frame",
           "Status_Dot",

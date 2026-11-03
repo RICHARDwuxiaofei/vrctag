@@ -1,6 +1,26 @@
 import { getStyle } from "./styles";
 import type { Config, Part } from "./model";
 import { resolvedDot } from "./model";
+export function defaultFilamentColors(c: Config): string[] {
+  const style = getStyle(c.styleId);
+  const profile = "printing" in style ? style.printing : undefined;
+  const palette = profile?.palette ?? [
+    "Plate_Body",
+    "Name",
+    "Friend_Name",
+    "auto",
+  ];
+  const colors: Record<string, string> = style.colors;
+  return palette.map((role) =>
+    role === "auto"
+      ? "auto"
+      : role === "NameColor"
+        ? c.friend
+          ? colors.Friend_Name
+          : colors.Name
+        : colors[role],
+  );
+}
 export function materialPlan(c: Config, parts: Part[]) {
   const color = (v: string) => {
     if (!/^#[0-9a-f]{6}$/i.test(v)) throw Error("无效打印耗材颜色");
@@ -18,23 +38,22 @@ export function materialPlan(c: Config, parts: Part[]) {
       })),
     };
   }
-  const palette = (
-    c.filamentColors ?? [
-      getStyle(c.styleId).colors.Plate_Body,
-      getStyle(c.styleId).colors.Name,
-      getStyle(c.styleId).colors.Friend_Name,
-      "auto",
-    ]
-  ).map((v, i) => color(v === "auto" && i === 3 ? resolvedDot(c) : v));
+  const palette = (c.filamentColors ?? defaultFilamentColors(c)).map((v, i) =>
+    color(v === "auto" && i === 3 ? resolvedDot(c) : v),
+  );
   if (palette.length !== 4) throw Error("四槽方案需要四个耗材颜色");
+  const style = getStyle(c.styleId);
+  const profile = "printing" in style ? style.printing : undefined;
+  const slots: Record<string, number> = profile?.slots ?? {
+    Plate_Body: 0,
+    Avatar_Back: 0,
+    Status_Dot: 3,
+    Name: 1,
+  };
   const defaultSlot = (name: string) =>
-    name === "Plate_Body" || name === "Avatar_Back"
-      ? 0
-      : name === "Status_Dot"
-        ? 3
-        : name === "Name" && c.friend
-          ? 2
-          : 1;
+    name === "Name" && c.friend
+      ? (profile?.friendNameSlot ?? 2)
+      : (slots[name] ?? 1);
   return {
     mode: "cfs4",
     palette,

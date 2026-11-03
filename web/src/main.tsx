@@ -1,6 +1,6 @@
 import { styles, getStyle } from "./styles";
 import { parseConfig, configDocument } from "./config";
-import { materialPlan } from "./materials";
+import { materialPlan, defaultFilamentColors } from "./materials";
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Preview } from "./Preview";
@@ -671,12 +671,8 @@ function App() {
                           color={color}
                           onChange={(value) => {
                             const colors = [
-                              ...(config.filamentColors ?? [
-                                getStyle(config.styleId).colors.Plate_Body,
-                                getStyle(config.styleId).colors.Name,
-                                getStyle(config.styleId).colors.Friend_Name,
-                                "auto",
-                              ]),
+                              ...(config.filamentColors ??
+                                defaultFilamentColors(config)),
                             ];
                             colors[i] = value;
                             patch({ filamentColors: colors });

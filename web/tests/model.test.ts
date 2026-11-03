@@ -36,7 +36,10 @@ for (const name of [
     assert(d.parts.find((p) => p.name === "Name"));
     for (const p of d.parts) assert(validateMesh(p).valid, p.name);
     const namePart = d.parts.find((p) => p.name === "Name")!;
-    assert(Math.max(...namePart.vertices.map((v) => v[0])) <= 50.0001);
+    assert(
+      Math.max(...namePart.vertices.map((v) => v[0])) <=
+        base.layout.textLeft + base.layout.textWidth + 0.0001,
+    );
     assert(
       Math.min(...namePart.vertices.map((v) => v[0])) >=
         base.layout.textLeft - 0.0001,

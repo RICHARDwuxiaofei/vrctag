@@ -8,10 +8,10 @@ def check_styles(root,styles):
         report={'styleId':style['id'],'reopened':True,'file':bpy.data.filepath,'unitScale':bpy.context.scene.unit_settings.scale_length,'parts':[],'intersections':[]}
         report['anchors']={}
         for name,key in [('Name_Anchor','name'),('Pronouns_Anchor','pronouns'),('Status_Anchor','status')]:
-            rule=style['layout']['textRules'][key];expected=[style['layout']['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),style['layout']['textZ']]
+            rule=style['layout']['textRules'][key];expected=[style['layout'].get('statusTextLeft',style['layout']['textLeft']) if name=='Status_Anchor' else style['layout']['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),style['layout']['textZ']]
             actual=list(bpy.data.objects[name].location);assert all(abs(a-b)<1e-6 for a,b in zip(actual,expected));report['anchors'][name]=actual
         objects=[o for o in bpy.data.objects if o.type=='MESH']
-        assert len(objects)==4
+        assert sorted(o.name for o in objects)==sorted(['Plate_Body','Avatar_Back','Avatar_Frame','Status_Dot']+(['Plate_Rim'] if style['geometry'].get('family')=='medallion-panel' else []))
         assert not any(o.name.startswith('Demo_')for o in bpy.data.objects)
         for obj in objects:
             bm=bmesh.new();bm.from_mesh(obj.data)

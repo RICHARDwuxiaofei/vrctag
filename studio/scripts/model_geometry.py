@@ -44,6 +44,21 @@ def build_model(project_root, style):
     if math.dist(clean[0],clean[-1])<1e-7:clean.pop()
     capsule=clean
     colors=style['colors']
+    if g.get('family')=='medallion-panel':
+        # Independently chosen circle-and-rectangular-shoulder outline. Never imports a reference mesh.
+        def shoulder(inset):
+            radius=g['leftRadius']-inset;half=g['panelHalfHeight']-inset
+            corner=g['rightRadius']-inset;right=g['rightEdge']-inset
+            alpha=math.asin(half/radius)
+            angles=sorted([alpha+(2*math.pi-2*alpha)*i/96 for i in range(97)]+[math.pi/2,math.pi,3*math.pi/2])
+            angles=[a for i,a in enumerate(angles) if i==0 or abs(a-angles[i-1])>1e-9]
+            path=[(g['leftCenter']+radius*math.cos(a),radius*math.sin(a)) for a in angles]
+            for cy,start in [(-half+corner,-math.pi/2),(half-corner,0)]:
+                path.extend([(right-corner+corner*math.cos(start+math.pi/2*i/24),cy+corner*math.sin(start+math.pi/2*i/24)) for i in range(25)])
+            return path
+        outer=shoulder(0);inside=shoulder(g['rimWidth'])
+        solid('Plate_Rim',outer,0,g['rimTop'],colors['Plate_Rim'],inside)
+        capsule=inside
     solid('Plate_Body',capsule,0,g['bodyTop'],colors['Plate_Body'])
     cx,cy=avatar['center'];radius=avatar['radius'];outer=radius+avatar['frameWidth'];dx,dy=avatar['dotCenter'];dot=avatar['dotRadius']
     back=solid('Avatar_Back',circle(cx,cy,radius),g['bodyTop'],g['avatarTop'],colors['Avatar_Back'])
@@ -58,21 +73,21 @@ def build_model(project_root, style):
         bpy.data.objects.remove(cutter,do_unlink=True)
     solid('Status_Dot',circle(dx,dy,dot),g['bodyTop'],g['dotTop'],'#2ed319')
     for name,rule in [('Name_Anchor',layout['textRules']['name']),('Pronouns_Anchor',layout['textRules']['pronouns']),('Status_Anchor',layout['textRules']['status'])]:
-        obj=bpy.data.objects.new(name,None);collection.objects.link(obj);obj.location=(layout['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),layout['textZ']);obj.empty_display_size=2
+        obj=bpy.data.objects.new(name,None);collection.objects.link(obj);obj.location=(layout.get('statusTextLeft',layout['textLeft']) if name=='Status_Anchor' else layout['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),layout['textZ']);obj.empty_display_size=2
     parts=[];report=[]
     for obj in collection.objects:
         if obj.type!='MESH':continue
         bm=bmesh.new();bm.from_mesh(obj.data);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bmesh.ops.triangulate(bm,faces=list(bm.faces));bm.to_mesh(obj.data)
-        report.append({'name':obj.name,'nonManifoldEdges':sum(not e.is_manifold for e in bm.edges),'volumeMm3':bm.calc_volume(signed=True),'dimensionsMm':list(obj.dimensions)})
+        report.append({'name':obj.name,'degenerateFaces':sum(f.calc_area()<1e-10 for f in bm.faces),'nonManifoldEdges':sum(not e.is_manifold for e in bm.edges),'volumeMm3':bm.calc_volume(signed=True),'dimensionsMm':list(obj.dimensions)})
         bm.free();parts.append({'name':obj.name,'vertices':[list(v.co)for v in obj.data.vertices],'triangles':[list(p.vertices)for p in obj.data.polygons]})
-    if any(r['nonManifoldEdges']or r['volumeMm3']<=0 for r in report):raise ValueError(str(report))
+    if any(r['degenerateFaces']or r['nonManifoldEdges']or r['volumeMm3']<=0 for r in report):raise ValueError(str(report))
     bpy.ops.object.select_all(action='DESELECT')
     for obj in collection.objects:
         if obj.type=='MESH':obj.select_set(True)
     bpy.context.view_layer.objects.active=bpy.data.objects['Plate_Body']
     root=project_root.rstrip('/\\')
     bpy.ops.wm.save_as_mainfile(filepath=root+'/studio/'+style['id']+'.blend')
-    selected=list(bpy.context.selected_objects)
+    selected=[o for o in collection.objects if o.type=='MESH']
     try:
         for obj in selected:obj.scale=(.001,.001,.001)
         bpy.ops.export_scene.gltf(filepath=root+'/web/public/assets/styles/'+style['id']+'/base.glb',use_selection=True,export_format='GLB')
