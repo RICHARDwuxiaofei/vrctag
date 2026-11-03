@@ -560,7 +560,12 @@ function App() {
               data-config-key={completedKey}
               aria-busy={busy}
             >
-              <Preview design={previewDesign} avatar={avatar} view={view} />
+              <Preview
+                design={previewDesign}
+                avatar={avatar}
+                view={view}
+                avatarPreview={!showPrintColors}
+              />
               {busy && (
                 <div className="loading" role="status">
                   {design ? "正在更新名牌…" : "正在加载本地建模资源…"}

@@ -6,10 +6,12 @@ export function Preview({
   design,
   avatar,
   view,
+  avatarPreview = true,
 }: {
   design: Design | null;
   avatar: string;
   view: number;
+  avatarPreview?: boolean;
 }) {
   const host = useRef<HTMLDivElement>(null);
   const width = design?.size?.[0] ?? 120;
@@ -136,7 +138,7 @@ export function Preview({
   }, [design]);
   useEffect(() => {
     const scene = sceneRef.current;
-    if (!scene || !design) return;
+    if (!scene || !design || !avatarPreview) return;
     const avatarBack = design.parts.find((p) => p.name === "Avatar_Back");
     if (!avatarBack) return;
     let disposed = false;
@@ -229,7 +231,7 @@ export function Preview({
         material.dispose();
       }
     };
-  }, [avatar, design]);
+  }, [avatar, design, avatarPreview]);
   return (
     <div ref={host} className="canvas-host">
       {failure && (
