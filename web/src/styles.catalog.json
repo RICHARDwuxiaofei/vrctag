@@ -58,7 +58,10 @@
             "centerY": -1.5,
             "centerYWithoutStatus": -5.5
           },
-          "status": { "height": 4, "centerY": -10.5 },
+          "status": {
+            "height": 4,
+            "centerY": -10.5
+          },
           "minimumHeight": 2.4,
           "warningHeight": 4.5,
           "maxCharacters": 120
@@ -115,14 +118,18 @@
             "heightWithPronouns": 9.4,
             "centerYWithPronouns": 9,
             "centerYWithoutStatus": 0,
-            "centerYWithPronounsWithoutStatus": 5.5
+            "centerYWithPronounsWithoutStatus": 4.5
           },
           "pronouns": {
             "height": 5.2,
             "centerY": 0.8,
-            "centerYWithoutStatus": -5.5
+            "centerYWithoutStatus": -7.5
           },
-          "status": { "height": 4.6, "centerY": -10.5 },
+          "status": {
+            "height": 4.6,
+            "centerY": -10.5,
+            "centerYWithoutPronouns": -7.5
+          },
           "minimumHeight": 2.4,
           "warningHeight": 4.5,
           "maxCharacters": 120

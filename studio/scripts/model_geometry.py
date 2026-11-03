@@ -58,7 +58,7 @@ def build_model(project_root, style):
         bpy.data.objects.remove(cutter,do_unlink=True)
     solid('Status_Dot',circle(dx,dy,dot),g['bodyTop'],g['dotTop'],'#2ed319')
     for name,rule in [('Name_Anchor',layout['textRules']['name']),('Pronouns_Anchor',layout['textRules']['pronouns']),('Status_Anchor',layout['textRules']['status'])]:
-        obj=bpy.data.objects.new(name,None);collection.objects.link(obj);obj.location=(layout['textLeft'],rule['centerY'],layout['textZ']);obj.empty_display_size=2
+        obj=bpy.data.objects.new(name,None);collection.objects.link(obj);obj.location=(layout['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),layout['textZ']);obj.empty_display_size=2
     parts=[];report=[]
     for obj in collection.objects:
         if obj.type!='MESH':continue

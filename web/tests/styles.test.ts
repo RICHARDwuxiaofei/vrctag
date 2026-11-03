@@ -244,3 +244,28 @@ test("mismatched style/base and stale style/export cannot succeed", () => {
     export3mf(buildDesign(first, bases.get(first.styleId)!, font), second),
   );
 });
+
+test("Native two-line centers match the manually calibrated 30% plate-height rhythm", () => {
+  const style = getStyle("native"),
+    base = bases.get(style.id)!;
+  const center = (d: ReturnType<typeof buildDesign>, name: string) => {
+    const y = d.parts.find((p) => p.name === name)!.vertices.map((v) => v[1]);
+    return (Math.min(...y) + Math.max(...y)) / 2;
+  };
+  for (const patch of [
+    { pronouns: "", customStatus: "无聊", row: "Status_Text" },
+    { pronouns: "They/Them", customStatus: "", row: "Pronouns" },
+  ]) {
+    const d = buildDesign(
+      { ...defaults, styleId: style.id, ...patch },
+      base,
+      font,
+    );
+    assert.deepEqual(d.errors, []);
+    assert(
+      Math.abs(
+        (center(d, "Name") - center(d, patch.row)) / base.layout.size[1] - 0.3,
+      ) < 1e-6,
+    );
+  }
+});

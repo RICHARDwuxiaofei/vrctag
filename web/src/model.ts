@@ -45,7 +45,11 @@ export interface Base {
         centerY: number;
         centerYWithoutStatus?: number;
       };
-      status: { height: number; centerY: number };
+      status: {
+        height: number;
+        centerY: number;
+        centerYWithoutPronouns?: number;
+      };
       minimumHeight: number;
       warningHeight: number;
       maxCharacters: number;
@@ -372,7 +376,9 @@ export function buildDesign(
       c.customStatus,
       palette.Status_Text,
       rules.status.height,
-      rules.status.centerY,
+      hasPronouns
+        ? rules.status.centerY
+        : (rules.status.centerYWithoutPronouns ?? rules.status.centerY),
     ],
   ];
   for (const [name, text, color, h, y] of specs) {
