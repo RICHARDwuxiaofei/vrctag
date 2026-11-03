@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "codeCommit": "80c3ef28af53e33fe06a2f48a4f0a6707ddb09bb",
+  "files": 96,
+  "pass": 96,
+  "fail": 0,
+  "scope": "96 root-level current samples only; interim artifacts are historical. Independent package, CRC, XML, millimeter dimensions, component assembly, materials and per-shell geometric validation. Not official XSD/lib3mf/slicer/printing certification.",
+  "byStyle": {
+    "classic": 48,
+    "native": 48
+  },
+  "archivesUnchangedSincePinned": true,
+  "hashManifest": "sample-hashes.json"
+}

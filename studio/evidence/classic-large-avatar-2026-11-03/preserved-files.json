@@ -1,0 +1,41 @@
+[
+  {
+    "file": "nametag_template.blend",
+    "sha256": "5eb396db8ba62990f23fc5b6ac1383225c6789a5c166acba993c3598b3b66470",
+    "unchangedFrom8be7020": true,
+    "unchangedFrom24c60f0": true
+  },
+  {
+    "file": "name_tag_generator.py",
+    "sha256": "f4f15704c54935313193e548773ee241f6a901d4d0dd20009c3af3eb0dd406de",
+    "unchangedFrom8be7020": true,
+    "unchangedFrom24c60f0": true
+  },
+  {
+    "file": "LICENSE",
+    "sha256": "11778efb11a80f0a84d65ef4882c20906e034743ea65405d81c4a30abe2ee111",
+    "unchangedFrom8be7020": true,
+    "unchangedFrom24c60f0": true
+  },
+  {
+    "file": "ATTRIBUTION.md",
+    "sha256": "3e5dd8632cd24c0f822f10c56b77efcea1f08dc5bb17768124df99a63cb4b047",
+    "unchangedFrom8be7020": true,
+    "unchangedFrom24c60f0": true
+  },
+  {
+    "file": "studio/native.blend",
+    "sha256": "f4ecd4e435bc06ad91bdb1b4b8072d4d2f8c08847a0afea34140e84fed5ed72b",
+    "unchangedFrom8be7020": true
+  },
+  {
+    "file": "web/public/assets/styles/native/base.json",
+    "sha256": "4f2d5d31f28e89d1b697c85e7e440ff91c5d9372c0badc0a0b09f8ed097dda28",
+    "unchangedFrom8be7020": true
+  },
+  {
+    "file": "web/public/assets/styles/native/base.glb",
+    "sha256": "62c01a88397fff3effb50c13759516b96c9236b2ae2448d617e1a47e387b968b",
+    "unchangedFrom8be7020": true
+  }
+]

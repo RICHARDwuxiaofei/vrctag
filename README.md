@@ -1,13 +1,14 @@
 # VRC Tag Studio — new browser edition
 
-新版独立网页在 [web/](web/README.md)，原创 Blender 源在 [studio/](studio/vrc-tag-original.blend)。客户端建模和多色 3MF 导出均在浏览器运行；部署只需要静态文件。
+新版独立网页在 [web/](web/README.md)，当前 Classic / Large Avatar 与 Native / VRChat Style 源在 [studio/](studio/README.md)。客户端建模和多色 3MF 导出均在浏览器运行；部署只需要静态文件。
 
 - [开发与使用](web/README.md)
-- [验收与限制](docs/ACCEPTANCE.md)
+- [最新大头像 Classic 验收与三栏对照](docs/CLASSIC-LARGE-AVATAR-2026-11-03.md)
+- [历史验收与限制](docs/ACCEPTANCE.md)
 - [模型、代码来源与许可证边界](docs/SOURCES.md)
 - [Caddy / Nginx / GitHub Pages 部署说明](docs/STATIC_DEPLOY.md)
 
-**许可边界：**旧版的根 LICENSE、ATTRIBUTION 和第三方资源原样保留。新版原创部分的最终许可由仓库拥有者之后决定，本次未选择新许可证或移除任何第三方权利。请同时阅读 [web/NOTICE.md](web/NOTICE.md)。
+**许可边界：**旧版的根 LICENSE、ATTRIBUTION 和第三方资源原样保留。新版原创部分的最终许可由仓库拥有者之后决定，本次未选择新许可证或移除任何第三方权利。Classic 参考旧作造型后的设计许可风险尚未厘清，独立写网格并不等于权利已获确认。请同时阅读 [web/NOTICE.md](web/NOTICE.md)。
 
 ---
 

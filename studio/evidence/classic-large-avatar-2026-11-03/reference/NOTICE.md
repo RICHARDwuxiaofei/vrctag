@@ -1,0 +1,7 @@
+# Reference only — retained third-party rights
+
+These two PNGs render the repository's preserved `nametag_template.blend`, originating from **[VRC名牌吊牌 by WiseWolf](https://makerworld.com.cn/zh/models/203011-vrcming-pai-diao-pai)** under **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**. The reference portion retains attribution, noncommercial and share-alike conditions. Original root LICENSE and ATTRIBUTION.md remain unchanged. WiseWolf does not endorse this work.
+
+The original template was opened with embedded scripts disabled and rendered without saving. Its absent White_Rim viewport material was assigned neutral white in memory for visibility. The template has no baked name/avatar: those were added by the old generator. Accordingly these images show the actual blank source, not a fabricated complete original output. The template's hanging loop is visible; it is intentionally absent from the new independently constructed Classic.
+
+No old mesh, topology, vertices, booleans or render pixels are consumed by the new model builder, browser or exporters. These files are outside web/public and dist. The containing comparison sheets include this licensed reference; their reference portion retains these terms. New contributions' final terms remain for the owner to decide. Nothing here grants commercial clearance or asserts that independently implementing similar geometry automatically avoids derivative-design obligations.

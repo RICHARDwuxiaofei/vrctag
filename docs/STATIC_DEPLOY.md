@@ -45,3 +45,5 @@ Vite 使用 `base: './'`，脚本与 Worker 的模型地址相对于当前站点
 
 
 双样式静态资源与 `styles-compare.html` / `styles-compare.js` 一起包含在 dist；保留 `assets/styles/<id>/` 全部目录。默认 Classic，旧配置自动迁移；上线前必须实际测试卡片切换、JSON 恢复、两种样式下载及窄屏。对照页参考图用本机 Blob URL，仅本地查看。样式 JSON 用 HTTP 重验证，更新时应连同应用哈希脚本一起原子部署，避免新旧注册表/网格混用。本轮没有操作任何生产配置。
+
+当前 Classic 已改为 Large Avatar；生产资源只包含新的两种样式。旧 WiseWolf 参考渲染与三栏审核拼版位于 studio/evidence，不能复制到 dist 冒充新版无条件授权资源。设计许可风险与最新未完成验收见 CLASSIC-LARGE-AVATAR-2026-11-03.md；本轮未部署。

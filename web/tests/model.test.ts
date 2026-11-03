@@ -20,7 +20,10 @@ const raw = readFileSync(
 const font = opentype.parse(
   raw.buffer.slice(raw.byteOffset, raw.byteOffset + raw.byteLength),
 );
-const evidence = new URL("../../studio/evidence/", import.meta.url);
+const evidence = new URL(
+  "../../studio/evidence/classic-large-avatar-2026-11-03/integration/",
+  import.meta.url,
+);
 mkdirSync(evidence, { recursive: true });
 for (const name of [
   "Amy",

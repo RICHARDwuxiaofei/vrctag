@@ -1,10 +1,10 @@
 # 来源与许可证边界
 
-## 独立原创部分
+## 初版历史记录（不代表当前 Classic）
 
-本次从无网格的 Blender 场景建立胶囊实体：自定 120 × 38 mm、3 mm 厚底板，96 段圆形头像结构及状态点。Blender 原场景只有相机/灯光，没有导入 nametag_template.blend、旧网格、旧拓扑、旧顶点、布尔结果或尺寸。未打开第三方参考模型。建模脚本保存在 studio/scripts/model_geometry.py，便携入口 studio/scripts/build_model.py，源文件为 studio/vrc-tag-original.blend。
+初版阶段从无网格的 Blender 场景建立胶囊实体：自定 120 × 38 mm、3 mm 厚底板，96 段圆形头像结构及状态点。Blender 原场景只有相机/灯光，没有导入 nametag_template.blend、旧网格、旧拓扑、旧顶点、布尔结果或尺寸。未打开第三方参考模型。建模脚本保存在 studio/scripts/model_geometry.py，便携入口 studio/scripts/build_model.py，源文件为 studio/vrc-tag-original.blend。
 
-web/src 的界面、文字挤出、网格校验、3MF 装配写入及 Worker 由本次独立实现。没有阅读或复制旧 Python 生成器的实质实现。基础网格来自本次 Blender 导出的 base.json；GLB 是同一原创几何。截图仅用于观察胶囊、头像、状态点、名字和小字的布局，没有打包任何截图、官方 Logo、人物、游戏背景或官方纹理。
+web/src 的界面、文字挤出、网格校验、3MF 装配写入及 Worker 由本次独立实现。初版时没有阅读或复制旧 Python 生成器的实质实现；本次更正阶段已按用户要求阅读其布局行为作参考，未复用实现。基础网格来自本次 Blender 导出的 base.json；GLB 是同一原创几何。截图仅用于观察胶囊、头像、状态点、名字和小字的布局，没有打包任何截图、官方 Logo、人物、游戏背景或官方纹理。
 
 默认人物头像图案用浏览器二维圆/椭圆绘制，仅预览；没有使用图标包。界面字体来自设备系统字体，不打包商业系统字体。模型文字使用以下 Noto 字体。生成的字形轮廓仍来源于该字体，不应宣称所有导出顶点完全是第一方创造。
 
@@ -46,3 +46,13 @@ Classic 从 `1f7a159` 的网页版原创生成逻辑恢复，四个部件顶点�
 对照页面、缩略图及六张正面/透视/好友图均为本次原创模型真实 Blender 渲染，临时演示文字来自现有 Noto 派生字体轮廓并未保存到基础源。没有新增第三方头像/贴图/Logo，未公开分发参考截图。Native 的比例来自对话截图手工近似分析，非现有网格提取，也不宣称一比一或权利认证。新第一方最终许可证仍待拥有者决定，未改变根 LICENSE 或旧许可。
 
 模型材料现共用 sRGB HEX，由 Blender 显式转线性；中性灰替换先前青绿色底板。状态点绿色仅代表 Online。详见 [双样式验收与来源记录](STYLES-2026-11-03.md)。
+
+## 2026-11-03 Classic 参考对象纠正（当前）
+
+当前 `classic.blend` / Classic 网页资源已不是 `1f7a159` 的小头像胶囊。按用户明确授权，单独打开了根 `nametag_template.blend`，禁用嵌入脚本，观察物件、粗略包围尺寸、材质及 Python 生成器布局。原模板只含 White_Rim、Black_Base、Online_Status_Dot；大头像/黄色名字由旧生成器动态添加。原模板参考图没有伪造这些缺失部件，白框仅在内存中补了中性显示材质，未保存旧模板。
+
+重建 Classic 使用自选 134×52 mm 外形、44 mm 头像、独立白色周边框和新肩部面板，圆弧/直线全部由 `model_geometry.py` 的新解析公式生成。未导入、复制、转移或重用原模板的顶点、拓扑、布尔结果、精确尺寸数据或旧 Python 实质代码。Native 的源/JSON/GLB 与 `8be7020` 字节相同。根 Python、模板、LICENSE、ATTRIBUTION.md 的哈希保持不变，证据见最新报告。
+
+**许可风险未解决：**原作来自 [WiseWolf 的 VRC名牌吊牌](https://makerworld.com.cn/zh/models/203011-vrcming-pai-diao-pai)，旧作/改编仍有 CC BY-NC-SA 4.0 声明。大头像、白框、黑底、黄色文字的相似整体表达可能仍涉及原设计权利或衍生作品义务；从新公式写网格、尺寸不同或不复制顶点均不是自动脱离旧许可的保证。不声称忠实复刻可成为完全无约束的原创。当前只记录独立构造过程；新 Classic 的最终许可/商业使用需拥有者进一步澄清，未替拥有者选择许可证。
+
+参考 PNG 和包含它的三栏图位于 `studio/evidence/classic-large-avatar-2026-11-03/`；参考部分保留 WiseWolf 署名、CC BY-NC-SA 4.0 和非商业/相同方式共享条件，不属于网页运行时资源或 dist。比较图中新的贡献仍待拥有者决定条款，不作额外许可授予。新版网页不读取旧模板或旧生成器。Pillow 仅用于开发时拼版，未新增浏览器依赖或字体；拼版文字仍使用现有 OFL Noto。

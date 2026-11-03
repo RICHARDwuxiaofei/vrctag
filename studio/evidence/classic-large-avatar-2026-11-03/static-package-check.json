@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "file": "assets/styles/classic/base.json",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/classic/base.glb",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/classic/front.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/classic/default-front.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/classic/default-perspective.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/classic/friend-pronouns-front.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/native/base.json",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/native/base.glb",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/native/front.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/native/default-front.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/native/default-perspective.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/styles/native/friend-pronouns-front.png",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "styles-compare.html",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "styles-compare.js",
+      "exists": true,
+      "matchesPublic": true
+    },
+    {
+      "file": "assets/fonts/manifest.json",
+      "exists": true,
+      "matchesPublic": true
+    }
+  ],
+  "forbiddenLegacyOrReferenceFiles": [],
+  "scope": "Static package files and byte equality only, not browser GUI verification"
+}
