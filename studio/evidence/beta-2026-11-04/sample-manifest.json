@@ -1,0 +1,253 @@
+[
+  {
+    "file": "samples/classic-default.3mf",
+    "styleId": "classic",
+    "case": "default",
+    "sha256": "d383e385bd4de4801a4ce3644ba7e6830af6edc45e911575331e202e2ee6ad9a",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.0113983464813816,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/classic-friend-pronouns.3mf",
+    "styleId": "classic",
+    "case": "friend-pronouns",
+    "sha256": "2540cb0f7c127753f5a06925fcd55cac557cc6dfc891ace8ad4bb8bc9df6dcd9",
+    "parts": 8,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 0.9150746944355359,
+      "Pronouns": 0.4528543689320375,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/classic-chinese.3mf",
+    "styleId": "classic",
+    "case": "chinese",
+    "sha256": "e2fee897f78a50ed03a45f2967de11ca39e52e83983cac69c2cc7e4fd0209ad5",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.1565874730021617,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/classic-japanese.3mf",
+    "styleId": "classic",
+    "case": "japanese",
+    "sha256": "9a390c64771110419b3af4825820cd8ff329c3a65759bfb02feffc47fce54e45",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.0773372256785865,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/classic-mixed.3mf",
+    "styleId": "classic",
+    "case": "mixed",
+    "sha256": "d810bc1575ec2a093d0a33166f683ee6a51d1d00371a32e72a298791faf2cf0d",
+    "parts": 8,
+    "materialEntries": 4,
+    "warnings": [
+      "Pronouns \u91c7\u6837\u7ec6\u7b14\u753b\u7ea6 0.31 mm\uff0c\u53ef\u80fd\u65e0\u6cd5\u7528 0.4 mm \u55b7\u5634\u4fdd\u7559\uff1b\u8bf7\u68c0\u67e5\u5207\u7247\u3002\u8fd9\u662f\u8f6e\u5ed3\u91c7\u6837\uff0c\u4e0d\u662f\u6700\u5c0f\u58c1\u539a\u8ba4\u8bc1\u3002"
+    ],
+    "sampledStrokeMm": {
+      "Name": 0.669743358847366,
+      "Pronouns": 0.31381215469613283,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/classic-long.3mf",
+    "styleId": "classic",
+    "case": "long",
+    "sha256": "f38e19a447f0a4770d19742355163cf75f5f9a2f404feb34c446376722af6aa1",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [
+      "Name \u9ad8 4.3 mm\uff1b\u7ec6\u7b14\u753b\u53ef\u80fd\u5c0f\u4e8e 0.4 mm\uff0c\u8bf7\u68c0\u67e5\u5207\u7247\u3002"
+    ],
+    "sampledStrokeMm": {
+      "Name": 0.4043409767197618,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/classic-custom-status.3mf",
+    "styleId": "classic",
+    "case": "custom-status",
+    "sha256": "7b4cea088ee62509e8facc08b9872ab94b9e5bcacef96b574cde956a5841e9b8",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.0113983464813816,
+      "Status_Text": 0.40677906976744305
+    }
+  },
+  {
+    "file": "samples/classic-cfs4-custom.3mf",
+    "styleId": "classic",
+    "case": "cfs4-custom",
+    "sha256": "00287ca8851af584e4fc383a000477bcba36447c77ef21456de161e33be56e0b",
+    "parts": 8,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 0.9150746944355359,
+      "Pronouns": 0.47020161290322443,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/classic-visual.3mf",
+    "styleId": "classic",
+    "case": "visual",
+    "sha256": "708270d792ab9c9b75c4a99c42a281036cfd3db338ac91664357cf6a67d9cfe8",
+    "parts": 8,
+    "materialEntries": 5,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 0.9150746944355359,
+      "Pronouns": 0.4725835866261384,
+      "Status_Text": 0.43425238600212124
+    }
+  },
+  {
+    "file": "samples/native-default.3mf",
+    "styleId": "native",
+    "case": "default",
+    "sha256": "d2a0f453b65c5f8bb3a2ba6d649153c0372bd5b11cc657a8a3bcfc4cbd8613a5",
+    "parts": 6,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.0788249029134738,
+      "Status_Text": 0.4439024390243905
+    }
+  },
+  {
+    "file": "samples/native-friend-pronouns.3mf",
+    "styleId": "native",
+    "case": "friend-pronouns",
+    "sha256": "fdaba43ed4ab38200045a681cd622841c9271c12f04956cbf065e14b3995caf1",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 0.9054423292309512,
+      "Pronouns": 0.49059223300970733,
+      "Status_Text": 0.4439024390243905
+    }
+  },
+  {
+    "file": "samples/native-chinese.3mf",
+    "styleId": "native",
+    "case": "chinese",
+    "sha256": "ef82cd7b1f6e7da2938857551bffa3d0577e3cef1eb2029292f6ac4c8a806f78",
+    "parts": 6,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.233693304535639,
+      "Status_Text": 0.4439024390243905
+    }
+  },
+  {
+    "file": "samples/native-japanese.3mf",
+    "styleId": "native",
+    "case": "japanese",
+    "sha256": "71f21a44d72978e02cf1b21324b38547a32776ab73bf6dcf7ae7eabd9fb5b5b4",
+    "parts": 6,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.1491597073904922,
+      "Status_Text": 0.4439024390243905
+    }
+  },
+  {
+    "file": "samples/native-mixed.3mf",
+    "styleId": "native",
+    "case": "mixed",
+    "sha256": "1254e13440182711c0ea8e475ef236beac3c2666852cc444b2e117576ca6031d",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [
+      "Pronouns \u91c7\u6837\u7ec6\u7b14\u753b\u7ea6 0.34 mm\uff0c\u53ef\u80fd\u65e0\u6cd5\u7528 0.4 mm \u55b7\u5634\u4fdd\u7559\uff1b\u8bf7\u68c0\u67e5\u5207\u7247\u3002\u8fd9\u662f\u8f6e\u5ed3\u91c7\u6837\uff0c\u4e0d\u662f\u6700\u5c0f\u58c1\u539a\u8ba4\u8bc1\u3002"
+    ],
+    "sampledStrokeMm": {
+      "Name": 0.6410400720396219,
+      "Pronouns": 0.3399631675874772,
+      "Status_Text": 0.4439024390243905
+    }
+  },
+  {
+    "file": "samples/native-long.3mf",
+    "styleId": "native",
+    "case": "long",
+    "sha256": "0b74280aebd8f6899e6603de39a9245ac8f348c911dbb8412cf5ddb91e72f734",
+    "parts": 6,
+    "materialEntries": 4,
+    "warnings": [
+      "Name \u91c7\u6837\u7ec6\u7b14\u753b\u7ea6 0.39 mm\uff0c\u53ef\u80fd\u65e0\u6cd5\u7528 0.4 mm \u55b7\u5634\u4fdd\u7559\uff1b\u8bf7\u68c0\u67e5\u5207\u7247\u3002\u8fd9\u662f\u8f6e\u5ed3\u91c7\u6837\uff0c\u4e0d\u662f\u6700\u5c0f\u58c1\u539a\u8ba4\u8bc1\u3002",
+      "Name \u9ad8 4.1 mm\uff1b\u7ec6\u7b14\u753b\u53ef\u80fd\u5c0f\u4e8e 0.4 mm\uff0c\u8bf7\u68c0\u67e5\u5207\u7247\u3002"
+    ],
+    "sampledStrokeMm": {
+      "Name": 0.3870120777174863,
+      "Status_Text": 0.4439024390243905
+    }
+  },
+  {
+    "file": "samples/native-custom-status.3mf",
+    "styleId": "native",
+    "case": "custom-status",
+    "sha256": "30cd37f449d4f46789b2ccfa7ce5231f4a1d957e94e345bc9c37d06a58084828",
+    "parts": 6,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 1.0788249029134738,
+      "Status_Text": 0.41581860465116394
+    }
+  },
+  {
+    "file": "samples/native-cfs4-custom.3mf",
+    "styleId": "native",
+    "case": "cfs4-custom",
+    "sha256": "ee6c7e33212b44ec16030e5988463ac23aa75878c092f4c63103c0414ac79335",
+    "parts": 7,
+    "materialEntries": 4,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 0.9054423292309512,
+      "Pronouns": 0.5093850806451599,
+      "Status_Text": 0.4439024390243905
+    }
+  },
+  {
+    "file": "samples/native-visual.3mf",
+    "styleId": "native",
+    "case": "visual",
+    "sha256": "7cf27fb60890d8af35f7db9b1778a69f3fd7165abe43ad3e5d20392c3d9480f5",
+    "parts": 7,
+    "materialEntries": 7,
+    "warnings": [],
+    "sampledStrokeMm": {
+      "Name": 0.9054423292309512,
+      "Pronouns": 0.5119655521783166,
+      "Status_Text": 0.4439024390243905
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "files": 152,
+  "bytes": 17842009,
+  "fontChunks": 103,
+  "fontGlyphCoverageUnchanged": true,
+  "fullSourceFontOmittedBytes": 17002248,
+  "legacyTemplates": false,
+  "referenceOrTestArtifacts": false,
+  "privateImages": false,
+  "sourceModelCopiesMatch": true,
+  "scope": "Filesystem/source audit; no actual browser network capture",
+  "imageFiles": [
+    "assets/styles/classic/default-front.png",
+    "assets/styles/classic/default-perspective.png",
+    "assets/styles/classic/friend-pronouns-front.png",
+    "assets/styles/classic/front.png",
+    "assets/styles/native/default-front.png",
+    "assets/styles/native/default-perspective.png",
+    "assets/styles/native/friend-pronouns-front.png",
+    "assets/styles/native/front.png"
+  ],
+  "allImagesAreIntentionalFirstPartyModelViews": true
+}

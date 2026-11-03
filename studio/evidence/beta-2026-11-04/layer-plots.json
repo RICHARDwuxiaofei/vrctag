@@ -1,0 +1,722 @@
+[
+  {
+    "sample": "classic-cfs4-custom",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5468
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9152
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 10604
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-chinese",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5468
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9143
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 9823
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-custom-status",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5469
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9151
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 10726
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-default",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5469
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9142
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 10485
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-friend-pronouns",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5469
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9142
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 10800
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-japanese",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5468
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9143
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 9355
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-long",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5469
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9142
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 10045
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-mixed",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5469
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9142
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 11509
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "classic-visual",
+    "actualLayers": 20,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 5468
+      },
+      {
+        "index": 12,
+        "z": 2.4,
+        "segments": 9143
+      },
+      {
+        "index": 14,
+        "z": 2.8,
+        "segments": 10769
+      },
+      {
+        "index": 20,
+        "z": 4.0,
+        "segments": 1287
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 90.00000000000001,
+    "objectBoundsMm": [
+      [
+        149.0,
+        108.0,
+        0.0
+      ],
+      [
+        201.0,
+        242.0,
+        3.9999999980000003
+      ]
+    ]
+  },
+  {
+    "sample": "native-cfs4-custom",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 5390
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 2280
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-chinese",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 4766
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 1391
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-custom-status",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 5662
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 2280
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-default",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 5380
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 1996
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-friend-pronouns",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 5603
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 2492
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-japanese",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 4278
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 1093
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-long",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 4766
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 1644
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-mixed",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 6240
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 3116
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  },
+  {
+    "sample": "native-visual",
+    "actualLayers": 18,
+    "shownLayers": [
+      {
+        "index": 1,
+        "z": 0.2,
+        "segments": 2168
+      },
+      {
+        "index": 13,
+        "z": 2.6,
+        "segments": 2319
+      },
+      {
+        "index": 15,
+        "z": 3.0,
+        "segments": 5566
+      },
+      {
+        "index": 18,
+        "z": 3.6,
+        "segments": 2452
+      }
+    ],
+    "plot": "Actual extrusion centerlines at nominal line width; not GUI/hardware certification",
+    "viewRotationDegrees": 178.56745505364609,
+    "objectBoundsMm": [
+      [
+        116.018433842,
+        155.00133494988555,
+        0.0
+      ],
+      [
+        233.98155306,
+        194.99861886297168,
+        3.600000026
+      ]
+    ]
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "styleId": "classic",
+    "source3mf": "studio/evidence/beta-2026-11-04/samples/classic-default.3mf",
+    "sourceSHA256": "d383e385bd4de4801a4ce3644ba7e6830af6edc45e911575331e202e2ee6ad9a",
+    "saved": "studio/demos/classic-nagikokoro.blend",
+    "dimensions": [
+      134.0,
+      52.0,
+      4.0
+    ],
+    "objects": [
+      {
+        "name": "Plate_Rim",
+        "vertices": 596,
+        "triangles": 1192,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 1652.060640182659
+      },
+      {
+        "name": "Plate_Body",
+        "vertices": 298,
+        "triangles": 592,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 11422.551698474426
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 192,
+        "triangles": 380,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 1367.5010817456382
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 384,
+        "triangles": 768,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 299.96490736923874
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 22.603326380990783
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 150.56211559564184
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 16.51317795375076
+      }
+    ],
+    "exactSerializedMesh": true,
+    "importer": "Project exact-mesh demo importer, not official extension validation"
+  },
+  {
+    "styleId": "native",
+    "source3mf": "studio/evidence/beta-2026-11-04/samples/native-default.3mf",
+    "sourceSHA256": "d2a0f453b65c5f8bb3a2ba6d649153c0372bd5b11cc657a8a3bcfc4cbd8613a5",
+    "saved": "studio/demos/native-nagikokoro.blend",
+    "dimensions": [
+      118.0,
+      40.0,
+      3.5999999046325684
+    ],
+    "objects": [
+      {
+        "name": "Plate_Body",
+        "vertices": 200,
+        "triangles": 396,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 11696.730743718988
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 366,
+        "triangles": 728,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 236.15657169192428
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 398,
+        "triangles": 792,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 23.390594174237012
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 32.54878120134148
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 171.30616906716395
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "nonManifoldEdges": 0,
+        "degenerateFaces": 0,
+        "signedVolume": 17.255242809214643
+      }
+    ],
+    "exactSerializedMesh": true,
+    "importer": "Project exact-mesh demo importer, not official extension validation"
+  }
+]

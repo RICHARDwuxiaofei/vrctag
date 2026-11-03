@@ -1,0 +1,8 @@
+{
+  "source": "https://github.com/3MFConsortium/lib3mf/releases/tag/v2.5.0",
+  "asset": "lib3mf-2.5.0.whl",
+  "sha256": "b4c00033c47cfeac93b7daa069fb46e8dea4391d5522b79cd6e9f6af75e33013",
+  "bytes": 1575000,
+  "verified": true,
+  "scope": "Temporary isolated test tool; not installed globally or bundled"
+}

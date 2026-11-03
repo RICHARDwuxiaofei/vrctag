@@ -1,0 +1,36 @@
+{
+  "decision": "CONDITIONAL",
+  "testedCodeCommit": "28def62309fdbbdf681ecf6e3775014f2434e888",
+  "branch": "codex/vrc-nameplate-web",
+  "unitTests": {
+    "pass": 39,
+    "fail": 0
+  },
+  "reviewClassic": {
+    "total": 43,
+    "pass": 43,
+    "fail": 0
+  },
+  "reviewNative": {
+    "total": 43,
+    "pass": 43,
+    "fail": 0
+  },
+  "pythonMesh": 6,
+  "pythonPackage": 6,
+  "betaSource3mfFiles": 18,
+  "independentPackageAndSupport": "PASS: 18/18",
+  "officialLib3mf": "PASS: 18/18 strict, zero warnings",
+  "officialBlenderExtensionImport": "PASS: 2/2 programmatic import; colors/parts/units verified",
+  "actualOrcaCLISlicing": "PASS: 18/18 after explicit slicer-side assignment; full visual uses 5/7 filaments and is not a single four-slot CFS claim",
+  "orcaCoreAutoMaterialMapping": "PARTIAL: not preserved automatically",
+  "browserGUI": "BLOCKED: retained prior explicit security refusal",
+  "slicerGUI": "NOT_TESTED: display unavailable",
+  "crealityPrint": "NOT_TESTED",
+  "physicalPrint": "NOT_TESTED",
+  "commercialClassicLicense": "UNRESOLVED: original NC-SA terms retained; no CC-BY-4.0 grant",
+  "productionDeployed": false,
+  "mergedMain": false,
+  "independentRegressionPackages": 98,
+  "independentlyCheckedSourcePackagesTotal": 116
+}

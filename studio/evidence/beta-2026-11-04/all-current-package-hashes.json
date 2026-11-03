@@ -1,0 +1,672 @@
+[
+  {
+    "file": "orca/classic-cfs4-custom-assigned-sliced.3mf",
+    "sha256": "237de8075eaaca533a82084e8fa975b9da23a287571e1669896285692f771c6b",
+    "bytes": 258613
+  },
+  {
+    "file": "orca/classic-chinese-assigned-sliced.3mf",
+    "sha256": "4636af282a71ccb4f19457e8d72f594e7106b03468530d7a242eac8cf838e60f",
+    "bytes": 222998
+  },
+  {
+    "file": "orca/classic-custom-status-assigned-sliced.3mf",
+    "sha256": "c19d2aca5c991e109b027fee700ba2fa0cc385876050d7d95481f3b7c8b46836",
+    "bytes": 272318
+  },
+  {
+    "file": "orca/classic-default-assigned-sliced.3mf",
+    "sha256": "52af2326f6a213e9e144db6cd592e4c58175f0e6219afa8963552fd1cee4e694",
+    "bytes": 255440
+  },
+  {
+    "file": "orca/classic-friend-pronouns-assigned-sliced.3mf",
+    "sha256": "ed360bac2a6e548442faf9bedb02ceba4a4e84130118ece69f7fb7f1a11a43a8",
+    "bytes": 269712
+  },
+  {
+    "file": "orca/classic-japanese-assigned-sliced.3mf",
+    "sha256": "8fd0d9d88ea9fe2c22d105ccdad74d3b0b096adfa3436b3342214a9d2ecab21e",
+    "bytes": 230549
+  },
+  {
+    "file": "orca/classic-long-assigned-sliced.3mf",
+    "sha256": "475fd9ee9995d3e37ecdaf3293f29b1bf0d207b0595d612d429daa9e45ebf45e",
+    "bytes": 280455
+  },
+  {
+    "file": "orca/classic-mixed-assigned-sliced.3mf",
+    "sha256": "38b8338cc205a9a01dce2d9588c3c7aadb598b4b6cc9c05d3e9b916e1f2690af",
+    "bytes": 311285
+  },
+  {
+    "file": "orca/classic-visual-assigned-sliced.3mf",
+    "sha256": "40777db071b3e0d2b5878d1b150edcad3ff0f928ad16a74dd51d7ad973c922a8",
+    "bytes": 278470
+  },
+  {
+    "file": "orca/native-cfs4-custom-assigned-sliced.3mf",
+    "sha256": "2e335da31541ae139e937e18bdc04cfe041cea3d1e9c8ee5f589bf019d9fce11",
+    "bytes": 208331
+  },
+  {
+    "file": "orca/native-chinese-assigned-sliced.3mf",
+    "sha256": "9fa359d615548aaee237d8b78868456f0cb2d6a06ed043b20d23ed21bbf1d21e",
+    "bytes": 169606
+  },
+  {
+    "file": "orca/native-custom-status-assigned-sliced.3mf",
+    "sha256": "ab97b98c257b1e69bcc36f161f49feb64b7729b3ab68d5cfaf243717038d5a6e",
+    "bytes": 227038
+  },
+  {
+    "file": "orca/native-default-assigned-sliced.3mf",
+    "sha256": "e1c3836c731594f0102aae0790d453f1a0fe17a933e1ba3a591e615abbf92fec",
+    "bytes": 209486
+  },
+  {
+    "file": "orca/native-friend-pronouns-assigned-sliced.3mf",
+    "sha256": "e9f57babb518b32fead79c15d29d84bc25e00761b530b545184c2cc2caec3946",
+    "bytes": 221281
+  },
+  {
+    "file": "orca/native-japanese-assigned-sliced.3mf",
+    "sha256": "ef8136d7196f1ca1cbd148caa979941d8ac5ab097e5c7cf9e1cc773f68157812",
+    "bytes": 178019
+  },
+  {
+    "file": "orca/native-long-assigned-sliced.3mf",
+    "sha256": "d97a13c107245f68d4f605f333c7e485e9931a0d16ae0842d93feac0a68e4b64",
+    "bytes": 229775
+  },
+  {
+    "file": "orca/native-mixed-assigned-sliced.3mf",
+    "sha256": "691b72d4c24fb2b0d3f265175a909bbf14d4d6e4cc20cded2bc74690f2aeaca9",
+    "bytes": 262799
+  },
+  {
+    "file": "orca/native-visual-assigned-sliced.3mf",
+    "sha256": "7ddff0ab4e634f5aa0a937d4376bf33a6147447ad7eabd53386ac22d04e0a02e",
+    "bytes": 236628
+  },
+  {
+    "file": "regressions/classic-Ask-Me-false.3mf",
+    "sha256": "734f2b7304beaa7e6a355ecfd21eec6506a18453cc9b883de24813a7db32521d",
+    "bytes": 83863
+  },
+  {
+    "file": "regressions/classic-Ask-Me-true.3mf",
+    "sha256": "740fe44050b1fba88cd032031369df23b764e404a6936c7d7d8e2df35245079f",
+    "bytes": 83865
+  },
+  {
+    "file": "regressions/classic-Busy-false.3mf",
+    "sha256": "a27df2509549b75a4fa26c9eed448336add22805b39883e0b329b3d484df76a3",
+    "bytes": 83861
+  },
+  {
+    "file": "regressions/classic-Busy-true.3mf",
+    "sha256": "63ef1ba9fa040be74d0f8a36cf7687fdb78257b8c06c09775abedec304ee3417",
+    "bytes": 83863
+  },
+  {
+    "file": "regressions/classic-Join-Me-false.3mf",
+    "sha256": "f885bc44736bf69d3c5a9e7b92ff174b8e98280c382c597fb12d4497e4570480",
+    "bytes": 83863
+  },
+  {
+    "file": "regressions/classic-Join-Me-true.3mf",
+    "sha256": "641954243f105cefc22bfe4f7b3ebed9e6028279338bf5b82195ab5225f07fcc",
+    "bytes": 83866
+  },
+  {
+    "file": "regressions/classic-Offline-false.3mf",
+    "sha256": "128fd526ab5bcb6191b216349ccc6af483259fa8cfbeb9f2bb0cb9f092f21091",
+    "bytes": 83864
+  },
+  {
+    "file": "regressions/classic-Offline-true.3mf",
+    "sha256": "cdadefd3e2fe8fbd4dd9e10097ddcfaa4127f00061e61b8025cc84c6c5daea73",
+    "bytes": 83865
+  },
+  {
+    "file": "regressions/classic-Online-false.3mf",
+    "sha256": "8805dc6445b5c13658f007f12fe859e17d3ac3af50e058e92c1754ac6d48e690",
+    "bytes": 83864
+  },
+  {
+    "file": "regressions/classic-Online-true.3mf",
+    "sha256": "c90e5880596f666bcf957c1fa6a52afd69f63665d08d9bc1145b6176fb325dc8",
+    "bytes": 83865
+  },
+  {
+    "file": "regressions/classic-chinese.3mf",
+    "sha256": "7f5f56e50764cd89b785f51c9d2bb5d1dd8e276542f004d0fcb820cc814eb4ae",
+    "bytes": 55800
+  },
+  {
+    "file": "regressions/classic-default.3mf",
+    "sha256": "7ca3ae04abd6f2122151f5e7a7192676e8221737c0f770ce88fb3bd021515375",
+    "bytes": 68584
+  },
+  {
+    "file": "regressions/classic-friend-pronouns.3mf",
+    "sha256": "a2f83c71f1dc2d51691c9c96d8b5d2763e99364ee73568c5414d06a914cb782f",
+    "bytes": 83865
+  },
+  {
+    "file": "regressions/classic-japanese.3mf",
+    "sha256": "d04e23b7c40b4b3a42f082c4c5dc7f9bac6d380b493ece4361882d4fbc9f994d",
+    "bytes": 62603
+  },
+  {
+    "file": "regressions/classic-long.3mf",
+    "sha256": "d256c4c37f272f8c71de15a309cc0cd94a2ccafc9b2cf7168cf5878e6eb8ecba",
+    "bytes": 110015
+  },
+  {
+    "file": "regressions/classic-mixed.3mf",
+    "sha256": "1ecfcd883c4a92ab3733d2ee2e85c0a4d5c29fa7cc03090646c1cc78d6e06ec6",
+    "bytes": 116050
+  },
+  {
+    "file": "regressions/classic-only-name.3mf",
+    "sha256": "331bfd8822e3c2c898b4fd2e47b366812130576c099b7ef34339cbbbca07eed3",
+    "bytes": 58381
+  },
+  {
+    "file": "regressions/classic-pronouns-no-status.3mf",
+    "sha256": "843c8df5e58cc6bab7b0d0318ab3387ff066aeba6688f20cb11ba922ec38c933",
+    "bytes": 67016
+  },
+  {
+    "file": "regressions/classic-review-custom-color-independent.3mf",
+    "sha256": "14eda614a749e387c937345f45655e255ca9ce4a5247caec73efde6430e75ded",
+    "bytes": 68589
+  },
+  {
+    "file": "regressions/classic-review-no-status-no-pronouns.3mf",
+    "sha256": "f25c1cb205d0a960916fc67d0bc121d5081e6b6fa8dc0ef159fe85a46be6c5c8",
+    "bytes": 58381
+  },
+  {
+    "file": "regressions/classic-review-palette-Ask-Me-false.3mf",
+    "sha256": "9857ccf39d64d7bf7e2be2270ab89c66c3b0bf1ebbeaaca6288374e06c8b3f07",
+    "bytes": 77780
+  },
+  {
+    "file": "regressions/classic-review-palette-Ask-Me-true.3mf",
+    "sha256": "3a81035b42db4f520cce88ebe4280035bf120e3d61a6c2dd42ade3ea99656654",
+    "bytes": 77783
+  },
+  {
+    "file": "regressions/classic-review-palette-Busy-false.3mf",
+    "sha256": "fcf2144d62f5457fe99f34843f8609964cce9eaeafd106c74e063cf416f9750c",
+    "bytes": 77780
+  },
+  {
+    "file": "regressions/classic-review-palette-Busy-true.3mf",
+    "sha256": "2cbde4eeffc51c532f91ab73bde49359db830e0c9f8b02b5383bff9ac4e4dda4",
+    "bytes": 77783
+  },
+  {
+    "file": "regressions/classic-review-palette-Join-Me-false.3mf",
+    "sha256": "da6bf889a28327ccc47bf8af4a6827c1f65a10a314130b739aac4148a11acc36",
+    "bytes": 77782
+  },
+  {
+    "file": "regressions/classic-review-palette-Join-Me-true.3mf",
+    "sha256": "e1afba0787d766e0ab00de10ac1ad06f292c32cf6fef12c9140e20fdde3dc836",
+    "bytes": 77785
+  },
+  {
+    "file": "regressions/classic-review-palette-Offline-false.3mf",
+    "sha256": "af15279a737391e1bbc28742da09b957c8fb24f0518a8c02a51f3f6ec53e5e8e",
+    "bytes": 77783
+  },
+  {
+    "file": "regressions/classic-review-palette-Offline-true.3mf",
+    "sha256": "6a22dc0483414504430610002e3ce5a14397ce402c34753ad8ee087254f3f795",
+    "bytes": 77784
+  },
+  {
+    "file": "regressions/classic-review-palette-Online-false.3mf",
+    "sha256": "44be6231f0db2328a81ddff04c09949e2788dc5ff42f83f11053b24d4c785277",
+    "bytes": 77782
+  },
+  {
+    "file": "regressions/classic-review-palette-Online-true.3mf",
+    "sha256": "c2ed1e0598e668489f23f5d204b95d3f3e1687ab19e5cf3bf831a6e09e6df916",
+    "bytes": 77783
+  },
+  {
+    "file": "regressions/classic-review-pronouns-22.3mf",
+    "sha256": "4c46f56d9b328d5ab5bd1b70028c77e052d6a650d9df2397b0e8b63e1fc6360f",
+    "bytes": 68584
+  },
+  {
+    "file": "regressions/classic-review-pronouns-23.3mf",
+    "sha256": "2e5abde498532ec9f4145f2320b31bc2ea00e4052d22f5a4be67641439e83776",
+    "bytes": 68586
+  },
+  {
+    "file": "regressions/classic-review-pronouns-24.3mf",
+    "sha256": "114f3ba120e256fc637bb26266c7e0b87be66bbaf63d32a45da47ca4e88d3499",
+    "bytes": 77124
+  },
+  {
+    "file": "regressions/classic-review-pronouns-25.3mf",
+    "sha256": "4dbd051c2d551ae97556cf268ade5df68ad947f5413904cf7c443a6722ebc1a4",
+    "bytes": 82560
+  },
+  {
+    "file": "regressions/classic-review-pronouns-26.3mf",
+    "sha256": "0f437ac69f1f8a67a6296a2cba415cee77fdedeab30db8933eaaa5423566583e",
+    "bytes": 83864
+  },
+  {
+    "file": "regressions/classic-review-pronouns-27.3mf",
+    "sha256": "19a0140f1af9a1a735a3cbe552a822e8efbcfcfb69aea7a63b4ec8fc08aa05c9",
+    "bytes": 92343
+  },
+  {
+    "file": "regressions/classic-review-text-0.3mf",
+    "sha256": "7d3af3547cc4816ca998ba11a50830869ab3a772170b3575992b6cfa6425401a",
+    "bytes": 51313
+  },
+  {
+    "file": "regressions/classic-review-text-1.3mf",
+    "sha256": "e6450dcddfc885a6ff0f75b5f62d10a66ef29d9b50ebac3add642cce2ff74960",
+    "bytes": 68584
+  },
+  {
+    "file": "regressions/classic-review-text-10.3mf",
+    "sha256": "6ec5db6624ee00744ff222ea9b6a08fc10e698b78bdee8ff4bb3a75a2eb4a1ce",
+    "bytes": 57456
+  },
+  {
+    "file": "regressions/classic-review-text-11.3mf",
+    "sha256": "38792f0040103c75e4bada318fc516401293c7a3a0b34a76f1bb30af54d81e51",
+    "bytes": 47949
+  },
+  {
+    "file": "regressions/classic-review-text-2.3mf",
+    "sha256": "0bd51ea684b2d98f338199acdbfe08d95f5014fd7d961518eeb635ea533eb298",
+    "bytes": 72494
+  },
+  {
+    "file": "regressions/classic-review-text-3.3mf",
+    "sha256": "cfda672f811a53cbe38b67c0095c4567c59e817b97a46fbab553a86f1aaac61e",
+    "bytes": 55800
+  },
+  {
+    "file": "regressions/classic-review-text-4.3mf",
+    "sha256": "c9c7748eed95e2089836df309a6aae0e12a2697b76f9bb16b4f98d1acc628fb5",
+    "bytes": 62603
+  },
+  {
+    "file": "regressions/classic-review-text-5.3mf",
+    "sha256": "1d72d9b9e556c63364746d80151b8c2b83de447b7c409d2a3285fa53093300cd",
+    "bytes": 92289
+  },
+  {
+    "file": "regressions/classic-review-text-6.3mf",
+    "sha256": "4e00dbe06ada5736ad1023f5fe3db040cf04a1b35f6f20f4acbb95e82530ff0f",
+    "bytes": 68971
+  },
+  {
+    "file": "regressions/classic-review-text-7.3mf",
+    "sha256": "1e2ff89c8f12901f9748dc0c518048400171487b54e1abaf642227d6fcce7eab",
+    "bytes": 73962
+  },
+  {
+    "file": "regressions/classic-review-text-8.3mf",
+    "sha256": "a547ae407096c28d5f24fe65abed293fba5717b87eb58b97f06d37f9a3244703",
+    "bytes": 71691
+  },
+  {
+    "file": "regressions/classic-review-text-9.3mf",
+    "sha256": "6b4f8f36d9c275a7f82767803037c3e3108fd0ecf3ff70afd306b457d804940e",
+    "bytes": 86543
+  },
+  {
+    "file": "regressions/mixed-friend-pronouns.3mf",
+    "sha256": "e1be86b325811aae8db1e0e7718d432585a6a8f36bfbf7dc1c023e2e43acb711",
+    "bytes": 81315
+  },
+  {
+    "file": "regressions/nagikokoro.3mf",
+    "sha256": "7ca3ae04abd6f2122151f5e7a7192676e8221737c0f770ce88fb3bd021515375",
+    "bytes": 68584
+  },
+  {
+    "file": "regressions/native-Ask-Me-false.3mf",
+    "sha256": "0cc4c3d66f9f70c117cfd319115e2f4b8cabfd0456328dee9898ef3a0ab80349",
+    "bytes": 74580
+  },
+  {
+    "file": "regressions/native-Ask-Me-true.3mf",
+    "sha256": "f6830fe9462747fd3760c2e8e1b83a04ed183bbe3a5c3c3b396d754f8a3d6f18",
+    "bytes": 74585
+  },
+  {
+    "file": "regressions/native-Busy-false.3mf",
+    "sha256": "fb4c3a24144250e13dcab542cbf2add423a4b6ce7cd5ce138619960a1bc5d0d6",
+    "bytes": 74575
+  },
+  {
+    "file": "regressions/native-Busy-true.3mf",
+    "sha256": "3b0a71db6b7b4cb774ec98596330d711962edbd6c4a1a594c7bac64aa54608f9",
+    "bytes": 74581
+  },
+  {
+    "file": "regressions/native-Join-Me-false.3mf",
+    "sha256": "76c313373a971208374a5fbcba1478911f4912a0be322e7f0b1467611769fb84",
+    "bytes": 74580
+  },
+  {
+    "file": "regressions/native-Join-Me-true.3mf",
+    "sha256": "cd64663e957fab2ed6bffa3f769770034739df924179a78b19f77b3b2f1035d1",
+    "bytes": 74586
+  },
+  {
+    "file": "regressions/native-Offline-false.3mf",
+    "sha256": "c5288b2f33e9224cc3b611d07077a4626aab3c27ad58b6b41f2bdc9042e3a9bf",
+    "bytes": 74579
+  },
+  {
+    "file": "regressions/native-Offline-true.3mf",
+    "sha256": "3dd127b4850b9a064d896aa26e2b79cc0e248187f3f87a2c29190fee9de4afa4",
+    "bytes": 74585
+  },
+  {
+    "file": "regressions/native-Online-false.3mf",
+    "sha256": "a01c8f4ed50197c54692dc7f77e9e0091feff4f883288c652e67d29bdd7272d8",
+    "bytes": 74579
+  },
+  {
+    "file": "regressions/native-Online-true.3mf",
+    "sha256": "f347dee3b86e8a85dae4deccfe0c9148c9ccd4799a338eefc0808f0286052c5e",
+    "bytes": 74583
+  },
+  {
+    "file": "regressions/native-chinese.3mf",
+    "sha256": "1cc0ce90d6adcb385da8771c0e51c1fb5aaacf1e01bc9c2b48e573d643873b67",
+    "bytes": 46780
+  },
+  {
+    "file": "regressions/native-default.3mf",
+    "sha256": "8ca3aab3d071247035875c411c9b5b07e51f9bd20788d0d9ba4c47baf981d7a8",
+    "bytes": 59198
+  },
+  {
+    "file": "regressions/native-friend-pronouns.3mf",
+    "sha256": "b12b4894804afdd4f48eb13e498d77498f8ec21ed2f82848ebee2703770c4791",
+    "bytes": 74583
+  },
+  {
+    "file": "regressions/native-japanese.3mf",
+    "sha256": "d03e83ad93af21c33ecaacf74bf2150879d68b2a75712951dcb47c5d40a4c29b",
+    "bytes": 53262
+  },
+  {
+    "file": "regressions/native-long.3mf",
+    "sha256": "c0dcafc1bfd0e957af49051a9cb874dfe166814cce04e87ad30fd34810a4ef96",
+    "bytes": 100386
+  },
+  {
+    "file": "regressions/native-mixed.3mf",
+    "sha256": "c6d9f5112548cd7a9a47ea024e8001c772b7f3e52be4f06b28e3d5a1a0fbe394",
+    "bytes": 107727
+  },
+  {
+    "file": "regressions/native-only-name.3mf",
+    "sha256": "fad053380ecdb669eda745495821d19306ece7ac1c096287212be925ee814fca",
+    "bytes": 49164
+  },
+  {
+    "file": "regressions/native-pronouns-no-status.3mf",
+    "sha256": "e36c4dc228f1b4566e8ff19c4ad0344b15dee5a670a76b896db8ef1d9690e64c",
+    "bytes": 57843
+  },
+  {
+    "file": "regressions/native-review-custom-color-independent.3mf",
+    "sha256": "6b363195692a1f1821ef09dadd2f31b589edacab6272666046341941226dd7b1",
+    "bytes": 59204
+  },
+  {
+    "file": "regressions/native-review-no-status-no-pronouns.3mf",
+    "sha256": "1806a8b3af829c02515c661df4ad3b5068b2c169b4fe11b8317b90fb84be5175",
+    "bytes": 49164
+  },
+  {
+    "file": "regressions/native-review-palette-Ask-Me-false.3mf",
+    "sha256": "ea89b5378c6479da574a61bf28951a356147e5f9bf7711accc4cad9cad5c24d4",
+    "bytes": 68639
+  },
+  {
+    "file": "regressions/native-review-palette-Ask-Me-true.3mf",
+    "sha256": "a2bb7b94ccc4419cedb3a68d0bbfbca2fde9027aa1f864399351fef99ad5137a",
+    "bytes": 68649
+  },
+  {
+    "file": "regressions/native-review-palette-Busy-false.3mf",
+    "sha256": "611dabad415ac31993293c6418181aaf3a3a467336ab04ad23cc3edf935f9429",
+    "bytes": 68635
+  },
+  {
+    "file": "regressions/native-review-palette-Busy-true.3mf",
+    "sha256": "1bbda00c1b0ffb07456ba0719f7f19354a6a052443f590edeb4f2bf77bc12187",
+    "bytes": 68644
+  },
+  {
+    "file": "regressions/native-review-palette-Join-Me-false.3mf",
+    "sha256": "cc0ea12aebba82fefe6949a03e569b3daceb2a4a51785fcc04a56c5a73c78dda",
+    "bytes": 68638
+  },
+  {
+    "file": "regressions/native-review-palette-Join-Me-true.3mf",
+    "sha256": "ddae81717e8e22982c8ea3a280749f20a869ccdc6a5c2c9b93eb333df424eea9",
+    "bytes": 68650
+  },
+  {
+    "file": "regressions/native-review-palette-Offline-false.3mf",
+    "sha256": "50e9f852b52ba2ddfb121a6198107c06b67cf2603fe7e457ea3c30069705769c",
+    "bytes": 68638
+  },
+  {
+    "file": "regressions/native-review-palette-Offline-true.3mf",
+    "sha256": "ff8b88d59f5a7a7d5ed0da9a61c668c3b02ecade0dfa1067abb75ac3241e9296",
+    "bytes": 68649
+  },
+  {
+    "file": "regressions/native-review-palette-Online-false.3mf",
+    "sha256": "e94007346c4cd3bd4c13ff54b62bfef568b4dd4b62c88cc556387b61ae84a0e2",
+    "bytes": 68640
+  },
+  {
+    "file": "regressions/native-review-palette-Online-true.3mf",
+    "sha256": "13d23b6ff5eab0234869c387485dc8e466b52676ea54d909bb10bb945cadb281",
+    "bytes": 68648
+  },
+  {
+    "file": "regressions/native-review-pronouns-22.3mf",
+    "sha256": "499ee5555ce03e52e609d095e06e94781d0dca744bd2ef9785ebe1c1c0db9526",
+    "bytes": 59198
+  },
+  {
+    "file": "regressions/native-review-pronouns-23.3mf",
+    "sha256": "eb260f3fa0c2ac1ff5d9f9356a33c2859021cdfdc2427684a9db8caa5b3552c2",
+    "bytes": 59200
+  },
+  {
+    "file": "regressions/native-review-pronouns-24.3mf",
+    "sha256": "6ad290d7abbddd27903de35d6573830b251b19c855a1389f233de5930903e3e5",
+    "bytes": 67727
+  },
+  {
+    "file": "regressions/native-review-pronouns-25.3mf",
+    "sha256": "7a001aa41c0900e24dd09b7b21afaa3a71942cbb71a195e713a9e808536cf22a",
+    "bytes": 73158
+  },
+  {
+    "file": "regressions/native-review-pronouns-26.3mf",
+    "sha256": "1442a42af30807718df729bda4f990ca3997a59f6561befb7ecef4cda9a088aa",
+    "bytes": 74579
+  },
+  {
+    "file": "regressions/native-review-pronouns-27.3mf",
+    "sha256": "00e9716ce6f4d129dc5834b2fab03b08a889f20e74285514c033e73e96b979e5",
+    "bytes": 83207
+  },
+  {
+    "file": "regressions/native-review-text-0.3mf",
+    "sha256": "8836f7af7a4f9b776d698446e8903c1e9b9cb3f032d05a17eb6ee307dac50e89",
+    "bytes": 42148
+  },
+  {
+    "file": "regressions/native-review-text-1.3mf",
+    "sha256": "bcc765ae21794b0fd03c80e1f7b8cbbb2c2857305fbb0e4b9e27b92e326a318a",
+    "bytes": 59198
+  },
+  {
+    "file": "regressions/native-review-text-10.3mf",
+    "sha256": "5177d3de981965592a90b1cbcf17974391d10cbcf9453c088bb8ff31b23ffb2f",
+    "bytes": 48416
+  },
+  {
+    "file": "regressions/native-review-text-11.3mf",
+    "sha256": "84fb81373c32443b6f4d31ea9705173bff5df71f2ce1ced4f4c31979591a4652",
+    "bytes": 38604
+  },
+  {
+    "file": "regressions/native-review-text-2.3mf",
+    "sha256": "0ab2a6059cb7ed4f221c4905557b77ff4d8c3a9dbd8a9e61db0de848d9dbef83",
+    "bytes": 63209
+  },
+  {
+    "file": "regressions/native-review-text-3.3mf",
+    "sha256": "ccee8c28356c801dae5dbaa9be96bc9b5030afdd63acc6b2516f5ce3d2dcd810",
+    "bytes": 46780
+  },
+  {
+    "file": "regressions/native-review-text-4.3mf",
+    "sha256": "21816d8d20201e14b43c0639d77c14a55b577c51bee963e476d8ae3b9db9ad28",
+    "bytes": 53262
+  },
+  {
+    "file": "regressions/native-review-text-5.3mf",
+    "sha256": "8738ee632606b1668038938b8b6fc7a69e771000c9c22d5655f69b8195ac78d5",
+    "bytes": 83656
+  },
+  {
+    "file": "regressions/native-review-text-6.3mf",
+    "sha256": "0b69e87892970edf84433b5fccb570f0a220458a26b70d5897926105eae6dd58",
+    "bytes": 59514
+  },
+  {
+    "file": "regressions/native-review-text-7.3mf",
+    "sha256": "07b0a739fab0172307d90ac3377daa7bcfbddc46e36759680e06db1d88bc0eb3",
+    "bytes": 64821
+  },
+  {
+    "file": "regressions/native-review-text-8.3mf",
+    "sha256": "10898a228d968ad364cca0cf072f02c6df89f99440d1a3f19d73dcb5bdd2e470",
+    "bytes": 62580
+  },
+  {
+    "file": "regressions/native-review-text-9.3mf",
+    "sha256": "0ee22a8995c1b2a15723e51224cce4e5b75fdb5003667c5112c1ebc6dd1fb323",
+    "bytes": 78033
+  },
+  {
+    "file": "samples/classic-cfs4-custom.3mf",
+    "sha256": "00287ca8851af584e4fc383a000477bcba36447c77ef21456de161e33be56e0b",
+    "bytes": 77224
+  },
+  {
+    "file": "samples/classic-chinese.3mf",
+    "sha256": "e2fee897f78a50ed03a45f2967de11ca39e52e83983cac69c2cc7e4fd0209ad5",
+    "bytes": 55800
+  },
+  {
+    "file": "samples/classic-custom-status.3mf",
+    "sha256": "7b4cea088ee62509e8facc08b9872ab94b9e5bcacef96b574cde956a5841e9b8",
+    "bytes": 80911
+  },
+  {
+    "file": "samples/classic-default.3mf",
+    "sha256": "d383e385bd4de4801a4ce3644ba7e6830af6edc45e911575331e202e2ee6ad9a",
+    "bytes": 68584
+  },
+  {
+    "file": "samples/classic-friend-pronouns.3mf",
+    "sha256": "2540cb0f7c127753f5a06925fcd55cac557cc6dfc891ace8ad4bb8bc9df6dcd9",
+    "bytes": 83865
+  },
+  {
+    "file": "samples/classic-japanese.3mf",
+    "sha256": "9a390c64771110419b3af4825820cd8ff329c3a65759bfb02feffc47fce54e45",
+    "bytes": 62603
+  },
+  {
+    "file": "samples/classic-long.3mf",
+    "sha256": "f38e19a447f0a4770d19742355163cf75f5f9a2f404feb34c446376722af6aa1",
+    "bytes": 110015
+  },
+  {
+    "file": "samples/classic-mixed.3mf",
+    "sha256": "d810bc1575ec2a093d0a33166f683ee6a51d1d00371a32e72a298791faf2cf0d",
+    "bytes": 116050
+  },
+  {
+    "file": "samples/classic-visual.3mf",
+    "sha256": "708270d792ab9c9b75c4a99c42a281036cfd3db338ac91664357cf6a67d9cfe8",
+    "bytes": 82592
+  },
+  {
+    "file": "samples/native-cfs4-custom.3mf",
+    "sha256": "ee6c7e33212b44ec16030e5988463ac23aa75878c092f4c63103c0414ac79335",
+    "bytes": 67834
+  },
+  {
+    "file": "samples/native-chinese.3mf",
+    "sha256": "ef82cd7b1f6e7da2938857551bffa3d0577e3cef1eb2029292f6ac4c8a806f78",
+    "bytes": 46780
+  },
+  {
+    "file": "samples/native-custom-status.3mf",
+    "sha256": "30cd37f449d4f46789b2ccfa7ce5231f4a1d957e94e345bc9c37d06a58084828",
+    "bytes": 71596
+  },
+  {
+    "file": "samples/native-default.3mf",
+    "sha256": "d2a0f453b65c5f8bb3a2ba6d649153c0372bd5b11cc657a8a3bcfc4cbd8613a5",
+    "bytes": 59198
+  },
+  {
+    "file": "samples/native-friend-pronouns.3mf",
+    "sha256": "fdaba43ed4ab38200045a681cd622841c9271c12f04956cbf065e14b3995caf1",
+    "bytes": 74583
+  },
+  {
+    "file": "samples/native-japanese.3mf",
+    "sha256": "71f21a44d72978e02cf1b21324b38547a32776ab73bf6dcf7ae7eabd9fb5b5b4",
+    "bytes": 53262
+  },
+  {
+    "file": "samples/native-long.3mf",
+    "sha256": "0b74280aebd8f6899e6603de39a9245ac8f348c911dbb8412cf5ddb91e72f734",
+    "bytes": 100386
+  },
+  {
+    "file": "samples/native-mixed.3mf",
+    "sha256": "1254e13440182711c0ea8e475ef236beac3c2666852cc444b2e117576ca6031d",
+    "bytes": 107727
+  },
+  {
+    "file": "samples/native-visual.3mf",
+    "sha256": "7cf27fb60890d8af35f7db9b1778a69f3fd7165abe43ad3e5d20392c3d9480f5",
+    "bytes": 73241
+  }
+]

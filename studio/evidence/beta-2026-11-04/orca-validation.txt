@@ -1,0 +1,16 @@
+classic-cfs4-custom actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+classic-chinese actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+classic-custom-status actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+classic-default actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+classic-friend-pronouns actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+classic-japanese actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+classic-long actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+classic-mixed actual mapped slicing PASS; used tool IDs [0, 1, 2, 3]
+Traceback (most recent call last):
+  File "/home/nagikokoro/CODE/vrctag/studio/scripts/beta_orca.py", line 63, in <module>
+    run(sample+'-assigned-slice',['--slice','0','--outputdir',folder,'--export-3mf',sample+'-assigned-sliced.3mf',mapped])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nagikokoro/CODE/vrctag/studio/scripts/beta_orca.py", line 16, in run
+    (dest/(name+'.txt')).write_text(result.stdout+result.stderr);assert result.returncode==0,(name,result.returncode,result.stderr)
+                                                                        ^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('classic-visual-assigned-slice', 156, 'Error: unable to open display :0\nFlush volumes matrix do not match to the correct size!\n')

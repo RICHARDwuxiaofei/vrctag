@@ -1,0 +1,181 @@
+[
+  {
+    "name": "Plate_Rim",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 1652.0606411595545,
+    "nonManifoldVertices": 0,
+    "intersections": 0,
+    "shells": [
+      {
+        "triangles": 1192,
+        "volume": 1652.0606411595545,
+        "depth": 0
+      }
+    ],
+    "issues": []
+  },
+  {
+    "name": "Plate_Body",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 11422.551697384813,
+    "nonManifoldVertices": 0,
+    "intersections": 0,
+    "shells": [
+      {
+        "triangles": 592,
+        "volume": 11422.551697384813,
+        "depth": 0
+      }
+    ],
+    "issues": []
+  },
+  {
+    "name": "Avatar_Back",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 1367.5010818664516,
+    "nonManifoldVertices": 0,
+    "intersections": 0,
+    "shells": [
+      {
+        "triangles": 380,
+        "volume": 1367.5010818664516,
+        "depth": 0
+      }
+    ],
+    "issues": []
+  },
+  {
+    "name": "Avatar_Frame",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 299.9649049429229,
+    "nonManifoldVertices": 0,
+    "intersections": 0,
+    "shells": [
+      {
+        "triangles": 768,
+        "volume": 299.9649049429229,
+        "depth": 0
+      }
+    ],
+    "issues": []
+  },
+  {
+    "name": "Status_Dot",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 22.603327098845835,
+    "nonManifoldVertices": 0,
+    "intersections": 0,
+    "shells": [
+      {
+        "triangles": 380,
+        "volume": 22.603327098845835,
+        "depth": 0
+      }
+    ],
+    "issues": []
+  },
+  {
+    "name": "Name",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 150.56206879888074,
+    "nonManifoldVertices": 0,
+    "intersections": 0,
+    "shells": [
+      {
+        "triangles": 116,
+        "volume": 21.872947497944903,
+        "depth": 0
+      },
+      {
+        "triangles": 344,
+        "volume": 14.450615417456955,
+        "depth": 0
+      },
+      {
+        "triangles": 768,
+        "volume": 20.546983968661266,
+        "depth": 0
+      },
+      {
+        "triangles": 12,
+        "volume": 6.535709270547896,
+        "depth": 0
+      },
+      {
+        "triangles": 124,
+        "volume": 1.732270205046444,
+        "depth": 0
+      },
+      {
+        "triangles": 48,
+        "volume": 16.666535003546624,
+        "depth": 0
+      },
+      {
+        "triangles": 256,
+        "volume": 14.552592981221062,
+        "depth": 0
+      },
+      {
+        "triangles": 48,
+        "volume": 16.666535003546638,
+        "depth": 0
+      },
+      {
+        "triangles": 256,
+        "volume": 14.55259298122105,
+        "depth": 0
+      },
+      {
+        "triangles": 152,
+        "volume": 8.432693488466835,
+        "depth": 0
+      },
+      {
+        "triangles": 256,
+        "volume": 14.552592981221068,
+        "depth": 0
+      }
+    ],
+    "issues": []
+  },
+  {
+    "name": "Status_Text",
+    "valid": true,
+    "badEdges": 0,
+    "degenerate": 0,
+    "volume": 16.51316775678216,
+    "nonManifoldVertices": 0,
+    "intersections": 0,
+    "shells": [
+      {
+        "triangles": 376,
+        "volume": 7.241734050085738,
+        "depth": 0
+      },
+      {
+        "triangles": 440,
+        "volume": 6.533622764454016,
+        "depth": 0
+      },
+      {
+        "triangles": 164,
+        "volume": 2.7378109422424037,
+        "depth": 0
+      }
+    ],
+    "issues": []
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "source": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.4.2",
+  "version": "2.4.2",
+  "bytes": 137759224,
+  "sha256": "d12fb8c8eac1aecd2dfb6377acd48f994f8fa439ed5292fa532dd82880f029fd",
+  "digestVerifiedAgainstGitHubAPI": true,
+  "isolatedConfig": "/tmp/vrctag-beta-tools/orca-config"
+}

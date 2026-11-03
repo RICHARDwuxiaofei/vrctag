@@ -1,0 +1,266 @@
+[
+  {
+    "styleId": "classic",
+    "status": "PASS",
+    "sizeMm": [
+      134.0000033378601,
+      52.000001072883606,
+      4.000000189989805
+    ],
+    "sceneScale": 1.0,
+    "parts": [
+      {
+        "name": "Plate_Rim",
+        "vertices": 596,
+        "faces": 1192,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 1652.060640182659,
+        "materials": [
+          {
+            "name": "Filament 2",
+            "rgba": [
+              0.7991027235984802,
+              0.8069522380828857,
+              0.838798999786377,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plate_Body",
+        "vertices": 298,
+        "faces": 592,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 11422.551698474426,
+        "materials": [
+          {
+            "name": "Filament 1",
+            "rgba": [
+              0.011612244881689548,
+              0.012286487966775894,
+              0.015208514407277107,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 192,
+        "faces": 380,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 1367.5010817456382,
+        "materials": [
+          {
+            "name": "Filament 1",
+            "rgba": [
+              0.011612244881689548,
+              0.012286487966775894,
+              0.015208514407277107,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 384,
+        "faces": 768,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 299.96490736923874,
+        "materials": [
+          {
+            "name": "Filament 2",
+            "rgba": [
+              0.7991027235984802,
+              0.8069522380828857,
+              0.838798999786377,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "faces": 380,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 22.603326380990783,
+        "materials": [
+          {
+            "name": "Filament 4",
+            "rgba": [
+              0.027320891618728638,
+              0.6514056324958801,
+              0.009721217676997185,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "faces": 2380,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 150.56211559564184,
+        "materials": [
+          {
+            "name": "Filament 3",
+            "rgba": [
+              0.8468732237815857,
+              0.5520114302635193,
+              0.06480326503515244,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "faces": 980,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 16.51317795375076,
+        "materials": [
+          {
+            "name": "Filament 2",
+            "rgba": [
+              0.7991027235984802,
+              0.8069522380828857,
+              0.838798999786377,
+              1.0
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [],
+    "pipeline": "Official Blender Extensions threemf-io 2.7.8 programmatic API, same import pipeline; no GUI use",
+    "noGlobalInstallation": true
+  },
+  {
+    "styleId": "native",
+    "status": "PASS",
+    "sizeMm": [
+      118.00000071525574,
+      40.00000283122063,
+      3.6000001709908247
+    ],
+    "sceneScale": 1.0,
+    "parts": [
+      {
+        "name": "Plate_Body",
+        "vertices": 200,
+        "faces": 396,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 11696.730743718988,
+        "materials": [
+          {
+            "name": "Filament 1",
+            "rgba": [
+              0.008568125776946545,
+              0.009134058840572834,
+              0.011612244881689548,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 366,
+        "faces": 728,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 236.15657169192428,
+        "materials": [
+          {
+            "name": "Filament 1",
+            "rgba": [
+              0.008568125776946545,
+              0.009134058840572834,
+              0.011612244881689548,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 398,
+        "faces": 792,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 23.390594174237012,
+        "materials": [
+          {
+            "name": "Filament 2",
+            "rgba": [
+              0.8962693810462952,
+              0.9215818643569946,
+              0.8468732237815857,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "faces": 380,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 32.54878120134148,
+        "materials": [
+          {
+            "name": "Filament 4",
+            "rgba": [
+              0.027320891618728638,
+              0.6514056324958801,
+              0.009721217676997185,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "faces": 2380,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 171.30616906716395,
+        "materials": [
+          {
+            "name": "Filament 2",
+            "rgba": [
+              0.8962693810462952,
+              0.9215818643569946,
+              0.8468732237815857,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "faces": 980,
+        "nonManifoldEdges": 0,
+        "signedVolumeBU3": 17.255242809214643,
+        "materials": [
+          {
+            "name": "Filament 2",
+            "rgba": [
+              0.8962693810462952,
+              0.9215818643569946,
+              0.8468732237815857,
+              1.0
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [],
+    "pipeline": "Official Blender Extensions threemf-io 2.7.8 programmatic API, same import pipeline; no GUI use",
+    "noGlobalInstallation": true
+  }
+]
