@@ -32,5 +32,6 @@
   "productionDeployed": false,
   "mergedMain": false,
   "independentRegressionPackages": 98,
-  "independentlyCheckedSourcePackagesTotal": 116
+  "independentlyCheckedSourcePackagesTotal": 116,
+  "githubAutomaticLicenseRecognition": "PARTIAL: canonical MIT text verified and remote bytes match; repository API remains NOASSERTION"
 }

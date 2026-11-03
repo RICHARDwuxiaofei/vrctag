@@ -40,3 +40,7 @@ Classic 是按用户要求观察 WiseWolf 旧模板和旧生成器布局后，�
 本轮的范围检查与回归测试防止 Classic 和默认别名误标 CC BY 4.0、遗漏 OFL/第三方声明或删掉历史许可。原模型/模板/根旧 Python 字节保持不变。GitHub 通常依据默认分支显示仓库许可；本轮只更新功能分支，不修改 main，因此默认分支尚可能显示旧许可。不能为改变徽标而自动合并。
 
 Classic 的商业/CC BY 4.0 发布仍需拥有者确认其设计是否可独立授权，必要时取得原作者许可或专业意见。当前可将明确拥有的软件与 Native 依上述范围开放，不能宣称整个混合仓库已全部变成 MIT 或可商业使用。
+
+## GitHub 自动识别核对 — PARTIAL
+
+功能分支远程 LICENSE 内容已与本地逐字节一致；除版权行及空白外，正文与 GitHub 官方 `/licenses/mit` 标准文本完全一致，SPDX/package 的 MIT 信息已设置。但仓库 license API 目前仍返回 **Other / NOASSERTION**，所以不能宣称 GitHub 已自动识别为 MIT；原因本轮未确认。见 [识别证据](../studio/evidence/beta-2026-11-04/github-license-recognition.json)。没有为改变徽标而修改 main 或删除模型许可例外；这是平台识别的剩余项，不改变路径级授权本身。

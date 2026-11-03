@@ -90,6 +90,7 @@ Classic、Native **分别**生成 9 个样例：默认、Friend＋Pronouns、中
 | `npm run build` | PASS；保留 bundle >500 KB 提示，不隐藏或调低门槛 |
 | 静态包检查 | PASS，103 个按需字体块均存在/大小一致，覆盖不减；未带测试/evidence/旧模板/私密图；新许可文件和两模型均可用 |
 | 桌面 / 390px / 320px 最新 GUI | BLOCKED，未取得本轮实际截图 |
+| GitHub 许可自动识别 | PARTIAL：远程文件及标准 MIT 正文比对通过，API 仍为 Other/NOASSERTION，未伪报识别成功；[证据](../studio/evidence/beta-2026-11-04/github-license-recognition.json) |
 | 本轮浏览器实际头像/下载/JSON/快速切换/竞态 | BLOCKED；离线测试/源码核对不能替代真实 GUI |
 | 本地隐私 | PASS（代码审计）；头像仅 FileReader/canvas，不入网络上传/Config/3MF；实际浏览器抓包 NOT_TESTED |
 
