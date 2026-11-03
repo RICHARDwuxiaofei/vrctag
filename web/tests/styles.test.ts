@@ -73,6 +73,22 @@ for (const style of styles) {
           Math.min(...p.vertices.map((v) => v[2])) >= base.layout.textZ - 1e-6,
         );
       }
+      const outline = base.parts
+        .find((p) => p.name === "Plate_Body")!
+        .vertices.filter((v) => Math.abs(v[2]) < 1e-6);
+      for (const part of d.parts.filter((p) =>
+        ["Name", "Pronouns", "Status_Text"].includes(p.name),
+      )) {
+        for (const [x, y] of part.vertices)
+          for (let i = 0; i < outline.length; i++) {
+            const a = outline[i],
+              b = outline[(i + 1) % outline.length];
+            assert(
+              (b[0] - a[0]) * (y - a[1]) - (b[1] - a[1]) * (x - a[0]) >= -1e-5,
+              "Text must remain on the actual convex plate footprint",
+            );
+          }
+      }
       const texts = d.parts.filter((p) =>
         ["Name", "Pronouns", "Status_Text"].includes(p.name),
       );

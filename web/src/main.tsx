@@ -83,6 +83,7 @@ function App() {
   const [avatarName, setAvatarName] = useState("未上传头像");
   const configKey = JSON.stringify(config);
   const patch = (next: Partial<Config>) => {
+    configImportGeneration.current++;
     revision.current = ++sequence.current;
     setBusy(true);
     setNotice("");
