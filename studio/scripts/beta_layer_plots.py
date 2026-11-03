@@ -28,7 +28,7 @@ for result in json.loads((out/'orca-validation.json').read_text()):
   if line.startswith(';Z:'):
    current={'z':float(line[3:]),'segments':[]};layers.append(current);continue
   code=line.split(';')[0].strip()
-  if re.fullmatch(r'T[0-3]',code):tool=int(code[1:]);continue
+  if re.fullmatch(r'T\d+',code)and int(code[1:])<len(result['palette']):tool=int(code[1:]);continue
   if code=='M83':relative_e=True
   if code=='M82':relative_e=False
   if code=='G91':relative_xy=True

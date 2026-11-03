@@ -5,7 +5,7 @@ No printer/network connection; portable app and its profiles stay outside the re
 """
 from pathlib import Path
 import argparse,subprocess,os,json,zipfile,xml.etree.ElementTree as ET,re
-p=argparse.ArgumentParser();p.add_argument('--app',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--app',type=Path,required=True);p.add_argument('--resume',action='store_true');a=p.parse_args()
 ROOT=Path(__file__).resolve().parents[2];out=ROOT/'studio/evidence/beta-2026-11-04';dest=out/'orca';dest.mkdir(exist_ok=True)
 resource=a.app.resolve().parent/'resources/profiles/Creality'
 machine=resource/'machine/Creality K2 Plus 0.4 nozzle.json';process=resource/'process/0.20mm Standard @Creality K2 Plus 0.4 nozzle.json';filament=resource/'filament/Generic PLA @K2 Plus-all.json'
@@ -25,12 +25,13 @@ def meshes(raw):
   lo=[min(v[k]for v in vertices)for k in range(3)];hi=[max(v[k]for v in vertices)for k in range(3)]
   r.append({'id':o.attrib['id'],'name':o.attrib.get('name'),'v':vertices,'t':triangles,'size':[b-a for a,b in zip(lo,hi)],'lo':lo})
  return r
-reports=[]
-for sample in ['classic-default','native-default','classic-friend-pronouns','native-friend-pronouns']:
+reports=json.loads((out/'orca-validation.json').read_text())if a.resume and (out/'orca-validation.json').exists()else[]
+for sample in sorted(p.stem for p in (out/'samples').glob('*.3mf')):
  style,case=sample.split('-',1)
+ if a.resume and any(r['styleId']==style and r['case']==case and (ROOT/r['output']).exists()for r in reports):continue
  source=out/'samples'/(sample+'.3mf');rawproject=base/(sample+'-orca-project.3mf')
  run(sample+'-core-import',['--info',source])
- run(sample+'-core-project',['--load-settings',str(machine)+';'+str(process),'--load-filaments',';'.join([str(filament)]*4),'--export-3mf',rawproject,source])
+ run(sample+'-core-project',['--load-settings',str(machine)+';'+str(process),'--load-filaments',';'.join([str(filament)]*len(json.loads(zipfile.ZipFile(source).read('Metadata/printing.json'))['palette'])),'--export-3mf',rawproject,source])
  with zipfile.ZipFile(source)as z:original=meshes(z.read('3D/3dmodel.model'));plan=json.loads(z.read('Metadata/printing.json'))
  with zipfile.ZipFile(rawproject)as z:files={n:z.read(n)for n in z.namelist()}
  nodes=[]
@@ -55,7 +56,15 @@ for sample in ['classic-default','native-default','classic-friend-pronouns','nat
    if node is None:node=ET.SubElement(part,'metadata',{'key':key})
    node.set('value',value)
  files['Metadata/model_settings.config']=ET.tostring(config,encoding='utf-8',xml_declaration=True)
- settings=json.loads(files['Metadata/project_settings.config']);settings['filament_colour']=plan['palette'];files['Metadata/project_settings.config']=json.dumps(settings).encode()
+ settings=json.loads(files['Metadata/project_settings.config']);settings['filament_colour']=plan['palette']
+ n=len(plan['palette'])
+ if len(settings.get('flush_volumes_matrix',[]))!=n*n:
+  # Retain the stock nominal amounts, just extend the test preset's table size.
+  # This is not a material-specific purge calibration or hardware recommendation.
+  off=next(v for v in settings['flush_volumes_matrix']if float(v)>0)
+  settings['flush_volumes_matrix']=['0'if i==j else off for i in range(n)for j in range(n)]
+  settings['flush_volumes_vector']=[settings['flush_volumes_vector'][0]]*(2*n)
+ files['Metadata/project_settings.config']=json.dumps(settings).encode()
  mapped=base/(sample+'-orca-assigned.3mf')
  with zipfile.ZipFile(mapped,'w',zipfile.ZIP_DEFLATED)as z:
   for n,raw in files.items():z.writestr(n,raw)
@@ -69,8 +78,8 @@ for sample in ['classic-default','native-default','classic-friend-pronouns','nat
    md={n.attrib['key']:n.attrib['value']for n in part.findall('metadata')};assigned.append({'name':md['name'],'extruder':int(md['extruder'])})
   assert colors==plan['palette']
   assert {(p['name'],p['extruder'])for p in assigned}=={(p['name'],p['slot']+1)for p in plan['parts']}
- tools=sorted(set(int(n)for n in re.findall(r'^T([0-3])\s*$',gcode,re.M)));assert tools==sorted({p['slot']for p in plan['parts']}),tools
+ tools=sorted(set(int(n)for n in re.findall(r'^T(\d+)\s*$',gcode,re.M)if int(n)<len(plan['palette'])));assert tools==sorted({p['slot']for p in plan['parts']}),tools
  (dest/output.name).write_bytes(output.read_bytes());(dest/(sample+'-result.json')).write_text(json.dumps(result,indent=2))
  (dest/(sample+'-gcode-summary.txt')).write_text('\n'.join(line for line in gcode.splitlines()if any(k in line.lower()for k in ['filament used','total layer','estimated printing','layer_height']))[:16000])
- reports.append({'styleId':style,'case':case,'version':'2.4.2','coreImport':'PASS: actual CLI import and geometry matching','coreAutomaticFilamentMapping':'PARTIAL: Core base materials are not auto-assigned by this Orca version','beforeSlicerAssignment':before,'explicitSlicerAssignment':assigned,'palette':colors,'sourceGeometry':matches,'slicing':'PASS: real CLI slicing after explicit slicer-side assignment','gcodeToolIDs':tools,'printerPreset':machine.stem,'processPreset':process.stem,'layerHeight':result['layer_height'],'result':result,'output':str((dest/output.name).relative_to(ROOT)),'guiScreenshots':'NOT_TESTED: display unavailable; CLI evidence only','physicalPrint':'NOT_TESTED'})
+ reports.append({'styleId':style,'case':case,'version':'2.4.2','coreImport':'PASS: actual CLI import and geometry matching','coreAutomaticFilamentMapping':'PARTIAL: Core base materials are not auto-assigned by this Orca version','beforeSlicerAssignment':before,'explicitSlicerAssignment':assigned,'palette':colors,'requiresMoreThanFourAvailableFilaments':len(colors)>4,'flushTable':'Stock nominal values; resized for palette count only; not hardware calibrated','sourceGeometry':matches,'slicing':'PASS: real CLI slicing after explicit slicer-side assignment','gcodeToolIDs':tools,'printerPreset':machine.stem,'processPreset':process.stem,'layerHeight':result['layer_height'],'result':result,'output':str((dest/output.name).relative_to(ROOT)),'guiScreenshots':'NOT_TESTED: display unavailable; CLI evidence only','physicalPrint':'NOT_TESTED'})
  (out/'orca-validation.json').write_text(json.dumps(reports,indent=2));print(sample,'actual mapped slicing PASS; used tool IDs',tools,flush=True)
