@@ -1,3 +1,5 @@
+import { styles, getStyle } from "./styles";
+import { parseConfig, configDocument } from "./config";
 import { materialPlan } from "./materials";
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
@@ -63,6 +65,9 @@ function App() {
   const [exporting, setExporting] = useState(false);
   const [modelError, setModelError] = useState("");
   const [avatarError, setAvatarError] = useState("");
+  const [configError, setConfigError] = useState("");
+  const importInput = useRef<HTMLInputElement>(null);
+  const configImportGeneration = useRef(0);
   const [exportError, setExportError] = useState("");
   const [notice, setNotice] = useState("");
   const [view, setView] = useState(0);
@@ -104,7 +109,11 @@ function App() {
           const name = pending.config.displayName
             .replace(/[^\p{L}\p{N}_-]/gu, "_")
             .slice(0, 40);
-          download(r.data, `vrc-tag-${name}.3mf`, "model/3mf");
+          download(
+            r.data,
+            `vrc-tag-${pending.config.styleId}-${name}.3mf`,
+            "model/3mf",
+          );
           setNotice(
             `${pending.config.displayName} 的 3MF 已生成，使用点击下载时的配置。请核对耗材映射。`,
           );
@@ -215,7 +224,35 @@ function App() {
       bitmap?.close();
     }
   }
+  async function restoreConfig(file?: File) {
+    if (!file) return;
+    const generation = ++configImportGeneration.current;
+    try {
+      if (file.size > 100000) throw Error("配置文件过大");
+      const restored = parseConfig(JSON.parse(await file.text()));
+      if (generation !== configImportGeneration.current) return;
+      revision.current = ++sequence.current;
+      setBusy(true);
+      setConfig(restored);
+      setConfigError("");
+      setModelError("");
+      setExportError("");
+      setNotice("已恢复配置；本地头像保持不变。");
+      setPronounMode(
+        !restored.pronouns
+          ? "None"
+          : ["He/Him", "She/Her", "They/Them"].includes(restored.pronouns)
+            ? restored.pronouns
+            : "Custom",
+      );
+    } catch (e) {
+      if (generation === configImportGeneration.current)
+        setConfigError(e instanceof Error ? e.message : "无法读取配置");
+    }
+  }
   const reset = () => {
+    configImportGeneration.current++;
+    setConfigError("");
     revision.current = ++sequence.current;
     avatarGeneration.current++;
     exportRequest.current = null;
@@ -282,6 +319,46 @@ function App() {
               <h2>设计你的名牌</h2>
               <span>01 — EDIT</span>
             </div>
+            <section
+              className="control-section style-section"
+              aria-label="名牌样式"
+            >
+              <div className="section-heading">
+                <span>名牌样式</span>
+                <small>STYLE</small>
+              </div>
+              <div
+                className="style-cards"
+                role="group"
+                aria-label="选择名牌样式"
+              >
+                {styles.map((style) => (
+                  <button
+                    key={style.id}
+                    type="button"
+                    className="style-card"
+                    aria-pressed={config.styleId === style.id}
+                    onClick={() => patch({ styleId: style.id })}
+                  >
+                    <img
+                      src={style.thumbnail}
+                      alt={`${style.name} 原创模型缩略图`}
+                    />
+                    <strong>{style.name}</strong>
+                    <span>{style.label}</span>
+                    <small>{style.description}</small>
+                  </button>
+                ))}
+              </div>
+              <a
+                className="style-compare-link"
+                href="styles-compare.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                查看两种造型对比 ↗
+              </a>
+            </section>
             <section className="control-section">
               <div className="section-heading">
                 <span>身份</span>
@@ -498,7 +575,12 @@ function App() {
             <div className="preview-caption">
               <span>属于你的，小小存在感。</span>
               <span>
-                120 × 38 × 4 <small>mm</small>
+                {getStyle(config.styleId).name} ·{" "}
+                {(design && design.styleId === config.styleId
+                  ? design.size
+                  : getStyle(config.styleId).layout.size
+                )?.join(" × ")}{" "}
+                <small>mm</small>
               </span>
             </div>
             <div className="export-panel">
@@ -577,9 +659,9 @@ function App() {
                           onChange={(value) => {
                             const colors = [
                               ...(config.filamentColors ?? [
-                                "#102b2a",
-                                "#f3f6ed",
-                                "#ffd45d",
+                                getStyle(config.styleId).colors.Plate_Body,
+                                getStyle(config.styleId).colors.Name,
+                                getStyle(config.styleId).colors.Friend_Name,
                                 "auto",
                               ]),
                             ];
@@ -652,7 +734,7 @@ function App() {
                 <button
                   onClick={() =>
                     download(
-                      JSON.stringify({ schemaVersion: 1, ...config }, null, 2),
+                      JSON.stringify(configDocument(config), null, 2),
                       "vrc-tag-config.json",
                       "application/json",
                     )
@@ -660,8 +742,27 @@ function App() {
                 >
                   导出配置 JSON ↗
                 </button>
+                <button onClick={() => importInput.current?.click()}>
+                  恢复配置 JSON ↗
+                </button>
+                <input
+                  ref={importInput}
+                  type="file"
+                  accept="application/json,.json"
+                  hidden
+                  onChange={(e) => {
+                    const f = e.target.files?.[0];
+                    e.target.value = "";
+                    void restoreConfig(f);
+                  }}
+                />
                 <button onClick={reset}>重置为默认</button>
               </div>
+              {configError && (
+                <p role="alert" className="error">
+                  配置读取失败：{configError}
+                </p>
+              )}
               <p className="export-note">
                 全部计算在你的浏览器完成。3MF
                 保留独立部件及颜色；导入切片软件后请映射实际耗材。Creality Print

@@ -13,7 +13,7 @@ import {
   type Vec3,
 } from "../src/model.ts";
 import { export3mf } from "../src/export.ts";
-const out = new URL("../../studio/evidence/fixes-2026-11-03/", import.meta.url);
+const out = new URL("../../studio/evidence/dual-style-2026-11-03/", import.meta.url);
 mkdirSync(out, { recursive: true });
 const base: Base = JSON.parse(
   readFileSync(new URL("../public/assets/base.json", import.meta.url), "utf8"),

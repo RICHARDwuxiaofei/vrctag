@@ -1,3 +1,4 @@
+import { getStyle, defaultStyleId } from "./styles";
 import { sampledStroke } from "./printability";
 import { validateMesh } from "./mesh-validation";
 export { validateMesh } from "./mesh-validation";
@@ -11,6 +12,8 @@ export interface Part {
   color: string;
 }
 export interface Base {
+  styleId?: string;
+  colors?: Record<string, string>;
   parts: Part[];
   layout: {
     avatar?: {
@@ -34,8 +37,14 @@ export interface Base {
         centerY: number;
         heightWithPronouns: number;
         centerYWithPronouns: number;
+        centerYWithoutStatus?: number;
+        centerYWithPronounsWithoutStatus?: number;
       };
-      pronouns: { height: number; centerY: number };
+      pronouns: {
+        height: number;
+        centerY: number;
+        centerYWithoutStatus?: number;
+      };
       status: { height: number; centerY: number };
       minimumHeight: number;
       warningHeight: number;
@@ -52,6 +61,7 @@ export const statuses = {
 };
 export type Status = keyof typeof statuses;
 export interface Config {
+  styleId?: string;
   printMode?: "cfs4" | "visual";
   filamentColors?: string[];
   materialSlots?: Record<string, number>;
@@ -63,6 +73,7 @@ export interface Config {
   pronouns: string;
 }
 export const defaults: Config = {
+  styleId: defaultStyleId,
   printMode: "cfs4",
   displayName: "Nagikokoro",
   friend: false,
@@ -74,6 +85,9 @@ export const defaults: Config = {
 export const resolvedDot = (c: Config) =>
   c.dotColor === "auto" ? statuses[c.status] : c.dotColor;
 export interface Design {
+  styleId?: string;
+  size?: number[];
+  placeholderColors?: [string, string];
   parts: Part[];
   warnings: string[];
   errors: string[];
@@ -303,7 +317,19 @@ export function buildDesign(
   base: Base,
   font: Pick<Font, "charToGlyph" | "unitsPerEm">,
 ): Design {
-  const d: Design = { parts: [], warnings: [], errors: [], textHeights: {} };
+  const style = getStyle(c.styleId);
+  if (base.styleId && base.styleId !== style.id)
+    throw Error("样式与基础模型不匹配，请等待加载完成");
+  const palette: Record<string, string> = base.colors ?? style.colors;
+  const d: Design = {
+    styleId: style.id,
+    size: base.layout.size,
+    placeholderColors: [palette.Avatar_Back, palette.Avatar_Placeholder],
+    parts: [],
+    warnings: [],
+    errors: [],
+    textHeights: {},
+  };
   if (!c.displayName.trim()) d.errors.push("请输入显示名称。");
   if (
     [c.displayName, c.pronouns, c.customStatus].some(
@@ -312,40 +338,39 @@ export function buildDesign(
   )
     d.errors.push("单个文字字段最多 120 个字符。");
   if (d.errors.length) return d;
-  const colors: Record<string, string> = {
-    Plate_Body: "#102b2a",
-    Avatar_Back: "#385653",
-    Avatar_Frame: "#7b9992",
-    Status_Dot: resolvedDot(c),
-  };
-  d.parts = base.parts.map((p) => ({ ...p, color: colors[p.name] }));
+  d.parts = base.parts.map((p) => ({
+    ...p,
+    color: p.name === "Status_Dot" ? resolvedDot(c) : palette[p.name],
+  }));
   const hasPronouns = !!c.pronouns.trim();
   const rules = base.layout.textRules;
   const specs: [string, string, string, number, number][] = [
     [
       "Name",
       c.displayName,
-      c.friend ? "#ffd45d" : "#f3f6ed",
+      c.friend ? palette.Friend_Name : palette.Name,
       hasPronouns ? rules.name.heightWithPronouns : rules.name.height,
       hasPronouns
         ? c.customStatus.trim()
           ? rules.name.centerYWithPronouns
-          : 5.5
+          : (rules.name.centerYWithPronounsWithoutStatus ?? 5.5)
         : c.customStatus.trim()
           ? rules.name.centerY
-          : 0,
+          : (rules.name.centerYWithoutStatus ?? 0),
     ],
     [
       "Pronouns",
       c.pronouns,
-      "#bdcbc6",
+      palette.Pronouns,
       rules.pronouns.height,
-      c.customStatus.trim() ? rules.pronouns.centerY : -5.5,
+      c.customStatus.trim()
+        ? rules.pronouns.centerY
+        : (rules.pronouns.centerYWithoutStatus ?? -5.5),
     ],
     [
       "Status_Text",
       c.customStatus,
-      "#bdcbc6",
+      palette.Status_Text,
       rules.status.height,
       rules.status.centerY,
     ],

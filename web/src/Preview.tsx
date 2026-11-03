@@ -12,6 +12,10 @@ export function Preview({
   view: number;
 }) {
   const host = useRef<HTMLDivElement>(null);
+  const width = design?.size?.[0] ?? 120;
+  const height = design?.size?.[1] ?? 38;
+  const sizeRef = useRef([width, height]);
+  sizeRef.current = [width, height];
   const sceneRef = useRef<THREE.Scene | null>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
@@ -47,19 +51,20 @@ export function Preview({
     const light = new THREE.DirectionalLight("#ffffff", 3);
     light.position.set(-40, 60, 100);
     scene.add(light);
-    const fill = new THREE.DirectionalLight("#9bbfb1", 1);
+    const fill = new THREE.DirectionalLight("#ffffff", 1);
     fill.position.set(40, -30, -30);
     scene.add(fill);
     const resize = new ResizeObserver(() => {
       const { width, height } = el.getBoundingClientRect();
       renderer.setSize(width, height);
       camera.aspect = width / height;
-      const fit = Math.max(
-        110,
-        140 / (2 * Math.tan(THREE.MathUtils.degToRad(17.5)) * camera.aspect),
-      );
+      const fit =
+        (Math.max(sizeRef.current[1], sizeRef.current[0] / camera.aspect) /
+          (2 * Math.tan(THREE.MathUtils.degToRad(17.5)))) *
+        1.18;
       camera.position.set(0, -fit * 0.14, fit);
-      controls.maxDistance = Math.max(400, fit * 2);
+      controls.minDistance = fit * 0.5;
+      controls.maxDistance = fit * 3;
       camera.updateProjectionMatrix();
     });
     resize.observe(el);
@@ -90,14 +95,16 @@ export function Preview({
     const camera = cameraRef.current,
       controls = controlsRef.current;
     if (!camera || !controls) return;
-    const fit = Math.max(
-      110,
-      140 / (2 * Math.tan(THREE.MathUtils.degToRad(17.5)) * camera.aspect),
-    );
+    const fit =
+      (Math.max(height, width / camera.aspect) /
+        (2 * Math.tan(THREE.MathUtils.degToRad(17.5)))) *
+      1.18;
     camera.position.set(0, view % 2 ? 0 : -fit * 0.14, fit);
+    controls.minDistance = fit * 0.5;
+    controls.maxDistance = fit * 3;
     controls.target.set(0, 0, 1.5);
     controls.update();
-  }, [view]);
+  }, [view, width, height]);
   useEffect(() => {
     const scene = sceneRef.current;
     if (!scene || !design) return;
@@ -197,9 +204,9 @@ export function Preview({
       };
       image.src = avatar;
     } else {
-      ctx.fillStyle = "#385653";
+      ctx.fillStyle = design.placeholderColors?.[0] ?? "#44464c";
       ctx.fillRect(0, 0, 512, 512);
-      ctx.fillStyle = "#a4bbb0";
+      ctx.fillStyle = design.placeholderColors?.[1] ?? "#b8bbc2";
       ctx.beginPath();
       ctx.arc(256, 205, 72, 0, Math.PI * 2);
       ctx.fill();

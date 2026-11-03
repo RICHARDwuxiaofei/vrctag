@@ -1,3 +1,4 @@
+import { getStyle } from "./styles";
 import type { Config, Part } from "./model";
 import { resolvedDot } from "./model";
 export function materialPlan(c: Config, parts: Part[]) {
@@ -18,7 +19,12 @@ export function materialPlan(c: Config, parts: Part[]) {
     };
   }
   const palette = (
-    c.filamentColors ?? ["#102b2a", "#f3f6ed", "#ffd45d", "auto"]
+    c.filamentColors ?? [
+      getStyle(c.styleId).colors.Plate_Body,
+      getStyle(c.styleId).colors.Name,
+      getStyle(c.styleId).colors.Friend_Name,
+      "auto",
+    ]
   ).map((v, i) => color(v === "auto" && i === 3 ? resolvedDot(c) : v));
   if (palette.length !== 4) throw Error("四槽方案需要四个耗材颜色");
   const defaultSlot = (name: string) =>

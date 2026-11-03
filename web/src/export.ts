@@ -1,3 +1,4 @@
+import { getStyle } from "./styles";
 import { materialPlan } from "./materials";
 import { strToU8, zipSync } from "fflate";
 import { validateMesh, type Design, type Config } from "./model";
@@ -16,6 +17,9 @@ const escape = (s: string) =>
 const xml = (s: string) =>
   strToU8('<?xml version="1.0" encoding="UTF-8"?>' + s);
 export function export3mf(d: Design, c: Config): Uint8Array {
+  const style = getStyle(c.styleId);
+  if (d.styleId && d.styleId !== style.id)
+    throw Error("拒绝导出与配置不一致的样式");
   if (d.errors.length || !d.parts.length)
     throw new Error(d.errors.join("\n") || "没有可导出的网格");
   // Validate the exact rounded coordinates that will be serialized, not a higher-precision proxy.
@@ -38,7 +42,9 @@ export function export3mf(d: Design, c: Config): Uint8Array {
     )
     .join("");
   const assembly = d.parts.length + 2;
-  const model = `<model unit="millimeter" xml:lang="en-US" xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02"><metadata name="Title">${escape(c.displayName)} — VRC Tag Studio</metadata><metadata name="Application">VRC Tag Studio 0.1</metadata><resources><basematerials id="1">${colors.map((color, i) => `<base name="Filament ${i + 1}" displaycolor="${color}FF"/>`).join("")}</basematerials>${objects}<object id="${assembly}" type="model" name="VRC Tag"><components>${d.parts.map((_, i) => `<component objectid="${i + 2}"/>`).join("")}</components></object></resources><build><item objectid="${assembly}" transform="1 0 0 0 1 0 0 0 1 60 19 0"/></build></model>`;
+  const minX = Math.min(...parts.flatMap((p) => p.vertices.map((v) => v[0])));
+  const minY = Math.min(...parts.flatMap((p) => p.vertices.map((v) => v[1])));
+  const model = `<model unit="millimeter" xml:lang="en-US" xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02"><metadata name="Title">${escape(c.displayName)} — VRC Tag Studio</metadata><metadata name="Application">VRC Tag Studio 0.1</metadata><resources><basematerials id="1">${colors.map((color, i) => `<base name="Filament ${i + 1}" displaycolor="${color}FF"/>`).join("")}</basematerials>${objects}<object id="${assembly}" type="model" name="VRC Tag"><components>${d.parts.map((_, i) => `<component objectid="${i + 2}"/>`).join("")}</components></object></resources><build><item objectid="${assembly}" transform="1 0 0 0 1 0 0 0 1 ${-minX} ${-minY} 0"/></build></model>`;
   return zipSync(
     {
       "[Content_Types].xml": xml(
@@ -60,7 +66,7 @@ export function export3mf(d: Design, c: Config): Uint8Array {
         ),
       ),
       "Metadata/design.json": strToU8(
-        JSON.stringify({ version: 1, ...c }, null, 2),
+        JSON.stringify({ version: 1, ...c, styleId: style.id }, null, 2),
       ),
     },
     { level: 6 },

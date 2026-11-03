@@ -1,0 +1,133 @@
+{
+  "defaultStyleId": "classic",
+  "styles": [
+    {
+      "id": "classic",
+      "name": "Classic",
+      "label": "经典胶囊",
+      "description": "圆润胶囊 · 小头像与厚边框",
+      "baseFile": "styles/classic/base.json",
+      "thumbnail": "assets/styles/classic/front.png",
+      "geometry": {
+        "leftCenter": -41,
+        "rightCenter": 41,
+        "leftRadius": 19,
+        "rightRadius": 19,
+        "bodyTop": 3,
+        "avatarTop": 3.8,
+        "frameTop": 4,
+        "dotTop": 4
+      },
+      "colors": {
+        "Plate_Body": "#24262a",
+        "Avatar_Back": "#4a4d54",
+        "Avatar_Frame": "#9ca2aa",
+        "Name": "#f3f6ed",
+        "Friend_Name": "#ffd45d",
+        "Pronouns": "#c6c8ce",
+        "Status_Text": "#c6c8ce",
+        "Avatar_Placeholder": "#b8bbc2"
+      },
+      "layout": {
+        "unit": "millimeter",
+        "front": "+Z",
+        "size": [120, 38, 4],
+        "textLeft": -22,
+        "textWidth": 72,
+        "textZ": 3,
+        "relief": 0.8,
+        "avatar": {
+          "center": [-42, 0],
+          "radius": 12,
+          "frameWidth": 2,
+          "dotCenter": [-29, -11],
+          "dotRadius": 2.5
+        },
+        "textRules": {
+          "alignment": "left",
+          "name": {
+            "height": 10,
+            "centerY": 4,
+            "heightWithPronouns": 8,
+            "centerYWithPronouns": 7,
+            "centerYWithoutStatus": 0,
+            "centerYWithPronounsWithoutStatus": 5.5
+          },
+          "pronouns": {
+            "height": 3.7,
+            "centerY": -1.5,
+            "centerYWithoutStatus": -5.5
+          },
+          "status": { "height": 4, "centerY": -10.5 },
+          "minimumHeight": 2.4,
+          "warningHeight": 4.5,
+          "maxCharacters": 120
+        }
+      }
+    },
+    {
+      "id": "native",
+      "name": "Native",
+      "label": "VRChat 拟原生",
+      "description": "头像圆融入轮廓 · 近黑正面与薄浮雕",
+      "baseFile": "styles/native/base.json",
+      "thumbnail": "assets/styles/native/front.png",
+      "geometry": {
+        "leftCenter": -40,
+        "rightCenter": 40,
+        "leftRadius": 20,
+        "rightRadius": 18,
+        "bodyTop": 2.8,
+        "avatarTop": 3.1,
+        "frameTop": 3.15,
+        "dotTop": 3.6
+      },
+      "colors": {
+        "Plate_Body": "#17181c",
+        "Avatar_Back": "#35363c",
+        "Avatar_Frame": "#62646c",
+        "Name": "#f3f6ed",
+        "Friend_Name": "#ffd45d",
+        "Pronouns": "#c6c8ce",
+        "Status_Text": "#b9bbc2",
+        "Avatar_Placeholder": "#aeb0b8"
+      },
+      "layout": {
+        "unit": "millimeter",
+        "front": "+Z",
+        "size": [118, 40, 3.6],
+        "textLeft": -18,
+        "textWidth": 67,
+        "textZ": 2.8,
+        "relief": 0.8,
+        "avatar": {
+          "center": [-40, 0],
+          "radius": 16,
+          "frameWidth": 0.7,
+          "dotCenter": [-27, -10],
+          "dotRadius": 3.6
+        },
+        "textRules": {
+          "alignment": "left",
+          "name": {
+            "height": 11.2,
+            "centerY": 4.5,
+            "heightWithPronouns": 9.4,
+            "centerYWithPronouns": 9,
+            "centerYWithoutStatus": 0,
+            "centerYWithPronounsWithoutStatus": 5.5
+          },
+          "pronouns": {
+            "height": 5.2,
+            "centerY": 0.8,
+            "centerYWithoutStatus": -5.5
+          },
+          "status": { "height": 4.6, "centerY": -10.5 },
+          "minimumHeight": 2.4,
+          "warningHeight": 4.5,
+          "maxCharacters": 120
+        }
+      }
+    }
+  ]
+}
