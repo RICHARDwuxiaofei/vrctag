@@ -1,0 +1,48 @@
+
+> vrc-tag-studio@0.1.0 test
+> node --import tsx --test --test-isolation=none tests/*.test.ts
+
+✔ queued style switches and text edits coalesce to final config (176.363412ms)
+✔ export during switch uses captured style and text; later preview stays independent (458.847458ms)
+✔ failed model resource can recover on next same-style request (135.719496ms)
+✔ same-value rebuilds and repeated exports produce correctly correlated responses (399.459392ms)
+✔ all original supported codepoints survive the renamed OFL partitions (276.596501ms)
+✔ default font loads under 500KB and repeated requests reuse cache (286.44029ms)
+✔ failed font request can retry, and uncommon CJK is loaded on demand (21.868898ms)
+✔ native fetch receiver stays global rather than the FontStore instance (8.124622ms)
+✔ GLB loads with original parts and physical meter bounds (6.691931ms)
+✔ CFS4 keeps seven independent parts, with four material slots (0.36301ms)
+✔ custom dot and filament mapping remain independent (0.189384ms)
+✔ full visual palette remains opt-in and invalid slots/colors are rejected (0.259916ms)
+✔ F-01: a positive exterior cannot hide an isolated inverted shell (0.425717ms)
+✔ nested inward cavity is legal, outward enclosed shell is not (0.601345ms)
+✔ solid island within a cavity has even depth and positive volume (0.260347ms)
+✔ intersecting and coplanar-overlapping solid shells are rejected (0.314198ms)
+✔ disjoint valid shells and a positive single shell remain valid (0.2513ms)
+✔ coplanar triangles sharing an edge cannot overlap in positive area (0.596816ms)
+✔ closed printable text: Amy (163.535771ms)
+✔ closed printable text: Nagikokoro (225.09455ms)
+✔ closed printable text: A Very Long English Display Name (410.001196ms)
+✔ closed printable text: 小凪心 (144.441024ms)
+✔ closed printable text: ナギココロ (195.98799ms)
+✔ closed printable text: Nagi_心こんにちは (332.435658ms)
+✔ optional pronouns, centering, friend material isolation, independent color (825.616216ms)
+✔ invalid, unsupported, too-small text never produces successful export (144.728893ms)
+✔ 3MF package has millimeter assembly, colors, independent parts and metadata (636.62112ms)
+✔ classic: default, multilingual, long text, optional rows and serialized samples (2436.250646ms)
+✔ classic: all statuses, independent custom color, immutable geometry and friend isolation (3086.313526ms)
+✔ classic: GLB real loader, original parts and physical dimensions (11.761746ms)
+✔ native: default, multilingual, long text, optional rows and serialized samples (2610.436163ms)
+✔ native: all statuses, independent custom color, immutable geometry and friend isolation (3552.785259ms)
+✔ native: GLB real loader, original parts and physical dimensions (11.093987ms)
+✔ configuration migration, full roundtrip and style validation (0.639566ms)
+✔ mismatched style/base and stale style/export cannot succeed (110.548049ms)
+✔ Native two-line centers match the manually calibrated 30% plate-height rhythm (272.567884ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18727.933718

@@ -38,3 +38,11 @@ web/src 的界面、文字挤出、网格校验、3MF 装配写入及 Worker 由
 开发工具 Vite（MIT）、TypeScript（Apache-2.0）、tsx（MIT）和类型声明保留各自包许可。Playwright 测试包曾安装用于检查环境；实际 GUI 验收使用 Codex 的浏览器控制。未下载新的浏览器或切片软件。package-lock 固定全部依赖；新增资源均自托管，无第三方 CDN、分析脚本或上传端点。
 
 3MF 结构参考官方 Core 1.4 规范：https://github.com/3MFConsortium/spec_core/blob/master/3MF%20Core%20Specification.md 。本次手工独立实现 writer，没有复制旧生成器的 3MF 代码，也未声称得到 3MF Consortium 认证。
+
+## 2026-11-03 双样式来源补充
+
+Classic 从 `1f7a159` 的网页版原创生成逻辑恢复，四个部件顶点及三角形逐项相同；该历史来源是本次原创网页模型，绝非 WiseWolf 桌面模板。Native 使用独立的不同端半径/平滑公切线轮廓、头像凹口及新布局参数。共同源参数在 `web/src/styles.catalog.json`，独立源分别为 `studio/classic.blend` 和 `studio/native.blend`，资源位于 `web/public/assets/styles/<id>/`。旧 `studio/vrc-tag-original.blend` 与根第三方历史资源均保持原样。
+
+对照页面、缩略图及六张正面/透视/好友图均为本次原创模型真实 Blender 渲染，临时演示文字来自现有 Noto 派生字体轮廓并未保存到基础源。没有新增第三方头像/贴图/Logo，未公开分发参考截图。Native 的比例来自对话截图手工近似分析，非现有网格提取，也不宣称一比一或权利认证。新第一方最终许可证仍待拥有者决定，未改变根 LICENSE 或旧许可。
+
+模型材料现共用 sRGB HEX，由 Blender 显式转线性；中性灰替换先前青绿色底板。状态点绿色仅代表 Online。详见 [双样式验收与来源记录](STYLES-2026-11-03.md)。

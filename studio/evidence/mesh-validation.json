@@ -21,13 +21,13 @@
     "valid": true,
     "badEdges": 0,
     "degenerate": 0,
-    "volume": 553.88947283718,
+    "volume": 361.6531337808773,
     "nonManifoldVertices": 0,
     "intersections": 0,
     "shells": [
       {
-        "triangles": 714,
-        "volume": 553.88947283718,
+        "triangles": 380,
+        "volume": 361.6531337808773,
         "depth": 0
       }
     ],
@@ -38,13 +38,13 @@
     "valid": true,
     "badEdges": 0,
     "degenerate": 0,
-    "volume": 90.3674187393401,
+    "volume": 163.24619901119675,
     "nonManifoldVertices": 0,
     "intersections": 0,
     "shells": [
       {
-        "triangles": 826,
-        "volume": 90.3674187393401,
+        "triangles": 768,
+        "volume": 163.24619901119675,
         "depth": 0
       }
     ],
@@ -55,13 +55,13 @@
     "valid": true,
     "badEdges": 0,
     "degenerate": 0,
-    "volume": 38.45704049616054,
+    "volume": 19.620939768396052,
     "nonManifoldVertices": 0,
     "intersections": 0,
     "shells": [
       {
         "triangles": 380,
-        "volume": 38.45704049616054,
+        "volume": 19.620939768396052,
         "depth": 0
       }
     ],
@@ -78,7 +78,7 @@
     "shells": [
       {
         "triangles": 116,
-        "volume": 19.83940816140126,
+        "volume": 19.83940816140125,
         "depth": 0
       },
       {
@@ -98,7 +98,7 @@
       },
       {
         "triangles": 124,
-        "volume": 1.5712201406316932,
+        "volume": 1.5712201406316928,
         "depth": 0
       },
       {
@@ -108,7 +108,7 @@
       },
       {
         "triangles": 256,
-        "volume": 13.19963082196921,
+        "volume": 13.199630821969215,
         "depth": 0
       },
       {
@@ -118,7 +118,7 @@
       },
       {
         "triangles": 256,
-        "volume": 13.199630821969228,
+        "volume": 13.199630821969224,
         "depth": 0
       },
       {
@@ -128,7 +128,7 @@
       },
       {
         "triangles": 256,
-        "volume": 13.199630821969219,
+        "volume": 13.199630821969212,
         "depth": 0
       }
     ],
@@ -139,23 +139,23 @@
     "valid": true,
     "badEdges": 0,
     "degenerate": 0,
-    "volume": 20.38662686022487,
+    "volume": 13.047441190543921,
     "nonManifoldVertices": 0,
     "intersections": 0,
     "shells": [
       {
         "triangles": 376,
-        "volume": 8.94041240751324,
+        "volume": 5.721863940808483,
         "depth": 0
       },
       {
         "triangles": 440,
-        "volume": 8.066200943770385,
+        "volume": 5.1623686040130465,
         "depth": 0
       },
       {
         "triangles": 164,
-        "volume": 3.3800135089412437,
+        "volume": 2.163208645722392,
         "depth": 0
       }
     ],

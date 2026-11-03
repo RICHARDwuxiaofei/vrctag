@@ -1,0 +1,39 @@
+{
+  "reference": "User-provided VRChat nameplate screenshot with speaking gold outline, visible in conversation",
+  "measurement": "Manual approximate proportions from displayed image; not a programmatic pixel measurement",
+  "localReferenceFileAvailable": false,
+  "referenceImageRedistributed": false,
+  "referenceEstimates": {
+    "bodyWidthOverHeight": 3,
+    "avatarDiameterOverHeight": 0.8,
+    "dotDiameterOverHeightRange": [
+      0.18,
+      0.2
+    ],
+    "nameGlyphHeightOverHeight": 0.28,
+    "secondLineHeightOverHeight": 0.13,
+    "twoLineCenterDistanceOverHeight": 0.3
+  },
+  "styles": [
+    {
+      "id": "classic",
+      "bodyWidthOverHeight": 3.1578947368421053,
+      "avatarDiameterOverHeight": 0.631578947368421,
+      "dotDiameterOverHeight": 0.13157894736842105,
+      "nameGlyphHeightOverHeight": 0.2631578947368421,
+      "pronounsHeightOverHeight": 0.09736842105263159,
+      "frameWidthMm": 2,
+      "defaultTwoLineCenterDistanceOverHeight": 0.3815789473684211
+    },
+    {
+      "id": "native",
+      "bodyWidthOverHeight": 2.95,
+      "avatarDiameterOverHeight": 0.8,
+      "dotDiameterOverHeight": 0.18,
+      "nameGlyphHeightOverHeight": 0.27999999999999997,
+      "pronounsHeightOverHeight": 0.13,
+      "frameWidthMm": 0.7,
+      "defaultTwoLineCenterDistanceOverHeight": 0.3
+    }
+  ]
+}

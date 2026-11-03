@@ -1,0 +1,1039 @@
+
+> vrc-tag-studio@0.1.0 test:review
+> node --import tsx tests/review-matrix.ts
+
+{
+  "testedSourceCommit": "698318a8ff98a81168cc55d8823465af0c97218e",
+  "date": "2026-11-03 Asia/Hong_Kong",
+  "fontParseMs": 506.58,
+  "summary": {
+    "total": 43,
+    "pass": 43,
+    "fail": 0
+  },
+  "results": [
+    {
+      "id": "text-0",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 248.45,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-1",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 262.09,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-2",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 266.99,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-3",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 173.16,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-4",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 228.59,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-5",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 353.68,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 8.728500675371455,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-6",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 242.57,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-7",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 268.96,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-8",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 243.73,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-9",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 341.95,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 8.154575282537367,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-10",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 174.28,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "text-11",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 129.74,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Online-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 279.19,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Online-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 271.71,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Join-Me-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 276.75,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Join-Me-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 279.13,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Ask-Me-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 275.07,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Ask-Me-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 274.78,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Busy-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 271.73,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Busy-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 276.39,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Offline-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 314.82,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Offline-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 268.92,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-22",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 224.45,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-23",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 235.65,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-24",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 260.56,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 8,
+        "Pronouns": 3.7,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Pronouns 采样细笔画约 0.36 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Pronouns 高 3.7 mm；细笔画可能小于 0.4 mm，请检查切片。",
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-25",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 282.12,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 8,
+        "Pronouns": 3.7,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Pronouns 采样细笔画约 0.36 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Pronouns 高 3.7 mm；细笔画可能小于 0.4 mm，请检查切片。",
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-26",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 283.03,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 8,
+        "Pronouns": 3.7,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Pronouns 采样细笔画约 0.35 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Pronouns 高 3.7 mm；细笔画可能小于 0.4 mm，请检查切片。",
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-27",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 347.98,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 8,
+        "Pronouns": 3.6999999999999997,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Pronouns 采样细笔画约 0.24 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Pronouns 高 3.7 mm；细笔画可能小于 0.4 mm，请检查切片。",
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "no-status-no-pronouns",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 185.96,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name"
+      ],
+      "textHeights": {
+        "Name": 10
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "custom-color-independent",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 222.15,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "empty",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.07,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "请输入显示名称。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 请输入显示名称。"
+    },
+    {
+      "id": "whitespace",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.01,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "请输入显示名称。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 请输入显示名称。"
+    },
+    {
+      "id": "emoji",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 1.27,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Status_Text": 4
+      },
+      "errors": [
+        "字体不支持字符「🙂」，请替换后导出。"
+      ],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": "Error: 字体不支持字符「🙂」，请替换后导出。"
+    },
+    {
+      "id": "tooLong",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.01,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "单个文字字段最多 120 个字符。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 单个文字字段最多 120 个字符。"
+    },
+    {
+      "id": "tooSmall",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 29.13,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 0.5709699168459242,
+        "Status_Text": 4
+      },
+      "errors": [
+        "Name 缩放后仅 0.6 mm 高，请缩短文字。"
+      ],
+      "warnings": [
+        "Name 采样细笔画约 0.09 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": "Error: Name 缩放后仅 0.6 mm 高，请缩短文字。"
+    },
+    {
+      "id": "longPronouns",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.02,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "单个文字字段最多 120 个字符。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 单个文字字段最多 120 个字符。"
+    },
+    {
+      "id": "zeroWidth",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 1.12,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Status_Text": 4
+      },
+      "errors": [
+        "字体不支持字符「​」，请替换后导出。"
+      ],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": "Error: 字体不支持字符「​」，请替换后导出。"
+    },
+    {
+      "id": "nonColor",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 210.25,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 10,
+        "Status_Text": 4
+      },
+      "errors": [],
+      "warnings": [
+        "Status_Text 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Status_Text 高 4.0 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "exportError": "Error: 无效打印耗材颜色"
+    },
+    {
+      "id": "mesh-open",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 3,
+        "degenerate": 0,
+        "volume": 0,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [],
+        "issues": [
+          "open/inconsistently oriented/degenerate triangles"
+        ]
+      }
+    },
+    {
+      "id": "mesh-reversed",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 0,
+        "degenerate": 0,
+        "volume": -12747.916350828425,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [
+          {
+            "triangles": 388,
+            "volume": -12747.916350828425,
+            "depth": 0
+          }
+        ],
+        "issues": [
+          "shell 0: wrong orientation at nesting depth 0"
+        ]
+      }
+    },
+    {
+      "id": "mesh-nonfinite",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 0,
+        "degenerate": 1,
+        "volume": 0,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [],
+        "issues": [
+          "empty/nonfinite mesh"
+        ]
+      }
+    },
+    {
+      "id": "mesh-outOfRange",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 3,
+        "degenerate": 1,
+        "volume": 0,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [],
+        "issues": [
+          "open/inconsistently oriented/degenerate triangles"
+        ]
+      }
+    },
+    {
+      "id": "mesh-disconnected-inward-shell",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 0,
+        "degenerate": 0,
+        "volume": 1.1666666666666665,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [
+          {
+            "triangles": 4,
+            "volume": 1.3333333333333333,
+            "depth": 0
+          },
+          {
+            "triangles": 4,
+            "volume": -0.16666666666666666,
+            "depth": 0
+          }
+        ],
+        "issues": [
+          "shell 1: wrong orientation at nesting depth 0"
+        ]
+      },
+      "scope": "Synthetic validator diagnostic; not confirmed normal UI output"
+    }
+  ],
+  "limits": [
+    "Node timings are not browser/mobile performance measurements",
+    "No slicer or printer used",
+    "No self-intersection or minimum-stroke certification"
+  ]
+}

@@ -21,3 +21,9 @@ Plan: original 120 × 38 mm capsule, 3 mm body; coplanar interfaces for relief c
 F-01 壳体方向/空腔/交叉检查，F-02 头像错误隔离，Blender 30mm 头像/1mm 框/7mm 状态点/5.2mm Pronouns，四槽材料映射，Worker/导出快照与本地字体分块已完成。代码检查点 974e13c。TypeScript/build PASS，单元测试 23/23，原诊断 43/43，Python 回归 6/6，独立 3MF 35/35，真实浏览器桌面/窄视口及故障恢复 PASS。
 
 完整证据、原样 XSD 编译限制、Blender 后台退出问题及切片 NOT_TESTED 见 [修复报告](FIXES-2026-11-03.md)。保留 Draft PR，不自动合并/部署/Release。
+
+## 2026-11-03 双样式升级
+
+实现 Classic / Native 可扩展注册表、两套原创 Blender 源/GLB/JSON、缩略图卡片、保留字段的切换、版本 2 JSON 导出/恢复及默认 Classic 重置。修正材质偏绿和打印配色预览中的非打印头像叠图；旧壳体、错误隔离、字体、快照及四槽修复保留。
+
+36/36 单元测试、43/43 诊断、6/6 Python 壳体回归、66/66 独立 3MF、两套 Blender 重开/几何/材质检查通过。真实浏览器 URL 被工具安全策略拒绝，本轮 GUI 和截图 BLOCKED / NOT_TESTED；无替代浏览器绕过。切片器、物理打印及真实手机仍 NOT_TESTED。详见 [双样式报告](STYLES-2026-11-03.md)。保持 Draft PR，不合并/部署/Release。
