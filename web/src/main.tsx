@@ -74,6 +74,7 @@ function App() {
   const [showPrintColors, setShowPrintColors] = useState(false);
   const [workerGeneration, setWorkerGeneration] = useState(0);
   const [completedKey, setCompletedKey] = useState("");
+  const completedRevision = useRef(-1);
   const worker = useRef<Worker | null>(null);
   const revision = useRef(0),
     sequence = useRef(0),
@@ -122,6 +123,10 @@ function App() {
         return;
       }
       if (r.id !== revision.current) return;
+      completedRevision.current =
+        !r.error && r.design?.parts.length && !r.design.errors.length
+          ? r.id
+          : -1;
       setBusy(false);
       setCompletedKey(r.key ?? "");
       if (r.error) {
@@ -134,6 +139,7 @@ function App() {
     };
     w.onerror = () => {
       if (!active) return;
+      completedRevision.current = -1;
       setModelError("建模线程异常，请点击重新加载建模资源。");
       setBusy(false);
       if (exportRequest.current) setExportError("导出中断，请重试。");
@@ -160,6 +166,7 @@ function App() {
   const beginExport = () => {
     if (
       exportRequest.current ||
+      completedRevision.current !== revision.current ||
       busy ||
       completedKey !== configKey ||
       !design?.parts.length ||
