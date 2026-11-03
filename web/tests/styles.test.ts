@@ -109,6 +109,22 @@ for (const style of styles) {
       const texts = d.parts.filter((p) =>
         ["Name", "Pronouns", "Status_Text"].includes(p.name),
       );
+      const dot = d.parts.find((p) => p.name === "Status_Dot")!;
+      const bounds = (p: typeof dot, axis: number) => [
+        Math.min(...p.vertices.map((v) => v[axis])),
+        Math.max(...p.vertices.map((v) => v[axis])),
+      ];
+      for (const text of texts) {
+        const separated = [0, 1].some((axis) => {
+          const a = bounds(text, axis),
+            b = bounds(dot, axis);
+          return a[1] < b[0] || b[1] < a[0];
+        });
+        assert(
+          separated,
+          `${sample.id}: text must keep a clear band or lane beside the status dot`,
+        );
+      }
       for (let i = 0; i < texts.length; i++)
         for (let j = i + 1; j < texts.length; j++) {
           const lo = (p: (typeof texts)[number]) =>

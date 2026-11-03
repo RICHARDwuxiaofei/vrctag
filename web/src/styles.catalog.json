@@ -67,12 +67,12 @@
             "heightWithPronouns": 9.5,
             "centerYWithPronouns": 8.5,
             "centerYWithoutStatus": 0,
-            "centerYWithPronounsWithoutStatus": 5
+            "centerYWithPronounsWithoutStatus": 6
           },
           "pronouns": {
             "height": 4.8,
             "centerY": 0.8,
-            "centerYWithoutStatus": -5
+            "centerYWithoutStatus": -2
           },
           "status": {
             "height": 4.5,
