@@ -1,0 +1,50 @@
+{
+  "basis": "Logical file bytes; excludes .git/node_modules/dist from tracked-tree comparison. Disk snapshot includes ignored files and dependencies. Snapshot before report commit; no history rewritten.",
+  "before": {
+    "commit": "106f547440b011836195460338c99deb3a2163e6",
+    "tracked": {
+      "files": 956,
+      "bytes": 82266671
+    },
+    "evidence": {
+      "files": 708,
+      "bytes": 46933858
+    },
+    "diskLogicalFileBytes": {
+      "workingDirectory": {
+        "files": 3891,
+        "bytes": 234864387
+      },
+      "gitHistory": {
+        "files": 1276,
+        "bytes": 67651010
+      }
+    }
+  },
+  "after": {
+    "trackedTreeIncludingNewDeliverables": {
+      "files": 540,
+      "bytes": 52001524
+    },
+    "evidence": {
+      "files": 290,
+      "bytes": 16650437
+    },
+    "diskLogicalFileBytes": {
+      "workingDirectory": {
+        "files": 3565,
+        "bytes": 204968218
+      },
+      "gitHistory": {
+        "files": 1337,
+        "bytes": 67724845
+      }
+    }
+  },
+  "allocatedDiskKiBSnapshot": [
+    "69604\t.git",
+    "20100\tstudio/evidence",
+    "17760\tweb/dist",
+    "104892\tweb/node_modules"
+  ]
+}

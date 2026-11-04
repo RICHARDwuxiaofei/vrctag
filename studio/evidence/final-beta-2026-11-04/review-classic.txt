@@ -3,9 +3,9 @@
 > node --import tsx tests/review-matrix.ts
 
 {
-  "testedSourceCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61",
-  "date": "2026-11-03 Asia/Hong_Kong",
-  "fontParseMs": 485.54,
+  "testedSourceCommit": "6680b8cdabbe27a0390b2e2a221195b2f0d20ab0",
+  "date": "2026-11-04T04:43:28.136Z",
+  "fontParseMs": 449.3,
   "summary": {
     "total": 43,
     "pass": 43,
@@ -17,7 +17,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 291.62,
+      "elapsedMs": 262.92,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -40,7 +40,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 315.08,
+      "elapsedMs": 308.77,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -63,7 +63,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 339.6,
+      "elapsedMs": 315.28,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -86,7 +86,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 221.01,
+      "elapsedMs": 214.87,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -109,7 +109,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 313.85,
+      "elapsedMs": 289.91,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -132,7 +132,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 394.65,
+      "elapsedMs": 377.82,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -155,7 +155,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 269.62,
+      "elapsedMs": 257.09,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -178,7 +178,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 293.97,
+      "elapsedMs": 283.54,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -201,7 +201,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 289.17,
+      "elapsedMs": 269.4,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -224,7 +224,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 374.04,
+      "elapsedMs": 355.25,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -247,7 +247,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 215.82,
+      "elapsedMs": 202.88,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -270,7 +270,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 171.63,
+      "elapsedMs": 160.97,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -293,7 +293,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 330.17,
+      "elapsedMs": 301.69,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -316,7 +316,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 328.36,
+      "elapsedMs": 300.69,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -339,7 +339,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 348.45,
+      "elapsedMs": 302.31,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -362,7 +362,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 335.29,
+      "elapsedMs": 309.72,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -385,7 +385,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 342.38,
+      "elapsedMs": 316.91,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -408,7 +408,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 361.92,
+      "elapsedMs": 334.81,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -431,7 +431,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 305.61,
+      "elapsedMs": 299.1,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -454,7 +454,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 312.4,
+      "elapsedMs": 295.7,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -477,7 +477,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 308.95,
+      "elapsedMs": 292.64,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -500,7 +500,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 306.64,
+      "elapsedMs": 293.19,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -523,7 +523,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 253.32,
+      "elapsedMs": 247.96,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -546,7 +546,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 254.51,
+      "elapsedMs": 251.51,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -569,7 +569,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 284.83,
+      "elapsedMs": 278.42,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -594,7 +594,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 318.24,
+      "elapsedMs": 305.89,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -619,7 +619,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 318.39,
+      "elapsedMs": 338.98,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -644,7 +644,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 360.58,
+      "elapsedMs": 356.76,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -671,7 +671,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 215.41,
+      "elapsedMs": 214.25,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -692,7 +692,7 @@
       "expected": "accept",
       "accepted": true,
       "status": "PASS",
-      "elapsedMs": 254.07,
+      "elapsedMs": 252.71,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -743,7 +743,7 @@
       "expected": "reject",
       "accepted": false,
       "status": "PASS",
-      "elapsedMs": 1.22,
+      "elapsedMs": 1.23,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -780,7 +780,7 @@
       "expected": "reject",
       "accepted": false,
       "status": "PASS",
-      "elapsedMs": 26.39,
+      "elapsedMs": 28.12,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -821,7 +821,7 @@
       "expected": "reject",
       "accepted": false,
       "status": "PASS",
-      "elapsedMs": 1.17,
+      "elapsedMs": 1.12,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
@@ -844,7 +844,7 @@
       "expected": "reject",
       "accepted": false,
       "status": "PASS",
-      "elapsedMs": 242.47,
+      "elapsedMs": 238.13,
       "parts": [
         "Plate_Rim",
         "Plate_Body",
