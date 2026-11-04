@@ -1,0 +1,32 @@
+[
+  {
+    "check": "typecheck",
+    "exitCode": 0,
+    "seconds": 1.47,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  },
+  {
+    "check": "unit-tests",
+    "exitCode": 0,
+    "seconds": 20.96,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  },
+  {
+    "check": "review-classic",
+    "exitCode": 0,
+    "seconds": 10.59,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  },
+  {
+    "check": "review-native",
+    "exitCode": 0,
+    "seconds": 9.84,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  },
+  {
+    "check": "build",
+    "exitCode": 0,
+    "seconds": 4.27,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  }
+]

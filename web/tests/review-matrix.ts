@@ -207,7 +207,7 @@ const result = {
   testedSourceCommit:
     process.env.SOURCE_COMMIT ??
     "unrecorded (set SOURCE_COMMIT when recording evidence)",
-  date: "2026-11-03 Asia/Hong_Kong",
+  date: new Date().toISOString(),
   fontParseMs: +fontParseMs.toFixed(2),
   summary: {
     total: results.length,

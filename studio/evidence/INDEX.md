@@ -27,7 +27,7 @@
 
 ```sh
 mkdir -p /tmp/vrctag-evidence-recovery
-git show 106f547440b011836195460338c99deb3a2163e6:studio/evidence/beta-2026-11-04/regressions/classic-default.3mf > /tmp/vrctag-evidence-recovery/example.3mf
+git show 106f547440b011836195460338c99deb3a2163e6:studio/evidence/beta-2026-11-04/regressions/classic-Ask-Me-false.3mf > /tmp/vrctag-evidence-recovery/example.3mf
 ```
 
-先确认路径存在于清单；上述文件名仅演示语法，应替换成真实归档路径。需要重跑历史脚本时，可另建只读参考 checkout 或将输入恢复到独立目录；不要把大批量生成物重新提交。
+先确认路径存在于清单；上述命令使用清单中真实归档文件；可替换为其他条目的路径。需要重跑历史脚本时，可另建只读参考 checkout 或将输入恢复到独立目录；不要把大批量生成物重新提交。

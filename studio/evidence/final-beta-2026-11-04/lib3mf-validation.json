@@ -1,0 +1,1423 @@
+{
+  "version": [
+    2,
+    5,
+    0
+  ],
+  "source": "3MFConsortium/lib3mf v2.5.0 official Linux wheel",
+  "strictMode": true,
+  "results": [
+    {
+      "file": "classic-cfs4-custom.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EEEEEE",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#16171B",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#16171B",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EEEEEE",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#51B44B",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#FFCE40",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 430,
+          "triangles": 836,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EEEEEE",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EEEEEE",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-chinese.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 538,
+          "triangles": 1040,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EDC448",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-custom-status.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#123456",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EDC448",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 1108,
+          "triangles": 2216,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-default.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EDC448",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-friend-pronouns.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#FFD45D",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 770,
+          "triangles": 1512,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-japanese.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 864,
+          "triangles": 1708,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EDC448",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-long.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 3340,
+          "triangles": 6612,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EDC448",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-mixed.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 2348,
+          "triangles": 4636,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EDC448",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 1176,
+          "triangles": 2332,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "classic-visual.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "vertices": 596,
+          "triangles": 1192,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Plate_Body",
+          "vertices": 298,
+          "triangles": 592,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#1C1D21",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#383A40",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 384,
+          "triangles": 768,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#FFD45D",
+          "propertyID": 5,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 692,
+          "triangles": 1364,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#E7E8EC",
+          "propertyID": 1,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-cfs4-custom.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#16171B",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#16171B",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EEEEEE",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#51B44B",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#FFCE40",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 430,
+          "triangles": 836,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EEEEEE",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#EEEEEE",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-chinese.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 538,
+          "triangles": 1040,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-custom-status.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#123456",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 1108,
+          "triangles": 2216,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-default.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-friend-pronouns.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#FFD45D",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 770,
+          "triangles": 1512,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-japanese.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 864,
+          "triangles": 1708,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-long.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 3340,
+          "triangles": 6612,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-mixed.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 2348,
+          "triangles": 4636,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 1176,
+          "triangles": 2332,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#F3F6ED",
+          "propertyID": 2,
+          "materialGroup": 1
+        }
+      ]
+    },
+    {
+      "file": "native-visual.3mf",
+      "status": "PASS",
+      "warnings": [],
+      "unit": "1",
+      "singleAssembly": true,
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "vertices": 200,
+          "triangles": 396,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#17181C",
+          "propertyID": 1,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Back",
+          "vertices": 366,
+          "triangles": 728,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#35363C",
+          "propertyID": 2,
+          "materialGroup": 1
+        },
+        {
+          "name": "Avatar_Frame",
+          "vertices": 398,
+          "triangles": 792,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#62646C",
+          "propertyID": 3,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Dot",
+          "vertices": 192,
+          "triangles": 380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#2ED319",
+          "propertyID": 4,
+          "materialGroup": 1
+        },
+        {
+          "name": "Name",
+          "vertices": 1200,
+          "triangles": 2380,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#FFD45D",
+          "propertyID": 5,
+          "materialGroup": 1
+        },
+        {
+          "name": "Pronouns",
+          "vertices": 692,
+          "triangles": 1364,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#C6C8CE",
+          "propertyID": 6,
+          "materialGroup": 1
+        },
+        {
+          "name": "Status_Text",
+          "vertices": 488,
+          "triangles": 980,
+          "valid": true,
+          "manifoldOriented": true,
+          "color": "#B9BBC2",
+          "propertyID": 7,
+          "materialGroup": 1
+        }
+      ]
+    }
+  ]
+}

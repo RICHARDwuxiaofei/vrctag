@@ -1,0 +1,89 @@
+{
+  "browserGUI": "BLOCKED",
+  "basis": "Prior explicit browser-tool security refusal for the local page; not retried through another browser, raw protocol, HTTP scraping, or other control path. This run makes no new GUI-pass claim.",
+  "viewports": [
+    "desktop 1440",
+    "390",
+    "320"
+  ],
+  "cases": [
+    {
+      "case": "Classic/Native switch",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "rapid and multilingual names",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "friend/nonfriend",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "none/preset/custom pronouns",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "custom status and five dot states",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "avatar upload/remove/retry",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "corrupt avatar export recovery",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "CFS4 allocation",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "configuration retained across style switches",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "JSON export/restore/migration",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "edit while exporting",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "double export",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "worker recovery",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "desktop/mobile layout",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    },
+    {
+      "case": "avatar/network privacy",
+      "actualBrowserStatus": "BLOCKED",
+      "offlineCoverage": "See unit tests, worker/config regressions, Beta export matrix and source audit; not GUI proof"
+    }
+  ],
+  "run": "Final Beta review 2026-11-04",
+  "manualChecklist": "docs/GUI_ACCEPTANCE_CHECKLIST.md",
+  "newScreenshots": []
+}
