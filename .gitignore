@@ -22,16 +22,12 @@ web/test-results/
 web/playwright-report/
 
 *.tsbuildinfo
-!studio/evidence/*.3mf
-!studio/evidence/review-2026-11-02/*.3mf
-!studio/evidence/fixes-2026-11-03/*.3mf
-!studio/evidence/dual-style-2026-11-03/*.3mf
 
 # Mixed-license records and current Beta fixtures.
 !/LICENSES/
 !/LICENSES/**/
 !/legacy/
 !/legacy/**/
-!studio/evidence/beta-2026-11-04/samples/*.3mf
-!studio/evidence/beta-2026-11-04/regressions/*.3mf
-!studio/evidence/beta-2026-11-04/orca/*-*-assigned-sliced.3mf
+
+# Test output is disposable. Curated tracked 3MF fixtures remain tracked.
+studio/generated/

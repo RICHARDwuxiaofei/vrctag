@@ -10,7 +10,7 @@ import { buildDesign, defaults, type Base, type Config } from "../src/model.ts";
 import { export3mf } from "../src/export.ts";
 import { materialPlan } from "../src/materials.ts";
 const out = new URL(
-  "../../studio/evidence/beta-2026-11-04/samples/",
+  process.env.VRC_TEST_EVIDENCE_URL ?? "../test-results/beta/samples/",
   import.meta.url,
 );
 mkdirSync(out, { recursive: true });

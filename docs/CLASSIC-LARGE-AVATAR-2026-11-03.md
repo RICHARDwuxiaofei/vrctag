@@ -71,7 +71,7 @@
 
 - 源：[Classic](../studio/classic.blend)、[Native](../studio/native.blend)；[布局/几何注册表](../web/src/styles.catalog.json)。
 - 网页：[运行说明](../web/README.md)，`npm --prefix web run dev`；静态构建 `npm --prefix web run build`；[部署说明](STATIC_DEPLOY.md)。本次没有上线或修改服务器。
-- 样例：[Classic 默认](../studio/evidence/classic-large-avatar-2026-11-03/classic-default.3mf)、[Classic Friend + Pronouns](../studio/evidence/classic-large-avatar-2026-11-03/classic-friend-pronouns.3mf)、[Native 默认](../studio/evidence/classic-large-avatar-2026-11-03/native-default.3mf)、[Native Friend + Pronouns](../studio/evidence/classic-large-avatar-2026-11-03/native-friend-pronouns.3mf)。其余中/日/混排/长名字/状态样例同目录。
+- 样例：[Classic 默认](../studio/evidence/classic-large-avatar-2026-11-03/classic-default.3mf)、[Classic Friend + Pronouns](https://github.com/RICHARDwuxiaofei/vrctag/blob/106f547440b011836195460338c99deb3a2163e6/studio/evidence/classic-large-avatar-2026-11-03/classic-friend-pronouns.3mf)、[Native 默认](https://github.com/RICHARDwuxiaofei/vrctag/blob/106f547440b011836195460338c99deb3a2163e6/studio/evidence/classic-large-avatar-2026-11-03/native-default.3mf)、[Native Friend + Pronouns](https://github.com/RICHARDwuxiaofei/vrctag/blob/106f547440b011836195460338c99deb3a2163e6/studio/evidence/classic-large-avatar-2026-11-03/native-friend-pronouns.3mf)。其余中/日/混排/长名字/状态样例同目录。
 - 参考署名：[reference/NOTICE.md](../studio/evidence/classic-large-avatar-2026-11-03/reference/NOTICE.md)，原作 WiseWolf，CC BY-NC-SA 4.0。根 LICENSE 不变。
 
 ## 剩余验收与风险

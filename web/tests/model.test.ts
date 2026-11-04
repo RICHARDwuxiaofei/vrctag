@@ -23,7 +23,7 @@ const font = opentype.parse(
   raw.buffer.slice(raw.byteOffset, raw.byteOffset + raw.byteLength),
 );
 const evidence = new URL(
-  process.env.VRC_TEST_EVIDENCE_URL ?? "../../studio/evidence/classic-large-avatar-2026-11-03/integration/",
+  process.env.VRC_TEST_EVIDENCE_URL ?? "../test-results/integration/",
   import.meta.url,
 );
 mkdirSync(evidence, { recursive: true });

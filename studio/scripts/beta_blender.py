@@ -11,8 +11,10 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).parent))
 from check_styles_blender import check_styles
 p = argparse.ArgumentParser(); p.add_argument('--mode', choices=['check','demo'], required=True)
+p.add_argument('--output', type=Path, help='Check copies/logs; use a disposable output directory')
 args = p.parse_args(sys.argv[sys.argv.index('--')+1:])
-out = ROOT/'studio/evidence/beta-2026-11-04'
+out = args.output or ROOT/('studio/generated/blender-check' if args.mode=='check' else 'studio/evidence/beta-2026-11-04')
+out.mkdir(parents=True, exist_ok=True)
 catalog = json.loads((ROOT/'web/src/styles.catalog.json').read_text())
 def mesh_report(obj):
     bm=bmesh.new();bm.from_mesh(obj.data)

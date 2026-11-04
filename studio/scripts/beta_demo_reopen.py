@@ -2,8 +2,8 @@
 # Copyright (c) 2026 RICHARDwuxiaofei
 """Read-only persisted demo acceptance, in a separate background Blender."""
 from pathlib import Path
-import json,hashlib,bpy,bmesh
-ROOT=Path(__file__).resolve().parents[2];out=ROOT/'studio/evidence/beta-2026-11-04';reports=[]
+import json,hashlib,os,bpy,bmesh
+ROOT=Path(__file__).resolve().parents[2];out=Path(os.environ.get('VRC_TEST_OUTPUT_DIR',ROOT/'studio/generated/demo-reopen'));out.mkdir(parents=True,exist_ok=True);reports=[]
 for style in ['classic','native']:
  path=ROOT/'studio/demos'/(style+'-nagikokoro.blend');before=hashlib.sha256(path.read_bytes()).hexdigest()
  bpy.ops.wm.open_mainfile(filepath=str(path),use_scripts=False)

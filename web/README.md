@@ -19,7 +19,7 @@ npm run build
 npm exec vite preview -- --host 127.0.0.1 --port 5173
 ```
 
-生产文件全部位于 `web/dist/`，可以单独复制。无需 Python、Blender、账号、数据库、API 或常驻服务。不要直接双击 HTML；Worker 和字体需要 HTTP(S) 加载。默认字体分块约 283KB；其他原字体支持的中日英字形按需加载，同源静态请求不含用户输入。HTTP 条件缓存和 Worker 有界缓存复用分块。所有建模与导出在本机进行。原完整字体仍保留在静态资源中，但运行时不请求。
+生产文件全部位于 `web/dist/`，可以单独复制。无需 Python、Blender、账号、数据库、API 或常驻服务。不要直接双击 HTML；Worker 和字体需要 HTTP(S) 加载。默认字体分块约 283KB；其他原字体支持的中日英字形按需加载，同源静态请求不含用户输入。HTTP 条件缓存和 Worker 有界缓存复用分块。所有建模与导出在本机进行。原完整字体保留在源码供字形测试/构建使用，生产 dist 会自动移除它。
 
 ## 使用
 
@@ -37,7 +37,7 @@ PNG / JPEG / WebP 在本机读取、居中裁切为 512 像素头像（15 MB 上
 
 Core 3MF，毫米单位：OPC 内容类型、根关系、模型、基材颜色、独立网格对象和一个装配 build item。底板平背朝打印床。Classic 浮雕从 Z=2.6 mm 开始，整体 134 × 52 × 4 mm；Native 从 Z=2.8 mm 开始，整体 118 × 40 × 3.6 mm。部件相接而不相互占据体积，是同次多材料打印设计，不是可分拆卡扣。
 
-导入为一个对象的多个部件，检查尺寸，然后将各部件颜色映射到实际耗材。此文件不包含机器、温度、喷嘴或耗材槽位配置，不是已切片工程文件。Creality Print / OrcaSlicer 可能忽略通用基材颜色或需要手工分配；真实导入验收当前 **NOT_TESTED**，总体打印兼容性 **PARTIAL**。最新完整验收见 `../docs/CLASSIC-LARGE-AVATAR-2026-11-03.md`。
+导入为一个对象的多个部件，检查尺寸，然后将各部件颜色映射到实际耗材。此文件不包含机器、温度、喷嘴或耗材槽位配置，不是已切片工程文件。Creality Print / OrcaSlicer 可能忽略通用基材颜色或需要手工分配；OrcaSlicer 2.4.2 的 18 例命令行导入/显式耗材分配/切片已通过；自动耗材映射仍为 **PARTIAL**，需要手工分配。Creality Print、切片器 GUI 逐层预览与实物打印 **NOT_TESTED**。见 [最终报告](../docs/FINAL_BETA_REVIEW.md) 与 [完整 Beta 证据](../docs/BETA_ACCEPTANCE.md)。
 
 默认四槽 CFS 配色允许逐部件共享耗材和四槽自定义 HEX；切片软件仍需手工对应实际槽位。“全部视觉颜色”保留原色，可能超过四种。勾选打印配色预览检查实际材料颜色；会隐藏不打印的头像照片/占位人物。
 
@@ -62,3 +62,5 @@ python3 studio/scripts/validate_3mf.py studio/evidence/browser-custom.3mf
 - `../docs/STATIC_DEPLOY.md`、`SOURCES.md`：部署和许可证边界。
 
 Classic 的 CFS4 默认为黑、白、名称黄/金、状态色；外框与头像框共享白槽，名字保持独立。可自定耗材颜色和映射，切换样式时保留用户显式选择。旧模板只在仓库审核证据中作参考，不进入静态资源；新 Classic 相似设计的许可风险仍未消除，见来源说明。
+
+测试默认输出到被忽略的 `web/test-results/`，不会改写历史证据。可通过 `VRC_TEST_EVIDENCE_URL=file:///绝对路径/` 指定独立输出目录（末尾保留 `/`）。诊断矩阵默认 Classic；用 `REVIEW_STYLE=native npm run test:review` 检查 Native。历史大型中间产物按 [证据索引](../studio/evidence/INDEX.md) 恢复。

@@ -20,7 +20,7 @@ if (!["classic", "native"].includes(reviewStyle))
   throw Error("Unknown diagnostic style");
 const expectedName = reviewStyle === "classic" ? "#edc448" : "#f3f6ed";
 const out = new URL(
-  process.env.VRC_TEST_EVIDENCE_URL ?? "../../studio/evidence/classic-large-avatar-2026-11-03/",
+  process.env.VRC_TEST_EVIDENCE_URL ?? "../test-results/",
   import.meta.url,
 );
 mkdirSync(out, { recursive: true });
@@ -146,7 +146,8 @@ for (const [id, patch] of Object.entries({
   nonColor: { dotColor: "not-a-color" },
 }))
   check(id, patch, false);
-const p = buildDesign({ ...defaults, styleId: reviewStyle }, base, font).parts[0];
+const p = buildDesign({ ...defaults, styleId: reviewStyle }, base, font)
+  .parts[0];
 const defects: Record<string, Part> = {
   open: { ...p, triangles: p.triangles.slice(1) },
   reversed: {

@@ -2,10 +2,15 @@
 // Copyright (c) 2026 RICHARDwuxiaofei
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import opentype from "opentype.js";
 import { FontStore, type FontManifest } from "../src/font-store.ts";
 import { buildDesign, defaults, type Base } from "../src/model.ts";
+const evidence = new URL(
+  process.env.VRC_TEST_EVIDENCE_URL ?? "../test-results/",
+  import.meta.url,
+);
+mkdirSync(evidence, { recursive: true });
 const directory = new URL("../public/assets/fonts/", import.meta.url),
   m: FontManifest = JSON.parse(
     readFileSync(new URL("manifest.json", directory), "utf8"),
@@ -46,10 +51,7 @@ test("all original supported codepoints survive the renamed OFL partitions", () 
     count++;
   }
   writeFileSync(
-    new URL(
-      "../../studio/evidence/fixes-2026-11-03/font-coverage.json",
-      import.meta.url,
-    ),
+    new URL("font-coverage.json", evidence),
     JSON.stringify(
       {
         supportedCodepoints: count,

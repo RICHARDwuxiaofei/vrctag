@@ -22,7 +22,7 @@ const font = opentype.parse(
   ),
 );
 const out = new URL(
-  process.env.VRC_TEST_EVIDENCE_URL ?? "../../studio/evidence/classic-large-avatar-2026-11-03/",
+  process.env.VRC_TEST_EVIDENCE_URL ?? "../test-results/",
   import.meta.url,
 );
 mkdirSync(out, { recursive: true });
