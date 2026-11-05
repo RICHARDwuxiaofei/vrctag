@@ -1,0 +1,3133 @@
+{
+  "archiveCommit": "106f547440b011836195460338c99deb3a2163e6",
+  "before": {
+    "commit": "106f547440b011836195460338c99deb3a2163e6",
+    "tracked": {
+      "files": 956,
+      "bytes": 82266671
+    },
+    "evidence": {
+      "files": 708,
+      "bytes": 46933858
+    },
+    "diskLogicalFileBytes": {
+      "workingDirectory": {
+        "files": 3891,
+        "bytes": 234864387
+      },
+      "gitHistory": {
+        "files": 1276,
+        "bytes": 67651010
+      }
+    }
+  },
+  "removed": [
+    {
+      "path": "studio/evidence/beta-2026-11-04/classic-official-extension-import.blend",
+      "bytes": 203175,
+      "gitBlob": "248108d6e47995bf2f38b858e75cb908a0e2c88b",
+      "sha256": "185efed3f1388d19d276ee5d1db822dfeaaaa80142a65fdf11c0b9716144ca9a",
+      "reason": "Derived reopen/import/export copy; formal source and actual-mesh demo retained"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/classic-reopen-copy.blend",
+      "bytes": 150154,
+      "gitBlob": "ca1291d0aa57c41a17f69f80466682688fa29156",
+      "sha256": "90f01dcc7cdf9fdf908d3b1c3ecd69200d5211c933ed41af35f813b5f8276419",
+      "reason": "Derived reopen/import/export copy; formal source and actual-mesh demo retained"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/classic-reopen-export.glb",
+      "bytes": 146768,
+      "gitBlob": "3a82f875562890e3d2d82a54a0f47c12254ba47b",
+      "sha256": "1540a25e147cd1f12f027d36ae32c708f0589d9a519fb47299c72cf503013097",
+      "reason": "Derived reopen/import/export copy; formal source and actual-mesh demo retained"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/native-official-extension-import.blend",
+      "bytes": 185282,
+      "gitBlob": "918b9f4ab5cae8938af88e696bf9a5a3bcc9fbd4",
+      "sha256": "32240fe23884462e812c5836536396d9eaf2c55f045fd665995dd63abb321861",
+      "reason": "Derived reopen/import/export copy; formal source and actual-mesh demo retained"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/native-reopen-copy.blend",
+      "bytes": 133405,
+      "gitBlob": "6d11f354e98935a03d4d24dcaf28d16bf24fa248",
+      "sha256": "446eaca0d954ee5451d005466be36fccda46d35670a281ca3844410c26328e07",
+      "reason": "Derived reopen/import/export copy; formal source and actual-mesh demo retained"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/native-reopen-export.glb",
+      "bytes": 100904,
+      "gitBlob": "944e01b25f58dc13f353bef4f752c7e16e6a5f0d",
+      "sha256": "62c01a88397fff3effb50c13759516b96c9236b2ae2448d617e1a47e387b968b",
+      "reason": "Derived reopen/import/export copy; formal source and actual-mesh demo retained"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-cfs4-custom-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-cfs4-custom-assigned-sliced.3mf",
+      "bytes": 258613,
+      "gitBlob": "e9357abdac5f13ec9c8fda494ebb947ad8ae3fb0",
+      "sha256": "237de8075eaaca533a82084e8fa975b9da23a287571e1669896285692f771c6b",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-cfs4-custom-core-import.txt",
+      "bytes": 307,
+      "gitBlob": "17406092e6d49365d6e19b84732d0e605467dd6e",
+      "sha256": "bf3acedcc0a5273a667dad9d041b2af68c724c65a0af01863bb06e77bbfbd297",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-cfs4-custom-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-cfs4-custom-gcode-summary.txt",
+      "bytes": 1860,
+      "gitBlob": "9e02417336e0016464658ab03eecd6eaa1a3e6f7",
+      "sha256": "fc2d62261eefc39b5b3a27554ff2c3d91473b023ce6587a9eef634bade3d32bc",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-chinese-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-chinese-assigned-sliced.3mf",
+      "bytes": 222998,
+      "gitBlob": "0622dc48c21cad38f9b8f94e76980c8a7790a613",
+      "sha256": "4636af282a71ccb4f19457e8d72f594e7106b03468530d7a242eac8cf838e60f",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-chinese-core-import.txt",
+      "bytes": 303,
+      "gitBlob": "e22eee3bcbb33adc715e11f8a758fd10c6ae3635",
+      "sha256": "dd6da2f8740c234e3b0f5f8fdff700b21232d8b9487cfacdd504a6110e3e8f0f",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-chinese-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-chinese-gcode-summary.txt",
+      "bytes": 1860,
+      "gitBlob": "30bd50612f168de9e7e1e8099b8f1a6f61895736",
+      "sha256": "9255cc5477ecd6d3533d27ce1919d3d4b06278718d3ff587351a94ee5a988202",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-core-import.txt",
+      "bytes": 303,
+      "gitBlob": "bf920c618901c3bc788f12ec252a12d04fe6fe1d",
+      "sha256": "c1afbc58c2607bd87b9c14a4dd80860952b96d833c6b2b4181c3f905f8782f8d",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-custom-status-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-custom-status-assigned-sliced.3mf",
+      "bytes": 272318,
+      "gitBlob": "0be3b17e7c71281e6c2f2e42e515f6f66c25c742",
+      "sha256": "c19d2aca5c991e109b027fee700ba2fa0cc385876050d7d95481f3b7c8b46836",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-custom-status-core-import.txt",
+      "bytes": 309,
+      "gitBlob": "e29b0069bf249409507257197aa5a93456662f48",
+      "sha256": "ebb42efafd640321cc700bc31ed8f59f7539e9c3cd970d0c327cb47c4b89c512",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-custom-status-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-custom-status-gcode-summary.txt",
+      "bytes": 1861,
+      "gitBlob": "60f6ba565f674de5629e6a4d24ee70b07d61f51f",
+      "sha256": "5800048d1f3731743008a60fd0573d48eb21f0c3f460784cc2c528addc2c894e",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-default-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-default-core-import.txt",
+      "bytes": 303,
+      "gitBlob": "bf920c618901c3bc788f12ec252a12d04fe6fe1d",
+      "sha256": "c1afbc58c2607bd87b9c14a4dd80860952b96d833c6b2b4181c3f905f8782f8d",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-default-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-default-gcode-summary.txt",
+      "bytes": 1861,
+      "gitBlob": "4836eb3dc712b8f79e02df2b1ace218a4eaa59f1",
+      "sha256": "fce52cf9521f3644e3429babcfc19a28650a38617808ed6fd70bf7a6957171a4",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-friend-pronouns-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-friend-pronouns-core-import.txt",
+      "bytes": 311,
+      "gitBlob": "796da802b89d624b3c782ff4d14071b8f23f4036",
+      "sha256": "3533a278f0b7545cfc64d5847c4421f7af095cc78bcc3b246234e00770ad86c7",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-friend-pronouns-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-friend-pronouns-gcode-summary.txt",
+      "bytes": 1860,
+      "gitBlob": "39fa9732be6210beb82d8eedfe9124aef61de8b9",
+      "sha256": "4e4cf77911b8c21536465ab1ff0d7a02f9ad717483110b8aee7f93a0d0d8f69d",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-gcode-summary.txt",
+      "bytes": 1861,
+      "gitBlob": "4836eb3dc712b8f79e02df2b1ace218a4eaa59f1",
+      "sha256": "fce52cf9521f3644e3429babcfc19a28650a38617808ed6fd70bf7a6957171a4",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-japanese-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-japanese-assigned-sliced.3mf",
+      "bytes": 230549,
+      "gitBlob": "becc8c817a0910e6ba96417e7cf29e04f038a742",
+      "sha256": "8fd0d9d88ea9fe2c22d105ccdad74d3b0b096adfa3436b3342214a9d2ecab21e",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-japanese-core-import.txt",
+      "bytes": 304,
+      "gitBlob": "cad4ede001107f03865e1b82bd058a6c6e49f675",
+      "sha256": "eeeedc2ead2a9991c0c325698fa3d6f6d8b1e13aa917152c7e23e9d7eb1ab228",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-japanese-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-japanese-gcode-summary.txt",
+      "bytes": 1861,
+      "gitBlob": "07e9f46fea340b9625123f3f70b84b1719bd2b2d",
+      "sha256": "dd373c7fbaae56ce5a38603f588c0d6d6b36634e39697159b39604e021032e34",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-long-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-long-assigned-sliced.3mf",
+      "bytes": 280455,
+      "gitBlob": "6b8276a39558a8c1707b28653cfa2e6b90c2061e",
+      "sha256": "475fd9ee9995d3e37ecdaf3293f29b1bf0d207b0595d612d429daa9e45ebf45e",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-long-core-import.txt",
+      "bytes": 301,
+      "gitBlob": "ea5acc2c69ddcf83777f5954d36cbf4d71f97344",
+      "sha256": "1c427039a1818e7d414e3af69e9c61e20c77a7123e769a31cd2cc9760e30d6c6",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-long-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-long-gcode-summary.txt",
+      "bytes": 1860,
+      "gitBlob": "0d1bc8468704996c5a6fb41bdc84131f1950c358",
+      "sha256": "a3fa4472115c06e0c27eb59b071e6338603a8bc6c0861a70b93df7729f14e3e7",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-mixed-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-mixed-assigned-sliced.3mf",
+      "bytes": 311285,
+      "gitBlob": "798f56af2d733b996c7232cf5e1c529b94a32a5d",
+      "sha256": "38b8338cc205a9a01dce2d9588c3c7aadb598b4b6cc9c05d3e9b916e1f2690af",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-mixed-core-import.txt",
+      "bytes": 302,
+      "gitBlob": "9cfc4c6abb638f79856dec3736e750a66c6d7729",
+      "sha256": "7e956c29da549f630b043524d221d9ea2123039a1ffe102dac588d35286eaa22",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-mixed-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-mixed-gcode-summary.txt",
+      "bytes": 1861,
+      "gitBlob": "994dcc96c33233c7e17a8bf58d0f9be19902b1de",
+      "sha256": "e9e9ee29035af16e7463247c6632f2c42b71c7931cebc99c4ac1242520cf2848",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-visual-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-visual-assigned-sliced.3mf",
+      "bytes": 278470,
+      "gitBlob": "81f8c5a0d57207de946b56af2ea24cf8c582a95d",
+      "sha256": "40777db071b3e0d2b5878d1b150edcad3ff0f928ad16a74dd51d7ad973c922a8",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-visual-core-import.txt",
+      "bytes": 302,
+      "gitBlob": "ecc2b5e13737eb3c17538e4696f4b78cab88d6b9",
+      "sha256": "35c90572d5e075e811ab2409b694b057417a8f9e12da0db80016aa8ce03b311f",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-visual-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-visual-gcode-summary.txt",
+      "bytes": 2021,
+      "gitBlob": "ce188b6e644a474c742dd31f08c5dd19b7770619",
+      "sha256": "34d8ffc7a3efc8a4ac160602fc163692e97b97c54520273028ec832a01027419",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-cfs4-custom-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-cfs4-custom-assigned-sliced.3mf",
+      "bytes": 208331,
+      "gitBlob": "13bcdf542cc2821d3513cd40c391f83b15468932",
+      "sha256": "2e335da31541ae139e937e18bdc04cfe041cea3d1e9c8ee5f589bf019d9fce11",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-cfs4-custom-core-import.txt",
+      "bytes": 306,
+      "gitBlob": "7027a7f09fc70d5bb86f9af2441df428f25ea3e0",
+      "sha256": "c59a41bbf502a741e1d56a082a7ddf775b0ce9596a22fa77974a2afa9d0c3a7e",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-cfs4-custom-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-cfs4-custom-gcode-summary.txt",
+      "bytes": 1860,
+      "gitBlob": "3fc1dc5f8e2a663e7b336ec9f13c4c92386054eb",
+      "sha256": "eb54b446bb60a6a9609deaec19e7df713f2c159ec912bdaf3ab8b035d618e183",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-chinese-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-chinese-assigned-sliced.3mf",
+      "bytes": 169606,
+      "gitBlob": "6ac47f0550ef994033de4efc5c29053783a9d253",
+      "sha256": "9fa359d615548aaee237d8b78868456f0cb2d6a06ed043b20d23ed21bbf1d21e",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-chinese-core-import.txt",
+      "bytes": 302,
+      "gitBlob": "5f6944deadc8ac627da49aa266e255777a11027c",
+      "sha256": "f91581259325918e70e5d1e3ed463e8aef82c5fb30e74be530556810be1764c0",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-chinese-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-chinese-gcode-summary.txt",
+      "bytes": 1858,
+      "gitBlob": "af44354197986778311b3e505902e35dae586de6",
+      "sha256": "6474b3ab69263d7310dba2e4fb0efa70fe7e5d3c68f5d36a68d02e00ec8afcb7",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-core-import.txt",
+      "bytes": 302,
+      "gitBlob": "e0d3562dd5f70441146e0036fc74e67bbfb22ea5",
+      "sha256": "19c723f7a478c3e0e368063e7fa935b559337d2c5c17617664053a18a2f61cbd",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-custom-status-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-custom-status-assigned-sliced.3mf",
+      "bytes": 227038,
+      "gitBlob": "b79a26dd9e7ce31873b9a65414a3a393cd3a5fd3",
+      "sha256": "ab97b98c257b1e69bcc36f161f49feb64b7729b3ab68d5cfaf243717038d5a6e",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-custom-status-core-import.txt",
+      "bytes": 308,
+      "gitBlob": "19742311c7d47608b933812d6eee6a39257ba658",
+      "sha256": "394c9e082f81801d310cc0b79cadcfa50f28296e9b7ebe635d6b5de1f2a7cbbe",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-custom-status-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-custom-status-gcode-summary.txt",
+      "bytes": 1858,
+      "gitBlob": "cb97b63a163154041a2cddcc8ce3b0651408996d",
+      "sha256": "8d4b0c29c3deb6585f8c2a7bf1edd2c65ca8d800a18117c65303c9cc4062d22a",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-default-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-default-core-import.txt",
+      "bytes": 302,
+      "gitBlob": "e0d3562dd5f70441146e0036fc74e67bbfb22ea5",
+      "sha256": "19c723f7a478c3e0e368063e7fa935b559337d2c5c17617664053a18a2f61cbd",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-default-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-default-gcode-summary.txt",
+      "bytes": 1857,
+      "gitBlob": "d51e79068071ed72359731ef1faeac9e027f45c2",
+      "sha256": "57d5f6159f03b6416f2ed70902ac292912652947413670e6b999724dcceddea8",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-friend-pronouns-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-friend-pronouns-core-import.txt",
+      "bytes": 310,
+      "gitBlob": "2ff8a56485ec045830b21f6dc10c653a9f6ee1f4",
+      "sha256": "6291737c8c6960b40bae6754d03e9d42d141811e1e3d6cd6e1174c185413a38f",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-friend-pronouns-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-friend-pronouns-gcode-summary.txt",
+      "bytes": 1860,
+      "gitBlob": "e5683cc8e1de0a45c18261911fb1d8588ac0644a",
+      "sha256": "f73b3d34c9cccce43b312e413477038f93894f558562e6edc3ea4fc363f94715",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-japanese-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-japanese-assigned-sliced.3mf",
+      "bytes": 178019,
+      "gitBlob": "dedea2057505b3a55dd7110378e8d0759897ea6f",
+      "sha256": "ef8136d7196f1ca1cbd148caa979941d8ac5ab097e5c7cf9e1cc773f68157812",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-japanese-core-import.txt",
+      "bytes": 303,
+      "gitBlob": "0efb7875490409f2bf3d50aaf4edb987842f5ec3",
+      "sha256": "35714a09185a3f8687639caeedb89010b4fc2a361fa87c56ec32c94b578aff80",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-japanese-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-japanese-gcode-summary.txt",
+      "bytes": 1858,
+      "gitBlob": "aa7df8b3b9c54fd74333b626c64d5ed56abb4a8e",
+      "sha256": "5d3a27d77f60d7db86fe884ee10b7207804fcd8bb999b1a40fe4630818adab92",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-long-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-long-assigned-sliced.3mf",
+      "bytes": 229775,
+      "gitBlob": "a2c7b815042db97bd13e5649ce9ce5404e5bed76",
+      "sha256": "d97a13c107245f68d4f605f333c7e485e9931a0d16ae0842d93feac0a68e4b64",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-long-core-import.txt",
+      "bytes": 299,
+      "gitBlob": "1987c06007885eb62be459b1b1dfac07c9715887",
+      "sha256": "53cbc2be414a1c36aacae89067527608dc13cbf9adeaf6c47cd17513e952d4f1",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-long-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-long-gcode-summary.txt",
+      "bytes": 1858,
+      "gitBlob": "308bca28e6ccc89823bba590523ae86de5f050a3",
+      "sha256": "f30a6a52a3315be55d8a983047725c3662b697c8971d7fe0da3b17a025fbf9d8",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-mixed-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-mixed-assigned-sliced.3mf",
+      "bytes": 262799,
+      "gitBlob": "b1bd12ac40b6f3da247f2f9ed7d155373f184829",
+      "sha256": "691b72d4c24fb2b0d3f265175a909bbf14d4d6e4cc20cded2bc74690f2aeaca9",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-mixed-core-import.txt",
+      "bytes": 301,
+      "gitBlob": "371044fb3a9a23f8220a17102ec92e7de53898ed",
+      "sha256": "030a1efd4b7b4eb06a36f01579099e6dd9a38beb7549494472848c8293e055ef",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-mixed-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-mixed-gcode-summary.txt",
+      "bytes": 1858,
+      "gitBlob": "7fb6f367b5cbd7f914c6667e18977203d33b25ec",
+      "sha256": "579b3414e0bf88d9db28e66afbcff145e7ce850e44fd8b1b82d9f1bb9afa9cf4",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-visual-assigned-slice.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-visual-assigned-sliced.3mf",
+      "bytes": 236628,
+      "gitBlob": "7911353ee4224d2b61c76682eecab11db62c16f2",
+      "sha256": "7ddff0ab4e634f5aa0a937d4376bf33a6147447ad7eabd53386ac22d04e0a02e",
+      "reason": "Extra sliced matrix project; retain all 18 source packages, slice results and four representative sliced projects"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-visual-core-import.txt",
+      "bytes": 301,
+      "gitBlob": "ed70637484950fb6ef49d666aa2507ee0651478e",
+      "sha256": "a48787801feb7e9774a3d282d0a0a24f502bfeb5cc3d216200e82591108084bc",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-visual-core-project.txt",
+      "bytes": 33,
+      "gitBlob": "7199d4e6968e41bd16081c95c9c3475c46af2cd6",
+      "sha256": "ac8a69bbea4057fb233c5ed4cb36a94810a6dd3383fb666e2afc56cf199fc574",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-visual-gcode-summary.txt",
+      "bytes": 2342,
+      "gitBlob": "047dadb754ac29b2e30e08be3049a303f3571b99",
+      "sha256": "e0e27686cf3b721b92523d5478211a2ac0c5e10d5cfc295ab946c711a862b5b5",
+      "reason": "Repeated success log; retain aggregate per-case Orca results and failure/recovery logs"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Ask-Me-false.3mf",
+      "bytes": 83863,
+      "gitBlob": "0062f667b1e9bd5917b50509a44e5ab971c3bf69",
+      "sha256": "734f2b7304beaa7e6a355ecfd21eec6506a18453cc9b883de24813a7db32521d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Ask-Me-true.3mf",
+      "bytes": 83865,
+      "gitBlob": "a176283c089a6a8e766d20c4a39093434fe6d65d",
+      "sha256": "740fe44050b1fba88cd032031369df23b764e404a6936c7d7d8e2df35245079f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Busy-false.3mf",
+      "bytes": 83861,
+      "gitBlob": "6b2606b23e8ba4a28529fb1b2dd020c0703dcdf2",
+      "sha256": "a27df2509549b75a4fa26c9eed448336add22805b39883e0b329b3d484df76a3",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Busy-true.3mf",
+      "bytes": 83863,
+      "gitBlob": "5b0d9da94944fb825eac74e41554d9b42f367874",
+      "sha256": "63ef1ba9fa040be74d0f8a36cf7687fdb78257b8c06c09775abedec304ee3417",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Join-Me-false.3mf",
+      "bytes": 83863,
+      "gitBlob": "e554ae42a028868dc1e0c355793be60c329ad0dc",
+      "sha256": "f885bc44736bf69d3c5a9e7b92ff174b8e98280c382c597fb12d4497e4570480",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Join-Me-true.3mf",
+      "bytes": 83866,
+      "gitBlob": "6e595dc93212cf1b46ea350707882f9dd15d2501",
+      "sha256": "641954243f105cefc22bfe4f7b3ebed9e6028279338bf5b82195ab5225f07fcc",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Offline-false.3mf",
+      "bytes": 83864,
+      "gitBlob": "e57a46a7c9b9eb0efeb060076c79f135426b159d",
+      "sha256": "128fd526ab5bcb6191b216349ccc6af483259fa8cfbeb9f2bb0cb9f092f21091",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Offline-true.3mf",
+      "bytes": 83865,
+      "gitBlob": "eb97db34387e0bbd44d821142bf51fc0055f70a5",
+      "sha256": "cdadefd3e2fe8fbd4dd9e10097ddcfaa4127f00061e61b8025cc84c6c5daea73",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Online-false.3mf",
+      "bytes": 83864,
+      "gitBlob": "f41ff7325f8e525dd72807af3c12008e692ce321",
+      "sha256": "8805dc6445b5c13658f007f12fe859e17d3ac3af50e058e92c1754ac6d48e690",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-Online-true.3mf",
+      "bytes": 83865,
+      "gitBlob": "013e27729f47ff67e0778ed5a3aa5e1bb21b38a6",
+      "sha256": "c90e5880596f666bcf957c1fa6a52afd69f63665d08d9bc1145b6176fb325dc8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-chinese.3mf",
+      "bytes": 55800,
+      "gitBlob": "2bafded39200ab379f46deb43a0d6b30cdfc9f93",
+      "sha256": "7f5f56e50764cd89b785f51c9d2bb5d1dd8e276542f004d0fcb820cc814eb4ae",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-default-design.json",
+      "bytes": 254554,
+      "gitBlob": "8bd46a880e4688bf9c5b9895bcf6150d9c6b16c9",
+      "sha256": "c1eb6abb494c6a5542b904fda17a6e34dc3c9f9aeb965bfd96de1b3fcafa8ee7",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-default.3mf",
+      "bytes": 68584,
+      "gitBlob": "443ff8525e513571055b201ecee19abb72c69e23",
+      "sha256": "7ca3ae04abd6f2122151f5e7a7192676e8221737c0f770ce88fb3bd021515375",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-friend-pronouns-design.json",
+      "bytes": 314557,
+      "gitBlob": "4be32128f6098ba9bb281f72e8656f2bb96069e2",
+      "sha256": "a3f576ac059ee68f8058e8750bde69dbdd3d0b3d3f2a509b0774e2529256c1aa",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-friend-pronouns.3mf",
+      "bytes": 83865,
+      "gitBlob": "416e013b15357fb36096aeac9a992bb1baa4af9a",
+      "sha256": "a2f83c71f1dc2d51691c9c96d8b5d2763e99364ee73568c5414d06a914cb782f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-japanese.3mf",
+      "bytes": 62603,
+      "gitBlob": "6cbd70b94f50cbbd09f2ff3a2f6be5076675acc3",
+      "sha256": "d04e23b7c40b4b3a42f082c4c5dc7f9bac6d380b493ece4361882d4fbc9f994d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-long.3mf",
+      "bytes": 110015,
+      "gitBlob": "aed51cb880eae781e06ddb6669baf248312da392",
+      "sha256": "d256c4c37f272f8c71de15a309cc0cd94a2ccafc9b2cf7168cf5878e6eb8ecba",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-mixed.3mf",
+      "bytes": 116050,
+      "gitBlob": "73a727f4483fab56e46cb35cfe72ca0634c1a6f1",
+      "sha256": "1ecfcd883c4a92ab3733d2ee2e85c0a4d5c29fa7cc03090646c1cc78d6e06ec6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-only-name.3mf",
+      "bytes": 58381,
+      "gitBlob": "fc8135b23ce78a2e4d02c37f3b51ac73f2a38914",
+      "sha256": "331bfd8822e3c2c898b4fd2e47b366812130576c099b7ef34339cbbbca07eed3",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-pronouns-no-status.3mf",
+      "bytes": 67016,
+      "gitBlob": "71dbe67466ecf1a30d457512fd4f0dc90c5b9f2f",
+      "sha256": "843c8df5e58cc6bab7b0d0318ab3387ff066aeba6688f20cb11ba922ec38c933",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-custom-color-independent.3mf",
+      "bytes": 68589,
+      "gitBlob": "42467881ef6e4b0d5a131919fe9dff08e8852834",
+      "sha256": "14eda614a749e387c937345f45655e255ca9ce4a5247caec73efde6430e75ded",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-no-status-no-pronouns.3mf",
+      "bytes": 58381,
+      "gitBlob": "e57c486d7f792579c7a31e87a0a6684e1d92177e",
+      "sha256": "f25c1cb205d0a960916fc67d0bc121d5081e6b6fa8dc0ef159fe85a46be6c5c8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Ask-Me-false.3mf",
+      "bytes": 77780,
+      "gitBlob": "d3619cd1140e9eb692846ae610fa86fc60446c38",
+      "sha256": "9857ccf39d64d7bf7e2be2270ab89c66c3b0bf1ebbeaaca6288374e06c8b3f07",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Ask-Me-true.3mf",
+      "bytes": 77783,
+      "gitBlob": "a673b4e78f45df961046193f447ac6cd0e60ecf6",
+      "sha256": "3a81035b42db4f520cce88ebe4280035bf120e3d61a6c2dd42ade3ea99656654",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Busy-false.3mf",
+      "bytes": 77780,
+      "gitBlob": "71982e8c971b1811b093663f4ab571ba9796c86c",
+      "sha256": "fcf2144d62f5457fe99f34843f8609964cce9eaeafd106c74e063cf416f9750c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Busy-true.3mf",
+      "bytes": 77783,
+      "gitBlob": "45cef9caa5442b622338393f7ffb2f46d15319af",
+      "sha256": "2cbde4eeffc51c532f91ab73bde49359db830e0c9f8b02b5383bff9ac4e4dda4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Join-Me-false.3mf",
+      "bytes": 77782,
+      "gitBlob": "57d48cfca3365317cc674a14e888f90840140bc1",
+      "sha256": "da6bf889a28327ccc47bf8af4a6827c1f65a10a314130b739aac4148a11acc36",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Join-Me-true.3mf",
+      "bytes": 77785,
+      "gitBlob": "249523118b8c987d5f62bda7bbdd0cf5e1a7a247",
+      "sha256": "e1afba0787d766e0ab00de10ac1ad06f292c32cf6fef12c9140e20fdde3dc836",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Offline-false.3mf",
+      "bytes": 77783,
+      "gitBlob": "17aa9c17cfbf3c72207317a5a4c0239090348c0a",
+      "sha256": "af15279a737391e1bbc28742da09b957c8fb24f0518a8c02a51f3f6ec53e5e8e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Offline-true.3mf",
+      "bytes": 77784,
+      "gitBlob": "1d1ad6c9a220b0c9608f645edd066bfa04bb4e0c",
+      "sha256": "6a22dc0483414504430610002e3ce5a14397ce402c34753ad8ee087254f3f795",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Online-false.3mf",
+      "bytes": 77782,
+      "gitBlob": "be41bbef4b276a40d1524ebfaee440a16c79c4c8",
+      "sha256": "44be6231f0db2328a81ddff04c09949e2788dc5ff42f83f11053b24d4c785277",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-palette-Online-true.3mf",
+      "bytes": 77783,
+      "gitBlob": "8d683e0d94a8413d0681cd0b12e69b4ba693b3ea",
+      "sha256": "c2ed1e0598e668489f23f5d204b95d3f3e1687ab19e5cf3bf831a6e09e6df916",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-pronouns-22.3mf",
+      "bytes": 68584,
+      "gitBlob": "0529dd7a6097aea53b87692195d89e9496112b7c",
+      "sha256": "4c46f56d9b328d5ab5bd1b70028c77e052d6a650d9df2397b0e8b63e1fc6360f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-pronouns-23.3mf",
+      "bytes": 68586,
+      "gitBlob": "98952b0d8167338c2dbb235663ad34bc7ab739a0",
+      "sha256": "2e5abde498532ec9f4145f2320b31bc2ea00e4052d22f5a4be67641439e83776",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-pronouns-24.3mf",
+      "bytes": 77124,
+      "gitBlob": "6ce9f87aebeffb952ca065adfc43c990af0e57fb",
+      "sha256": "114f3ba120e256fc637bb26266c7e0b87be66bbaf63d32a45da47ca4e88d3499",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-pronouns-25.3mf",
+      "bytes": 82560,
+      "gitBlob": "26546f132559310265a0beb1e7c5b98d18649b1a",
+      "sha256": "4dbd051c2d551ae97556cf268ade5df68ad947f5413904cf7c443a6722ebc1a4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-pronouns-26.3mf",
+      "bytes": 83864,
+      "gitBlob": "902c7785198a752861c5c1aebbbc1cc5adad277d",
+      "sha256": "0f437ac69f1f8a67a6296a2cba415cee77fdedeab30db8933eaaa5423566583e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-pronouns-27.3mf",
+      "bytes": 92343,
+      "gitBlob": "0db4f35762eceba73322c3ddd67205ba538163d6",
+      "sha256": "19a0140f1af9a1a735a3cbe552a822e8efbcfcfb69aea7a63b4ec8fc08aa05c9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-0.3mf",
+      "bytes": 51313,
+      "gitBlob": "0fabd1b91a6c43f250cf4e258a4f1c448a4280be",
+      "sha256": "7d3af3547cc4816ca998ba11a50830869ab3a772170b3575992b6cfa6425401a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-1.3mf",
+      "bytes": 68584,
+      "gitBlob": "d7ef77b9607b3202195d4ee4b49f7e52e7ae1b0a",
+      "sha256": "e6450dcddfc885a6ff0f75b5f62d10a66ef29d9b50ebac3add642cce2ff74960",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-10.3mf",
+      "bytes": 57456,
+      "gitBlob": "3e15b595146bca071640133a11365d64591bf9bd",
+      "sha256": "6ec5db6624ee00744ff222ea9b6a08fc10e698b78bdee8ff4bb3a75a2eb4a1ce",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-11.3mf",
+      "bytes": 47949,
+      "gitBlob": "6dd12674e8e443d0f2e4022b63fd03edb87e1aa3",
+      "sha256": "38792f0040103c75e4bada318fc516401293c7a3a0b34a76f1bb30af54d81e51",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-2.3mf",
+      "bytes": 72494,
+      "gitBlob": "06d9906ef87a30a828c68594a10b2f32ed6def09",
+      "sha256": "0bd51ea684b2d98f338199acdbfe08d95f5014fd7d961518eeb635ea533eb298",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-3.3mf",
+      "bytes": 55800,
+      "gitBlob": "77900849f520b2cb3279c3faa937e270ff3c046a",
+      "sha256": "cfda672f811a53cbe38b67c0095c4567c59e817b97a46fbab553a86f1aaac61e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-4.3mf",
+      "bytes": 62603,
+      "gitBlob": "4df80c023ffa2a8cfe89d1a37caee8ca98752366",
+      "sha256": "c9c7748eed95e2089836df309a6aae0e12a2697b76f9bb16b4f98d1acc628fb5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-5.3mf",
+      "bytes": 92289,
+      "gitBlob": "4f506e018ded53e8c937f1dbe5175a877ee10c92",
+      "sha256": "1d72d9b9e556c63364746d80151b8c2b83de447b7c409d2a3285fa53093300cd",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-6.3mf",
+      "bytes": 68971,
+      "gitBlob": "aaa26fa42ab083ceaf9f118a097f1a28f50129c7",
+      "sha256": "4e00dbe06ada5736ad1023f5fe3db040cf04a1b35f6f20f4acbb95e82530ff0f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-7.3mf",
+      "bytes": 73962,
+      "gitBlob": "989159a9e128eeea5e434e2e08713538bf84b549",
+      "sha256": "1e2ff89c8f12901f9748dc0c518048400171487b54e1abaf642227d6fcce7eab",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-8.3mf",
+      "bytes": 71691,
+      "gitBlob": "6a97b0edc521316be62131e1a18cc7c316d297e9",
+      "sha256": "a547ae407096c28d5f24fe65abed293fba5717b87eb58b97f06d37f9a3244703",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/classic-review-text-9.3mf",
+      "bytes": 86543,
+      "gitBlob": "ec663a77996ad0c7a50862e528da6f5120c25c52",
+      "sha256": "6b4f8f36d9c275a7f82767803037c3e3108fd0ecf3ff70afd306b457d804940e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/independent-shard-0.json",
+      "bytes": 231440,
+      "gitBlob": "0f98ca8881b1bc882b9965848583e2a1c3bd983b",
+      "sha256": "4de732a1604110d7f23377b8c116b4fea6419317a097f0a2acceeebe2f3f3aab",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/independent-shard-1.json",
+      "bytes": 231488,
+      "gitBlob": "4f80801f1b306fdac327625c83ab89c0be9579c5",
+      "sha256": "de453b8cc710818fe3804e337181bbf520331db0024f4857d0b1d38ef2fea939",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/independent-shard-2.json",
+      "bytes": 230180,
+      "gitBlob": "dce0038c832019d83c557bfabdc088e00754c610",
+      "sha256": "c26641fcfbb6dcfea2782f45bad69ec8a888fcd052db3c4c71979bef38c99cb7",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/mixed-friend-pronouns.3mf",
+      "bytes": 81315,
+      "gitBlob": "88f97f6c421c630cd96112d77c60012b832b9bca",
+      "sha256": "e1be86b325811aae8db1e0e7718d432585a6a8f36bfbf7dc1c023e2e43acb711",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/nagikokoro.3mf",
+      "bytes": 68584,
+      "gitBlob": "443ff8525e513571055b201ecee19abb72c69e23",
+      "sha256": "7ca3ae04abd6f2122151f5e7a7192676e8221737c0f770ce88fb3bd021515375",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Ask-Me-false.3mf",
+      "bytes": 74580,
+      "gitBlob": "94027e04c68bff06d5f3bad5e11f745adebf4886",
+      "sha256": "0cc4c3d66f9f70c117cfd319115e2f4b8cabfd0456328dee9898ef3a0ab80349",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Ask-Me-true.3mf",
+      "bytes": 74585,
+      "gitBlob": "19a966dbdd83014e71cf41a4250c2fb5fca71d67",
+      "sha256": "f6830fe9462747fd3760c2e8e1b83a04ed183bbe3a5c3c3b396d754f8a3d6f18",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Busy-false.3mf",
+      "bytes": 74575,
+      "gitBlob": "86fe07ff249774c14708c241dbb4d468532743b7",
+      "sha256": "fb4c3a24144250e13dcab542cbf2add423a4b6ce7cd5ce138619960a1bc5d0d6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Busy-true.3mf",
+      "bytes": 74581,
+      "gitBlob": "e23a27f75471cfa03ee33aac04262190a5e3ec33",
+      "sha256": "3b0a71db6b7b4cb774ec98596330d711962edbd6c4a1a594c7bac64aa54608f9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Join-Me-false.3mf",
+      "bytes": 74580,
+      "gitBlob": "12470220f02e29b3cf46741cb5bbf2930a899c6b",
+      "sha256": "76c313373a971208374a5fbcba1478911f4912a0be322e7f0b1467611769fb84",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Join-Me-true.3mf",
+      "bytes": 74586,
+      "gitBlob": "39641e7cfee282acdd3e67a1daaf449a387db24a",
+      "sha256": "cd64663e957fab2ed6bffa3f769770034739df924179a78b19f77b3b2f1035d1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Offline-false.3mf",
+      "bytes": 74579,
+      "gitBlob": "0650193b42fcd7f008ed94db083860121ee53954",
+      "sha256": "c5288b2f33e9224cc3b611d07077a4626aab3c27ad58b6b41f2bdc9042e3a9bf",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Offline-true.3mf",
+      "bytes": 74585,
+      "gitBlob": "d6e1c5482084c4695be216496c6c2fe020970602",
+      "sha256": "3dd127b4850b9a064d896aa26e2b79cc0e248187f3f87a2c29190fee9de4afa4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Online-false.3mf",
+      "bytes": 74579,
+      "gitBlob": "59e74edee7fed04fd42f2ba8a7c8e00044030e16",
+      "sha256": "a01c8f4ed50197c54692dc7f77e9e0091feff4f883288c652e67d29bdd7272d8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-Online-true.3mf",
+      "bytes": 74583,
+      "gitBlob": "e8b1aba3c323e4aa1ad2c3241635b788776af23b",
+      "sha256": "f347dee3b86e8a85dae4deccfe0c9148c9ccd4799a338eefc0808f0286052c5e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-chinese.3mf",
+      "bytes": 46780,
+      "gitBlob": "87f365dd28c3cdcefa75f2362030c959e8df39ff",
+      "sha256": "1cc0ce90d6adcb385da8771c0e51c1fb5aaacf1e01bc9c2b48e573d643873b67",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-default-design.json",
+      "bytes": 227894,
+      "gitBlob": "4745879ad04e7fd4a2e0529fbb26f8e457f219b3",
+      "sha256": "1bef33fd4f0e7908debd99733d012b6fe380974f54b5cbb150de810902c43d94",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-default.3mf",
+      "bytes": 59198,
+      "gitBlob": "dbc8b80ecadcd3f9549f4bddad651c4e79dc272a",
+      "sha256": "8ca3aab3d071247035875c411c9b5b07e51f9bd20788d0d9ba4c47baf981d7a8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-friend-pronouns-design.json",
+      "bytes": 288288,
+      "gitBlob": "2dfbb9e56b564630c6bea5c37790d90b233eb56f",
+      "sha256": "24198a8149e63b45c8605c404da10780031f289a0ebb161149835aaed8fad32e",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-friend-pronouns.3mf",
+      "bytes": 74583,
+      "gitBlob": "05e8e404265bac4c0ee2161874084b090ec97c3a",
+      "sha256": "b12b4894804afdd4f48eb13e498d77498f8ec21ed2f82848ebee2703770c4791",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-japanese.3mf",
+      "bytes": 53262,
+      "gitBlob": "7aeca3f5453f7cf890dab3c082987ce4b5875bc6",
+      "sha256": "d03e83ad93af21c33ecaacf74bf2150879d68b2a75712951dcb47c5d40a4c29b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-long.3mf",
+      "bytes": 100386,
+      "gitBlob": "07ab4dcd4675a4447c040cfa038a7edad9c717c8",
+      "sha256": "c0dcafc1bfd0e957af49051a9cb874dfe166814cce04e87ad30fd34810a4ef96",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-mixed.3mf",
+      "bytes": 107727,
+      "gitBlob": "58b589265cc43142b0b1f2569cc9408f129a601b",
+      "sha256": "c6d9f5112548cd7a9a47ea024e8001c772b7f3e52be4f06b28e3d5a1a0fbe394",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-only-name.3mf",
+      "bytes": 49164,
+      "gitBlob": "a7bc707a8f91a7b97f43eaf6768b5d38207bba4e",
+      "sha256": "fad053380ecdb669eda745495821d19306ece7ac1c096287212be925ee814fca",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-pronouns-no-status.3mf",
+      "bytes": 57843,
+      "gitBlob": "b6b6c935bfef5dc9cb6dbfcd08d068e4040743cb",
+      "sha256": "e36c4dc228f1b4566e8ff19c4ad0344b15dee5a670a76b896db8ef1d9690e64c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-custom-color-independent.3mf",
+      "bytes": 59204,
+      "gitBlob": "42c5321fd509519b51a11cec5a426c5074077aac",
+      "sha256": "6b363195692a1f1821ef09dadd2f31b589edacab6272666046341941226dd7b1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-no-status-no-pronouns.3mf",
+      "bytes": 49164,
+      "gitBlob": "bafacf589c39ff3df0e95972d36f7ad92155a043",
+      "sha256": "1806a8b3af829c02515c661df4ad3b5068b2c169b4fe11b8317b90fb84be5175",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Ask-Me-false.3mf",
+      "bytes": 68639,
+      "gitBlob": "ba2a0f628ef8d4084a7162dec2e3def86528753f",
+      "sha256": "ea89b5378c6479da574a61bf28951a356147e5f9bf7711accc4cad9cad5c24d4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Ask-Me-true.3mf",
+      "bytes": 68649,
+      "gitBlob": "71df2109248ed215b714aa30e62674610ee86c0f",
+      "sha256": "a2bb7b94ccc4419cedb3a68d0bbfbca2fde9027aa1f864399351fef99ad5137a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Busy-false.3mf",
+      "bytes": 68635,
+      "gitBlob": "98a90c81b64b218e0d72077310b4e28d398b55a9",
+      "sha256": "611dabad415ac31993293c6418181aaf3a3a467336ab04ad23cc3edf935f9429",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Busy-true.3mf",
+      "bytes": 68644,
+      "gitBlob": "b8fbeec8ef57793a8eeb6479d7d81358065301b9",
+      "sha256": "1bbda00c1b0ffb07456ba0719f7f19354a6a052443f590edeb4f2bf77bc12187",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Join-Me-false.3mf",
+      "bytes": 68638,
+      "gitBlob": "19aad0fabed71ceb6a1e90c1f7055cbe47fbc66a",
+      "sha256": "cc0ea12aebba82fefe6949a03e569b3daceb2a4a51785fcc04a56c5a73c78dda",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Join-Me-true.3mf",
+      "bytes": 68650,
+      "gitBlob": "cad541272ed319e35321b33bd2327eca85604711",
+      "sha256": "ddae81717e8e22982c8ea3a280749f20a869ccdc6a5c2c9b93eb333df424eea9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Offline-false.3mf",
+      "bytes": 68638,
+      "gitBlob": "9287cc5fd0d49c487e1a69dfbd6647430af42d8d",
+      "sha256": "50e9f852b52ba2ddfb121a6198107c06b67cf2603fe7e457ea3c30069705769c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Offline-true.3mf",
+      "bytes": 68649,
+      "gitBlob": "db726df6845dc8e67f895377531a725cb00070ef",
+      "sha256": "ff8b88d59f5a7a7d5ed0da9a61c668c3b02ecade0dfa1067abb75ac3241e9296",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Online-false.3mf",
+      "bytes": 68640,
+      "gitBlob": "70f006d2f82fb16f146fa08450d86ee517413583",
+      "sha256": "e94007346c4cd3bd4c13ff54b62bfef568b4dd4b62c88cc556387b61ae84a0e2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-palette-Online-true.3mf",
+      "bytes": 68648,
+      "gitBlob": "0d3d6fbb597cf52d427bad8de2cdb22055ac6693",
+      "sha256": "13d23b6ff5eab0234869c387485dc8e466b52676ea54d909bb10bb945cadb281",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-pronouns-22.3mf",
+      "bytes": 59198,
+      "gitBlob": "e23c0938570d9750e2f121720e774aa60b7e3bcd",
+      "sha256": "499ee5555ce03e52e609d095e06e94781d0dca744bd2ef9785ebe1c1c0db9526",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-pronouns-23.3mf",
+      "bytes": 59200,
+      "gitBlob": "de1f76c9484549a6f500a9a5f4a446c771af3c0f",
+      "sha256": "eb260f3fa0c2ac1ff5d9f9356a33c2859021cdfdc2427684a9db8caa5b3552c2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-pronouns-24.3mf",
+      "bytes": 67727,
+      "gitBlob": "863932899bf2f8f0499dbdbfbce2284aa6841f2c",
+      "sha256": "6ad290d7abbddd27903de35d6573830b251b19c855a1389f233de5930903e3e5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-pronouns-25.3mf",
+      "bytes": 73158,
+      "gitBlob": "7cf82421d51793225b0c81965b39f06d02691462",
+      "sha256": "7a001aa41c0900e24dd09b7b21afaa3a71942cbb71a195e713a9e808536cf22a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-pronouns-26.3mf",
+      "bytes": 74579,
+      "gitBlob": "c5ab326a181b6f724dcce92001ec5792fbc373c7",
+      "sha256": "1442a42af30807718df729bda4f990ca3997a59f6561befb7ecef4cda9a088aa",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-pronouns-27.3mf",
+      "bytes": 83207,
+      "gitBlob": "c27d782a2a308bad586b3e23f16c6608ee04437c",
+      "sha256": "00e9716ce6f4d129dc5834b2fab03b08a889f20e74285514c033e73e96b979e5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-0.3mf",
+      "bytes": 42148,
+      "gitBlob": "4899e4bf80bf194de91f7a84dffca2982bf100f9",
+      "sha256": "8836f7af7a4f9b776d698446e8903c1e9b9cb3f032d05a17eb6ee307dac50e89",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-1.3mf",
+      "bytes": 59198,
+      "gitBlob": "5a92e66078361a92e358805487a81e2a1fb0804c",
+      "sha256": "bcc765ae21794b0fd03c80e1f7b8cbbb2c2857305fbb0e4b9e27b92e326a318a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-10.3mf",
+      "bytes": 48416,
+      "gitBlob": "5751874110aa913bfc68d5363c1a3147e327b96e",
+      "sha256": "5177d3de981965592a90b1cbcf17974391d10cbcf9453c088bb8ff31b23ffb2f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-11.3mf",
+      "bytes": 38604,
+      "gitBlob": "67be08ee20f7cf747dd18b0f7d8292516cd9fb00",
+      "sha256": "84fb81373c32443b6f4d31ea9705173bff5df71f2ce1ced4f4c31979591a4652",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-2.3mf",
+      "bytes": 63209,
+      "gitBlob": "9bdc08c430ed5e41c08e35a26b9879a8147eaa8a",
+      "sha256": "0ab2a6059cb7ed4f221c4905557b77ff4d8c3a9dbd8a9e61db0de848d9dbef83",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-3.3mf",
+      "bytes": 46780,
+      "gitBlob": "3a92d70f5f81e39503c196d69f0adddcc2c81432",
+      "sha256": "ccee8c28356c801dae5dbaa9be96bc9b5030afdd63acc6b2516f5ce3d2dcd810",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-4.3mf",
+      "bytes": 53262,
+      "gitBlob": "45ab76094ee05f8d552e59e4e3d5e3b4bfca6385",
+      "sha256": "21816d8d20201e14b43c0639d77c14a55b577c51bee963e476d8ae3b9db9ad28",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-5.3mf",
+      "bytes": 83656,
+      "gitBlob": "de3668d67e00c9882ce632a1c4dccbfd32902ef1",
+      "sha256": "8738ee632606b1668038938b8b6fc7a69e771000c9c22d5655f69b8195ac78d5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-6.3mf",
+      "bytes": 59514,
+      "gitBlob": "ab92bb32262dde8f45449e3dde72d9b797839239",
+      "sha256": "0b69e87892970edf84433b5fccb570f0a220458a26b70d5897926105eae6dd58",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-7.3mf",
+      "bytes": 64821,
+      "gitBlob": "7c601580b1a217e77657336724179c7017ce59b9",
+      "sha256": "07b0a739fab0172307d90ac3377daa7bcfbddc46e36759680e06db1d88bc0eb3",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-8.3mf",
+      "bytes": 62580,
+      "gitBlob": "dd29502c0310849d054addb4b3fa0af55a0b7d19",
+      "sha256": "10898a228d968ad364cca0cf072f02c6df89f99440d1a3f19d73dcb5bdd2e470",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/regressions/native-review-text-9.3mf",
+      "bytes": 78033,
+      "gitBlob": "23f944e31d13e4bb38640054b6b0dd2e61b0e27c",
+      "sha256": "0ee22a8995c1b2a15723e51224cce4e5b75fdb5003667c5112c1ebc6dd1fb323",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-default-design.json",
+      "bytes": 254554,
+      "gitBlob": "8bd46a880e4688bf9c5b9895bcf6150d9c6b16c9",
+      "sha256": "c1eb6abb494c6a5542b904fda17a6e34dc3c9f9aeb965bfd96de1b3fcafa8ee7",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-default-design.json",
+      "bytes": 227894,
+      "gitBlob": "4745879ad04e7fd4a2e0529fbb26f8e457f219b3",
+      "sha256": "1bef33fd4f0e7908debd99733d012b6fe380974f54b5cbb150de810902c43d94",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Ask-Me-false.3mf",
+      "bytes": 83863,
+      "gitBlob": "751db475e422984fe8c49544d3423af1adb51244",
+      "sha256": "ebee35f03e05359112f9d21ea18821c0ac6c64f53e4d418b829e654eac17db75",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Ask-Me-true.3mf",
+      "bytes": 83865,
+      "gitBlob": "b1142b3b2100a0a5ca3be8dd188be80b55b53903",
+      "sha256": "2e78eedb065cbf3e01658e68a6ad9161b377211cf833a70c7e37402e883e1006",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Busy-false.3mf",
+      "bytes": 83861,
+      "gitBlob": "2a21847a8d4ecc676550c5dcd65c4b673989a807",
+      "sha256": "effe8c817d36e3ea651c264d8285a87384f7645ba006a69385ba090b6c743ef5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Busy-true.3mf",
+      "bytes": 83863,
+      "gitBlob": "525308df18e16bba5e4196d70621d931c9848ea4",
+      "sha256": "1d53edfbb7e3afb9f73a4d6ee37cb3f5035b9d8a7f991828cb2f6ba03f560d6b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Join-Me-false.3mf",
+      "bytes": 83863,
+      "gitBlob": "4e29814d1e72ece70c7d19b4932f3fda6cad97b1",
+      "sha256": "dff3a0391e84c264609606f12c5f624ad3d2563ed28e37aad192e52f883f6cd4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Join-Me-true.3mf",
+      "bytes": 83866,
+      "gitBlob": "51d13f17b5583aee2f1653c960c3f262b895f357",
+      "sha256": "5841736fe2ddcc52f3ab872f8a8df4e228bef927c19ae30d514cc2842801d1bf",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Offline-false.3mf",
+      "bytes": 83864,
+      "gitBlob": "80d9dd09936ec1ecc23649a6147a90a0c9eec166",
+      "sha256": "5c87511deca160aebd8db89f26566bc180f59ed2e1f56be2aa64da29bf2603c4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Offline-true.3mf",
+      "bytes": 83865,
+      "gitBlob": "dd9105c9b48a86a178f0f592bc720bc316092728",
+      "sha256": "7b071658dfc26e6e5920762e95b60d646da864a984db41ce342a2b12a6ae4ebb",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Online-false.3mf",
+      "bytes": 83864,
+      "gitBlob": "471d591f2f9a8b597de514ecb2f9d16c7f8a99e7",
+      "sha256": "869b6ab0ed77f9f48a40904aca40bb811ebca1a4a33430110f6cf595bdfe0582",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-Online-true.3mf",
+      "bytes": 83865,
+      "gitBlob": "c568316046c753b71ee20169a917c3922a20015a",
+      "sha256": "5d65910a5bd08a48c86e6e41985c117ed8e429fc056e1303e1da240e693cede6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-chinese.3mf",
+      "bytes": 55800,
+      "gitBlob": "94628028bf1d65032ad89214971657e008941509",
+      "sha256": "e86347b06bb9e8918110319abbabec8dc86efc8a8a15e408d13188f27cc4e18c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-friend-pronouns.3mf",
+      "bytes": 83865,
+      "gitBlob": "67eb047e5210a20ea6288c99c9e70047973d1481",
+      "sha256": "f5aa720db23a71b8b74831bfaf5a64e88db3848b8f00ba1bc97e6b5c2e137bb1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-japanese.3mf",
+      "bytes": 62603,
+      "gitBlob": "4d19be1abf862f864a4fea1add735616593dcf0b",
+      "sha256": "59aba2b67eaa1ff79589805c73cb757ea8125b684f081c21023a6806eeaf6312",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-long.3mf",
+      "bytes": 110015,
+      "gitBlob": "d47e5eb3fa9f253898c449b2cba96dcbca18e5e3",
+      "sha256": "7019c9f07594cf1b50f77b294e7063d3829145f6ec5c5324b41238e68c4e7756",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-mixed.3mf",
+      "bytes": 116050,
+      "gitBlob": "016d30a682b5ccbe981db1e614d4628f02f135e3",
+      "sha256": "07c90bdb21f9e13817572d5f303b0179e428923f6d4e604311093fe4e4a229e6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-only-name.3mf",
+      "bytes": 58381,
+      "gitBlob": "6c83fb36d10d1d1e06309a8865c569e5a056f771",
+      "sha256": "a061a9c443a7fbc1369fe620716d9a76ce2cf130ab0342fba4d858586fd47f88",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-pronouns-no-status.3mf",
+      "bytes": 67016,
+      "gitBlob": "51479ba99787a579ecda18c559541f6ca43cb51e",
+      "sha256": "9393c1ccba83c2be446ed61874d757110aa2cf87aa2db8c8878c5d2d01380561",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-custom-color-independent.3mf",
+      "bytes": 68589,
+      "gitBlob": "a6d43ff9789faa3f7a625c0d34570f91d5c5ad00",
+      "sha256": "4028105ef1807d6048d14a3ce8d8810df1b6d1368d11dec8b275c2863c6557a6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-no-status-no-pronouns.3mf",
+      "bytes": 58381,
+      "gitBlob": "a75a48618a97f79eba5a0f92b0fc1a07c7200d5b",
+      "sha256": "6aedd6ebbc4fca9891b1bb7093a5fe985d49fe0508861c90f54e4207aef79b2b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Ask-Me-false.3mf",
+      "bytes": 77780,
+      "gitBlob": "0fa92b1b8478627cbd96cb8e7b18b0d1bb68bf9b",
+      "sha256": "c728891292dae98da7a05f559b35cdee4311f0aff3e3334fd580b38aa284c26c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Ask-Me-true.3mf",
+      "bytes": 77783,
+      "gitBlob": "ca0edde2bddef8e68ef3f27d5153a69fc640335c",
+      "sha256": "a875538fe1a5324a9d84d080e8dac8f99f17c0cb4b50a88bcb7bf6096738f9e1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Busy-false.3mf",
+      "bytes": 77780,
+      "gitBlob": "d0e11e68d0e5ef49d5953062b3c764f120099724",
+      "sha256": "25db9dab45005b2c04864abc03e73885c1e0931d0aca68c3994a87f6e1b4dd4b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Busy-true.3mf",
+      "bytes": 77783,
+      "gitBlob": "41704093b6e4958f61119b4b20608e30a2ffe920",
+      "sha256": "95ff1e21cdb10fae203392af8d0607a16f1ce00461e8580391d75e1b8f80a2a5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Join-Me-false.3mf",
+      "bytes": 77782,
+      "gitBlob": "80f79d74a96cd44a4c3ca4365a08f28b33469a8b",
+      "sha256": "744bebf7cf800ef27f0f4fceff3b79254b8625d5f435a19f825c14440b620ddb",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Join-Me-true.3mf",
+      "bytes": 77785,
+      "gitBlob": "18fc997403e69bb7acf1138d459417910a050af8",
+      "sha256": "ab10e76d24a53d1ec27ddc3faa04ed74bd94ade6a36773df7ad7b085b5588251",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Offline-false.3mf",
+      "bytes": 77783,
+      "gitBlob": "d92a96bfafaa03e1043f318dea88f7faae009738",
+      "sha256": "07e050436ab7e8cccf40c4042cc966b990e4bf291fdafc1ece4795e4184962ca",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Offline-true.3mf",
+      "bytes": 77784,
+      "gitBlob": "88992670023d3ae60069a29a6054052b855e7fa1",
+      "sha256": "d9a50a99b05329fad0b2c55ad082c6c4dac0a14cc2634517b293760cbb440a68",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Online-false.3mf",
+      "bytes": 77782,
+      "gitBlob": "0d81cd8a7efde46f49eb9f6be0a6b6a0adf916a0",
+      "sha256": "69349d4b262480041589195648d0cbc313ad762d523f4c79f9ae15e4914e11f5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-palette-Online-true.3mf",
+      "bytes": 77783,
+      "gitBlob": "aea5d1db76bc33858f5f047ff6f8d1e38bf14eb9",
+      "sha256": "0d6c0a71d78541eb294beca4f27aca667338cf29ef6e070d9881629a5cff59b8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-pronouns-22.3mf",
+      "bytes": 68584,
+      "gitBlob": "6ecb17a6e95fc940d7877ad3bd379dcc6fa0fa9b",
+      "sha256": "fad49feb80672ca26baaa676b860f55e69d1bf90f43124aa3f282ae71aa08460",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-pronouns-23.3mf",
+      "bytes": 68586,
+      "gitBlob": "18f7d87721cacbaedb7bf902f36cd168646da8c4",
+      "sha256": "8f6be2b97a00e08fe125e019fea54d8c05b8e3908406d2f33b5f2bc6f2184293",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-pronouns-24.3mf",
+      "bytes": 77124,
+      "gitBlob": "a05d7c5bcaeee97eed9f94f2c0f99ddfc5faa873",
+      "sha256": "e7f9f62496dddd6366f47eb44b258790222a49e1dfc084ac221e3a03963f3eba",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-pronouns-25.3mf",
+      "bytes": 82560,
+      "gitBlob": "9b142c3620e7c19a13a94837ab65dd23868f807e",
+      "sha256": "d695dad0c611577f00f6de79824d8b27f6c8043d50d3bfdf11dd2ef4433c9a63",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-pronouns-26.3mf",
+      "bytes": 83864,
+      "gitBlob": "3570a97d1b7a0e9d621af54b4aee07833d969bd2",
+      "sha256": "4a56171cddb1bb05ccad025e657d2a1715d3ac44d8994fb93456ed95a11df0e2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-pronouns-27.3mf",
+      "bytes": 92343,
+      "gitBlob": "852acf0b394bed5a85b5367983b29dd5d5716e0e",
+      "sha256": "d6b2ac828588961a3d19599ba7baecbb14429253b9489052028ff6dd5ba83c19",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-0.3mf",
+      "bytes": 51313,
+      "gitBlob": "569a98229b59bd39fe579c9717c46be7498ea3b1",
+      "sha256": "4f704f6701098184d05404b35e86cfc755c0eed8d2dd0eab0f3e74c496ef654c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-1.3mf",
+      "bytes": 68584,
+      "gitBlob": "e8d4c64189610200182227cd7dface95ac775567",
+      "sha256": "9c0c3eaec3f70aaa45af3bb29807bf83888285586933b48558a82642ae2d1e1c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-10.3mf",
+      "bytes": 57456,
+      "gitBlob": "e5a889132b5bce9dbc1a03e021bdea8ef1ab6f3a",
+      "sha256": "d34cc25a66274d7dbf59103b06e3d2f1f3b0165a831d7d502a1d2c4befd77d38",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-11.3mf",
+      "bytes": 47949,
+      "gitBlob": "75aa6b0cedc6e73f4e1867470d055ac920cb8678",
+      "sha256": "23369330583bb889c6e9bcbbeb8cd8dd9384561e458f57014961cf3cbbf3e17c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-2.3mf",
+      "bytes": 72494,
+      "gitBlob": "c7385f19bdfdcd231f4a579852ce5cc411c2a5cb",
+      "sha256": "5369d2448ea44075608aba0dd1b3058e71a8cef1d7d42217577ba349a6b8a241",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-3.3mf",
+      "bytes": 55800,
+      "gitBlob": "ab60b5bbb04f129260c5698bc8ad3d4e8702b454",
+      "sha256": "22a1c4ea186039795a3186de6c9cf27786d164f0c7130110e9efc2d770a2b8fd",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-4.3mf",
+      "bytes": 62603,
+      "gitBlob": "798ee03b1a87193e0ac5c4bf203fa351fc89a390",
+      "sha256": "026e32934ef5ee19b50b5c47fc73adf29c00820f4161ab0affe6c7fc9b145525",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-5.3mf",
+      "bytes": 92289,
+      "gitBlob": "9700e6f92c36c26323b2070b8107eaccda0617ef",
+      "sha256": "fce32898812caa13eeea0d8b4f4249a149f1393dc66dda1963c3b4c5cb06d9a9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-6.3mf",
+      "bytes": 68971,
+      "gitBlob": "0410834e757f2af37783f83fb143e9b14e7dd839",
+      "sha256": "3ce3fcb6efba19e5dc83f0ef2a715f02abcde78ef58c91972b2848cbc6964434",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-7.3mf",
+      "bytes": 73962,
+      "gitBlob": "eb0698944a18704e128168813698639a4df35f0e",
+      "sha256": "96fdaf6cd04cd8ebf0398352e37fb791f5ea6f346962d3ffb057786d0939461d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-8.3mf",
+      "bytes": 71691,
+      "gitBlob": "9decda74fcb7281715de06b9556391f96a21d527",
+      "sha256": "25e737af9a4478a63a0f9b3be50c91792da7b5e0d517da8d7fb6fd63651753b0",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/classic-review-text-9.3mf",
+      "bytes": 86543,
+      "gitBlob": "8b5bf24a58a5cfb4d2641740a3b5b44a527cdf18",
+      "sha256": "ba940a5c338c3b67deaca14db97c4ea79867568fe4163ee248c67708e7af7481",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/independent-shard-0.json",
+      "bytes": 228760,
+      "gitBlob": "3b6bbedf9f9011e7242bd2da3b6f6f74f1013665",
+      "sha256": "01997bbc30ce7160f53517ea5b4f2519e53a360d201c8c51e64a0f055414881f",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/independent-shard-1.json",
+      "bytes": 217890,
+      "gitBlob": "c9cee3873ec037711ec63c316be1645525576e3b",
+      "sha256": "372f5ee7978ca1bcc07831c83e764c15e2604586227b4cc5431769c896ff3198",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/independent-shard-2.json",
+      "bytes": 231824,
+      "gitBlob": "76f3511b1628c9f61887ad4d1df889d079ad298e",
+      "sha256": "dc92f72332438e109a3b2e2ac16201b1ac27d60d2c0adb5205341e6a1e472140",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/integration/independent-shard-0.json",
+      "bytes": 15052,
+      "gitBlob": "88aa2c181547c74f4fb049dc748b52dc1f2c8321",
+      "sha256": "175a40a785712baa7e4640e8f4b3fac41b7a6059886f554e43355e00d494e8e2",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/integration/mixed-friend-pronouns.3mf",
+      "bytes": 81315,
+      "gitBlob": "2153d04ea8c74493b1b6b78fa8c02006a0953d7c",
+      "sha256": "8bb022c0c56007f65287632b51d2c4a31671e16c5010092705b3fb2331e37994",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/integration/nagikokoro.3mf",
+      "bytes": 68584,
+      "gitBlob": "31ee6d7b8ca87074415af447b329af0bc97440ce",
+      "sha256": "336ae35d0b60c36c38d5c87a7f99871935e7bc4c15ba8ddb24667021698294e0",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Ask-Me-false.3mf",
+      "bytes": 74580,
+      "gitBlob": "bc813659561aa084e5aac76177ba4d8d71979de8",
+      "sha256": "4684c75f3c7af3d0becca67808d0ac28b856c81cfcc436bb098642ac6969c6bb",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Ask-Me-true.3mf",
+      "bytes": 74585,
+      "gitBlob": "3619e25a44daf8c5df63f22699fe09d468c4c6ae",
+      "sha256": "8a11b04a46cd8c5d41dec99931b16239f7064554931be6cbea83de18100357dc",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Busy-false.3mf",
+      "bytes": 74575,
+      "gitBlob": "0cb1cd80346b58bb4aa79e895d416f98d2131c5e",
+      "sha256": "17d05ab054668934d960ab8fbf85ae69e2865b93e265f96c3865a8566829d42f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Busy-true.3mf",
+      "bytes": 74581,
+      "gitBlob": "155f6f31603c36f685375088e1a8a888aa93ab8a",
+      "sha256": "28973ecb02d4c65e71aaf8d549fd86285a1d4f1cb7e8e207f5c603a17b537207",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Join-Me-false.3mf",
+      "bytes": 74580,
+      "gitBlob": "b00ea1c89941d35d82dbf2c309515e2b4550ccca",
+      "sha256": "aa5d6c3d2711c74c3ab60de31d800dc50e56ed5c460b6ca26873053ee78cdda2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Join-Me-true.3mf",
+      "bytes": 74586,
+      "gitBlob": "592d75556f5f7e04f508b7ebe32d4eee197b63c1",
+      "sha256": "1862f3080e2b4813538cf430576ae9e1cc098b8c705a8afb3224bb920dd8dec3",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Offline-false.3mf",
+      "bytes": 74579,
+      "gitBlob": "e25f6a4265ff220f73178161f7d2f4272fcaf31c",
+      "sha256": "ecfc19710cc44980973f6beba36394543f9b0212bcde6d21fbe63d182b28d5b8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Offline-true.3mf",
+      "bytes": 74585,
+      "gitBlob": "7598a6c54463348148eb3b8e1835442808b402b3",
+      "sha256": "26101415f67aeb44f3654a8527f25b083428afe6c294de6163ba78fe05158354",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Online-false.3mf",
+      "bytes": 74579,
+      "gitBlob": "a52aa94744c3d3fb3cb66ece7ba0d1c7f30ed85d",
+      "sha256": "ca25409e852a162f42278e9a929ad94dc90688bd18bb9fdbf61c5bcfefc5b0b9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-Online-true.3mf",
+      "bytes": 74583,
+      "gitBlob": "5e94bd1ededf911cf5f438409c40c64b74c95726",
+      "sha256": "a4272b9e04ceb90df5b0f9f475557055c050adf951aa862da48a4ef0119d6aff",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-chinese.3mf",
+      "bytes": 46780,
+      "gitBlob": "cd533e6a9ac30cc475aa68c4151a1738baffbba1",
+      "sha256": "b502f9f41df66bb37b0fdc3d7347c6f0bdc5cc7b0c06051ebc99865dea7990c0",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-default.3mf",
+      "bytes": 59198,
+      "gitBlob": "44da8546b597c93d4fc5f4cafddf2ea4d3037aac",
+      "sha256": "269c150be720feed2888df1f6884a54fb0102ad8fcd99f233764373a00db8792",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-friend-pronouns.3mf",
+      "bytes": 74583,
+      "gitBlob": "08ac0935ec4133b8b86ac7a5d51f4afa719e082a",
+      "sha256": "aa199b5ff3930b6c20c893fc7b0ca87af2418e80b1a461336c683af3793e147c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-japanese.3mf",
+      "bytes": 53262,
+      "gitBlob": "606645afbb30c02409cd0c391d0d9436aeda5748",
+      "sha256": "8f548a76df13b5a0f1043589d79c3243d3c1e2ad345a803c96b337d11e5751e1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-long.3mf",
+      "bytes": 100386,
+      "gitBlob": "045808978dd4b46252fe444110015b753d48c00d",
+      "sha256": "0008feaf02092e2a2c8a419cb600c8f05fb25f2ae12810814d6135b75ab78158",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-mixed.3mf",
+      "bytes": 107727,
+      "gitBlob": "0f722e77e2e41af59820786199a36db870c67639",
+      "sha256": "dba789d2b11411c6cd4d8fe518d3a3e3a5f00ca434f4f4824947a9dc96fedf2d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-only-name.3mf",
+      "bytes": 49164,
+      "gitBlob": "fa70da5ec584e63ea038f8f3a7d71e218b80db9c",
+      "sha256": "e4a21b804b6050af8e643eb6af7d2c417a30b0e2be51cb7ab416db79c3fd1997",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-pronouns-no-status.3mf",
+      "bytes": 57843,
+      "gitBlob": "eb12a5c9d1dc3f6b79713b8ef38604f496333c85",
+      "sha256": "d986466ee8785995cad542d18512fcdf3b8c374d3acd830e794f76e922728609",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-custom-color-independent.3mf",
+      "bytes": 59204,
+      "gitBlob": "c56c2f0fc51115253e4aaf1a7f30a6f0f65f6567",
+      "sha256": "5e581f4508046792d1b054eda69be204bded4d1323f856fd16e3409c13604184",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-no-status-no-pronouns.3mf",
+      "bytes": 49164,
+      "gitBlob": "aa490c54eceba4e8fdd01deac7fda3796593b89b",
+      "sha256": "38b3c3887ff2ebca4c03142aa039aa855b9b49283954bc915f2ae4e9c585a64e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Ask-Me-false.3mf",
+      "bytes": 68639,
+      "gitBlob": "c3e91ba90af1a796aac821922be01f408fef962f",
+      "sha256": "27123932be53b991af99423df353b8928a45cc1e67194c4976ed03daffbe866e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Ask-Me-true.3mf",
+      "bytes": 68649,
+      "gitBlob": "9974d38c60575781281a99243ca95bc65c6850f0",
+      "sha256": "b0aa1d64f271326485693b26f1430908fcca2115707b3ad87ce23e37a45d2a73",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Busy-false.3mf",
+      "bytes": 68635,
+      "gitBlob": "096c891ce096b49d4c7ae5e34b6ee7318da52714",
+      "sha256": "0d4ecad7e07a47ec03eb9d26ff45b9e4ec414ac3a493c7e8004ac5adff7974b5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Busy-true.3mf",
+      "bytes": 68644,
+      "gitBlob": "fbbe449caea0155c9d74ce75d516efedd6a9b380",
+      "sha256": "8019793cb245fbde6dad6cced919d3ce787ddd803211c6e91008d1b576e97029",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Join-Me-false.3mf",
+      "bytes": 68638,
+      "gitBlob": "b759ce5efe8973329d59220e1912ef7ed1073a2f",
+      "sha256": "8fd6a7a445e06b437e438d8df00a637fa643be9c4d04e77153778658452ae0e6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Join-Me-true.3mf",
+      "bytes": 68650,
+      "gitBlob": "397b9674a26c0cace4bbfbac3f19c15aa037fe1b",
+      "sha256": "42d978d065fa7992a07589d167c7106f21443b1b71c4fb1ed997e065aa1761ec",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Offline-false.3mf",
+      "bytes": 68638,
+      "gitBlob": "c574a617b7128aeb1de46488ab534042772cceb9",
+      "sha256": "24a0d0ee026d48673e20f1584711c1d1970914542192d7ca1d2e385717e9daf4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Offline-true.3mf",
+      "bytes": 68649,
+      "gitBlob": "7a77c86f507e346361fbb056e6041863be8be6c5",
+      "sha256": "2efd4bd1d76e29442d22d89128e4e520ef682d30cf27213154ab73f792c545f8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Online-false.3mf",
+      "bytes": 68640,
+      "gitBlob": "80ba42d82cf2a5e3bfccbd4e7be863a9ef0f9eff",
+      "sha256": "8db255d01f2929434cb260fdc132de6033b50da90ce672ab962081f89a5cc850",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-palette-Online-true.3mf",
+      "bytes": 68648,
+      "gitBlob": "928c5adad8d018227be9ccee30b8fd24f9e38b14",
+      "sha256": "65512138ec43305b2aa804a5795fa473f17b94e4db13507bf72b3817d59c333a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-pronouns-22.3mf",
+      "bytes": 59198,
+      "gitBlob": "0b6bb4cbe9d07b9ad34ee01003a241d414c49479",
+      "sha256": "a209295531b5216845ad1f4890303db8a3bb56018d7eb092f664f24bcec9fd88",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-pronouns-23.3mf",
+      "bytes": 59200,
+      "gitBlob": "ac82292324e2e747aa09c4819b66aa18b46e5a38",
+      "sha256": "b3a3e93edc52b1a474643cfa609224d0b36fe37d318fa4e2654f559988d1ccf2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-pronouns-24.3mf",
+      "bytes": 67727,
+      "gitBlob": "d01732961b31317a35434f8b657f17219f6c218d",
+      "sha256": "e398866eb0ffb1e5f6558b5d26bcb4e20b2beec1bf662763e9918aee37d7c0d2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-pronouns-25.3mf",
+      "bytes": 73158,
+      "gitBlob": "fb20bb192a43cd02af33311dc953223ee9d64bba",
+      "sha256": "6b5fdcfefe17ff2c773eed59132307e610e91878d69e0abb88741a3937d2156b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-pronouns-26.3mf",
+      "bytes": 74579,
+      "gitBlob": "02fd9046dbc995168d0fe9979d2299dc9d6b1235",
+      "sha256": "33526fa5f11bb471639ea4a66af9058f12de607c7514f60cab73e9a26a47da59",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-pronouns-27.3mf",
+      "bytes": 83207,
+      "gitBlob": "ad82f659748f07ed9d064401b4678548911c1e3d",
+      "sha256": "b3f5285b3ab647c7218a9f5724a494cca3739a73332152dceddfa00a3661afa8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-0.3mf",
+      "bytes": 42148,
+      "gitBlob": "6409626a333425b2f556b437ddb143f43a6a7a14",
+      "sha256": "23e361ed5f6b025ba6335d2c3627ca10ab7d15c44646eb11d41f3538d7127041",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-1.3mf",
+      "bytes": 59198,
+      "gitBlob": "bf1b8da2e18309802294a25e89bae79d2452bc59",
+      "sha256": "a33b7469afed0a8a7e797390520314833fe5d187bc31bdbce2827827f7f58078",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-10.3mf",
+      "bytes": 48416,
+      "gitBlob": "29d12b851250de9df59268f7e6a9f352b5bf84a7",
+      "sha256": "0cbf56e2e8ee6b3a475d8cf8d74365548eb874bb12b3b224d5b285f42b79e00b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-11.3mf",
+      "bytes": 38604,
+      "gitBlob": "0be09b33ab913a3b84781a1dd9c8961f42089b13",
+      "sha256": "32293b2ca16f50975de32eba18a4a0e568d94c3f9ca24fc0eefde901033974ea",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-2.3mf",
+      "bytes": 63209,
+      "gitBlob": "5dcf9133822bad5a87d4063522d16c225b90cf04",
+      "sha256": "7be398f94ee1e85f7fbcd9f2e7f45bd398253f39041aee4e87e4478e6b3198a1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-3.3mf",
+      "bytes": 46780,
+      "gitBlob": "09479c6b4b4a065900a0166207f745e563a08dc7",
+      "sha256": "0a9bc9526aba0f23b3446ecd2ebfdc6513e0eeb87d38750d80a96cb1dd7497ef",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-4.3mf",
+      "bytes": 53262,
+      "gitBlob": "fce3c5de11237eb471ba54e3cf007aea7c1fccda",
+      "sha256": "5224bb60da5fafc0946297c5d6be06eb744a538165dc601002dfb60218997d89",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-5.3mf",
+      "bytes": 83656,
+      "gitBlob": "da444005e17fbdff63c019160f59780c88b7b6fd",
+      "sha256": "e4923604160854c11dc9ff3e62deef0b1878078bb3c5a8c88460f7169eb50d17",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-6.3mf",
+      "bytes": 59514,
+      "gitBlob": "8689f5778db5cd648916b706d41dce52968b41d4",
+      "sha256": "57a3743b8297d650b8e055e9747d9d01759a5d4a39fbb7f905528102872a44c3",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-7.3mf",
+      "bytes": 64821,
+      "gitBlob": "471328c7bb7763f5ba0859fa17a09402eda744fd",
+      "sha256": "a931441d590e8fcb19dae0d480d71c746d0a8ff15e7d8ba986cf97cc22d2aca8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-8.3mf",
+      "bytes": 62580,
+      "gitBlob": "f4591438c839dde586fe3b87437ffcddf296f05d",
+      "sha256": "17ef810297b45747d9a10cf9f2e919dc3aadc122e23b1101a1e96b946cd81bd1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/classic-large-avatar-2026-11-03/native-review-text-9.3mf",
+      "bytes": 78033,
+      "gitBlob": "c7577633d7df404779ae237b9344f232ef69fc56",
+      "sha256": "43a66986d6d16d7c753cec8c705e98e2af8fbef695447b00978b454c28bb98e6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Ask-Me-false.3mf",
+      "bytes": 68397,
+      "gitBlob": "ab731f861254dfe60e076ebf88b1fbe970533298",
+      "sha256": "07a56b68d080566a4cbc33dc7d8b8e2cbad94073f36918f05457b772fc86c0ac",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Ask-Me-true.3mf",
+      "bytes": 68403,
+      "gitBlob": "f8462c3305d65ce0bb5b0df5911dcc4f7a2d76cc",
+      "sha256": "56c6a3376a7a71c31d4d146fb0a71b2698bc692003d4b011b7a390d23622bc2f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Busy-false.3mf",
+      "bytes": 68393,
+      "gitBlob": "d9b5daa00b67f8ac55f2dfd4fa3082470dd00b74",
+      "sha256": "302828371897f4dba17d348f200cba70dca1c075184dcd7807b783894ca91b1e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Busy-true.3mf",
+      "bytes": 68400,
+      "gitBlob": "1dc1a8003ba7d3752cea1698601c2988c6595e25",
+      "sha256": "63bb1bd1fceeb8d0212eb43fe07ce361abc8c37a743776e21843887c6a411fc7",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Join-Me-false.3mf",
+      "bytes": 68397,
+      "gitBlob": "206cac1cef7688f7a5ac22604d295dc7ad7f5502",
+      "sha256": "7996be7f8cf11e7dc2ebcf461cfc130f00444653d8b479e2449a298c0505ce2c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Join-Me-true.3mf",
+      "bytes": 68402,
+      "gitBlob": "918d0d4faa4644608c9fb20052127ea160378cf2",
+      "sha256": "909b66ff02aa5b1972d3742be1e9ebbe8e02f528bff6751c2f7815518a75d989",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Offline-false.3mf",
+      "bytes": 68397,
+      "gitBlob": "40700f059eede651e28ef7d894c0de45e184a80a",
+      "sha256": "5c310743b288db00ac681ca97bb7dbdc3a5614fb84a9cbaf6805e9f0211f34da",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Offline-true.3mf",
+      "bytes": 68402,
+      "gitBlob": "463a9a0438238b498a8a359a114d8b0840d9b107",
+      "sha256": "40a952c3a53efa42f220d1f769caaec8de7be59e5f61bc240ea3579bc0865a86",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Online-false.3mf",
+      "bytes": 68393,
+      "gitBlob": "0d5e034158017bdd977a4885c4309707c9d37ee6",
+      "sha256": "325e014934fb8f543b6d80612ea488d8d0bf31edb9b156dc1bc609b2200e69e1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-Online-true.3mf",
+      "bytes": 68401,
+      "gitBlob": "97229fe96fb194473eed253ddbf0b3d8a119e2fa",
+      "sha256": "958c61487bdba1122848fe0c45395ab1903ba9ee80f6527e7f30f2c898ec02a6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-chinese.3mf",
+      "bytes": 40408,
+      "gitBlob": "bcae8a139a7441e0628d0d752dd02138f473a819",
+      "sha256": "e2165953e86c98df5a6d3ea4f8d9febda80424b05114a4ab73d58658f5801160",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-default-design.json",
+      "bytes": 183905,
+      "gitBlob": "f023fe7137f30263a66aadc86d1ca3243d692343",
+      "sha256": "e6d0673231fbca49667df46b2d28f79ebf57b96b86e9458c15f3ad40e56a33d4",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-default.3mf",
+      "bytes": 53200,
+      "gitBlob": "694a6fa4d36bb5cb06578941524e640598fba793",
+      "sha256": "28017ce92e00f2a3b869c5672ed6a833092a95b7411356d1e1140fcd29784d94",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-friend-pronouns-design.json",
+      "bytes": 238469,
+      "gitBlob": "aac04c554eb5a078446040a05bba91328ed0bba4",
+      "sha256": "e51f295854ba05536c0286947009e05fe8470fe0e1109cb01cc1b0dcd0547444",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-friend-pronouns.3mf",
+      "bytes": 68401,
+      "gitBlob": "aaefff2a33bcce832156ef3d015c51f52d85fb2d",
+      "sha256": "ece33ef8972e17972a1c4fd0f41a6e3b5a8f279c003df11a269c9eb2b3706c6f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-japanese.3mf",
+      "bytes": 47170,
+      "gitBlob": "a4f64ac4b275918dbc1ac288af371d3897dab8dc",
+      "sha256": "bc3ddc1c591d0b30712caa79cf34ea39f02541fe6542fb83c28747bf5d583601",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-long.3mf",
+      "bytes": 94766,
+      "gitBlob": "08234c50b517a8427175f71e6b8c6d6ff7fee5bc",
+      "sha256": "52507d15e83779695dbac810f59fc10fe55719e833acaad8acfbe589893f7d38",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-mixed.3mf",
+      "bytes": 100697,
+      "gitBlob": "0cdcb4b5b2368f9c035309505f363f603fa65e53",
+      "sha256": "bf7b1b800b419d519b2deb7943fbd61bfa161b6f8a43472fb7f8ade3c5bfd93b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-only-name.3mf",
+      "bytes": 42938,
+      "gitBlob": "894c53859d042b97c59addea7bb331713e610d08",
+      "sha256": "3426b687cfad8a948534328703cad0a9bb440ab79d05412c1ed681c86de81dc6",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/classic-pronouns-no-status.3mf",
+      "bytes": 51571,
+      "gitBlob": "98ba1f292f10cb8cb8a4b57f4e81c3c44098120e",
+      "sha256": "e623f9c7c6ea1eec25926d6bada5ff3a362413e3714fc62bf7ffdaf0db420feb",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/custom-color-independent.3mf",
+      "bytes": 53205,
+      "gitBlob": "49d9a836892549c526c428c1318ee0c02f955189",
+      "sha256": "609897b03935f41b22ecb2c25b3a9a4e54faec1a8b5a1df9f8a08128e6aa5317",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/independent-shard-0.json",
+      "bytes": 152455,
+      "gitBlob": "952a818746f477b1d1f0af21f23850f79200f15d",
+      "sha256": "9db4c2ad56dcbe729e40daa8be4ec9a0ebec7bb7c790ac49f9070ff3354f4bcc",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/independent-shard-1.json",
+      "bytes": 150450,
+      "gitBlob": "845b8307df773e41a456b0119e8e460912968c63",
+      "sha256": "2f766589038109aff397253c7236b4f100531c813bbd8e8c64a395ef0c8fb511",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/independent-shard-2.json",
+      "bytes": 149648,
+      "gitBlob": "b84242b569ff388ec93f7e309f803afc8828188a",
+      "sha256": "eddc3dbd1447c491d26abdf5d62d9114493e7d36e04db05fcccefdbede45141f",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Ask-Me-false.3mf",
+      "bytes": 74580,
+      "gitBlob": "af387b988b5efe087f36bcaac2809d63b016216d",
+      "sha256": "530ca63707b2fdc2e3d96daec89e76cdb8fd9d1001d2b0b802fff8941a96eb94",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Ask-Me-true.3mf",
+      "bytes": 74585,
+      "gitBlob": "7790436aeb0552b88803082d6e9f62d8c0e1fae4",
+      "sha256": "f358d47af7d228086258fc3fea76d4a5fd17c05478fe68a1e158dd5c8e28b6bc",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Busy-false.3mf",
+      "bytes": 74575,
+      "gitBlob": "fcfa25be3d0c907dcd240250194a4a45f5776b22",
+      "sha256": "fe8e898ec4071b77839a34c0e116ecc65f6ed22717c1ec404e76a1d9814d561b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Busy-true.3mf",
+      "bytes": 74581,
+      "gitBlob": "b5f89ad8a2ec126560cf6535bed490bf7d75ba1d",
+      "sha256": "8cb6c8ea9cc692726fe1c1fffe885eead5dc7b439fc8b77061a00ec505bf878e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Join-Me-false.3mf",
+      "bytes": 74580,
+      "gitBlob": "444fe671fb640354e88def2d92a19029ce35a44f",
+      "sha256": "1e5f913924ee39c9d2a377ea6d8903fb1c2e557f3f5cf2589a266b9f19839e0a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Join-Me-true.3mf",
+      "bytes": 74586,
+      "gitBlob": "8c93c7fd7a6961816c48c4a860f626234659d576",
+      "sha256": "1045fb078b3a60666f1717a534babebaa761ce173c0d66ca5b5decda9e16393b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Offline-false.3mf",
+      "bytes": 74579,
+      "gitBlob": "4e555c4f29158a62bfb2bcf9d09ce9d3989ece3c",
+      "sha256": "005861b88b9afd90e74f21eeeefbbac18bb2e1c864025b1fe14c54394d09ccce",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Offline-true.3mf",
+      "bytes": 74585,
+      "gitBlob": "d2b75de5dfeb09b769c349d802fdd34e72620811",
+      "sha256": "03bd5c7abf3e12c0c476e43c2eb72cd4c8d96a3650e157cbda83a09be5e341ee",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Online-false.3mf",
+      "bytes": 74579,
+      "gitBlob": "e0c611adf32269d389155e1f8e33de02137c3c26",
+      "sha256": "620dee6e8b1279f75daaea42a788d26e3b24eb2d6f5d7f7bfd7c59ac8d4a69f0",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-Online-true.3mf",
+      "bytes": 74583,
+      "gitBlob": "a04e1589e37ee6d5451f70a4ab123aa809ca25d3",
+      "sha256": "7a9bf09c6993f9dbc8667a7a4e2d832d82abd1562af8d759862893d35fafbe1b",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-chinese.3mf",
+      "bytes": 46780,
+      "gitBlob": "0335f3071b5247a368d573616d411269273d301c",
+      "sha256": "7c64dbc063f5bce0e17eb7a9427a49b647592758c142af0fb6b75198fee024bf",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-default-design.json",
+      "bytes": 227894,
+      "gitBlob": "4745879ad04e7fd4a2e0529fbb26f8e457f219b3",
+      "sha256": "1bef33fd4f0e7908debd99733d012b6fe380974f54b5cbb150de810902c43d94",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-default.3mf",
+      "bytes": 59198,
+      "gitBlob": "bec823be0151968a47f8a3e158900482de04b228",
+      "sha256": "82635e5c860d5425985395b39bd7761d0ee44b4233330bcfd28d27d7c163cce3",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-friend-pronouns-design.json",
+      "bytes": 288288,
+      "gitBlob": "2dfbb9e56b564630c6bea5c37790d90b233eb56f",
+      "sha256": "24198a8149e63b45c8605c404da10780031f289a0ebb161149835aaed8fad32e",
+      "reason": "Serialized render intermediate; retain source 3MF and final renders"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-friend-pronouns.3mf",
+      "bytes": 74583,
+      "gitBlob": "1d95612adc371694f6e97189032ad9ab1f6f55d5",
+      "sha256": "fc9779f51535a4ed8537c128ada69f9c09c03b8d1204f0506549da31858913c2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-japanese.3mf",
+      "bytes": 53262,
+      "gitBlob": "ead4b94a8bf6e0b113ab551dac92e8c4965910bd",
+      "sha256": "5268bc188eaee9a2b993ebaceebfecf2cb65d320a2332e4503bc90986bba884e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-long.3mf",
+      "bytes": 100386,
+      "gitBlob": "65cadc32f1260f3c1efaef9f8f9fbfe673ca9451",
+      "sha256": "2cb05ea7c9347b3bc72fa12b606667fba03670e2aba3ee86944190ab8c2b5623",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-mixed.3mf",
+      "bytes": 107727,
+      "gitBlob": "0019daf643efa1ba3196c08a0559b399ae45ee94",
+      "sha256": "17b7755091aed128a3ae3d08e5df9b439bbd8dab961aa39c01c52c43579e671e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-only-name.3mf",
+      "bytes": 49164,
+      "gitBlob": "cccde80f021754d0190ec30c15f504164d582072",
+      "sha256": "ee6ab56b3ec5e054b26258b0606775c6b99dc61bca8515c1b7ad1eefc3d69120",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/native-pronouns-no-status.3mf",
+      "bytes": 57843,
+      "gitBlob": "ef2ff70c349394ead00d0e07cec730de8b380bf3",
+      "sha256": "38e5161033f18db17c9c246ae30b4164c40558aad61de2a44c1a6e7f8a378ec1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/no-status-no-pronouns.3mf",
+      "bytes": 42938,
+      "gitBlob": "4c13b1cc8fb2d67415f4974efa495ff837bfe684",
+      "sha256": "3e8b732aca3da52b2de7f4b877175f9b530d15e2e6d0fd0bc725661bf900d4ad",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Ask-Me-false.3mf",
+      "bytes": 62237,
+      "gitBlob": "54720ffed53d44d6a1b6f593cb8767679f371f68",
+      "sha256": "e37a01291723adc6b75354d063fa7df2b044f07b8f5b364af1a2d2dccb5a139a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Ask-Me-true.3mf",
+      "bytes": 62246,
+      "gitBlob": "4d1504229e0ef442e18af9f7f842e57140cfa847",
+      "sha256": "5b664362c2cc9fa2a9a56e0809749506bdbbea6e853abf035d27df817c2d01a7",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Busy-false.3mf",
+      "bytes": 62234,
+      "gitBlob": "4ffda07a3dcc75754c8adffe3c6b6cbf620085b2",
+      "sha256": "b601ad2f452781dec8c70cd07925189d60353d782b32003b087c81225b1a67b3",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Busy-true.3mf",
+      "bytes": 62243,
+      "gitBlob": "110fdb16a39bd717d6134d21adffb817c9e6ed00",
+      "sha256": "b263bb2722ea459ae41227bf61ae28483164cad6dee8c0b6099050bd372a296f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Join-Me-false.3mf",
+      "bytes": 62236,
+      "gitBlob": "536a69ae938240fe2009e971b31e898117c61b2a",
+      "sha256": "3b41bd9ed744a88bc1e1b5a9a962e8e69a74d8e4da3664b22c3224ee185faccd",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Join-Me-true.3mf",
+      "bytes": 62245,
+      "gitBlob": "697a2766f3e6c905f3089dbccef7bd2c2ddb2541",
+      "sha256": "52b2f25f7050813e30facc42b1dc4018337112195c7fbc8a6ec800c72d137294",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Offline-false.3mf",
+      "bytes": 62237,
+      "gitBlob": "083eb45164c547ba6f95d55ed12c9b578cfda580",
+      "sha256": "dc92f0464c9f70090a52a5f2d8ce6b915375fc0ae1c344d46095f7ec10bdf9d9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Offline-true.3mf",
+      "bytes": 62246,
+      "gitBlob": "a7d64ee101b97681cc23c9198c02b175341808d8",
+      "sha256": "e262f0e357a1cc9f66b7cbe139ab5c6304226cf5d0664fe4a702274c3a31b5a4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Online-false.3mf",
+      "bytes": 62233,
+      "gitBlob": "3f108119abd248b088230381f65dd98cfe92c9df",
+      "sha256": "607c7a5dff011531f00607c1835b76100ce4317381f24937ff9c8e8973ff07f5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/palette-Online-true.3mf",
+      "bytes": 62243,
+      "gitBlob": "6b6a1ba575a6e4e56204864eb6714117ae33fbfb",
+      "sha256": "87195755dce93749f61f6be3394f5011a7e12101d3d68f92989545bf02f9e57d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/pronouns-22.3mf",
+      "bytes": 53200,
+      "gitBlob": "033057a5f2cd9d1c96501d7235fe3264f282122b",
+      "sha256": "44905d245650d8d2ff8bf5a6c9ad2227ff8d77769936493afd4847bc704a0f10",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/pronouns-23.3mf",
+      "bytes": 53202,
+      "gitBlob": "9df61c3bc8ec6bfecf751a3e0ae3b29026266c16",
+      "sha256": "20106413cb35fd9cb2ba83f011eccd5e2b45a05f78865016e8b14390d97910a8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/pronouns-24.3mf",
+      "bytes": 61691,
+      "gitBlob": "87e13d7139260262f2db4297090a553fe8f9bd7c",
+      "sha256": "dc067e1212b9275f84d526245d89952d734814aafdcb82e2b626cea14fb07e80",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/pronouns-25.3mf",
+      "bytes": 67052,
+      "gitBlob": "80c2fc6f30442558cbf37e8ba684ec3e863a0277",
+      "sha256": "c9ede893203145d7a4b023852471f1a5577b06a40dd495c177cc9680876981c4",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/pronouns-26.3mf",
+      "bytes": 68393,
+      "gitBlob": "b4c04856a8c7e57dceebe2cf337cf472026ad963",
+      "sha256": "62423e6724ac20c25aca6c9c7146268484b77b76abd41de5252ac4a7d7cb6cd9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/pronouns-27.3mf",
+      "bytes": 77160,
+      "gitBlob": "b62a7df6d2115c60f85749894ca1c6e35359aa2f",
+      "sha256": "8ea9fc0082c60375cf88e3f9f26ac8e93357b93e3499284c1d6689d833d49318",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-0.3mf",
+      "bytes": 35920,
+      "gitBlob": "a26bc1ab5fa3720cbe9066eae6327990fa4c164b",
+      "sha256": "644ae16d68f8c43542fac9011dae38b72c10ab4754cb766075ef3473ca1dc176",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-1.3mf",
+      "bytes": 53200,
+      "gitBlob": "a22a50a3c1b32a01ff4c52e1043bd0222d3f9ae9",
+      "sha256": "274f071f0e780fa5d91fd86e66b42e3ae4f74d2fadab59ba7632773bda5e2dc0",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-10.3mf",
+      "bytes": 42145,
+      "gitBlob": "695a00b4003938d9be929fc294b55dd00a5b0d67",
+      "sha256": "a7d98a42eeedffb82554b005ce0c7c1a2601993301eed1ce08770095102bc59d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-11.3mf",
+      "bytes": 32610,
+      "gitBlob": "6cc7fb3b913c5c4db731063986a5c1b8a2e80ded",
+      "sha256": "2ba098696df26fd2cd7e8cb3882d29c115305fef640bd5d66451bcc955a7df53",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-2.3mf",
+      "bytes": 57036,
+      "gitBlob": "ba8f79445a3591237521b225b9432fb3f3f1a15a",
+      "sha256": "4d8f7356e6da3f4e583a0fff8da51ac15711598d897e98ee1491b8a5ded55da7",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-3.3mf",
+      "bytes": 40408,
+      "gitBlob": "7310ceaecac4ad9f9d54271d475dafa62d5f6ece",
+      "sha256": "a11fe396d8e4e655bb9db8dde9bde53562e3ea4e59e4127a749f0b1627d2c4c2",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-4.3mf",
+      "bytes": 47170,
+      "gitBlob": "6365cd686dfddb43ca11239b4fb41218638579e5",
+      "sha256": "0796b34bd06da2a1beaa250ae5b969cb12d3e3d10cefe9eb85967c2696dc64ef",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-5.3mf",
+      "bytes": 77065,
+      "gitBlob": "15c6b6a6679569df00390fe9f434fd7582fc2872",
+      "sha256": "a47e712f7cef1812918f11956fb3836fd1a09c7811506a2f32794bba73e58423",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-6.3mf",
+      "bytes": 53559,
+      "gitBlob": "e84046cb18826ca04f05a18ff1158ddf2974b601",
+      "sha256": "4d96f77f51d4f147b3c33615cb766add624fd048b0fc380c322a68cb6493f343",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-7.3mf",
+      "bytes": 58552,
+      "gitBlob": "2dd6b5d82d957f700c9e37f86228523353e17f6f",
+      "sha256": "f9946f8b87aff790a5a9fc3034083d7da70c9369ec63f15f01b17f85408aec06",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-8.3mf",
+      "bytes": 56290,
+      "gitBlob": "2e6a3a0d1ccab3ed69189950e85f9cbb9f9aed34",
+      "sha256": "24f921ff5bbac116d39a9544db243ddf8dc0b1c20cf89d8ac7bb4e805ed8a6f1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/dual-style-2026-11-03/text-9.3mf",
+      "bytes": 71408,
+      "gitBlob": "9f560ca07bf0f2477d054860b8a63afe33fe1a11",
+      "sha256": "11e3e95318104905497a4f53f202fec1be1eec02551db123b73f008e1e231718",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/custom-color-independent.3mf",
+      "bytes": 59302,
+      "gitBlob": "4f18202b757ce5ccf6ecac5cca87d144751b445f",
+      "sha256": "200829cb302efe4aa37c17de47e0bcf72b606fdf4bc8f669ffe3451aac9d2177",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/independent-shard-0.json",
+      "bytes": 78048,
+      "gitBlob": "51c07561c312d1c3cf05cc638eb34caf48eb68c5",
+      "sha256": "6a9643aae4da6145b80e3b81d921a6038653d3e03acac590206e1de238a42352",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/independent-shard-1.json",
+      "bytes": 79579,
+      "gitBlob": "ec0339ae9e4a6878e4f49dd7b0165b9c300e2445",
+      "sha256": "45e46b44193ef3d36152670bb06e0490a6e8ba8680d7237334d769d7e8059744",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/independent-shard-2.json",
+      "bytes": 66720,
+      "gitBlob": "06e431239d05fd92f63c1c8c523e1d0c7a35fb37",
+      "sha256": "a1647d13782f613cf7f350c3e039acea5ea71c11cba84230ab19268b49757919",
+      "reason": "Verbose per-triangle audit detail; retain final audit summaries and pinned full detail"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/no-status-no-pronouns.3mf",
+      "bytes": 49029,
+      "gitBlob": "254206d4daff184cfb9e731147c3612c0f7e6dee",
+      "sha256": "c1167e9f3b1b87a6a09d6266099b104ef250554ab109e8cdd6a1c56528f6cb5f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Ask-Me-false.3mf",
+      "bytes": 68435,
+      "gitBlob": "2714ae45dfedd512d964b3b3a1bf8bac014448df",
+      "sha256": "b0be46b7844c242bd5f38489b188c89636b1ab164fbe905832b04c0fa560b281",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Ask-Me-true.3mf",
+      "bytes": 68445,
+      "gitBlob": "f3f93ec39d836afe0bfe8848d27ec39ffaf177a7",
+      "sha256": "e17131d0a4e392bb175ae253e38f819f78b464376db78b35f14d24daa1e96211",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Busy-false.3mf",
+      "bytes": 68433,
+      "gitBlob": "b8a9221e14b340ad578f7f6161a7109535ed6eb4",
+      "sha256": "eb7c184a1d9a0ac774b532061b51bb88e3ab759ea0091be37c4faabf00db5fd5",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Busy-true.3mf",
+      "bytes": 68441,
+      "gitBlob": "33381e6aa094c92cd80b0aaabb3a71569a4b0518",
+      "sha256": "0048921cbdf51a13d0a94d5fce3a3bc0fb926a80a8e0e0cc2888c95582e025e8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Join-Me-false.3mf",
+      "bytes": 68432,
+      "gitBlob": "9030856dcf461f202c493a5dc1802a5dc48df835",
+      "sha256": "a9c2d85a172abc21e1d993c2b229410f1a392c0ebea64a5d2f73c515eec619b8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Join-Me-true.3mf",
+      "bytes": 68443,
+      "gitBlob": "4f0cdc4bcfa55af24975192d4e28e7df09527889",
+      "sha256": "95efad61d0bfa3d2f1fd8ac3cc5ab7bda838d098ba05e57fe1223eee7f04431d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Offline-false.3mf",
+      "bytes": 68434,
+      "gitBlob": "821d3356176700eaedb4a0c7639c90612d384c5c",
+      "sha256": "6dba54b348e88cc98be40faa4923d60893ac6442bd4e9400ff45d8b9fbf2ebe9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Offline-true.3mf",
+      "bytes": 68445,
+      "gitBlob": "d0cc5bbb2887ca12d386772b946ce2565389847a",
+      "sha256": "3ea0110e33df9fc69e8ba555a01cefdc56eeaccc31ce560caf1a2e7386121d97",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Online-false.3mf",
+      "bytes": 68434,
+      "gitBlob": "3c0b490977bb09afe63e0754a618c29a0d6e8120",
+      "sha256": "9d39d57f86b382afb41edf7371cc1f5ea3e33930278c74a28a9315eecc7f86bd",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/palette-Online-true.3mf",
+      "bytes": 68443,
+      "gitBlob": "b2b28c13e6de997c11e885e2aaf984c209e5906e",
+      "sha256": "703da416e0e32929da54eabf302142458ca91aef3424068a518dc3781fd00784",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/pronouns-22.3mf",
+      "bytes": 59300,
+      "gitBlob": "0771a38ff3f14b6f864f67f9370cd328b893aa5d",
+      "sha256": "34eaa43df23977f76150073412c66ec729a28d04fc9cd25e6b808b01d90711ed",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/pronouns-23.3mf",
+      "bytes": 59301,
+      "gitBlob": "e4e4e2162c3c01ea4737d550c5c0f3563d25b9b2",
+      "sha256": "0c27622baa6ba02722678c45e00bb0b55a6012161e69d2def9b29fb3c9fc81ea",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/pronouns-24.3mf",
+      "bytes": 67766,
+      "gitBlob": "502b8187377b2ca335028a54584a0d8be80c3f12",
+      "sha256": "e7a9237a36a7f5e4b4650bff470fdaefe004b6a376293d5388e0465acb8919f8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/pronouns-25.3mf",
+      "bytes": 73218,
+      "gitBlob": "1bb496c9938db3cda45b7da817fe07d7be501b6f",
+      "sha256": "5e7340fba344b19f96089dc0be132c2fe5555adc9a821be6c1eb77d510c7b76e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/pronouns-26.3mf",
+      "bytes": 74619,
+      "gitBlob": "801aebb0b586d9d268a80d2e94f66423afa7da8b",
+      "sha256": "0d3f42002f4dbe7098386d0c30efdd18958064c6bb8d28d2d85fd566a79592a9",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/pronouns-27.3mf",
+      "bytes": 83254,
+      "gitBlob": "4a3a13880d35db4e9c4fed9549679f377adaea71",
+      "sha256": "ef61ea475a775fd86e1cfb245bf1961a7c4b4c25f6614aecde153cf2d89e761c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-0.3mf",
+      "bytes": 42182,
+      "gitBlob": "68850fa2944c4a8c9c72b85d46a2d572e19e2fe4",
+      "sha256": "7851252fd7b2bf0995ceacd15ea61d6ea62b426b9c68711f08d3540c2a3187dd",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-1.3mf",
+      "bytes": 59300,
+      "gitBlob": "2f3fbda21a14ad58860ac1ea2b3cf61907bd9cd9",
+      "sha256": "61ffde9b6e3039b355f33dd548b093742a46f045e248efdcc7779cece6a53c92",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-10.3mf",
+      "bytes": 48418,
+      "gitBlob": "d400375dcd510b1739cf652e8a0ca6adb9d930b1",
+      "sha256": "71b1e2465d9fb9a42996c96fdd6048b04a5e9bcf665a7cd1ca45609fdea92333",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-11.3mf",
+      "bytes": 38722,
+      "gitBlob": "1ded4cba4b2ffad4e242d903e9502345335184eb",
+      "sha256": "e906d1336974acb2337a4c717dfa57933c2db09628815cb2a502e1c31384d3dd",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-2.3mf",
+      "bytes": 63349,
+      "gitBlob": "42398021e59517694846f0815a663793c6a042f8",
+      "sha256": "69ad2c83d3311fd25281b7c3712ab82e9a44351ddb7c554a9d68a72d91fde5cd",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-3.3mf",
+      "bytes": 46802,
+      "gitBlob": "c4be340d9574aad1fcd1fe5add0e110300e69bfb",
+      "sha256": "c92b6935187d7878a0e0c0f531d8982239fa827186823d2b922b7af16786f41a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-4.3mf",
+      "bytes": 53311,
+      "gitBlob": "8877a8fb3beb75d4802f93df9131d8d684f55626",
+      "sha256": "68217739d629d8c363c72a62572d4cd6b138854db61abea1f0bece7d4a46008f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-5.3mf",
+      "bytes": 83749,
+      "gitBlob": "a2613cd3dd64e4fbc3ced95955d533a941569eb0",
+      "sha256": "76584ec316493bf0556e195e5262fef8af04c8546345a8ab0e31328705461312",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-6.3mf",
+      "bytes": 59544,
+      "gitBlob": "5b3e52f55e6f5fd3d13210299562afae3bc95f08",
+      "sha256": "009198d45c5d693efa3dbc1be7ffe048972190b5460bdfd0a1e00f63fbe0cd2e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-7.3mf",
+      "bytes": 64888,
+      "gitBlob": "54766626f3e0c0c4dde76810057a4b99b3e1ab01",
+      "sha256": "ba9e3e1af1bff6b3e9de5651aaee5a7a76c79e02128512444bf2ab89422eca8f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-8.3mf",
+      "bytes": 62567,
+      "gitBlob": "f42a072d5d3136ea0c383c61fefb658547992eeb",
+      "sha256": "4862d3beaf7104c2c90720ff6d5306d4f50a41408b2fd48ab40740d4c070bc35",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/fixes-2026-11-03/text-9.3mf",
+      "bytes": 78110,
+      "gitBlob": "de046a7c26a0980311c6d8c20b20a9ed81bb6624",
+      "sha256": "69e83f4b10f22b1f661e23aef8830bea4383f0accecbc25d700833f236717453",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/custom-color-independent.3mf",
+      "bytes": 52860,
+      "gitBlob": "4eac36eac37b8991b02b9aa4b8c02b1dcde45554",
+      "sha256": "caeca4ed67167f8f8c9fcde88d2afdda48af6938fdf481063a7a70c99633235e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/no-status-no-pronouns.3mf",
+      "bytes": 42593,
+      "gitBlob": "fbf13ae12577c15d59046458b6a8a3877dcc816a",
+      "sha256": "148a5c32dc63f9060da5bc89ae89eb57051834657c9b46f431ce2c0e8a597002",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Ask-Me-false.3mf",
+      "bytes": 61891,
+      "gitBlob": "9da9c843f1d3e7e4f48f16da305ffdd1fb78e01f",
+      "sha256": "54673f07765e0903931076160de27f4583c75afc0df7af992d71037735829b8f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Ask-Me-true.3mf",
+      "bytes": 61890,
+      "gitBlob": "8347da04fcf143cf925665dcc5f6cc0ab9216cff",
+      "sha256": "684b1492c59f5acea5a90f036901b69e56a824ad32cab7dbe896fce48f0dbdaf",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Busy-false.3mf",
+      "bytes": 61889,
+      "gitBlob": "34973b1498df28171cd809144aabe84161f6a6c8",
+      "sha256": "619a22cd8265062456116767b3a3275b8eb7ce2369ba97aa254f488ec7e0ff4a",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Busy-true.3mf",
+      "bytes": 61888,
+      "gitBlob": "506c7b0caa79acf422882ef45048dd564088470b",
+      "sha256": "b13dfe41e0f15af9aa6b08a6cde99915fecaa0f0b1ce13d8677c234aea7e4656",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Join-Me-false.3mf",
+      "bytes": 61894,
+      "gitBlob": "0621618d9e6bc687b27bd6b17dfbc9a9b178f8f4",
+      "sha256": "6c8ea288c6bdc0c08089dfe6cc00aa6397c07c2793786bcbe2eed4839db67611",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Join-Me-true.3mf",
+      "bytes": 61892,
+      "gitBlob": "ed78bdd9e01b31f13c67e1d3af0ef9d137bf71b1",
+      "sha256": "3a489d9615703b207e1f7ef23ece80ab87e0dcf0b7f37e862a3d40faf29703a1",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Offline-false.3mf",
+      "bytes": 61892,
+      "gitBlob": "27744a9e412b1f6ea805868993e9633c476d6625",
+      "sha256": "a25ca87df85ac5dacaec053f1ace5f280e897b1a612891cbef81616bf74e2af8",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Offline-true.3mf",
+      "bytes": 61891,
+      "gitBlob": "0156fb1b8fbb5f73edef953d8733f80de77e60f9",
+      "sha256": "509b9df1eec7b2c33ada3b49528e48f0aca4569db2564434fa9d23133fa9894c",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Online-false.3mf",
+      "bytes": 61892,
+      "gitBlob": "97dcc2dd96b0c2e332e158d8f3f023159bbc0470",
+      "sha256": "577e2e6c3693e0fb550ea5df9626d7d5b6dc3c7994d07cc2ed603ad632faff9d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/palette-Online-true.3mf",
+      "bytes": 61891,
+      "gitBlob": "e2f3c6a6a232045418ef01dd3e6277838207d4ef",
+      "sha256": "9491d6631f3b1524019f869a9bd1bca7e1098782868eb952e1c7f64c48b9f185",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/pronouns-22.3mf",
+      "bytes": 52859,
+      "gitBlob": "704eb394387a34e794892a3d2d3e7440fc494913",
+      "sha256": "600e58c16dcb2f75435b13819f51259c237c074aab74efaf1ef7df795a9d97f7",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/pronouns-23.3mf",
+      "bytes": 52861,
+      "gitBlob": "0759d9013574a01b2ee0f1cf488d36b199734f18",
+      "sha256": "08073d1824b6f8423d85aeddc964bb0d5324f773ae811c2db3d72f795dbc701f",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/pronouns-24.3mf",
+      "bytes": 61338,
+      "gitBlob": "d000e55d6d810ff156a274099ccdf8b2ea353542",
+      "sha256": "7a6fff1839841f33c0452ec9651445393251206fffd0021338bfbe6336cb80fb",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/pronouns-25.3mf",
+      "bytes": 66700,
+      "gitBlob": "237fcf65c616b8bf4cfc94001e9cb4e1a36f215b",
+      "sha256": "28a76024d7bf8a93d93df6740c09426745a2a8e6eabf08b82e2415f48c5a5ba0",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/pronouns-26.3mf",
+      "bytes": 68038,
+      "gitBlob": "a5fe5d6d0e9d411dda5b2242824c48c0398a4a2a",
+      "sha256": "4bfd6783bfc654412db2887b83ac52d22380f693958d34717142a420a5cdb465",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/pronouns-27.3mf",
+      "bytes": 76808,
+      "gitBlob": "0ca804f9bcf6e885264cf89486dd79a614a615b6",
+      "sha256": "216b4d6e782e8441e0aca33baf5cbd0617b244cf6ba6e5bf7565012af63d0f90",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-0.3mf",
+      "bytes": 35575,
+      "gitBlob": "818e8950153d7bcf556be7a2bcf77228de3e4a41",
+      "sha256": "a3671c79d9310fc023e1b4906fcda5f45c1441c114528797417f6503a84f7b2d",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-1.3mf",
+      "bytes": 52859,
+      "gitBlob": "99f6bf5b3fa3b4ad8eb27026681d8ab3cce19d12",
+      "sha256": "16f541c76617b4a4abfce3c445d6050af074d6adc431cc515ce8affb9d9d9f9e",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-10.3mf",
+      "bytes": 41799,
+      "gitBlob": "309b20f4a24478e5719150fb01988d0789446190",
+      "sha256": "1918b3b960ebbcf4bb29410a845677303f2de5e17a725f6471332ea0953633cb",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-11.3mf",
+      "bytes": 32281,
+      "gitBlob": "2a33c507e796d6134fb3752d5d6a3978a0416315",
+      "sha256": "21a50622f8753349f897e53cf9c6183e6f2e142ef4987fcbd6e544f91e4e4d79",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-2.3mf",
+      "bytes": 56690,
+      "gitBlob": "0d3e4efdbc2079ff2c02b4f4414a5da689ec5cd8",
+      "sha256": "514e7a04a47c21a55e7b0bd285f738b308d33f235dbbb827540a1e0ec1770131",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-3.3mf",
+      "bytes": 40061,
+      "gitBlob": "41ff923df207ed99a787c9cef3ff40a1955fd1ab",
+      "sha256": "8f595b64d5c3023148ba428dd6e6692a7947e7b91e5602860c13e9640e5526ca",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-4.3mf",
+      "bytes": 46824,
+      "gitBlob": "93b5816614d7428b1d1224bcdf787216a7fd09a0",
+      "sha256": "17c2b7358e0a0d8d31603ec86ebabf86723248f2d3afb01b62d5a22d73986096",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-5.3mf",
+      "bytes": 76723,
+      "gitBlob": "29faf2026ef41eebe7e291fd65d4805753d5df3b",
+      "sha256": "6b0c96d49414b8d4c9ddc9d901a700a5aa91b01fc22c8569a7bec0997888a012",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-6.3mf",
+      "bytes": 53215,
+      "gitBlob": "cd6fe0639a660a2aeeb4fd0cde64297e3a78e333",
+      "sha256": "ac3d3b95db91df385f7bb379ae126ec2d3d0e9b34c71241631f341985f76ebcf",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-7.3mf",
+      "bytes": 58204,
+      "gitBlob": "37a1327fc199a6de1ccf99db3a4cd09de6b326e5",
+      "sha256": "bbdc26669988d72ffd7a633a3631ca9e8133d8a2d8bca2d5294fd099f88fc7ba",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-8.3mf",
+      "bytes": 55942,
+      "gitBlob": "c0049caf2bb41da671ac0182e0ca229d610a6577",
+      "sha256": "776692d59aa46bfdf938a3b83f945ba479f1cebe8d3814389ef4ac3d5e0f6676",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    },
+    {
+      "path": "studio/evidence/review-2026-11-02/text-9.3mf",
+      "bytes": 71067,
+      "gitBlob": "dc3e8245982e46582af326a5f9ea93ce90239b1f",
+      "sha256": "32272893123e59b81f30f724e8bbf10b4eab90e0ba7ab183321bdb7124bf3bc0",
+      "reason": "Historical generated matrix fixture; retain summaries, unique failures and final 18-case sources"
+    }
+  ],
+  "historicalReportLinksPinned": [
+    "docs/STYLES-2026-11-03.md",
+    "docs/CLASSIC-LARGE-AVATAR-2026-11-03.md"
+  ],
+  "historyRewritten": false,
+  "licenseFilesRemoved": false
+}

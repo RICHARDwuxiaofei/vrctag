@@ -1,0 +1,16 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+SPDX-License-Identifier: CC-BY-NC-SA-4.0
+
+The model assets, adaptations, and original contributions in this repository
+are licensed under CC BY-NC-SA 4.0, except third-party assets (including fonts
+and user-supplied images), which retain their respective rights and licenses.
+
+Original model: "VRC名牌吊牌" by WiseWolf
+https://makerworld.com.cn/zh/models/203011-vrcming-pai-diao-pai
+Adaptation and generator: RICHARDwuxiaofei
+See ATTRIBUTION.md for the changes made and attribution details.
+
+You may share and adapt the licensed material subject to attribution,
+noncommercial use, and sharing adaptations under the same license.
+This notice is a summary; the full license terms apply:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en

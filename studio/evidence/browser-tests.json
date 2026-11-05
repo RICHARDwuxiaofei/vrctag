@@ -1,0 +1,56 @@
+{
+  "browser": "Codex in-app Chromium",
+  "productionRoot": "http://127.0.0.1:5173/",
+  "productionSubpath": "http://127.0.0.1:5174/vrctag/",
+  "textScenarios": [
+    {
+      "name": "Amy",
+      "exportEnabled": true
+    },
+    {
+      "name": "A Very Long English Display Name",
+      "exportEnabled": true
+    },
+    {
+      "name": "小凪心",
+      "exportEnabled": true
+    },
+    {
+      "name": "ナギココロ",
+      "exportEnabled": true
+    },
+    {
+      "name": "Nagi_心こんにちは",
+      "exportEnabled": true
+    },
+    {
+      "name": "🙂",
+      "exportEnabled": false
+    }
+  ],
+  "responsive": [
+    {
+      "requestedWidth": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "previewBeforeEditor": false
+    },
+    {
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "previewBeforeEditor": true
+    },
+    {
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "previewBeforeEditor": true
+    }
+  ],
+  "friendPronounsStatus": "PASS: actual downloaded metadata verified",
+  "avatarLocalDataURI": true,
+  "avatarArchiveEntryEquality": true,
+  "jsonDownloadAndReset": "PASS",
+  "slicerImport": "NOT_TESTED"
+}

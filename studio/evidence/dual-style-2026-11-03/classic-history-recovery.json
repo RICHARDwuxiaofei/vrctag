@@ -1,0 +1,26 @@
+{
+  "originCommit": "1f7a159",
+  "source": "studio/scripts/build_model.py and web/public/assets/base.json (web original, not legacy template)",
+  "parts": [
+    {
+      "name": "Plate_Body",
+      "sameVertices": true,
+      "sameTriangles": true
+    },
+    {
+      "name": "Avatar_Back",
+      "sameVertices": true,
+      "sameTriangles": true
+    },
+    {
+      "name": "Avatar_Frame",
+      "sameVertices": true,
+      "sameTriangles": true
+    },
+    {
+      "name": "Status_Dot",
+      "sameVertices": true,
+      "sameTriangles": true
+    }
+  ]
+}

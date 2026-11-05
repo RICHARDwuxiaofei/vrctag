@@ -1,0 +1,8 @@
+{
+  "source": "https://extensions.blender.org/add-ons/threemf-io/",
+  "asset": "threemf-io-2.7.8.zip",
+  "sha256": "403f2eee3f34926ea78ad67c08d96318102b02a4d82494d4dab283f51f6f2fb9",
+  "bytes": 350192,
+  "verified": true,
+  "scope": "Temporary isolated test tool; not installed globally or bundled"
+}

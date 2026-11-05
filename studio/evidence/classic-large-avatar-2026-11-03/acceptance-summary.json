@@ -1,0 +1,43 @@
+{
+  "coreCodeCommit": "80c3ef28af53e33fe06a2f48a4f0a6707ddb09bb",
+  "unitTests": {
+    "passed": 37,
+    "failed": 0
+  },
+  "reviewClassic": {
+    "total": 43,
+    "pass": 43,
+    "fail": 0
+  },
+  "reviewNative": {
+    "total": 43,
+    "pass": 43,
+    "fail": 0
+  },
+  "pythonRegressionTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "blenderSources": "PASS",
+  "staticPackage": "PASS",
+  "independent3mf": {
+    "status": "PASS",
+    "codeCommit": "80c3ef28af53e33fe06a2f48a4f0a6707ddb09bb",
+    "files": 96,
+    "pass": 96,
+    "fail": 0,
+    "scope": "96 root-level current samples only; interim artifacts are historical. Independent package, CRC, XML, millimeter dimensions, component assembly, materials and per-shell geometric validation. Not official XSD/lib3mf/slicer/printing certification.",
+    "byStyle": {
+      "classic": 48,
+      "native": 48
+    },
+    "archivesUnchangedSincePinned": true,
+    "hashManifest": "sample-hashes.json"
+  },
+  "browserGUI": "BLOCKED: previous browser tool security-policy rejection; no workaround attempted",
+  "crealityPrint": "NOT_TESTED",
+  "orcaSlicer": "NOT_TESTED",
+  "physicalPrint": "NOT_TESTED",
+  "overall": "PARTIAL",
+  "license": "Unresolved design-similarity risk; first-party final terms pending; legacy rights unchanged"
+}

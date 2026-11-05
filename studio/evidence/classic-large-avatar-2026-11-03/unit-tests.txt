@@ -1,0 +1,49 @@
+
+> vrc-tag-studio@0.1.0 test
+> node --import tsx --test --test-isolation=none tests/*.test.ts
+
+✔ queued style switches and text edits coalesce to final config (194.068103ms)
+✔ export during switch uses captured style and text; later preview stays independent (478.184957ms)
+✔ failed model resource can recover on next same-style request (144.257269ms)
+✔ same-value rebuilds and repeated exports produce correctly correlated responses (458.312402ms)
+✔ all original supported codepoints survive the renamed OFL partitions (272.448645ms)
+✔ default font loads under 500KB and repeated requests reuse cache (307.174124ms)
+✔ failed font request can retry, and uncommon CJK is loaded on demand (21.905845ms)
+✔ native fetch receiver stays global rather than the FontStore instance (7.791756ms)
+✔ GLB loads with original parts and physical meter bounds (7.481074ms)
+✔ CFS4 keeps seven independent parts, with four material slots (0.242223ms)
+✔ custom dot and filament mapping remain independent (0.141615ms)
+✔ full visual palette remains opt-in and invalid slots/colors are rejected (0.200355ms)
+✔ F-01: a positive exterior cannot hide an isolated inverted shell (0.326983ms)
+✔ nested inward cavity is legal, outward enclosed shell is not (0.579827ms)
+✔ solid island within a cavity has even depth and positive volume (0.253175ms)
+✔ intersecting and coplanar-overlapping solid shells are rejected (0.290654ms)
+✔ disjoint valid shells and a positive single shell remain valid (0.23995ms)
+✔ coplanar triangles sharing an edge cannot overlap in positive area (0.417041ms)
+✔ closed printable text: Amy (184.41537ms)
+✔ closed printable text: Nagikokoro (252.644808ms)
+✔ closed printable text: A Very Long English Display Name (430.785935ms)
+✔ closed printable text: 小凪心 (180.259705ms)
+✔ closed printable text: ナギココロ (226.38062ms)
+✔ closed printable text: Nagi_心こんにちは (358.329809ms)
+✔ optional pronouns, centering, friend material isolation, independent color (933.359986ms)
+✔ invalid, unsupported, too-small text never produces successful export (160.412658ms)
+✔ 3MF package has millimeter assembly, colors, independent parts and metadata (799.462246ms)
+✔ classic: default, multilingual, long text, optional rows and serialized samples (2727.953809ms)
+✔ classic: all statuses, independent custom color, immutable geometry and friend isolation (3454.354806ms)
+✔ classic: GLB real loader, original parts and physical dimensions (2.620388ms)
+✔ native: default, multilingual, long text, optional rows and serialized samples (2536.211835ms)
+✔ native: all statuses, independent custom color, immutable geometry and friend isolation (3446.487779ms)
+✔ native: GLB real loader, original parts and physical dimensions (1.666291ms)
+✔ configuration migration, full roundtrip and style validation (0.741269ms)
+✔ mismatched style/base and stale style/export cannot succeed (124.085028ms)
+✔ Native two-line centers match the manually calibrated 30% plate-height rhythm (264.0268ms)
+✔ Classic large medallion, separate white rim and status lane are genuinely different from Native (153.28154ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19836.187975

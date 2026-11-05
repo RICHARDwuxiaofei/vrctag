@@ -1,0 +1,47 @@
+{
+  "reopened": true,
+  "file": "/home/nagikokoro/CODE/vrctag/studio/vrc-tag-original.blend",
+  "unitScale": 0.0010000000474974513,
+  "parts": [
+    {
+      "name": "Avatar_Back",
+      "nonManifoldEdges": 0,
+      "volumeMm3": 553.8894728371793,
+      "dimensionsMm": [
+        30,
+        30,
+        0.7999999523162842
+      ]
+    },
+    {
+      "name": "Avatar_Frame",
+      "nonManifoldEdges": 0,
+      "volumeMm3": 90.36741873934007,
+      "dimensionsMm": [
+        32,
+        32,
+        1
+      ]
+    },
+    {
+      "name": "Plate_Body",
+      "nonManifoldEdges": 0,
+      "volumeMm3": 12747.916350828422,
+      "dimensionsMm": [
+        120,
+        38,
+        3
+      ]
+    },
+    {
+      "name": "Status_Dot",
+      "nonManifoldEdges": 0,
+      "volumeMm3": 38.4570404961605,
+      "dimensionsMm": [
+        7,
+        7,
+        1
+      ]
+    }
+  ]
+}

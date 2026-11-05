@@ -1,0 +1,702 @@
+{
+  "results": [
+    {
+      "styleId": "classic",
+      "case": "default",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#EDC448",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.0113983464813816,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "friend-pronouns",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": true,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "They/Them"
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 0.9150746944355359,
+        "Pronouns": 0.4528543689320375,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "chinese",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "小凪心",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#EDC448",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.1565874730021617,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "japanese",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "ナギココロ",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#EDC448",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.0773372256785865,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "mixed",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "Nagi_心こんにちは",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "随意 / Any"
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#EDC448",
+        "#2ED319"
+      ],
+      "warnings": [
+        "Pronouns 采样细笔画约 0.31 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。"
+      ],
+      "strokeScreening": {
+        "Name": 0.669743358847366,
+        "Pronouns": 0.31381215469613283,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "long",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "A Very Long English Display Name",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#EDC448",
+        "#2ED319"
+      ],
+      "warnings": [
+        "Name 高 4.3 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "strokeScreening": {
+        "Name": 0.4043409767197618,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "custom-status",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": false,
+        "status": "Busy",
+        "dotColor": "#123456",
+        "customStatus": "自由に / Ready",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#EDC448",
+        "#123456"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.0113983464813816,
+        "Status_Text": 0.40677906976744305
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "cfs4-custom",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": true,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "He/Him",
+        "filamentColors": [
+          "#16171b",
+          "#eeeeee",
+          "#ffce40",
+          "#51b44b"
+        ],
+        "materialSlots": {
+          "Avatar_Back": 0,
+          "Avatar_Frame": 1,
+          "Name": 2,
+          "Pronouns": 1,
+          "Status_Text": 1,
+          "Status_Dot": 3
+        }
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#16171B",
+        "#EEEEEE",
+        "#FFCE40",
+        "#51B44B"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 0.9150746944355359,
+        "Pronouns": 0.47020161290322443,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "classic",
+      "case": "visual",
+      "status": "PASS",
+      "config": {
+        "styleId": "classic",
+        "printMode": "visual",
+        "displayName": "Nagikokoro",
+        "friend": true,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "She/Her"
+      },
+      "parts": [
+        "Plate_Rim",
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#E7E8EC",
+        "#1C1D21",
+        "#383A40",
+        "#2ED319",
+        "#FFD45D"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 0.9150746944355359,
+        "Pronouns": 0.4725835866261384,
+        "Status_Text": 0.43425238600212124
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "default",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.0788249029134738,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "friend-pronouns",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": true,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "They/Them"
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 0.9054423292309512,
+        "Pronouns": 0.49059223300970733,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "chinese",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "小凪心",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.233693304535639,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "japanese",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "ナギココロ",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.1491597073904922,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "mixed",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "Nagi_心こんにちは",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "随意 / Any"
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "warnings": [
+        "Pronouns 采样细笔画约 0.34 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。"
+      ],
+      "strokeScreening": {
+        "Name": 0.6410400720396219,
+        "Pronouns": 0.3399631675874772,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "long",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "A Very Long English Display Name",
+        "friend": false,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "warnings": [
+        "Name 采样细笔画约 0.39 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。",
+        "Name 高 4.1 mm；细笔画可能小于 0.4 mm，请检查切片。"
+      ],
+      "strokeScreening": {
+        "Name": 0.3870120777174863,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "custom-status",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": false,
+        "status": "Busy",
+        "dotColor": "#123456",
+        "customStatus": "自由に / Ready",
+        "pronouns": ""
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#123456"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 1.0788249029134738,
+        "Status_Text": 0.41581860465116394
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "cfs4-custom",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "cfs4",
+        "displayName": "Nagikokoro",
+        "friend": true,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "He/Him",
+        "filamentColors": [
+          "#16171b",
+          "#eeeeee",
+          "#ffce40",
+          "#51b44b"
+        ],
+        "materialSlots": {
+          "Avatar_Back": 0,
+          "Avatar_Frame": 1,
+          "Name": 2,
+          "Pronouns": 1,
+          "Status_Text": 1,
+          "Status_Dot": 3
+        }
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#16171B",
+        "#EEEEEE",
+        "#FFCE40",
+        "#51B44B"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 0.9054423292309512,
+        "Pronouns": 0.5093850806451599,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    },
+    {
+      "styleId": "native",
+      "case": "visual",
+      "status": "PASS",
+      "config": {
+        "styleId": "native",
+        "printMode": "visual",
+        "displayName": "Nagikokoro",
+        "friend": true,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "She/Her"
+      },
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "palette": [
+        "#17181C",
+        "#35363C",
+        "#62646C",
+        "#2ED319",
+        "#FFD45D",
+        "#C6C8CE",
+        "#B9BBC2"
+      ],
+      "warnings": [],
+      "strokeScreening": {
+        "Name": 0.9054423292309512,
+        "Pronouns": 0.5119655521783166,
+        "Status_Text": 0.4439024390243905
+      },
+      "previewExportGeometry": "identical after 6-decimal rounding"
+    }
+  ],
+  "total": 18,
+  "pass": 18
+}

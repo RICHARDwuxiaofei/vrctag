@@ -1,0 +1,17 @@
+{
+  "reportedByUser": true,
+  "branch": "codex/vrc-nameplate-web",
+  "savedImplementationCommit": "698318a",
+  "gitFsck": "PASS",
+  "sourceAndModelMatchCommit": true,
+  "blenderMcpConnection": "PASS after user reported outage",
+  "retainedTests": {
+    "unit": "36/36",
+    "review": "43/43",
+    "productionBuild": "PASS"
+  },
+  "pendingAtRecovery": [
+    "final independent 3MF audit",
+    "evidence commit and branch push"
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "studio/classic.blend",
+    "unchanged": true
+  },
+  {
+    "path": "studio/native.blend",
+    "unchanged": true
+  },
+  {
+    "path": "studio/vrc-tag-original.blend",
+    "unchanged": true
+  },
+  {
+    "path": "nametag_template.blend",
+    "unchanged": true
+  },
+  {
+    "path": "name_tag_generator.py",
+    "unchanged": true
+  },
+  {
+    "path": "LICENSE",
+    "oldNoticeArchivedExactly": true
+  },
+  {
+    "path": "ATTRIBUTION.md",
+    "unchanged": true
+  }
+]

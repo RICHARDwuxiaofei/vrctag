@@ -1,0 +1,42 @@
+[
+  {
+    "step": "Official Blender extension API discovery",
+    "status": "FAIL then recovered",
+    "detail": "Guessed single-extension API URL returned HTTP 404; used official HTML download link and checked SHA-256."
+  },
+  {
+    "step": "Orca minimal vendor-hint experiment",
+    "status": "FAIL; not shipped",
+    "detail": "Temporary partial vendor metadata caused a native crash. Kept generic Core web exporter unchanged; used complete Orca-produced projects for explicit material assignment."
+  },
+  {
+    "step": "Orca first CLI slice output argument",
+    "status": "FAIL then recovered",
+    "detail": "Orca concatenated outputdir with absolute export filename; used a basename. Actual slice artifacts subsequently generated."
+  },
+  {
+    "step": "Orca project XML encoding",
+    "status": "FAIL then recovered",
+    "detail": "This Orca reader rejected encoding=utf8 in project settings XML; using canonical UTF-8 allowed the same assigned geometry/materials to load."
+  },
+  {
+    "step": "Native default tool-count assertion",
+    "status": "Test assumption corrected",
+    "detail": "Default Native uses slots 0,1,3, leaving gold slot 2 unused. Final assertion equals source material-plan used slots, plus Native Friend case actually exercises all four. Existing tests and F-01 expectations unchanged."
+  },
+  {
+    "step": "Layer plot parser",
+    "status": "FAIL then recovered",
+    "detail": "Actual G-code contained G2/G3 arcs and leading-dot decimals; plotter now interpolates arcs, handles numeric syntax and aligns view to object pose. These are toolpath plots, not GUI screenshots."
+  },
+  {
+    "step": "Orca upstream license URL",
+    "status": "FAIL then recovered",
+    "detail": "Guessed LICENSE path returned HTTP 404; official GitHub license API gives the real file and its original license."
+  },
+  {
+    "step": "Full-visual Orca flush-table size",
+    "status": "FAIL then recovered in test profile only",
+    "detail": "5/7-color source cases exceeded the inherited four-color flush-table dimensions. Retained the stock nominal off-diagonal 280 mm3/vector 140 mm3 values and resized only to the test palette count. No source geometry/color merge or hardware-calibration claim; original failure logs retained."
+  }
+]

@@ -1,0 +1,15 @@
+# Third-party notices and exclusions
+
+- **WiseWolf — VRC名牌吊牌**: https://makerworld.com.cn/zh/models/203011-vrcming-pai-diao-pai . Root legacy template, its adaptations, historical reference images and original generator retain their original CC BY-NC-SA 4.0 and ATTRIBUTION.md. The owner separately grants CC BY 4.0 for first-party contributions in the current independently rebuilt Classic; this does not relicense third-party rights or determine whether any protected third-party design expression is implicated.
+- **Noto Sans CJK**: SIL OFL 1.1. Original font and renamed VRCStudioSubset derived chunks retain `web/public/assets/OFL-Noto.txt`, original copyright and OFL terms. Model text is generated using this font; no claim of exclusive ownership of the glyph designs is made.
+- **React, React DOM, scheduler, Three.js, opentype.js, fflate and embedded runtime dependencies**: original MIT notices retained in `web/public/licenses/`. Exact versions are in `web/package-lock.json`; see `docs/SOURCES.md`. Their copyright is not replaced with the project author's.
+- **Development tools**: Blender, OrcaSlicer, the Blender Extensions 3MF Import/Export addon, lib3mf, Pillow and npm development dependencies retain their original licenses. Downloaded tool binaries/source are not redistributed in the static site or repository. Verified portable tools live in a temporary isolated directory for this test. Orca-produced test projects contain upstream settings/preset data and are not covered wholesale by project MIT/CC BY; see `studio/evidence/beta-2026-11-04/orca/NOTICE.md`.
+- User-uploaded images remain the user's content, processed locally, omitted from exports and repository. No VRChat official logo, third-party avatar image, account API, or game scene texture is bundled.
+
+This project is unofficial and is not endorsed by VRChat or WiseWolf. For exact first-party/legacy path scope, see LICENSE_SCOPE.md. Prior CC BY-NC-SA grants remain available to compliant recipients; this migration does not retroactively revoke them.
+
+## Clipper / Javascript Clipper
+
+Runtime glyph contour repair uses clipper-lib 6.4.2 (Angus Johnson 2010-2017; Javascript port by Timo and contributors), under the Boost Software License 1.0. Source: https://github.com/junmer/clipper-lib . License text is distributed in web/public/licenses/Boost-Software-License-1.0.txt. Project MIT does not replace this license.
+
+Bambu default export preset data: upstream BambuStudio 02.02.02.56 system presets for A1 0.4 nozzle, 0.20mm Standard and Bambu PLA Basic. Inheritance flattened in web/src/bambu-default.json; no user template or private data is included. Upstream preset source JSON files are distributed under web/public/licenses/bambu-presets/ and the upstream AGPL license in BambuStudio-AGPL-3.0.txt. Source: https://github.com/bambulab/BambuStudio/tree/master/resources/profiles/BBL . These upstream data are not relicensed under the first-party software MIT grant. Output uses a standard starting profile; users must select their own printer and filaments in the slicer before printing.

@@ -1,0 +1,27 @@
+[
+  {
+    "file": "web/public/assets/styles/classic/base.json",
+    "unchangedFrom1a1155f": true,
+    "sha256": "621430b46a0e3dc6f3b504176458d12593eb568923cc979262c5dc85ad0554f1"
+  },
+  {
+    "file": "web/public/assets/styles/classic/base.glb",
+    "unchangedFrom1a1155f": true,
+    "sha256": "1540a25e147cd1f12f027d36ae32c708f0589d9a519fb47299c72cf503013097"
+  },
+  {
+    "file": "web/public/assets/styles/native/base.json",
+    "unchangedFrom1a1155f": true,
+    "sha256": "4f2d5d31f28e89d1b697c85e7e440ff91c5d9372c0badc0a0b09f8ed097dda28"
+  },
+  {
+    "file": "web/public/assets/styles/native/base.glb",
+    "unchangedFrom1a1155f": true,
+    "sha256": "62c01a88397fff3effb50c13759516b96c9236b2ae2448d617e1a47e387b968b"
+  },
+  {
+    "file": "web/public/assets/NotoSansCJKsc-Bold.otf",
+    "unchangedFrom1a1155f": true,
+    "sha256": "b5f0d1a190a7f9b43c310a8850630af12553df32c4c050543f9059732d9b4c0a"
+  }
+]

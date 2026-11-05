@@ -1,0 +1,139 @@
+{
+  "baseline": "106f547440b011836195460338c99deb3a2163e6",
+  "sourcePackages": 18,
+  "representativeSlicedProjects": 4,
+  "files": [
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-cfs4-custom.3mf",
+      "sha256": "00287ca8851af584e4fc383a000477bcba36447c77ef21456de161e33be56e0b",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-chinese.3mf",
+      "sha256": "e2fee897f78a50ed03a45f2967de11ca39e52e83983cac69c2cc7e4fd0209ad5",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-custom-status.3mf",
+      "sha256": "7b4cea088ee62509e8facc08b9872ab94b9e5bcacef96b574cde956a5841e9b8",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-default.3mf",
+      "sha256": "d383e385bd4de4801a4ce3644ba7e6830af6edc45e911575331e202e2ee6ad9a",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-friend-pronouns.3mf",
+      "sha256": "2540cb0f7c127753f5a06925fcd55cac557cc6dfc891ace8ad4bb8bc9df6dcd9",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-japanese.3mf",
+      "sha256": "9a390c64771110419b3af4825820cd8ff329c3a65759bfb02feffc47fce54e45",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-long.3mf",
+      "sha256": "f38e19a447f0a4770d19742355163cf75f5f9a2f404feb34c446376722af6aa1",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-mixed.3mf",
+      "sha256": "d810bc1575ec2a093d0a33166f683ee6a51d1d00371a32e72a298791faf2cf0d",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/classic-visual.3mf",
+      "sha256": "708270d792ab9c9b75c4a99c42a281036cfd3db338ac91664357cf6a67d9cfe8",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-cfs4-custom.3mf",
+      "sha256": "ee6c7e33212b44ec16030e5988463ac23aa75878c092f4c63103c0414ac79335",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-chinese.3mf",
+      "sha256": "ef82cd7b1f6e7da2938857551bffa3d0577e3cef1eb2029292f6ac4c8a806f78",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-custom-status.3mf",
+      "sha256": "30cd37f449d4f46789b2ccfa7ce5231f4a1d957e94e345bc9c37d06a58084828",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-default.3mf",
+      "sha256": "d2a0f453b65c5f8bb3a2ba6d649153c0372bd5b11cc657a8a3bcfc4cbd8613a5",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-friend-pronouns.3mf",
+      "sha256": "fdaba43ed4ab38200045a681cd622841c9271c12f04956cbf065e14b3995caf1",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-japanese.3mf",
+      "sha256": "71f21a44d72978e02cf1b21324b38547a32776ab73bf6dcf7ae7eabd9fb5b5b4",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-long.3mf",
+      "sha256": "0b74280aebd8f6899e6603de39a9245ac8f348c911dbb8412cf5ddb91e72f734",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-mixed.3mf",
+      "sha256": "1254e13440182711c0ea8e475ef236beac3c2666852cc444b2e117576ca6031d",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/samples/native-visual.3mf",
+      "sha256": "7cf27fb60890d8af35f7db9b1778a69f3fd7165abe43ad3e5d20392c3d9480f5",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-default-assigned-sliced.3mf",
+      "sha256": "52af2326f6a213e9e144db6cd592e4c58175f0e6219afa8963552fd1cee4e694",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/classic-friend-pronouns-assigned-sliced.3mf",
+      "sha256": "ed360bac2a6e548442faf9bedb02ceba4a4e84130118ece69f7fb7f1a11a43a8",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-default-assigned-sliced.3mf",
+      "sha256": "e1c3836c731594f0102aae0790d453f1a0fe17a933e1ba3a591e615abbf92fec",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    },
+    {
+      "path": "studio/evidence/beta-2026-11-04/orca/native-friend-pronouns-assigned-sliced.3mf",
+      "sha256": "e9f57babb518b32fead79c15d29d84bc25e00761b530b545184c2cc2caec3946",
+      "crc": "PASS",
+      "matchesPinnedBeta": true
+    }
+  ]
+}

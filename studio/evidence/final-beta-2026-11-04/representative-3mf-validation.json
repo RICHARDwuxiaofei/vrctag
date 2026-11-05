@@ -1,0 +1,1450 @@
+[
+  {
+    "file": "studio/evidence/beta-2026-11-04/samples/classic-default.3mf",
+    "status": "PASS",
+    "unit": "millimeter",
+    "parts": [
+      {
+        "name": "Plate_Rim",
+        "vertices": 596,
+        "triangles": 1192,
+        "volumeMm3": 1652.0607345207777,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 1192,
+            "volume": 1652.0607345207777,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -66.0,
+            68.0
+          ],
+          [
+            -26.0,
+            26.0
+          ],
+          [
+            0.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "Plate_Body",
+        "vertices": 298,
+        "triangles": 592,
+        "volumeMm3": 11422.552041346413,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 592,
+            "volume": 11422.552041346413,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -64.300003,
+            66.300003
+          ],
+          [
+            -24.299999,
+            24.299999
+          ],
+          [
+            0.0,
+            2.6
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 1367.5009386522888,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 380,
+            "volume": 1367.5009386522888,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -62.0,
+            -18.0
+          ],
+          [
+            -22.0,
+            22.0
+          ],
+          [
+            2.6,
+            3.5
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 384,
+        "triangles": 768,
+        "volumeMm3": 299.96488637473533,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 768,
+            "volume": 299.96488637473533,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -63.5,
+            -16.5
+          ],
+          [
+            -23.5,
+            23.5
+          ],
+          [
+            2.6,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 22.603321163737192,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 380,
+            "volume": 22.603321163737192,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -13.0,
+            -7.0
+          ],
+          [
+            -11.4,
+            -5.4
+          ],
+          [
+            2.6,
+            3.4
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "volumeMm3": 150.5620716464476,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 116,
+            "volume": 21.872949205914793,
+            "depth": 0
+          },
+          {
+            "triangles": 344,
+            "volume": 14.450614592990798,
+            "depth": 0
+          },
+          {
+            "triangles": 768,
+            "volume": 20.546985199295595,
+            "depth": 0
+          },
+          {
+            "triangles": 12,
+            "volume": 6.535708579926398,
+            "depth": 0
+          },
+          {
+            "triangles": 124,
+            "volume": 1.7322702106959995,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 16.666534897022796,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 14.552592674853994,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 16.666534550343215,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 14.552595166798394,
+            "depth": 0
+          },
+          {
+            "triangles": 152,
+            "volume": 8.432693893751606,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 14.552592674853996,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -12.0,
+            45.859583
+          ],
+          [
+            -0.75,
+            9.75
+          ],
+          [
+            2.6,
+            3.4
+          ]
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "volumeMm3": 16.513172513786394,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 376,
+            "volume": 7.241737608408,
+            "depth": 0
+          },
+          {
+            "triangles": 440,
+            "volume": 6.533622577709997,
+            "depth": 0
+          },
+          {
+            "triangles": 164,
+            "volume": 2.7378123276683985,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -4.5,
+            4.724284
+          ],
+          [
+            -10.65,
+            -6.15
+          ],
+          [
+            2.6,
+            3.4
+          ]
+        ]
+      }
+    ],
+    "assemblyParts": [
+      "Plate_Rim",
+      "Plate_Body",
+      "Avatar_Back",
+      "Avatar_Frame",
+      "Status_Dot",
+      "Name",
+      "Status_Text"
+    ],
+    "worldBoundsMm": [
+      [
+        0.0,
+        134.0
+      ],
+      [
+        0.0,
+        52.0
+      ],
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "worldSizeMm": [
+      134.0,
+      52.0,
+      4.0
+    ],
+    "materialEntries": 4,
+    "printing": {
+      "mode": "cfs4",
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#EDC448",
+        "#2ED319"
+      ],
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "slot": 1,
+          "color": "#E7E8EC"
+        },
+        {
+          "name": "Plate_Body",
+          "slot": 0,
+          "color": "#1C1D21"
+        },
+        {
+          "name": "Avatar_Back",
+          "slot": 0,
+          "color": "#1C1D21"
+        },
+        {
+          "name": "Avatar_Frame",
+          "slot": 1,
+          "color": "#E7E8EC"
+        },
+        {
+          "name": "Status_Dot",
+          "slot": 3,
+          "color": "#2ED319"
+        },
+        {
+          "name": "Name",
+          "slot": 2,
+          "color": "#EDC448"
+        },
+        {
+          "name": "Status_Text",
+          "slot": 1,
+          "color": "#E7E8EC"
+        }
+      ],
+      "unit": "millimeter",
+      "requiresSlicerFilamentAssignment": true
+    },
+    "slicerImport": "NOT_TESTED",
+    "sha256": "d383e385bd4de4801a4ce3644ba7e6830af6edc45e911575331e202e2ee6ad9a"
+  },
+  {
+    "file": "studio/evidence/beta-2026-11-04/samples/classic-friend-pronouns.3mf",
+    "status": "PASS",
+    "unit": "millimeter",
+    "parts": [
+      {
+        "name": "Plate_Rim",
+        "vertices": 596,
+        "triangles": 1192,
+        "volumeMm3": 1652.0607345207777,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 1192,
+            "volume": 1652.0607345207777,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -66.0,
+            68.0
+          ],
+          [
+            -26.0,
+            26.0
+          ],
+          [
+            0.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "Plate_Body",
+        "vertices": 298,
+        "triangles": 592,
+        "volumeMm3": 11422.552041346413,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 592,
+            "volume": 11422.552041346413,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -64.300003,
+            66.300003
+          ],
+          [
+            -24.299999,
+            24.299999
+          ],
+          [
+            0.0,
+            2.6
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 1367.5009386522888,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 380,
+            "volume": 1367.5009386522888,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -62.0,
+            -18.0
+          ],
+          [
+            -22.0,
+            22.0
+          ],
+          [
+            2.6,
+            3.5
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 384,
+        "triangles": 768,
+        "volumeMm3": 299.96488637473533,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 768,
+            "volume": 299.96488637473533,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -63.5,
+            -16.5
+          ],
+          [
+            -23.5,
+            23.5
+          ],
+          [
+            2.6,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 22.603321163737192,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 380,
+            "volume": 22.603321163737192,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -13.0,
+            -7.0
+          ],
+          [
+            -11.4,
+            -5.4
+          ],
+          [
+            2.6,
+            3.4
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "volumeMm3": 123.24922420447396,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 116,
+            "volume": 17.905065893578396,
+            "depth": 0
+          },
+          {
+            "triangles": 344,
+            "volume": 11.829189086308796,
+            "depth": 0
+          },
+          {
+            "triangles": 768,
+            "volume": 16.819639911208395,
+            "depth": 0
+          },
+          {
+            "triangles": 12,
+            "volume": 5.350094496331202,
+            "depth": 0
+          },
+          {
+            "triangles": 124,
+            "volume": 1.4180262453327992,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 13.643125587682402,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 11.912667474115997,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 13.643126420509605,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 11.912668467238795,
+            "depth": 0
+          },
+          {
+            "triangles": 152,
+            "volume": 6.902953355096404,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 11.912667267071193,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -12.0,
+            40.349146
+          ],
+          [
+            3.75,
+            13.25
+          ],
+          [
+            2.6,
+            3.4
+          ]
+        ]
+      },
+      {
+        "name": "Pronouns",
+        "vertices": 770,
+        "triangles": 1512,
+        "volumeMm3": 28.923919702380402,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 28,
+            "volume": 2.803735653360001,
+            "depth": 0
+          },
+          {
+            "triangles": 160,
+            "volume": 3.8019499859167993,
+            "depth": 0
+          },
+          {
+            "triangles": 300,
+            "volume": 3.0379133476439995,
+            "depth": 0
+          },
+          {
+            "triangles": 224,
+            "volume": 3.0605253731019997,
+            "depth": 0
+          },
+          {
+            "triangles": 12,
+            "volume": 1.6719368838623998,
+            "depth": 0
+          },
+          {
+            "triangles": 28,
+            "volume": 2.8037356533599995,
+            "depth": 0
+          },
+          {
+            "triangles": 160,
+            "volume": 3.8019511591675994,
+            "depth": 0
+          },
+          {
+            "triangles": 300,
+            "volume": 3.0379136022519995,
+            "depth": 0
+          },
+          {
+            "triangles": 300,
+            "volume": 4.904258043715599,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -12.0,
+            14.437282
+          ],
+          [
+            -1.6,
+            3.2
+          ],
+          [
+            2.6,
+            3.4
+          ]
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "volumeMm3": 16.513172513786394,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 376,
+            "volume": 7.241737608408,
+            "depth": 0
+          },
+          {
+            "triangles": 440,
+            "volume": 6.533622577709997,
+            "depth": 0
+          },
+          {
+            "triangles": 164,
+            "volume": 2.7378123276683985,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -4.5,
+            4.724284
+          ],
+          [
+            -10.65,
+            -6.15
+          ],
+          [
+            2.6,
+            3.4
+          ]
+        ]
+      }
+    ],
+    "assemblyParts": [
+      "Plate_Rim",
+      "Plate_Body",
+      "Avatar_Back",
+      "Avatar_Frame",
+      "Status_Dot",
+      "Name",
+      "Pronouns",
+      "Status_Text"
+    ],
+    "worldBoundsMm": [
+      [
+        0.0,
+        134.0
+      ],
+      [
+        0.0,
+        52.0
+      ],
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "worldSizeMm": [
+      134.0,
+      52.0,
+      4.0
+    ],
+    "materialEntries": 4,
+    "printing": {
+      "mode": "cfs4",
+      "palette": [
+        "#1C1D21",
+        "#E7E8EC",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "parts": [
+        {
+          "name": "Plate_Rim",
+          "slot": 1,
+          "color": "#E7E8EC"
+        },
+        {
+          "name": "Plate_Body",
+          "slot": 0,
+          "color": "#1C1D21"
+        },
+        {
+          "name": "Avatar_Back",
+          "slot": 0,
+          "color": "#1C1D21"
+        },
+        {
+          "name": "Avatar_Frame",
+          "slot": 1,
+          "color": "#E7E8EC"
+        },
+        {
+          "name": "Status_Dot",
+          "slot": 3,
+          "color": "#2ED319"
+        },
+        {
+          "name": "Name",
+          "slot": 2,
+          "color": "#FFD45D"
+        },
+        {
+          "name": "Pronouns",
+          "slot": 1,
+          "color": "#E7E8EC"
+        },
+        {
+          "name": "Status_Text",
+          "slot": 1,
+          "color": "#E7E8EC"
+        }
+      ],
+      "unit": "millimeter",
+      "requiresSlicerFilamentAssignment": true
+    },
+    "slicerImport": "NOT_TESTED",
+    "sha256": "2540cb0f7c127753f5a06925fcd55cac557cc6dfc891ace8ad4bb8bc9df6dcd9"
+  },
+  {
+    "file": "studio/evidence/beta-2026-11-04/samples/native-default.3mf",
+    "status": "PASS",
+    "unit": "millimeter",
+    "parts": [
+      {
+        "name": "Plate_Body",
+        "vertices": 200,
+        "triangles": 396,
+        "volumeMm3": 11696.730970951037,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 396,
+            "volume": 11696.730970951037,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -60.0,
+            58.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            0.0,
+            2.8
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 366,
+        "triangles": 728,
+        "volumeMm3": 236.15660876379783,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 728,
+            "volume": 236.15660876379783,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -56.0,
+            -24.0
+          ],
+          [
+            -16.0,
+            16.0
+          ],
+          [
+            2.8,
+            3.1
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 398,
+        "triangles": 792,
+        "volumeMm3": 23.390586615701324,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 792,
+            "volume": 23.390586615701324,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -56.700001,
+            -23.299999
+          ],
+          [
+            -16.700001,
+            16.700001
+          ],
+          [
+            2.8,
+            3.15
+          ]
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 32.548783316032015,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 380,
+            "volume": 32.548783316032015,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -30.6,
+            -23.4
+          ],
+          [
+            -13.6,
+            -6.4
+          ],
+          [
+            2.8,
+            3.6
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "volumeMm3": 171.30617624082686,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 116,
+            "volume": 24.88655233804441,
+            "depth": 0
+          },
+          {
+            "triangles": 344,
+            "volume": 16.441590599882407,
+            "depth": 0
+          },
+          {
+            "triangles": 768,
+            "volume": 23.37790049532681,
+            "depth": 0
+          },
+          {
+            "triangles": 12,
+            "volume": 7.4361830004288,
+            "depth": 0
+          },
+          {
+            "triangles": 124,
+            "volume": 1.9709384031220007,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 18.96281465612081,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 16.5576187309,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 18.962813529745187,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 16.557617296962405,
+            "depth": 0
+          },
+          {
+            "triangles": 152,
+            "volume": 9.59452955183201,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 16.557617638462016,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -18.0,
+            43.716888
+          ],
+          [
+            -1.1,
+            10.1
+          ],
+          [
+            2.8,
+            3.6
+          ]
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "volumeMm3": 17.255241280062805,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 376,
+            "volume": 7.567166459008001,
+            "depth": 0
+          },
+          {
+            "triangles": 440,
+            "volume": 6.8272318334180015,
+            "depth": 0
+          },
+          {
+            "triangles": 164,
+            "volume": 2.8608429876368024,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -18.0,
+            -8.570732
+          ],
+          [
+            -9.8,
+            -5.2
+          ],
+          [
+            2.8,
+            3.6
+          ]
+        ]
+      }
+    ],
+    "assemblyParts": [
+      "Plate_Body",
+      "Avatar_Back",
+      "Avatar_Frame",
+      "Status_Dot",
+      "Name",
+      "Status_Text"
+    ],
+    "worldBoundsMm": [
+      [
+        0.0,
+        118.0
+      ],
+      [
+        0.0,
+        40.0
+      ],
+      [
+        0.0,
+        3.6
+      ]
+    ],
+    "worldSizeMm": [
+      118.0,
+      40.0,
+      3.6
+    ],
+    "materialEntries": 4,
+    "printing": {
+      "mode": "cfs4",
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "slot": 0,
+          "color": "#17181C"
+        },
+        {
+          "name": "Avatar_Back",
+          "slot": 0,
+          "color": "#17181C"
+        },
+        {
+          "name": "Avatar_Frame",
+          "slot": 1,
+          "color": "#F3F6ED"
+        },
+        {
+          "name": "Status_Dot",
+          "slot": 3,
+          "color": "#2ED319"
+        },
+        {
+          "name": "Name",
+          "slot": 1,
+          "color": "#F3F6ED"
+        },
+        {
+          "name": "Status_Text",
+          "slot": 1,
+          "color": "#F3F6ED"
+        }
+      ],
+      "unit": "millimeter",
+      "requiresSlicerFilamentAssignment": true
+    },
+    "slicerImport": "NOT_TESTED",
+    "sha256": "d2a0f453b65c5f8bb3a2ba6d649153c0372bd5b11cc657a8a3bcfc4cbd8613a5"
+  },
+  {
+    "file": "studio/evidence/beta-2026-11-04/samples/native-friend-pronouns.3mf",
+    "status": "PASS",
+    "unit": "millimeter",
+    "parts": [
+      {
+        "name": "Plate_Body",
+        "vertices": 200,
+        "triangles": 396,
+        "volumeMm3": 11696.730970951037,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 396,
+            "volume": 11696.730970951037,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -60.0,
+            58.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            0.0,
+            2.8
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 366,
+        "triangles": 728,
+        "volumeMm3": 236.15660876379783,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 728,
+            "volume": 236.15660876379783,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -56.0,
+            -24.0
+          ],
+          [
+            -16.0,
+            16.0
+          ],
+          [
+            2.8,
+            3.1
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 398,
+        "triangles": 792,
+        "volumeMm3": 23.390586615701324,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 792,
+            "volume": 23.390586615701324,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -56.700001,
+            -23.299999
+          ],
+          [
+            -16.700001,
+            16.700001
+          ],
+          [
+            2.8,
+            3.15
+          ]
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 32.548783316032015,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 380,
+            "volume": 32.548783316032015,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -30.6,
+            -23.4
+          ],
+          [
+            -13.6,
+            -6.4
+          ],
+          [
+            2.8,
+            3.6
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "volumeMm3": 120.66816022364763,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 116,
+            "volume": 17.5301015189728,
+            "depth": 0
+          },
+          {
+            "triangles": 344,
+            "volume": 11.581462111156002,
+            "depth": 0
+          },
+          {
+            "triangles": 768,
+            "volume": 16.467404553932006,
+            "depth": 0
+          },
+          {
+            "triangles": 12,
+            "volume": 5.238053154273603,
+            "depth": 0
+          },
+          {
+            "triangles": 124,
+            "volume": 1.3883299920224004,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 13.357415200754403,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 11.663195365139602,
+            "depth": 0
+          },
+          {
+            "triangles": 48,
+            "volume": 13.357417002272806,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 11.663194413302003,
+            "depth": 0
+          },
+          {
+            "triangles": 152,
+            "volume": 6.758393123464001,
+            "depth": 0
+          },
+          {
+            "triangles": 256,
+            "volume": 11.663193788358004,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -18.0,
+            33.798102
+          ],
+          [
+            4.3,
+            13.7
+          ],
+          [
+            2.8,
+            3.6
+          ]
+        ]
+      },
+      {
+        "name": "Pronouns",
+        "vertices": 770,
+        "triangles": 1512,
+        "volumeMm3": 33.9454312292152,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 28,
+            "volume": 3.290496810779997,
+            "depth": 0
+          },
+          {
+            "triangles": 160,
+            "volume": 4.462011452662803,
+            "depth": 0
+          },
+          {
+            "triangles": 300,
+            "volume": 3.565329199094401,
+            "depth": 0
+          },
+          {
+            "triangles": 224,
+            "volume": 3.5918654219924018,
+            "depth": 0
+          },
+          {
+            "triangles": 12,
+            "volume": 1.9622033717832001,
+            "depth": 0
+          },
+          {
+            "triangles": 28,
+            "volume": 3.2904943188192006,
+            "depth": 0
+          },
+          {
+            "triangles": 160,
+            "volume": 4.462010940606802,
+            "depth": 0
+          },
+          {
+            "triangles": 300,
+            "volume": 3.5653299390608013,
+            "depth": 0
+          },
+          {
+            "triangles": 300,
+            "volume": 5.755689774415599,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -18.0,
+            10.640388
+          ],
+          [
+            -1.8,
+            3.4
+          ],
+          [
+            2.8,
+            3.6
+          ]
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "volumeMm3": 17.255241280062805,
+        "closedOriented": true,
+        "shells": [
+          {
+            "triangles": 376,
+            "volume": 7.5671664590080026,
+            "depth": 0
+          },
+          {
+            "triangles": 440,
+            "volume": 6.8272318334180015,
+            "depth": 0
+          },
+          {
+            "triangles": 164,
+            "volume": 2.8608429876368024,
+            "depth": 0
+          }
+        ],
+        "bounds": [
+          [
+            -18.0,
+            -8.570732
+          ],
+          [
+            -12.8,
+            -8.2
+          ],
+          [
+            2.8,
+            3.6
+          ]
+        ]
+      }
+    ],
+    "assemblyParts": [
+      "Plate_Body",
+      "Avatar_Back",
+      "Avatar_Frame",
+      "Status_Dot",
+      "Name",
+      "Pronouns",
+      "Status_Text"
+    ],
+    "worldBoundsMm": [
+      [
+        0.0,
+        118.0
+      ],
+      [
+        0.0,
+        40.0
+      ],
+      [
+        0.0,
+        3.6
+      ]
+    ],
+    "worldSizeMm": [
+      118.0,
+      40.0,
+      3.6
+    ],
+    "materialEntries": 4,
+    "printing": {
+      "mode": "cfs4",
+      "palette": [
+        "#17181C",
+        "#F3F6ED",
+        "#FFD45D",
+        "#2ED319"
+      ],
+      "parts": [
+        {
+          "name": "Plate_Body",
+          "slot": 0,
+          "color": "#17181C"
+        },
+        {
+          "name": "Avatar_Back",
+          "slot": 0,
+          "color": "#17181C"
+        },
+        {
+          "name": "Avatar_Frame",
+          "slot": 1,
+          "color": "#F3F6ED"
+        },
+        {
+          "name": "Status_Dot",
+          "slot": 3,
+          "color": "#2ED319"
+        },
+        {
+          "name": "Name",
+          "slot": 2,
+          "color": "#FFD45D"
+        },
+        {
+          "name": "Pronouns",
+          "slot": 1,
+          "color": "#F3F6ED"
+        },
+        {
+          "name": "Status_Text",
+          "slot": 1,
+          "color": "#F3F6ED"
+        }
+      ],
+      "unit": "millimeter",
+      "requiresSlicerFilamentAssignment": true
+    },
+    "slicerImport": "NOT_TESTED",
+    "sha256": "fdaba43ed4ab38200045a681cd622841c9271c12f04956cbf065e14b3995caf1"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "artifactGeneration": "PASS",
+  "sameMeshesAndMetadata": true,
+  "scriptRootIsRelative": true,
+  "cleanCliExit": "PARTIAL: background processes remained alive after export and were explicitly terminated; live Blender untouched"
+}

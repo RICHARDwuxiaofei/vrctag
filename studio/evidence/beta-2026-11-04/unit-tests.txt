@@ -1,0 +1,51 @@
+
+> vrc-tag-studio@0.1.0 test
+> node --import tsx --test --test-isolation=none tests/*.test.ts
+
+✔ queued style switches and text edits coalesce to final config (188.351461ms)
+✔ export during switch uses captured style and text; later preview stays independent (434.990708ms)
+✔ failed model resource can recover on next same-style request (147.04322ms)
+✔ same-value rebuilds and repeated exports produce correctly correlated responses (406.268244ms)
+✔ all original supported codepoints survive the renamed OFL partitions (274.818813ms)
+✔ default font loads under 500KB and repeated requests reuse cache (295.247672ms)
+✔ failed font request can retry, and uncommon CJK is loaded on demand (23.692819ms)
+✔ native fetch receiver stays global rather than the FontStore instance (7.733836ms)
+✔ GLB loads with original parts and physical meter bounds (6.922638ms)
+✔ MIT software grant preserves legacy license and third-party notices (0.411932ms)
+✔ Classic exception and compatibility aliases cannot silently acquire the Native grant (0.238326ms)
+✔ CFS4 keeps seven independent parts, with four material slots (0.19235ms)
+✔ custom dot and filament mapping remain independent (0.126427ms)
+✔ full visual palette remains opt-in and invalid slots/colors are rejected (0.220714ms)
+✔ F-01: a positive exterior cannot hide an isolated inverted shell (0.343523ms)
+✔ nested inward cavity is legal, outward enclosed shell is not (0.663932ms)
+✔ solid island within a cavity has even depth and positive volume (0.252022ms)
+✔ intersecting and coplanar-overlapping solid shells are rejected (0.30462ms)
+✔ disjoint valid shells and a positive single shell remain valid (0.230942ms)
+✔ coplanar triangles sharing an edge cannot overlap in positive area (0.395701ms)
+✔ closed printable text: Amy (187.215475ms)
+✔ closed printable text: Nagikokoro (238.171556ms)
+✔ closed printable text: A Very Long English Display Name (402.593455ms)
+✔ closed printable text: 小凪心 (171.669787ms)
+✔ closed printable text: ナギココロ (219.971268ms)
+✔ closed printable text: Nagi_心こんにちは (341.544292ms)
+✔ optional pronouns, centering, friend material isolation, independent color (886.987438ms)
+✔ invalid, unsupported, too-small text never produces successful export (154.891751ms)
+✔ 3MF package has millimeter assembly, colors, independent parts and metadata (695.291145ms)
+✔ classic: default, multilingual, long text, optional rows and serialized samples (2585.172577ms)
+✔ classic: all statuses, independent custom color, immutable geometry and friend isolation (3166.736094ms)
+✔ classic: GLB real loader, original parts and physical dimensions (2.492175ms)
+✔ native: default, multilingual, long text, optional rows and serialized samples (2318.678606ms)
+✔ native: all statuses, independent custom color, immutable geometry and friend isolation (3220.188117ms)
+✔ native: GLB real loader, original parts and physical dimensions (1.359896ms)
+✔ configuration migration, full roundtrip and style validation (0.571019ms)
+✔ mismatched style/base and stale style/export cannot succeed (114.65814ms)
+✔ Native two-line centers match the manually calibrated 30% plate-height rhythm (241.869538ms)
+✔ Classic large medallion, separate white rim and status lane are genuinely different from Native (143.953085ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18414.800169

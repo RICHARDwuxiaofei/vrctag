@@ -1,0 +1,15 @@
+00:00.016  color_management | ERROR OpenColorIO Error: Error: Loading the OCIO profile '/usr/share/blender/5.2/datafiles/colormanagement/config.ocio' failed. This .ocio config  '/usr/share/blender/5.2/datafiles/colormanagement/config.ocio' is version 2.5. This version of the OpenColorIO library (2.4.2) is not able to load that config version.
+                            | The minor version 5 is not supported for major version 2. Maximum minor version is 4.
+00:00.016  color_management | Using fallback mode for management
+/home/nagikokoro/CODE/vrctag/studio/scripts/beta_blender.py:73: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('Filament_'+resource.attrib['pindex']);mat.diffuse_color=(*linear,1);mat.use_nodes=True
+00:01.030  render           | Saved: '/home/nagikokoro/CODE/vrctag/studio/evidence/beta-2026-11-04/classic-front.png'
+00:01.094  render           | Saved: '/home/nagikokoro/CODE/vrctag/studio/evidence/beta-2026-11-04/classic-perspective.png'
+00:01.224  render           | Saved: '/home/nagikokoro/CODE/vrctag/studio/evidence/beta-2026-11-04/native-front.png'
+00:01.283  render           | Saved: '/home/nagikokoro/CODE/vrctag/studio/evidence/beta-2026-11-04/native-perspective.png'
+Info: Saved as "classic-nagikokoro.blend"
+Info: Saved as "native-nagikokoro.blend"
+BETA_BLENDER_COMPLETE demo
+Blender 5.2.1 LTS (hash unknown built 2026-08-27 00:00:00)
+
+Blender quit

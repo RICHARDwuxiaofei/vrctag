@@ -1,0 +1,446 @@
+[
+  {
+    "file": "studio/evidence/nagikokoro.3mf",
+    "status": "PASS",
+    "unit": "millimeter",
+    "parts": [
+      {
+        "name": "Plate_Body",
+        "vertices": 196,
+        "triangles": 388,
+        "volumeMm3": 12747.916366775105,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -60.0,
+            60.0
+          ],
+          [
+            -19.0,
+            19.0
+          ],
+          [
+            0.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 361.6531511425257,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -54.0,
+            -30.0
+          ],
+          [
+            -12.0,
+            12.0
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 384,
+        "triangles": 768,
+        "volumeMm3": 163.24620329971725,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -56.0,
+            -28.0
+          ],
+          [
+            -14.0,
+            14.0
+          ],
+          [
+            3.0,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 19.62093965702385,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -31.5,
+            -26.5
+          ],
+          [
+            -13.5,
+            -8.5
+          ],
+          [
+            3.0,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "volumeMm3": 136.56422337388284,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            33.104364
+          ],
+          [
+            -1.0,
+            9.0
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "volumeMm3": 13.047442491689976,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            -13.800636
+          ],
+          [
+            -12.5,
+            -8.5
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      }
+    ],
+    "slicerImport": "NOT_TESTED"
+  },
+  {
+    "file": "studio/evidence/mixed-friend-pronouns.3mf",
+    "status": "PASS",
+    "unit": "millimeter",
+    "parts": [
+      {
+        "name": "Plate_Body",
+        "vertices": 196,
+        "triangles": 388,
+        "volumeMm3": 12747.916366775105,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -60.0,
+            60.0
+          ],
+          [
+            -19.0,
+            19.0
+          ],
+          [
+            0.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 361.6531511425257,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -54.0,
+            -30.0
+          ],
+          [
+            -12.0,
+            12.0
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 384,
+        "triangles": 768,
+        "volumeMm3": 163.24620329971725,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -56.0,
+            -28.0
+          ],
+          [
+            -14.0,
+            14.0
+          ],
+          [
+            3.0,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 19.62093965702385,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -31.5,
+            -26.5
+          ],
+          [
+            -13.5,
+            -8.5
+          ],
+          [
+            3.0,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1026,
+        "triangles": 2024,
+        "volumeMm3": 67.54999908884965,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            11.364226
+          ],
+          [
+            3.0,
+            11.0
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Pronouns",
+        "vertices": 770,
+        "triangles": 1512,
+        "volumeMm3": 17.186129825513508,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            -1.621262
+          ],
+          [
+            -3.35,
+            0.35
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "volumeMm3": 13.047442491689976,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            -13.800636
+          ],
+          [
+            -12.5,
+            -8.5
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      }
+    ],
+    "slicerImport": "NOT_TESTED"
+  },
+  {
+    "file": "studio/evidence/browser-custom.3mf",
+    "status": "PASS",
+    "unit": "millimeter",
+    "parts": [
+      {
+        "name": "Plate_Body",
+        "vertices": 196,
+        "triangles": 388,
+        "volumeMm3": 12747.916366775105,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -60.0,
+            60.0
+          ],
+          [
+            -19.0,
+            19.0
+          ],
+          [
+            0.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Back",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 361.6531511425257,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -54.0,
+            -30.0
+          ],
+          [
+            -12.0,
+            12.0
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Avatar_Frame",
+        "vertices": 384,
+        "triangles": 768,
+        "volumeMm3": 163.24620329971725,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -56.0,
+            -28.0
+          ],
+          [
+            -14.0,
+            14.0
+          ],
+          [
+            3.0,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Status_Dot",
+        "vertices": 192,
+        "triangles": 380,
+        "volumeMm3": 19.62093965702385,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -31.5,
+            -26.5
+          ],
+          [
+            -13.5,
+            -8.5
+          ],
+          [
+            3.0,
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Name",
+        "vertices": 1200,
+        "triangles": 2380,
+        "volumeMm3": 87.40111273198441,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            22.083491
+          ],
+          [
+            3.0,
+            11.0
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Pronouns",
+        "vertices": 1176,
+        "triangles": 2332,
+        "volumeMm3": 15.42309549453365,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            -5.799724
+          ],
+          [
+            -3.35,
+            0.35
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      {
+        "name": "Status_Text",
+        "vertices": 488,
+        "triangles": 980,
+        "volumeMm3": 13.047442491689976,
+        "closedOriented": true,
+        "bounds": [
+          [
+            -22.0,
+            -13.800636
+          ],
+          [
+            -12.5,
+            -8.5
+          ],
+          [
+            3.0,
+            3.8
+          ]
+        ]
+      }
+    ],
+    "slicerImport": "NOT_TESTED"
+  }
+]

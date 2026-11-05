@@ -1,0 +1,35 @@
+
+> vrc-tag-studio@0.1.0 test
+> node --import tsx --test --test-isolation=none tests/*.test.ts
+
+✔ all original supported codepoints survive the renamed OFL partitions (307.451016ms)
+✔ default font loads under 500KB and repeated requests reuse cache (352.018306ms)
+✔ failed font request can retry, and uncommon CJK is loaded on demand (24.145487ms)
+✔ native fetch receiver stays global rather than the FontStore instance (8.372173ms)
+✔ GLB loads with original parts and physical meter bounds (6.423652ms)
+✔ CFS4 keeps seven independent parts, with four material slots (0.336279ms)
+✔ custom dot and filament mapping remain independent (0.144722ms)
+✔ full visual palette remains opt-in and invalid slots/colors are rejected (0.225753ms)
+✔ F-01: a positive exterior cannot hide an isolated inverted shell (0.600114ms)
+✔ nested inward cavity is legal, outward enclosed shell is not (0.765944ms)
+✔ solid island within a cavity has even depth and positive volume (0.317885ms)
+✔ intersecting and coplanar-overlapping solid shells are rejected (0.296405ms)
+✔ disjoint valid shells and a positive single shell remain valid (0.25094ms)
+✔ coplanar triangles sharing an edge cannot overlap in positive area (0.425658ms)
+✔ closed printable text: Amy (206.174491ms)
+✔ closed printable text: Nagikokoro (247.611539ms)
+✔ closed printable text: A Very Long English Display Name (456.705479ms)
+✔ closed printable text: 小凪心 (174.701318ms)
+✔ closed printable text: ナギココロ (216.265784ms)
+✔ closed printable text: Nagi_心こんにちは (345.413625ms)
+✔ optional pronouns, centering, friend material isolation, independent color (905.236296ms)
+✔ invalid, unsupported, too-small text never produces successful export (153.495948ms)
+✔ 3MF package has millimeter assembly, colors, independent parts and metadata (741.017713ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5175.22135

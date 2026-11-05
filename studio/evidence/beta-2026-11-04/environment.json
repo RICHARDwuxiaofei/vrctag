@@ -1,0 +1,12 @@
+{
+  "baselineCommit": "1a1155f5985046b52f5975204476a3266fa8d455",
+  "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+  "distribution": "NAME=\"Fedora Linux\"\nVERSION=\"44 (Workstation Edition)\"\nRELEASE_TYPE=stable\nID=fedora\nVERSION_ID=44\nVERSION_CODENAME=\"\"\nPRETTY_NAME=\"Fedora Linux 44 (Workstation Edition)\"\nANSI_COLOR=\"0;38;2;60;110;180\"\nLOGO=fedora-logo-icon\nCPE_NAME=\"cpe:/o:fedoraproject:fedora:44\"\nDEFAULT_HOSTNAME=\"fedora\"\nHOME_URL=\"https://fedoraproject.org/\"\nDOCUMENTATION_URL=\"https://docs.fedoraproject.org/en-US/fedora/f44/\"\nSUPPORT_URL=\"https://ask.fedoraproject.org/\"\nBUG_REPORT_URL=\"https://bugzilla.redhat.com/\"\nREDHAT_BUGZILLA_PRODUCT=\"Fedora\"\nREDHAT_BUGZILLA_PRODUCT_VERSION=44\nREDHAT_SUPPORT_PRODUCT=\"Fedora\"\nREDHAT_SUPPORT_PRODUCT_VERSION=44\nSUPPORT_END=2027-05-19\nVARIANT=\"Workstation Edition\"\nVARIANT_ID=workstation\n",
+  "architecture": "x86_64",
+  "node": "v24.18.0",
+  "npm": "11.16.0",
+  "python": "Python 3.14.7",
+  "blender": "Blender 5.2.1 LTS",
+  "flatpak": "Flatpak 1.17.6",
+  "flatpakApps": "com.github.gmg137.netease-cloud-music-gtk\t2.5.4\tsystem\ncom.hostbuf.FinalShell\t4.6.5\tuser\ncom.obsproject.Studio\t32.1.1\tsystem\ncom.obsproject.Studio\t33.0.1\tuser\ncom.valvesoftware.Steam\t1.0.0.87\tsystem\norg.videolan.VLC\t3.0.24\tuser"
+}

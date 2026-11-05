@@ -1,0 +1,25 @@
+VRC Tag Studio — Copyright (c) 2026 RICHARDwuxiaofei
+Unofficial project, not affiliated with or endorsed by VRChat.
+Source: https://github.com/RICHARDwuxiaofei/vrctag
+
+Independently authored software: MIT; see VRC-Tag-Studio-MIT.txt.
+First-party contributions to BOTH current Classic and Native model/design assets: CC BY 4.0;
+see CC-BY-4.0.txt. Attribution: RICHARDwuxiaofei — VRC Tag Studio.
+Link to the source and license; indicate modifications.
+
+Only rights owned by the author are granted. This does not relicense third-party
+design, font, trademark or reference-image rights.
+Historical WiseWolf-derived desktop resources remain subject to their original
+CC BY-NC-SA 4.0 attribution and license. They are not packaged in this static site.
+Previous compliant license grants cannot be retroactively withdrawn.
+
+Noto Sans CJK fonts and renamed subsets: SIL OFL 1.1; see ../assets/OFL-Noto.txt.
+Third-party runtime libraries retain their own notices in this directory.
+Uploaded photos are local previews only; no photos are included in 3MF exports.
+Full path-level scope: LICENSE_SCOPE.md / THIRD_PARTY_NOTICES.md in repository.
+
+Glyph contour repair: clipper-lib 6.4.2, Angus Johnson 2010-2017 and Javascript port contributors,
+Boost Software License 1.0; see Boost-Software-License-1.0.txt.
+https://github.com/junmer/clipper-lib
+
+Bambu-compatible export uses bundled BambuStudio system preset data, retained under upstream AGPL terms. See BambuStudio-AGPL-3.0.txt and bambu-presets/ for original preset JSON sources. No private project template is bundled.

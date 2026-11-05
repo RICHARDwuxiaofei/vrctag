@@ -1,0 +1,2567 @@
+[
+  {
+    "styleId": "classic",
+    "case": "cfs4-custom",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#16171B",
+      "#EEEEEE",
+      "#FFCE40",
+      "#51B44B"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "8",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 7508,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-cfs4-custom-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "chinese",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#1C1D21",
+      "#E7E8EC",
+      "#EDC448",
+      "#2ED319"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 5332,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-chinese-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "custom-status",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#1C1D21",
+      "#E7E8EC",
+      "#EDC448",
+      "#123456"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 7908,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-custom-status-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "default",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#1C1D21",
+      "#E7E8EC",
+      "#EDC448",
+      "#2ED319"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 6672,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-default-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "friend-pronouns",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#1C1D21",
+      "#E7E8EC",
+      "#FFD45D",
+      "#2ED319"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "8",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 8184,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-friend-pronouns-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "japanese",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#1C1D21",
+      "#E7E8EC",
+      "#EDC448",
+      "#2ED319"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 6000,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-japanese-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "long",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#1C1D21",
+      "#E7E8EC",
+      "#EDC448",
+      "#2ED319"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 10904,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-long-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "mixed",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 2
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#1C1D21",
+      "#E7E8EC",
+      "#EDC448",
+      "#2ED319"
+    ],
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "8",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 1,
+          "sliced_time_with_cache": 1,
+          "triangle_count": 11260,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-mixed-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "classic",
+    "case": "visual",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Rim",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Rim",
+        "extruder": 1
+      },
+      {
+        "name": "Plate_Body",
+        "extruder": 2
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 3
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 1
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 5
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 1
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 1
+      }
+    ],
+    "palette": [
+      "#E7E8EC",
+      "#1C1D21",
+      "#383A40",
+      "#2ED319",
+      "#FFD45D"
+    ],
+    "requiresMoreThanFourAvailableFilaments": true,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Rim",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "8",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 1,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 8036,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/classic-visual-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "cfs4-custom",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#16171B",
+      "#EEEEEE",
+      "#FFCE40",
+      "#51B44B"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 1,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 6492,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-cfs4-custom-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "chinese",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#F3F6ED",
+      "#FFD45D",
+      "#2ED319"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 1,
+          "sliced_time_with_cache": 1,
+          "triangle_count": 4316,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-chinese-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "custom-status",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#F3F6ED",
+      "#FFD45D",
+      "#123456"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 1,
+          "sliced_time_with_cache": 1,
+          "triangle_count": 6892,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-custom-status-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "default",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#F3F6ED",
+      "#FFD45D",
+      "#2ED319"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 5656,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-default-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "friend-pronouns",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 3
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#F3F6ED",
+      "#FFD45D",
+      "#2ED319"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 7168,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-friend-pronouns-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "japanese",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#F3F6ED",
+      "#FFD45D",
+      "#2ED319"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 4984,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-japanese-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "long",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#F3F6ED",
+      "#FFD45D",
+      "#2ED319"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 9888,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-long-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "mixed",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 2
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 2
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 2
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#F3F6ED",
+      "#FFD45D",
+      "#2ED319"
+    ],
+    "requiresMoreThanFourAvailableFilaments": false,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      3
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 10244,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-mixed-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  },
+  {
+    "styleId": "native",
+    "case": "visual",
+    "version": "2.4.2",
+    "coreImport": "PASS: actual CLI import and geometry matching",
+    "coreAutomaticFilamentMapping": "PARTIAL: Core base materials are not auto-assigned by this Orca version",
+    "beforeSlicerAssignment": [
+      {
+        "part": "Plate_Body",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Back",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Avatar_Frame",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Dot",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Name",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Pronouns",
+        "extruder": "1 (default)"
+      },
+      {
+        "part": "Status_Text",
+        "extruder": "1 (default)"
+      }
+    ],
+    "explicitSlicerAssignment": [
+      {
+        "name": "Plate_Body",
+        "extruder": 1
+      },
+      {
+        "name": "Avatar_Back",
+        "extruder": 2
+      },
+      {
+        "name": "Avatar_Frame",
+        "extruder": 3
+      },
+      {
+        "name": "Status_Dot",
+        "extruder": 4
+      },
+      {
+        "name": "Name",
+        "extruder": 5
+      },
+      {
+        "name": "Pronouns",
+        "extruder": 6
+      },
+      {
+        "name": "Status_Text",
+        "extruder": 7
+      }
+    ],
+    "palette": [
+      "#17181C",
+      "#35363C",
+      "#62646C",
+      "#2ED319",
+      "#FFD45D",
+      "#C6C8CE",
+      "#B9BBC2"
+    ],
+    "requiresMoreThanFourAvailableFilaments": true,
+    "flushTable": "Stock nominal values; resized for palette count only; not hardware calibrated",
+    "sourceGeometry": [
+      {
+        "orcaMesh": "1",
+        "sourcePart": "Plate_Body",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "2",
+        "sourcePart": "Avatar_Back",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "3",
+        "sourcePart": "Avatar_Frame",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "4",
+        "sourcePart": "Status_Dot",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "5",
+        "sourcePart": "Name",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "6",
+        "sourcePart": "Pronouns",
+        "geometryUnchangedApartFromRecentering": true
+      },
+      {
+        "orcaMesh": "7",
+        "sourcePart": "Status_Text",
+        "geometryUnchangedApartFromRecentering": true
+      }
+    ],
+    "slicing": "PASS: real CLI slicing after explicit slicer-side assignment",
+    "gcodeToolIDs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "printerPreset": "Creality K2 Plus 0.4 nozzle",
+    "processPreset": "0.20mm Standard @Creality K2 Plus 0.4 nozzle",
+    "layerHeight": 0.20000000298023224,
+    "result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.20000000298023224,
+      "plate_index": 0,
+      "prepare_time": 0,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "id": 1,
+          "sliced_time": 0,
+          "sliced_time_with_cache": 0,
+          "triangle_count": 7020,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 15.0,
+      "wall_loops": 2
+    },
+    "output": "studio/evidence/beta-2026-11-04/orca/native-visual-assigned-sliced.3mf",
+    "guiScreenshots": "NOT_TESTED: display unavailable; CLI evidence only",
+    "physicalPrint": "NOT_TESTED"
+  }
+]

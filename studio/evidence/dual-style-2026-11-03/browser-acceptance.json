@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED",
+  "url": "http://127.0.0.1:5173/",
+  "tool": "cua_repl getTab",
+  "reason": "Browser Use rejected this action due to browser URL security policy; tool reported requested URL protocol not allowed although URL was HTTP. No alternate surface or browser-control workaround attempted.",
+  "notTested": [
+    "new desktop/mobile GUI screenshots",
+    "actual GUI style switching, JSON upload, avatar and downloads",
+    "physical mobile touch"
+  ],
+  "availableEvidence": [
+    "Blender front/perspective views",
+    "Node engine race/snapshot tests",
+    "configuration roundtrip tests",
+    "GLB loader tests",
+    "independent 3MF checks"
+  ],
+  "historicalScreenshots": "Earlier evidence is retained as historical and not presented as current dual-style GUI proof"
+}

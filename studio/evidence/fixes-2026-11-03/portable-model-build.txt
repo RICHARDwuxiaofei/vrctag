@@ -1,0 +1,63 @@
+00:00.017  color_management | ERROR OpenColorIO Error: Error: Loading the OCIO profile '/usr/share/blender/5.2/datafiles/colormanagement/config.ocio' failed. This .ocio config  '/usr/share/blender/5.2/datafiles/colormanagement/config.ocio' is version 2.5. This version of the OpenColorIO library (2.4.2) is not able to load that config version.
+                            | The minor version 5 is not supported for major version 2. Maximum minor version is 4.
+00:00.017  color_management | Using fallback mode for management
+[ALSOFT] (EE) Failed to connect PipeWire event context (errno: 1)
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/nagikokoro/.config/blender/5.2/extensions').
+Info: Saved as "vrc-tag-original.blend"
+ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so
+ERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so
+02:51:13 | INFO: Starting glTF 2.0 export
+02:51:13 | INFO: Extracting primitive: Avatar_Back
+02:51:13 | INFO: Primitives created: 1
+02:51:13 | INFO: Extracting primitive: Avatar_Frame
+02:51:13 | INFO: Primitives created: 1
+02:51:13 | INFO: Extracting primitive: Plate_Body
+02:51:13 | INFO: Primitives created: 1
+02:51:13 | INFO: Extracting primitive: Status_Dot
+02:51:13 | INFO: Primitives created: 1
+02:51:13 | INFO: Finished glTF 2.0 export in 0.01888108253479004 s
+
+[
+  {
+    "name": "Plate_Body",
+    "nonManifoldEdges": 0,
+    "volumeMm3": 12747.916350828422,
+    "dimensionsMm": [
+      120.0,
+      38.0,
+      3.0
+    ]
+  },
+  {
+    "name": "Avatar_Back",
+    "nonManifoldEdges": 0,
+    "volumeMm3": 553.8894728371793,
+    "dimensionsMm": [
+      30.0,
+      30.0,
+      0.7999999523162842
+    ]
+  },
+  {
+    "name": "Avatar_Frame",
+    "nonManifoldEdges": 0,
+    "volumeMm3": 90.36741873934007,
+    "dimensionsMm": [
+      32.0,
+      32.0,
+      1.0
+    ]
+  },
+  {
+    "name": "Status_Dot",
+    "nonManifoldEdges": 0,
+    "volumeMm3": 38.4570404961605,
+    "dimensionsMm": [
+      7.0,
+      7.0,
+      1.0
+    ]
+  }
+]
+Blender 5.2.1 LTS (hash unknown built 2026-08-27 00:00:00)
+pa_write() failed while trying to wake up the mainloop: Operation not permitted

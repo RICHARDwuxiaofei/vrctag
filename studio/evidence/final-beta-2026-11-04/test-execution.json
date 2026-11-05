@@ -1,0 +1,34 @@
+[
+  {
+    "check": "typecheck",
+    "exitCode": 0,
+    "seconds": 1.47,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  },
+  {
+    "check": "unit-tests",
+    "exitCode": 0,
+    "seconds": 20.96,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  },
+  {
+    "check": "build",
+    "exitCode": 0,
+    "seconds": 4.27,
+    "testedCommit": "2641fd6267be984d2ffa95fa54fe368a5c832e61"
+  },
+  {
+    "check": "review-classic",
+    "exitCode": 0,
+    "seconds": 10.04,
+    "testedCommit": "6680b8cdabbe27a0390b2e2a221195b2f0d20ab0",
+    "reason": "Corrected previously hard-coded report date; assertions unchanged"
+  },
+  {
+    "check": "review-native",
+    "exitCode": 0,
+    "seconds": 9.84,
+    "testedCommit": "6680b8cdabbe27a0390b2e2a221195b2f0d20ab0",
+    "reason": "Corrected previously hard-coded report date; assertions unchanged"
+  }
+]

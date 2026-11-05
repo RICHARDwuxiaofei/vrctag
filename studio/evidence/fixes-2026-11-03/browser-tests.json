@@ -1,0 +1,143 @@
+{
+  "testedSourceCommit": "974e13c",
+  "tests": [
+    {
+      "test": "F02 malformed avatar leaves export enabled",
+      "pass": true
+    },
+    {
+      "test": "F02 retry valid image clears avatar error",
+      "pass": true,
+      "localDataURI": true
+    },
+    {
+      "test": "F02 delete image leaves valid export",
+      "pass": true
+    },
+    {
+      "test": "preview and export configuration keys match",
+      "pass": true,
+      "config": {
+        "printMode": "cfs4",
+        "displayName": "CFS4_Check",
+        "friend": true,
+        "status": "Join Me",
+        "dotColor": "#c80928",
+        "customStatus": "无聊",
+        "pronouns": "随意 / Any",
+        "materialSlots": {
+          "Avatar_Frame": 0
+        }
+      }
+    },
+    {
+      "test": "edit after export uses new preview without changing captured download",
+      "pass": true,
+      "preview": "Snapshot_B"
+    },
+    {
+      "test": "CFS custom filament HEX and shared part slot",
+      "pass": true,
+      "config": {
+        "printMode": "cfs4",
+        "displayName": "CFS4_Hex",
+        "friend": true,
+        "status": "Online",
+        "dotColor": "auto",
+        "customStatus": "无聊",
+        "pronouns": "They/Them",
+        "filamentColors": [
+          "#102b2a",
+          "#abcabc",
+          "#ffd45d",
+          "auto"
+        ],
+        "materialSlots": {
+          "Avatar_Frame": 0
+        }
+      }
+    },
+    {
+      "test": "full visual colors remain available with four-slot warning",
+      "pass": true
+    },
+    {
+      "test": "35 rapid config edits show final request only",
+      "pass": true,
+      "lastName": "Rapid_34"
+    },
+    {
+      "test": "bounded WebGL allocation over repeated model replacement",
+      "before": "{\"geometries\":8,\"textures\":1}",
+      "after": "{\"geometries\":7,\"textures\":1}",
+      "pass": true,
+      "limit": "short stress run, not hours of soak testing"
+    },
+    {
+      "test": "missing font reports recoverable model error",
+      "pass": true
+    },
+    {
+      "test": "worker recovers after restoring missing font without page reload",
+      "pass": true,
+      "subpath": "/studio/"
+    },
+    {
+      "name": "desktop1440",
+      "status": "PASS",
+      "viewport": [
+        1440,
+        1080
+      ],
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "mobile390",
+      "status": "PASS",
+      "viewport": [
+        390,
+        844
+      ],
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "previewBeforeEditor": true
+    },
+    {
+      "name": "mobile320-expanded-materials",
+      "status": "PASS",
+      "viewport": [
+        320,
+        740
+      ],
+      "clientWidth": 305,
+      "scrollWidth": 305
+    },
+    {
+      "name": "final-friend-pronouns",
+      "status": "PASS",
+      "nameValue": "Nagikokoro",
+      "pronouns": "They/Them"
+    },
+    {
+      "name": "F02 default config malformed avatar then reset",
+      "status": "PASS",
+      "errors": 0,
+      "exportEnabled": true
+    },
+    {
+      "name": "same-value color edit rebuild",
+      "status": "PASS"
+    },
+    {
+      "name": "repeat reset while already default",
+      "status": "PASS"
+    }
+  ],
+  "limits": [
+    "Most suite tested at 0ced025; reset/same-value regressions retested at 974e13c",
+    "Desktop viewports, no physical phone",
+    "Bounded 47 changes, not hours-long soak",
+    "Snapshot edit immediate after click, not forced scheduler interleaving"
+  ]
+}

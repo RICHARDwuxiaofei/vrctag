@@ -1,0 +1,18 @@
+[
+  {
+    "file": "studio/demos/classic-nagikokoro.blend",
+    "reopened": true,
+    "meshObjects": 7,
+    "dynamicTextIsRealMesh": true,
+    "sourceUnchanged": true,
+    "sha256": "3af2ce3a37a411f43219339d5b8e3d7d6a2a91c7a38b5b5556ba16d60fea97cb"
+  },
+  {
+    "file": "studio/demos/native-nagikokoro.blend",
+    "reopened": true,
+    "meshObjects": 6,
+    "dynamicTextIsRealMesh": true,
+    "sourceUnchanged": true,
+    "sha256": "a0a47b41eaad2bf393dea4813d9adbd0847b426d727ef289a15082d6815c0258"
+  }
+]

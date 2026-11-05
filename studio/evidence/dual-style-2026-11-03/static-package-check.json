@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "sourceCommit": "698318a",
+  "scope": "Filesystem validation of the production static package only; not HTTP, GUI or browser evidence",
+  "files": [
+    "assets/styles/classic/base.json",
+    "assets/styles/classic/base.glb",
+    "assets/styles/classic/front.png",
+    "assets/styles/classic/default-front.png",
+    "assets/styles/classic/default-perspective.png",
+    "assets/styles/classic/friend-pronouns-front.png",
+    "assets/styles/native/base.json",
+    "assets/styles/native/base.glb",
+    "assets/styles/native/front.png",
+    "assets/styles/native/default-front.png",
+    "assets/styles/native/default-perspective.png",
+    "assets/styles/native/friend-pronouns-front.png",
+    "styles-compare.html",
+    "styles-compare.js"
+  ],
+  "browserAcceptance": "BLOCKED"
+}

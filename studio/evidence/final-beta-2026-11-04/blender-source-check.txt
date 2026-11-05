@@ -1,0 +1,40 @@
+00:00.022  color_management | ERROR OpenColorIO Error: Error: Loading the OCIO profile '/usr/share/blender/5.2/datafiles/colormanagement/config.ocio' failed. This .ocio config  '/usr/share/blender/5.2/datafiles/colormanagement/config.ocio' is version 2.5. This version of the OpenColorIO library (2.4.2) is not able to load that config version.
+                            | The minor version 5 is not supported for major version 2. Maximum minor version is 4.
+00:00.022  color_management | Using fallback mode for management
+00:00.848  blend            | Read blend: "/home/nagikokoro/CODE/vrctag/studio/classic.blend"
+00:01.163  blend            | Read blend: "/home/nagikokoro/CODE/vrctag/studio/native.blend"
+00:01.396  blend            | Read blend: "/home/nagikokoro/CODE/vrctag/studio/classic.blend"
+Info: Saved copy as "classic-reopen-copy.blend"
+ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so
+ERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so
+12:39:59 | INFO: Starting glTF 2.0 export
+12:39:59 | INFO: Extracting primitive: Avatar_Back.004
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Extracting primitive: Avatar_Frame.004
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Extracting primitive: Plate_Body.004
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Extracting primitive: Plate_Rim.003
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Extracting primitive: Status_Dot.004
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Finished glTF 2.0 export in 0.022846698760986328 s
+00:01.631  blend            | Read blend: "/home/nagikokoro/CODE/vrctag/studio/native.blend"
+
+Info: Saved copy as "native-reopen-copy.blend"
+12:39:59 | INFO: Starting glTF 2.0 export
+12:39:59 | INFO: Extracting primitive: Avatar_Back.002
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Extracting primitive: Avatar_Frame.002
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Extracting primitive: Plate_Body.002
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Extracting primitive: Status_Dot.002
+12:39:59 | INFO: Primitives created: 1
+12:39:59 | INFO: Finished glTF 2.0 export in 0.009821176528930664 s
+00:01.657  blend            | Read blend: "/home/nagikokoro/CODE/vrctag/studio/vrc-tag-original.blend"
+
+BETA_BLENDER_COMPLETE check
+Blender 5.2.1 LTS (hash unknown built 2026-08-27 00:00:00)
+
+Blender quit

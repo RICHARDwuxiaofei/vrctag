@@ -1,0 +1,3 @@
+error_code 65544, description: Wayland: Failed to connect to display
+glfwInit return error, Error code: 65544, Error: Wayland: Failed to connect to display
+OpenGL context unavailable; skip thumbnail generating

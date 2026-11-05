@@ -1,0 +1,10 @@
+{
+  "branch": "codex/vrc-nameplate-web",
+  "path": "LICENSE",
+  "repositoryAPISPDX": "NOASSERTION",
+  "status": "PARTIAL",
+  "matchesRemoteFileBytes": true,
+  "canonicalMITBodyMatchIgnoringCopyrightAndWhitespace": true,
+  "canonicalSource": "https://api.github.com/licenses/mit",
+  "scope": "Canonical MIT and SPDX/package metadata were added, but GitHub repository license API still reports Other/NOASSERTION. Cause unconfirmed; no main/default-branch changes made."
+}

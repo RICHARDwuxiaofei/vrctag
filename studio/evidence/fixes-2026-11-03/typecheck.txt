@@ -1,0 +1,4 @@
+
+> vrc-tag-studio@0.1.0 check
+> tsc -b
+

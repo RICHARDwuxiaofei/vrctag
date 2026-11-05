@@ -1,0 +1,247 @@
+{
+  "toleranceMm3": 0.00001,
+  "results": [
+    {
+      "styleId": "classic",
+      "reopened": true,
+      "file": "/home/nagikokoro/CODE/vrctag/studio/classic.blend",
+      "unitScale": 0.0010000000474974513,
+      "parts": [
+        {
+          "name": "Avatar_Back",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 361.6531337808773,
+          "dimensionsMm": [
+            24,
+            24,
+            0.7999999523162842
+          ],
+          "linearBaseColor": [
+            0.06847816705703735,
+            0.07421357184648514,
+            0.08865558356046677,
+            1
+          ]
+        },
+        {
+          "name": "Avatar_Frame",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 163.2461990111968,
+          "dimensionsMm": [
+            28,
+            28,
+            1
+          ],
+          "linearBaseColor": [
+            0.3324515223503113,
+            0.3613067865371704,
+            0.4019777774810791,
+            1
+          ]
+        },
+        {
+          "name": "Plate_Body",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 12747.916350828422,
+          "dimensionsMm": [
+            120,
+            38,
+            3
+          ],
+          "linearBaseColor": [
+            0.017641954123973846,
+            0.019382361322641373,
+            0.023153366521000862,
+            1
+          ]
+        },
+        {
+          "name": "Status_Dot",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 19.62093976839605,
+          "dimensionsMm": [
+            5,
+            5,
+            1
+          ],
+          "linearBaseColor": [
+            0.027320891618728638,
+            0.6514056324958801,
+            0.009721217676997185,
+            1
+          ]
+        }
+      ],
+      "intersections": [
+        {
+          "a": "Avatar_Back",
+          "b": "Avatar_Frame",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Avatar_Back",
+          "b": "Plate_Body",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Avatar_Back",
+          "b": "Status_Dot",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Avatar_Frame",
+          "b": "Plate_Body",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Avatar_Frame",
+          "b": "Status_Dot",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Plate_Body",
+          "b": "Status_Dot",
+          "volumeMm3": 0
+        }
+      ],
+      "anchors": {
+        "Name_Anchor": [
+          -22,
+          4,
+          3
+        ],
+        "Pronouns_Anchor": [
+          -22,
+          -1.5,
+          3
+        ],
+        "Status_Anchor": [
+          -22,
+          -10.5,
+          3
+        ]
+      }
+    },
+    {
+      "styleId": "native",
+      "reopened": true,
+      "file": "/home/nagikokoro/CODE/vrctag/studio/native.blend",
+      "unitScale": 0.0010000000474974513,
+      "parts": [
+        {
+          "name": "Avatar_Back",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 236.15657131087994,
+          "dimensionsMm": [
+            32,
+            32,
+            0.2999999523162842
+          ],
+          "linearBaseColor": [
+            0.03560131415724754,
+            0.03688944876194,
+            0.045186202973127365,
+            1
+          ]
+        },
+        {
+          "name": "Avatar_Frame",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 23.39059507803723,
+          "dimensionsMm": [
+            33.400001525878906,
+            33.400001525878906,
+            0.35000014305114746
+          ],
+          "linearBaseColor": [
+            0.12213877588510513,
+            0.12743768095970154,
+            0.14995978772640228,
+            1
+          ]
+        },
+        {
+          "name": "Plate_Body",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 11696.730738970627,
+          "dimensionsMm": [
+            118,
+            40,
+            2.799999952316284
+          ],
+          "linearBaseColor": [
+            0.008568125776946545,
+            0.009134058840572834,
+            0.011612244881689548,
+            1
+          ]
+        },
+        {
+          "name": "Status_Dot",
+          "nonManifoldEdges": 0,
+          "volumeMm3": 32.54878172743681,
+          "dimensionsMm": [
+            7.200000762939453,
+            7.200000286102295,
+            0.7999999523162842
+          ],
+          "linearBaseColor": [
+            0.027320891618728638,
+            0.6514056324958801,
+            0.009721217676997185,
+            1
+          ]
+        }
+      ],
+      "intersections": [
+        {
+          "a": "Avatar_Back",
+          "b": "Avatar_Frame",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Avatar_Back",
+          "b": "Plate_Body",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Avatar_Back",
+          "b": "Status_Dot",
+          "volumeMm3": 2.4993552091845395e-7
+        },
+        {
+          "a": "Avatar_Frame",
+          "b": "Plate_Body",
+          "volumeMm3": 0
+        },
+        {
+          "a": "Avatar_Frame",
+          "b": "Status_Dot",
+          "volumeMm3": 3.676483026349153e-8
+        },
+        {
+          "a": "Plate_Body",
+          "b": "Status_Dot",
+          "volumeMm3": 0
+        }
+      ],
+      "anchors": {
+        "Name_Anchor": [
+          -18,
+          4.5,
+          2.799999952316284
+        ],
+        "Pronouns_Anchor": [
+          -18,
+          0.800000011920929,
+          2.799999952316284
+        ],
+        "Status_Anchor": [
+          -18,
+          -7.5,
+          2.799999952316284
+        ]
+      }
+    }
+  ]
+}

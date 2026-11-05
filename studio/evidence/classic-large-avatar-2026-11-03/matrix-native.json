@@ -1,0 +1,941 @@
+{
+  "testedSourceCommit": "80c3ef28af53e33fe06a2f48a4f0a6707ddb09bb",
+  "date": "2026-11-03 Asia/Hong_Kong",
+  "fontParseMs": 506.39,
+  "summary": {
+    "total": 43,
+    "pass": 43,
+    "fail": 0
+  },
+  "results": [
+    {
+      "id": "text-0",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 252.81,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-1",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 311.56,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-2",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 305.67,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-3",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 208.39,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-4",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 298.22,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-5",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 377.05,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 8.122354795137326,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-6",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 263.52,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-7",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 280.13,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-8",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 267.46,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-9",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 346.01,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 7.588285332361161,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-10",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 200.28,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.199999999999998,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "text-11",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 159.28,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Online-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 297.25,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Online-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 298.66,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Join-Me-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 298.67,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Join-Me-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 300.56,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Ask-Me-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 299.11,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Ask-Me-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 300.51,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Busy-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 298.37,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Busy-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 299.11,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Offline-false",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 299.23,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "palette-Offline-true",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 298.42,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-22",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 254.79,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-23",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 255.39,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-24",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 290.63,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 9.4,
+        "Pronouns": 5.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-25",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 314.21,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 9.4,
+        "Pronouns": 5.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-26",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 324.83,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 9.4,
+        "Pronouns": 5.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "pronouns-27",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 361.22,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Pronouns",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 9.4,
+        "Pronouns": 5.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [
+        "Pronouns 采样细笔画约 0.34 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。"
+      ],
+      "exportError": ""
+    },
+    {
+      "id": "no-status-no-pronouns",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 214.87,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name"
+      ],
+      "textHeights": {
+        "Name": 11.2
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "custom-color-independent",
+      "expected": "accept",
+      "accepted": true,
+      "status": "PASS",
+      "elapsedMs": 254.56,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": ""
+    },
+    {
+      "id": "empty",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.08,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "请输入显示名称。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 请输入显示名称。"
+    },
+    {
+      "id": "whitespace",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.01,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "请输入显示名称。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 请输入显示名称。"
+    },
+    {
+      "id": "emoji",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 1.24,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Status_Text": 4.6
+      },
+      "errors": [
+        "字体不支持字符「🙂」，请替换后导出。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 字体不支持字符「🙂」，请替换后导出。"
+    },
+    {
+      "id": "tooLong",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.01,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "单个文字字段最多 120 个字符。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 单个文字字段最多 120 个字符。"
+    },
+    {
+      "id": "tooSmall",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 27.38,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 0.5313192281760684,
+        "Status_Text": 4.6
+      },
+      "errors": [
+        "Name 缩放后仅 0.5 mm 高，请缩短文字。"
+      ],
+      "warnings": [
+        "Name 采样细笔画约 0.08 mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。"
+      ],
+      "exportError": "Error: Name 缩放后仅 0.5 mm 高，请缩短文字。"
+    },
+    {
+      "id": "longPronouns",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 0.02,
+      "parts": [],
+      "textHeights": {},
+      "errors": [
+        "单个文字字段最多 120 个字符。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 单个文字字段最多 120 个字符。"
+    },
+    {
+      "id": "zeroWidth",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 1.96,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Status_Text": 4.6
+      },
+      "errors": [
+        "字体不支持字符「​」，请替换后导出。"
+      ],
+      "warnings": [],
+      "exportError": "Error: 字体不支持字符「​」，请替换后导出。"
+    },
+    {
+      "id": "nonColor",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "elapsedMs": 240.48,
+      "parts": [
+        "Plate_Body",
+        "Avatar_Back",
+        "Avatar_Frame",
+        "Status_Dot",
+        "Name",
+        "Status_Text"
+      ],
+      "textHeights": {
+        "Name": 11.2,
+        "Status_Text": 4.6
+      },
+      "errors": [],
+      "warnings": [],
+      "exportError": "Error: 无效打印耗材颜色"
+    },
+    {
+      "id": "mesh-open",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 3,
+        "degenerate": 0,
+        "volume": 0,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [],
+        "issues": [
+          "open/inconsistently oriented/degenerate triangles"
+        ]
+      }
+    },
+    {
+      "id": "mesh-reversed",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 0,
+        "degenerate": 0,
+        "volume": -11696.730738970633,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [
+          {
+            "triangles": 396,
+            "volume": -11696.730738970633,
+            "depth": 0
+          }
+        ],
+        "issues": [
+          "shell 0: wrong orientation at nesting depth 0"
+        ]
+      }
+    },
+    {
+      "id": "mesh-nonfinite",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 0,
+        "degenerate": 1,
+        "volume": 0,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [],
+        "issues": [
+          "empty/nonfinite mesh"
+        ]
+      }
+    },
+    {
+      "id": "mesh-outOfRange",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 3,
+        "degenerate": 1,
+        "volume": 0,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [],
+        "issues": [
+          "open/inconsistently oriented/degenerate triangles"
+        ]
+      }
+    },
+    {
+      "id": "mesh-disconnected-inward-shell",
+      "expected": "reject",
+      "accepted": false,
+      "status": "PASS",
+      "validation": {
+        "valid": false,
+        "badEdges": 0,
+        "degenerate": 0,
+        "volume": 1.1666666666666665,
+        "nonManifoldVertices": 0,
+        "intersections": 0,
+        "shells": [
+          {
+            "triangles": 4,
+            "volume": 1.3333333333333333,
+            "depth": 0
+          },
+          {
+            "triangles": 4,
+            "volume": -0.16666666666666666,
+            "depth": 0
+          }
+        ],
+        "issues": [
+          "shell 1: wrong orientation at nesting depth 0"
+        ]
+      },
+      "scope": "Synthetic validator diagnostic; not confirmed normal UI output"
+    }
+  ],
+  "limits": [
+    "Node timings are not browser/mobile performance measurements",
+    "No slicer or printer used",
+    "No self-intersection or minimum-stroke certification"
+  ]
+}

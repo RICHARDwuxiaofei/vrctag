@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-02 Asia/Hong_Kong",
+  "source": "Actual in-app browser UI at http://127.0.0.1:5173/",
+  "tests": [
+    {
+      "id": "friend-busy-custom-pronouns",
+      "status": "PASS",
+      "friend": true,
+      "statusSelection": "Busy",
+      "dotColor": "#c80928",
+      "pronouns": "随意 / Any",
+      "customStatusUnchanged": "无聊"
+    },
+    {
+      "id": "malformed-avatar-does-not-disable-print",
+      "status": "FAIL",
+      "fixture": "invalid.png",
+      "observed": "Cannot decode image error; 3MF button disabled despite printable geometry unchanged",
+      "resetRecovers": true
+    },
+    {
+      "id": "unsupported-emoji",
+      "status": "PASS",
+      "exportEnabled": false
+    },
+    {
+      "id": "reset-recovers-defaults",
+      "status": "PASS",
+      "exportEnabled": true
+    }
+  ],
+  "limits": [
+    "No new mobile hardware or slicer testing in this run",
+    "No browser request tracing in this run"
+  ]
+}

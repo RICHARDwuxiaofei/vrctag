@@ -1,0 +1,38 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 RICHARDwuxiaofei
+import type { Vector2 } from "three";
+/** Conservative screening from vector scanline spans, not a certified minimum-wall algorithm. */
+export function sampledStroke(contours: Vector2[][], scale: number) {
+  const spans: number[] = [];
+  for (const axis of [0, 1]) {
+    const points = contours.flat(),
+      values = points.map((p) => (axis === 0 ? p.x : p.y));
+    if (!values.length) continue;
+    const min = Math.min(...values),
+      max = Math.max(...values);
+    for (let i = 1; i < 80; i++) {
+      const line = min + ((max - min) * i) / 80,
+        hits: number[] = [];
+      for (const loop of contours)
+        for (let j = 0; j < loop.length; j++) {
+          const a = loop[j],
+            b = loop[(j + 1) % loop.length],
+            u = axis === 0 ? a.x : a.y,
+            v = axis === 0 ? b.x : b.y;
+          if ((u <= line && line < v) || (v <= line && line < u)) {
+            const t = (line - u) / (v - u);
+            hits.push(
+              axis === 0 ? a.y + t * (b.y - a.y) : a.x + t * (b.x - a.x),
+            );
+          }
+        }
+      hits.sort((a, b) => a - b);
+      for (let h = 0; h + 1 < hits.length; h += 2) {
+        const width = (hits[h + 1] - hits[h]) * scale;
+        if (width > 1e-5) spans.push(width);
+      }
+    }
+  }
+  spans.sort((a, b) => a - b);
+  return spans.length ? spans[Math.floor(spans.length * 0.15)] : null;
+}

@@ -1,0 +1,31 @@
+{
+  "baseline": "1f7a159",
+  "files": [
+    {
+      "file": "LICENSE",
+      "unchanged": true,
+      "sha256": "11778efb11a80f0a84d65ef4882c20906e034743ea65405d81c4a30abe2ee111"
+    },
+    {
+      "file": "ATTRIBUTION.md",
+      "unchanged": true,
+      "sha256": "3e5dd8632cd24c0f822f10c56b77efcea1f08dc5bb17768124df99a63cb4b047"
+    },
+    {
+      "file": "nametag_template.blend",
+      "unchanged": true,
+      "sha256": "5eb396db8ba62990f23fc5b6ac1383225c6789a5c166acba993c3598b3b66470"
+    },
+    {
+      "file": "name_tag_generator.py",
+      "unchanged": true,
+      "sha256": "f4f15704c54935313193e548773ee241f6a901d4d0dd20009c3af3eb0dd406de"
+    },
+    {
+      "file": "upgrade_existing.py",
+      "unchanged": true,
+      "sha256": "1f130c059f1cc6b05884728a9f83d2eb052822305551fc60be19aa3121c4e9fb"
+    }
+  ],
+  "sourceScan": "No /home/ hardcoded path or legacy template/generator references found in studio/scripts, web/src, package or Vite config"
+}
