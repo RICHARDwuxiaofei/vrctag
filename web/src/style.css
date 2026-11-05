@@ -424,7 +424,7 @@ select + input {
 .preview-area {
   height: 386px;
   position: relative;
-  background: #202126;
+  background: #929ba3;
 }
 .canvas-host {
   position: absolute;
@@ -903,3 +903,32 @@ footer a {
 }
 
 .header-controls{display:flex;align-items:center;gap:24px}.language-picker{display:flex;align-items:center;gap:10px;font-size:12px}.language-picker select{width:auto;min-width:100px;margin:0}.topbar{gap:16px}.filament-colors input{min-width:0}@media(max-width:600px){.header-controls{flex-direction:column;gap:8px;align-items:flex-end}.header-controls .privacy{display:none}.language-picker{font-size:11px}}
+
+/* Quiet header, compact language control, and minimal footer. */
+.brand-icon{width:48px;height:48px;object-fit:contain;flex:none}
+.brand small{font-size:11px;letter-spacing:.1px;margin-top:5px;color:#89948e}
+.language-picker{position:relative;width:40px;height:40px;display:grid;place-items:center;border:1px solid #35403c;border-radius:50%;color:#d4dbd5}
+.language-picker:hover{border-color:#a9b9a4;background:#1c2622}
+.language-globe{width:21px;height:21px;pointer-events:none}
+.language-picker select{position:absolute;inset:0;width:100%;min-width:0;height:100%;margin:0;opacity:0;cursor:pointer}
+.language-picker:focus-within{outline:2px solid #c9e2a7;outline-offset:3px}
+.intro{padding-top:38px;padding-bottom:34px}
+.intro h1{font-size:clamp(25px,3vw,38px);font-weight:500;letter-spacing:-1px;margin:0}
+.export-heading h2{font-size:25px;font-weight:500}
+.print-notes{font-size:12px;color:#8e9b92;margin:6px 0 12px}
+.print-notes summary{cursor:pointer}
+.print-notes .warning{margin-top:12px;line-height:1.7}
+.github-footer{text-align:center;padding:0 0 28px;font-size:12px;color:#a6b2a9}
+.github-footer a:hover{color:#e6eedf}
+@media(max-width:600px){.brand-icon{width:40px;height:40px}.intro{padding-top:26px;padding-bottom:24px}.language-picker{width:36px;height:36px}.topbar{height:84px}.brand small{font-size:10px;letter-spacing:0}}
+
+.workspace{margin-top:30px}.preview-area{border-radius:16px 16px 0 0}.topbar{border-bottom-color:#25302c}.brand strong{color:#d6ddd7}.brand{font-size:21px}.print-settings{border-top:0}.preview-caption{font-size:11px}
+
+.status-color-control{display:flex;align-items:center;justify-content:space-between;margin-top:20px;gap:16px}.status-color-control input[type=color]{width:44px;height:32px;padding:3px;cursor:pointer;margin:0}
+
+.status-swatches{gap:14px;margin:12px 0 0}.status-swatches .swatch,.status-custom-color{width:28px;height:28px;flex:none}.status-custom-color span{font-size:19px;line-height:1;pointer-events:none}.hook-toggle{padding:18px 0 0}.hook-toggle label{margin:0}
+
+.style-thumbnail{display:block;width:100%;height:78px;margin:0 0 10px;overflow:visible}
+
+
+.style-thumbnail{background:#929ba3;border-radius:8px}

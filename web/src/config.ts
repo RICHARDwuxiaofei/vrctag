@@ -13,6 +13,8 @@ export function parseConfig(input: unknown): Config {
   )
     throw Error("不支持的配置版本");
   const c = { ...defaults };
+  if(o.hideStatus !== undefined && typeof o.hideStatus !== "boolean") throw Error("无效状态显示设置");
+  if(o.hideStatus !== undefined) c.hideStatus = o.hideStatus as boolean;
   if (
     o.language !== undefined &&
     !["zh", "ja", "ko", "en"].includes(o.language as string)

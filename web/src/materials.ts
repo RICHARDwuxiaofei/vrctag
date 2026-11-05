@@ -48,7 +48,7 @@ export function materialPlan(c: Config, parts: Part[]) {
   const profile = "printing" in style ? style.printing : undefined;
   const slots: Record<string, number> = profile?.slots ?? {
     Plate_Core: 1,
-    Hanging_Loop: 1,
+    Hanging_Loop: 0,
     Plate_Body: 0,
     Avatar_Back: 0,
     Status_Dot: 3,

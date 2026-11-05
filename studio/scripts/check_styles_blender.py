@@ -13,7 +13,7 @@ def check_styles(root,styles):
             rule=style['layout']['textRules'][key];expected=[style['layout'].get('statusTextLeft',style['layout']['textLeft']) if name=='Status_Anchor' else style['layout']['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),style['layout']['textZ']]
             actual=list(bpy.data.objects[name].location);assert all(abs(a-b)<1e-6 for a,b in zip(actual,expected));report['anchors'][name]=actual
         objects=[o for o in bpy.data.objects if o.type=='MESH']
-        assert sorted(o.name for o in objects)==sorted(['Plate_Core','Plate_Body','Avatar_Back','Status_Dot']+(['Plate_Rim','Hanging_Loop'] if style['id']=='classic' else ['Avatar_Frame']))
+        assert sorted(o.name for o in objects)==sorted((['Plate_Core','Plate_Body','Avatar_Back','Status_Dot','Plate_Rim','Hanging_Loop'] if style['id']=='classic' else ['Plate_Body','Status_Dot','Avatar_Frame','Hanging_Loop']))
         assert not any(o.name.startswith('Demo_')for o in bpy.data.objects)
         for obj in objects:
             bm=bmesh.new();bm.from_mesh(obj.data)

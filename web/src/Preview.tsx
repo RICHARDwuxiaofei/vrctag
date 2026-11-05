@@ -143,8 +143,8 @@ export function Preview({
   }, [design]);
   useEffect(() => {
     const scene = sceneRef.current;
-    if (!scene || !design || !avatarPreview) return;
-    const avatarBack = design.parts.find((p) => p.name === "Avatar_Back");
+    if (!scene || !design || !avatarPreview || !avatar) return;
+    const avatarBack = design.previewAvatar ?? design.parts.find((p) => p.name === "Avatar_Back");
     if (!avatarBack) return;
     let disposed = false;
     let mesh: THREE.Mesh | undefined;
@@ -210,17 +210,6 @@ export function Preview({
         finish();
       };
       image.src = avatar;
-    } else {
-      ctx.fillStyle = design.placeholderColors?.[0] ?? "#44464c";
-      ctx.fillRect(0, 0, 512, 512);
-      ctx.fillStyle = design.placeholderColors?.[1] ?? "#b8bbc2";
-      ctx.beginPath();
-      ctx.arc(256, 205, 72, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.beginPath();
-      ctx.ellipse(256, 430, 150, 130, 0, 0, Math.PI * 2);
-      ctx.fill();
-      finish();
     }
     return () => {
       disposed = true;

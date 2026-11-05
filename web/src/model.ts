@@ -16,6 +16,7 @@ export interface Part {
   color: string;
 }
 export interface Base {
+  previewAvatar?: Part;
   styleId?: string;
   colors?: Record<string, string>;
   parts: Part[];
@@ -75,6 +76,7 @@ export interface Config {
   hangingLoop?: boolean;
   language?: Language;
   statusMode?: "preset" | "custom";
+  hideStatus?: boolean;
   printMode?: "cfs4" | "visual";
   filamentColors?: string[];
   materialSlots?: Record<string, number>;
@@ -96,13 +98,12 @@ export const defaults: Config = {
   customStatus: "无聊",
   pronouns: "",
 };
-export const statusText = (c: Config) =>
-  c.statusMode === "preset"
-    ? statusLabels[c.language ?? "zh"][c.status]
-    : c.customStatus;
+export const statusIsHidden = (c: Config) => c.hideStatus ?? (getStyle(c.styleId).id === "native");
+export const statusText = (c: Config) => statusIsHidden(c) ? "" : c.statusMode === "preset" ? statusLabels[c.language ?? "zh"][c.status] : c.customStatus;
 export const resolvedDot = (c: Config) =>
   c.dotColor === "auto" ? statuses[c.status] : c.dotColor;
 export interface Design {
+  previewAvatar?: Part;
   styleId?: string;
   size?: number[];
   placeholderColors?: [string, string];
@@ -449,6 +450,7 @@ export function buildDesign(
   const palette: Record<string, string> = base.colors ?? style.colors;
   const d: Design = {
     styleId: style.id,
+    previewAvatar: base.previewAvatar,
     size: base.layout.size,
     placeholderColors: [palette.Avatar_Back, palette.Avatar_Placeholder],
     parts: [],
@@ -470,6 +472,8 @@ export function buildDesign(
       ...p,
       color: p.name === "Status_Dot" ? resolvedDot(c) : palette[p.name],
     }));
+  // Actual visible bounds follow the optional hook; the body size stays unchanged.
+  d.size=[0,1,2].map(axis=>{const values=d.parts.flatMap(p=>p.vertices.map(v=>v[axis]));return Math.max(...values)-Math.min(...values)});
   const hasPronouns = !!c.pronouns.trim();
   const rules = base.layout.textRules;
   const specs: [string, string, string, number, number][] = [

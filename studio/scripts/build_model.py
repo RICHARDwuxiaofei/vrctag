@@ -17,6 +17,14 @@ for style in selected:
     folder=root/'web/public/assets/styles'/style['id'];folder.mkdir(parents=True,exist_ok=True)
     bpy.ops.wm.read_factory_settings(use_empty=True)
     result=build_model(str(root),style);(folder/'base.json').write_text(json.dumps(result),encoding='utf8')
+    # Lightweight front projection of actual model meshes; no renderer involved.
+    thumb=[]
+    for part in result['parts']:
+        vs=part['vertices'];top=max(v[2]for v in vs)
+        faces=[t for t in part['triangles']if all(abs(vs[i][2]-top)<1e-5 for i in t)]
+        path=' '.join('M '+' L '.join(f'{vs[i][0]:.5f},{vs[i][1]:.5f}'for i in t)+' Z'for t in faces)
+        thumb.append({'name':part['name'],'color':result['colors'].get(part['name'],'#2ed319'),'z':top,'path':path})
+    (folder/'thumbnail.json').write_text(json.dumps(sorted(thumb,key=lambda p:p['z'])),encoding='utf-8')
     print(json.dumps({'style':style['id'],'validation':result['validation']},indent=2))
 
     if style['id']==catalog['defaultStyleId']:

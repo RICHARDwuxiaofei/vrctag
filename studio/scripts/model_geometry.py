@@ -45,7 +45,7 @@ def build_model(project_root, style):
         if not clean or math.dist(p,clean[-1])>1e-7:clean.append(p)
     if math.dist(clean[0],clean[-1])<1e-7:clean.pop()
     capsule=clean
-    colors=style['colors']
+    colors=style['colors'];preview_avatar=None
     if g.get('family')=='reference-round-panel':
         # Analytic reconstruction of the user's single-rim reference silhouette.
         # No private reference mesh or text is embedded in runtime assets.
@@ -73,8 +73,7 @@ def build_model(project_root, style):
         solid('Hanging_Loop',hook,0,g['rimTop'],colors['Hanging_Loop'])
         dx,dy=avatar['dotCenter'];solid('Status_Dot',circle(dx,dy,avatar['dotRadius']),g['bodyTop'],g['dotTop'],'#2ed319')
     else:
-        solid('Plate_Core',capsule,0,g['coreTop'],colors['Plate_Core'])
-        solid('Plate_Body',capsule,g['coreTop'],g['bodyTop'],colors['Plate_Body'])
+        solid('Plate_Body',capsule,0,g['bodyTop'],colors['Plate_Body'])
         cx,cy=avatar['center'];radius=avatar['radius'];outer=radius+avatar['frameWidth'];dx,dy=avatar['dotCenter'];dot=avatar['dotRadius']
         back=solid('Avatar_Back',circle(cx,cy,radius),g['bodyTop'],g['avatarTop'],colors['Avatar_Back'])
         frame=solid('Avatar_Frame',circle(cx,cy,outer),g['bodyTop'],g['frameTop'],colors['Avatar_Frame'],circle(cx,cy,radius))
@@ -85,7 +84,20 @@ def build_model(project_root, style):
                 modifier.solver=next(i.identifier for i in modifier.bl_rna.properties['solver'].enum_items if i.identifier.lower()=='exact')
                 bpy.context.view_layer.objects.active=obj;bpy.ops.object.modifier_apply(modifier=modifier.name)
             bpy.data.objects.remove(cutter,do_unlink=True)
+        # Keep a photo surface only as preview metadata; it is not a printable part.
+        top=max(v.co.z for v in back.data.vertices)
+        preview_avatar={'name':'Avatar_Preview','color':colors['Plate_Body'],'vertices':[[v.co.x,v.co.y,g['bodyTop']]for v in back.data.vertices],'triangles':[list(p.vertices)for p in back.data.polygons if all(abs(back.data.vertices[i].co.z-top)<1e-5 for i in p.vertices)]}
+        bpy.data.objects.remove(back,do_unlink=True)
         solid('Status_Dot',circle(dx,dy,dot),g['bodyTop'],g['dotTop'],'#2ed319')
+        # Attach both hook legs exactly to the capsule's sloped upper tangent.
+        nx=(g['leftRadius']-g['rightRadius'])/(g['rightCenter']-g['leftCenter']);ny=math.sqrt(1-nx*nx)
+        hx=g['hookCenter'];hy=(g['leftRadius']+nx*g['leftCenter']-nx*hx)/ny
+        angles=sorted(set([math.pi*i/64 for i in range(65)]+[math.atan2(ny,-nx)]))
+        def hook_point(r,a):
+            u=r*math.cos(a);v=r*math.sin(a)
+            return (hx+ny*u+nx*v,hy-nx*u+ny*v)
+        hook=[hook_point(g['hookOuter'],a)for a in angles]+[hook_point(g['hookInner'],a)for a in reversed(angles)]
+        solid('Hanging_Loop',hook,0,g['hookTop'],colors['Hanging_Loop'])
     for name,rule in [('Name_Anchor',layout['textRules']['name']),('Pronouns_Anchor',layout['textRules']['pronouns']),('Status_Anchor',layout['textRules']['status'])]:
         obj=bpy.data.objects.new(name,None);collection.objects.link(obj);obj.location=(layout.get('statusTextLeft',layout['textLeft']) if name=='Status_Anchor' else layout['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),layout['textZ']);obj.empty_display_size=2
     parts=[];report=[]
@@ -107,4 +119,4 @@ def build_model(project_root, style):
         bpy.ops.export_scene.gltf(filepath=root+'/web/public/assets/styles/'+style['id']+'/base.glb',use_selection=True,export_format='GLB')
     finally:
         for obj in selected:obj.scale=(1,1,1)
-    return {'styleId':style['id'],'parts':parts,'validation':report,'colors':colors,'layout':layout}
+    return {'styleId':style['id'],'parts':parts,'validation':report,'colors':colors,'layout':layout,**({'previewAvatar':preview_avatar}if preview_avatar else {})}

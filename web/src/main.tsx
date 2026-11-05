@@ -4,19 +4,19 @@ import {
   languages,
   statusLabels,
   translate,
-  partLabels,
   type Language,
 } from "./i18n";
 import { styles, getStyle } from "./styles";
 import { parseConfig, configDocument } from "./config";
-import { materialPlan, defaultFilamentColors } from "./materials";
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { StyleThumbnail } from "./StyleThumbnail";
 import { Preview } from "./Preview";
 import {
   defaults,
   statuses,
   resolvedDot,
+  statusIsHidden,
   type Config,
   type Design,
   type Status,
@@ -29,46 +29,6 @@ function download(data: BlobPart, name: string, type: string) {
   a.download = name;
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 2000);
-}
-function FilamentColor({
-  slot,
-  language,
-  color,
-  onChange,
-}: {
-  slot: number;
-  language: Language;
-  color: string;
-  onChange: (v: string) => void;
-}) {
-  const t = (text: string) => translate(language, text);
-  const [draft, setDraft] = useState(color);
-  useEffect(() => setDraft(color), [color]);
-  const apply = (v: string) => {
-    setDraft(v);
-    if (/^#[0-9a-f]{6}$/i.test(v)) onChange(v);
-  };
-  return (
-    <label>
-      {t("槽")} {slot + 1}
-      <input
-        aria-label={`${t("槽")} ${slot + 1} ${t("耗材颜色")}`}
-        type="color"
-        value={color}
-        onInput={(e) => apply(e.currentTarget.value)}
-        onChange={(e) => apply(e.target.value)}
-      />
-      <input
-        aria-label={`${t("槽")} ${slot + 1} HEX`}
-        value={draft}
-        maxLength={7}
-        onChange={(e) => apply(e.target.value)}
-      />
-      {!/^#[0-9a-f]{6}$/i.test(draft) && (
-        <small>{t("输入 #RRGGBB 后应用")}</small>
-      )}
-    </label>
-  );
 }
 function App() {
   const [config, setConfig] = useState<Config>({
@@ -89,7 +49,6 @@ function App() {
   const [exportError, setExportError] = useState("");
   const [notice, setNotice] = useState("");
   const [view, setView] = useState(0);
-  const [showPrintColors, setShowPrintColors] = useState(true);
   const [workerGeneration, setWorkerGeneration] = useState(0);
   const [completedKey, setCompletedKey] = useState("");
   const completedRevision = useRef(-1);
@@ -115,6 +74,7 @@ function App() {
     setExportError("");
     setConfig((c) => ({ ...c, ...next }));
   };
+  const chooseDotColor = (value:string) => patch({dotColor:value,filamentColors:config.filamentColors?.map((v,i)=>i===3?value:v),materialSlots:config.materialSlots?{...config.materialSlots,Status_Dot:3}:undefined});
   useEffect(() => {
     const w = new Worker(new URL("./studio.worker.ts", import.meta.url), {
       type: "module",
@@ -244,7 +204,6 @@ function App() {
         );
       bitmap.close();
       setAvatar(canvas.toDataURL("image/png"));
-      setShowPrintColors(false);
       setAvatarName(file.name);
       setAvatarError("");
     } catch {
@@ -290,7 +249,6 @@ function App() {
     setBusy(true);
     setConfig({ ...defaults, language, statusMode: "preset" });
     setPronounMode("None");
-    setShowPrintColors(true);
     setAvatar("");
     setAvatarName("未上传头像");
     setNotice("");
@@ -305,33 +263,19 @@ function App() {
     !errors.length &&
     !modelError &&
     completedKey === configKey;
-  const plan = design?.parts.length ? materialPlan(config, design.parts) : null;
-  const previewDesign =
-    showPrintColors && design && plan
-      ? {
-          ...design,
-          parts: design.parts.map((p, i) => ({
-            ...p,
-            color: plan.parts[i].color,
-          })),
-        }
-      : design;
   return (
     <>
       <header className="topbar">
         <a className="brand" href="./">
-          <span className="brand-mark">v.</span>
+          <img className="brand-icon" src="assets/brand-icon.png" alt="" />
           <span>
             VRC Tag <strong>Studio</strong>
-            <small>THE PERSONAL NAMEPLATE WORKSHOP</small>
+            <small>powered by Nagikokoro</small>
           </span>
         </a>
         <div className="header-controls">
-          <span className="privacy">
-            <i /> {t("浏览器本地制作")} · {t("无需登录")}
-          </span>
           <label className="language-picker">
-            {t("语言")}
+            <svg className="language-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg>
             <select
               id="language"
               aria-label="Language"
@@ -348,18 +292,10 @@ function App() {
         </div>
       </header>
       <main>
-        <section className="intro">
-          <div>
-            <div className="eyebrow">YOUR NAME. YOUR PRESENCE.</div>
-            <h1>{t("把你的名字，带到现实。")}</h1>
-            <p>{t("从一次相遇，到一枚可以握住的名牌。")}</p>
-          </div>
-        </section>
         <div className="workspace">
           <aside className="editor">
             <div className="panel-title">
               <h2>{t("设计你的名牌")}</h2>
-              <span>01</span>
             </div>
             <section
               className="control-section style-section"
@@ -379,9 +315,9 @@ function App() {
                     type="button"
                     className="style-card"
                     aria-pressed={config.styleId === style.id}
-                    onClick={() => patch({ styleId: style.id })}
+                    onClick={() => patch({ styleId: style.id, hideStatus: undefined })}
                   >
-                    <img src={style.thumbnail} alt={style.name} />
+                    <StyleThumbnail styleId={style.id} hangingLoop={config.hangingLoop !== false} />
                     <strong>{style.name}</strong>
                     <span>
                       {t(
@@ -393,16 +329,17 @@ function App() {
                   </button>
                 ))}
               </div>
-              {config.styleId === "classic" && (
-                <label className="print-toggle">
+              {(
+                <div className="friend-row hook-toggle">
+                  <label htmlFor="hangingLoop">{t("是否保留顶部挂环")}</label>
                   <input
                     id="hangingLoop"
+                    role="switch"
                     type="checkbox"
                     checked={config.hangingLoop !== false}
                     onChange={(e) => patch({ hangingLoop: e.target.checked })}
                   />
-                  {t("是否保留顶部挂环")}
-                </label>
+                </div>
               )}
             </section>
             <section className="control-section">
@@ -465,12 +402,13 @@ function App() {
               <select
                 id="status"
                 value={
-                  config.statusMode === "preset" ? config.status : "Custom"
+                  statusIsHidden(config) ? "Hide" : config.statusMode === "preset" ? config.status : "Custom"
                 }
                 onChange={(e) =>
-                  e.target.value === "Custom"
-                    ? patch({ statusMode: "custom" })
+                  e.target.value === "Hide" ? patch({hideStatus:true,dotColor:"auto",filamentColors:config.filamentColors?.map((v,i)=>i===3?"auto":v)}) : e.target.value === "Custom"
+                    ? patch({ statusMode: "custom", hideStatus:false,dotColor:"auto",filamentColors:config.filamentColors?.map((v,i)=>i===3?"auto":v) })
                     : patch({
+                        hideStatus: false,
                         statusMode: "preset",
                         status: e.target.value as Status,
                         dotColor: "auto",
@@ -480,6 +418,7 @@ function App() {
                       })
                 }
               >
+                <option value="Hide">{t("隐藏状态文字")}</option>
                 {Object.keys(statuses).map((id) => (
                   <option key={id} value={id}>
                     {statusLabels[language][id]}
@@ -487,7 +426,7 @@ function App() {
                 ))}
                 <option value="Custom">{t("自定义")}</option>
               </select>
-              {config.statusMode !== "preset" && (
+              {!statusIsHidden(config) && config.statusMode !== "preset" && (
                 <>
                   <label htmlFor="customStatus">{t("状态文字")}</label>
                   <input
@@ -498,12 +437,11 @@ function App() {
                   />
                 </>
               )}
-              <p className="field-note">
-                {t("状态文字随界面语言切换；自定义文字保持原样。")}
-              </p>
-              <p className="field-note">
-                {t("状态点使用第四槽；可在下面修改颜色。")}
-              </p>
+              <label>{t("状态点颜色")}</label>
+              <div className="swatches status-swatches">
+                {Object.entries(statuses).filter(([id])=>id!=="Offline").map(([id,color])=><button key={id} type="button" className={`swatch ${resolvedDot(config).toLowerCase()===color.toLowerCase()?"selected":""}`} title={statusLabels[language][id]} aria-label={statusLabels[language][id]} aria-pressed={resolvedDot(config).toLowerCase()===color.toLowerCase()} style={{"--swatch":color} as React.CSSProperties} onClick={()=>chooseDotColor(color)}/>)}
+                <label className="color-input status-custom-color" title={t("自定义")}><input id="statusColor" type="color" aria-label={t("状态点颜色")} value={resolvedDot(config)} onChange={e=>chooseDotColor(e.target.value)}/><span aria-hidden="true">＋</span></label>
+              </div>
             </section>
             <section className="control-section avatar-section">
               <div className="section-heading">
@@ -558,28 +496,19 @@ function App() {
                   {t(avatarError)}
                 </p>
               )}
-              <p className="field-note">
-                {t("图片只留在你的设备。打印包含头像底座，不包含彩色图片。")}
-              </p>
             </section>
           </aside>
           <section className="preview-panel">
-            <div className="preview-top">
-              <span>
-                <i /> {t("实时预览")}
-              </span>
-              <span>{t("毫米尺寸")}</span>
-            </div>
             <div
               className="preview-area"
               data-config-key={completedKey}
               aria-busy={busy}
             >
               <Preview
-                design={previewDesign}
+                design={design}
                 avatar={avatar}
                 view={view}
-                avatarPreview={!showPrintColors}
+                avatarPreview={true}
                 language={language}
               />
               {busy && (
@@ -597,19 +526,11 @@ function App() {
             <div className="preview-caption">
               <span>{getStyle(config.styleId).name}</span>
               <span>
-                {(design?.size ?? getStyle(config.styleId).layout.size).join(
-                  " × ",
-                )}{" "}
+                {(design?.size ?? getStyle(config.styleId).layout.size).map(v=>v.toFixed(1)).join(" × ")}{" "}
                 mm
               </span>
             </div>
             <div className="export-panel">
-              <div className="export-heading">
-                <h2>{t("准备好，把它带走。")}</h2>
-                <span className={`mesh-state ${valid ? "ready" : ""}`}>
-                  {t(busy ? "计算中" : valid ? "网格检查通过" : "等待修正")}
-                </span>
-              </div>
               <div className="messages" aria-live="polite">
                 {[modelError, exportError, ...errors]
                   .filter(Boolean)
@@ -629,98 +550,9 @@ function App() {
                     {t("重新加载建模资源")}
                   </button>
                 )}
-                {design?.warnings.map((s, i) => (
-                  <p className="warning" key={i}>
-                    {t(s)}
-                  </p>
-                ))}
+                {!!design?.warnings.length && <details className="print-notes"><summary>{t("打印提示")}</summary>{design.warnings.map((s,i)=><p className="warning" key={i}>{t(s)}</p>)}</details>}
                 {notice && <p className="success">{t(notice)}</p>}
               </div>
-              <section className="print-settings">
-                <label>{t("四槽打印配色")}</label>
-                <p className="field-note">
-                  {t("白色内芯＋0.6 mm 黑色正面；上层文字仍可能同层换色。")}
-                </p>
-                <label className="print-toggle">
-                  <input
-                    type="checkbox"
-                    checked={showPrintColors}
-                    onChange={(e) => setShowPrintColors(e.target.checked)}
-                  />
-                  {t("预览实际打印配色")}
-                </label>
-                {(config.printMode ?? "cfs4") === "cfs4" && (
-                  <div className="filament-colors">
-                    {plan?.palette.map((color, i) => (
-                      <FilamentColor
-                        key={i}
-                        language={language}
-                        slot={i}
-                        color={color}
-                        onChange={(value) => {
-                          const colors = [
-                            ...(config.filamentColors ??
-                              defaultFilamentColors(config)),
-                          ];
-                          colors[i] = value;
-                          patch({ filamentColors: colors });
-                        }}
-                      />
-                    ))}
-                  </div>
-                )}
-                <button
-                  className="secondary"
-                  onClick={() =>
-                    patch({
-                      filamentColors: undefined,
-                      materialSlots: undefined,
-                      dotColor: "auto",
-                    })
-                  }
-                >
-                  {t("恢复自动配色映射")}
-                </button>
-                <details>
-                  <summary>{t("高级配色与部件映射")}</summary>
-                  <select
-                    id="printMode"
-                    aria-label={t("四槽打印配色")}
-                    value={config.printMode ?? "cfs4"}
-                    onChange={(e) =>
-                      patch({ printMode: e.target.value as "cfs4" | "visual" })
-                    }
-                  >
-                    <option value="cfs4">{t("四槽打印配色")}</option>
-                    <option value="visual">{t("保留全部视觉颜色")}</option>
-                  </select>
-                  <div className="material-mapping">
-                    {plan?.parts.map((p) => (
-                      <label key={p.name}>
-                        {t(partLabels[p.name] ?? p.name)}
-                        <select
-                          aria-label={p.name}
-                          value={p.slot}
-                          onChange={(e) =>
-                            patch({
-                              materialSlots: {
-                                ...config.materialSlots,
-                                [p.name]: Number(e.target.value),
-                              },
-                            })
-                          }
-                        >
-                          {[0, 1, 2, 3].map((i) => (
-                            <option key={i} value={i}>
-                              {t("槽")} {i + 1}
-                            </option>
-                          ))}
-                        </select>
-                      </label>
-                    ))}
-                  </div>
-                </details>
-              </section>
               <button
                 className="export-button"
                 disabled={busy || exporting || !valid}
@@ -763,11 +595,7 @@ function App() {
                   {t(configError)}
                 </p>
               )}
-              <p className="export-note">
-                {t(
-                  "全部计算在浏览器完成。导入切片软件后请映射实际耗材。尚未验证实际切片或打印。",
-                )}
-              </p>
+
             </div>
           </section>
         </div>
@@ -784,6 +612,7 @@ function App() {
             {t("代码 MIT · Native CC BY 4.0 · Classic 许可例外")}
           </a>
         </footer>
+        <div className="github-footer"><a href="https://github.com/RICHARDwuxiaofei/vrctag" target="_blank" rel="noreferrer">GitHub ↗</a></div>
       </main>
     </>
   );

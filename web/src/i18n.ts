@@ -10,7 +10,7 @@ export const statusLabels: Record<Language, Record<string, string>> = {
   zh: {
     Online: "在线",
     "Join Me": "欢迎加入",
-    "Ask Me": "请先询问",
+    "Ask Me": "忙碌",
     Busy: "请勿打扰",
     Offline: "离线",
   },
@@ -38,6 +38,9 @@ export const statusLabels: Record<Language, Record<string, string>> = {
 };
 // Product translations; the official English/Korean status terminology is source-checked.
 const rows: Record<string, [string, string, string]> = {
+  "隐藏状态文字": ["ステータス文字を非表示", "상태 문구 숨기기", "Hide status text"],
+  "状态点颜色": ["ステータスの点の色", "상태 점 색상", "Status dot color"],
+  "打印提示": ["印刷のヒント", "출력 참고", "Print notes"],
   语言: ["言語", "언어", "Language"],
   浏览器本地制作: [
     "ブラウザー内で作成",

@@ -12,18 +12,14 @@ export function assertPrintStructure(parts: Part[], config: Config) {
       Math.max(...p.vertices.map((v) => v[2])),
     ];
   };
-  const core = bounds("Plate_Core"),
-    skin = bounds("Plate_Body");
+  if(getStyle(config.styleId).id === "native") {
+    const body=bounds("Plate_Body");
+    if(parts.some(p=>p.name==="Plate_Core"||p.name==="Avatar_Back") || Math.abs(body[0])>1e-5 || Math.abs(body[1]-g.bodyTop)>1e-5) throw Error("Native requires one full-depth black body");
+  } else {
+    const core=bounds("Plate_Core"),skin=bounds("Plate_Body");
+    if(Math.abs(core[0])>1e-5 || Math.abs(core[1]-g.coreTop)>1e-5 || Math.abs(skin[0]-core[1])>1e-5 || Math.abs(skin[1]-g.bodyTop)>1e-5 || Math.abs(skin[1]-skin[0]-.6)>1e-5) throw Error("White core / black face Z contact or thickness mismatch");
+  }
   if (
-    Math.abs(core[0]) > 1e-5 ||
-    Math.abs(core[1] - g.coreTop) > 1e-5 ||
-    Math.abs(skin[0] - core[1]) > 1e-5 ||
-    Math.abs(skin[1] - g.bodyTop) > 1e-5 ||
-    Math.abs(skin[1] - skin[0] - 0.6) > 1e-5
-  )
-    throw Error("White core / black face Z contact or thickness mismatch");
-  if (
-    getStyle(config.styleId).id === "classic" &&
     parts.some((p) => p.name === "Hanging_Loop") !==
       (config.hangingLoop !== false)
   )

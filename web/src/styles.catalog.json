@@ -130,26 +130,30 @@
         "avatarTop": 3.1,
         "frameTop": 3.15,
         "dotTop": 3.6,
-        "coreTop": 2.2,
-        "skinThickness": 0.6
+        "coreTop": 0,
+        "skinThickness": 0,
+        "hookCenter": -5,
+        "hookOuter": 6.5,
+        "hookInner": 4.3,
+        "hookTop": 2.8
       },
       "colors": {
         "Plate_Body": "#17181c",
-        "Avatar_Back": "#35363c",
-        "Avatar_Frame": "#62646c",
-        "Name": "#f3f6ed",
+        "Avatar_Back": "#17181c",
+        "Avatar_Frame": "#ffffff",
+        "Name": "#ffffff",
         "Friend_Name": "#ffd45d",
-        "Pronouns": "#c6c8ce",
-        "Status_Text": "#b9bbc2",
-        "Avatar_Placeholder": "#aeb0b8",
-        "Plate_Core": "#f3f6ed"
+        "Pronouns": "#ffffff",
+        "Status_Text": "#ffffff",
+        "Avatar_Placeholder": "#ffffff",
+        "Hanging_Loop": "#17181c"
       },
       "layout": {
         "unit": "millimeter",
         "front": "+Z",
         "size": [
           118,
-          40,
+          45.630979,
           3.6
         ],
         "textLeft": -18,
@@ -167,7 +171,7 @@
             -27,
             -10
           ],
-          "dotRadius": 3.6
+          "dotRadius": 4.4
         },
         "textRules": {
           "alignment": "left",
