@@ -1,7 +1,7 @@
 <p align="center"><img src="web/public/assets/brand-icon.png" alt="VRC Tag Studio" width="92"></p>
 <h1 align="center">VRC Tag Studio</h1>
 <p align="center">Create VRChat-inspired nameplates in your browser — live 3D preview, multicolor 3MF printing exports and editable Blender GLB.</p>
-<p align="center">**English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)</p>
+<p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a></p>
 <p align="center"><a href="https://tag.nagikokoro.best/"><strong>Launch VRC Tag Studio</strong></a> · <a href="web/README.md">Developer docs</a></p>
 <p align="center"><sub>Public beta · Open source · No account required · Unofficial VRChat fan project</sub></p>
 

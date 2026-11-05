@@ -1,7 +1,7 @@
 <p align="center"><img src="web/public/assets/brand-icon.png" alt="VRC Tag Studio" width="92"></p>
 <h1 align="center">VRC Tag Studio</h1>
 <p align="center">VRChat風ネームプレートをブラウザーで作成。リアルタイム3Dプレビュー、マルチカラー3MF、Blender向けGLBに対応します。</p>
-<p align="center">[English](README.md) · [简体中文](README.zh-CN.md) · **日本語** · [한국어](README.ko.md)</p>
+<p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <strong>日本語</strong> · <a href="README.ko.md">한국어</a></p>
 <p align="center"><a href="https://tag.nagikokoro.best/"><strong>Web Studioを開く</strong></a> · <a href="web/README.md">開発ドキュメント</a></p>
 <p align="center"><sub>公開ベータ · オープンソース · ログイン不要 · 非公式ファンプロジェクト</sub></p>
 

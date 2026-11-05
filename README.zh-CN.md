@@ -1,7 +1,7 @@
 <p align="center"><img src="web/public/assets/brand-icon.png" alt="VRC Tag Studio" width="92"></p>
 <h1 align="center">VRC Tag Studio</h1>
 <p align="center">在浏览器中制作 VRChat 风格名牌：实时 3D 预览、多色 3MF 打印文件和可编辑 Blender GLB。</p>
-<p align="center">[English](README.md) · **简体中文** · [日本語](README.ja.md) · [한국어](README.ko.md)</p>
+<p align="center"><a href="README.md">English</a> · <strong>简体中文</strong> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a></p>
 <p align="center"><a href="https://tag.nagikokoro.best/"><strong>打开在线生成器</strong></a> · <a href="web/README.md">开发文档</a></p>
 <p align="center"><sub>公开 Beta · 开源 · 无需登录 · 非 VRChat 官方项目</sub></p>
 
