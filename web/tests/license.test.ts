@@ -4,7 +4,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 const read = (file: string) =>
-  readFileSync(new URL("../../" + file, import.meta.url), "utf8");
+  readFileSync(new URL("../../" + file, import.meta.url), "utf8").replace(/\r\n/g, "\n");
 test("MIT software grant preserves legacy license and third-party notices", () => {
   assert(read("LICENSE").startsWith("MIT License"));
   assert(read("LICENSE").includes("Copyright (c) 2026 RICHARDwuxiaofei"));
