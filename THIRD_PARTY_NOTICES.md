@@ -7,3 +7,7 @@
 - User-uploaded images remain the user's content, processed locally, omitted from exports and repository. No VRChat official logo, third-party avatar image, account API, or game scene texture is bundled.
 
 This project is unofficial and is not endorsed by VRChat or WiseWolf. For exact first-party/legacy path scope, see LICENSE_SCOPE.md. Prior CC BY-NC-SA grants remain available to compliant recipients; this migration does not retroactively revoke them.
+
+## Clipper / Javascript Clipper
+
+Runtime glyph contour repair uses clipper-lib 6.4.2 (Angus Johnson 2010-2017; Javascript port by Timo and contributors), under the Boost Software License 1.0. Source: https://github.com/junmer/clipper-lib . License text is distributed in web/public/licenses/Boost-Software-License-1.0.txt. Project MIT does not replace this license.

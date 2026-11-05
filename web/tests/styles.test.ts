@@ -177,8 +177,8 @@ for (const style of styles) {
           friend ? style.colors.Friend_Name : style.colors.Name,
         );
         assert.equal(
-          d.parts.find((p) => p.name === "Avatar_Frame")!.color,
-          style.colors.Avatar_Frame,
+          d.parts.find((p) => p.name === (style.id === "classic" ? "Plate_Rim" : "Avatar_Frame"))!.color,
+          style.colors[style.id === "classic" ? "Plate_Rim" : "Avatar_Frame"],
         );
         assert.equal(
           materialPlan(c, d.parts).palette[0],
@@ -300,11 +300,11 @@ test("Native two-line centers match the manually calibrated 30% plate-height rhy
   }
 });
 
-test("Classic large medallion, separate white rim and status lane are genuinely different from Native", () => {
+test("Classic single reference rim, round panel and aligned status lane differ from Native", () => {
   const c = getStyle("classic"),
     n = getStyle("native"),
     b = bases.get(c.id)!;
-  assert.equal(c.layout.avatar.radius, 22);
+  assert.equal(c.layout.avatar.radius, 23.8);
   assert.equal(n.layout.avatar.radius, 16);
   assert((c.layout.avatar.radius * 2) / c.layout.size[1] > 0.84);
   assert(b.parts.some((p) => p.name === "Plate_Rim"));
@@ -316,7 +316,7 @@ test("Classic large medallion, separate white rim and status lane are genuinely 
   );
   assert.deepEqual(d.errors, []);
   const plan = materialPlan({ ...defaults, styleId: c.id }, d.parts);
-  for (const name of ["Plate_Rim", "Avatar_Frame"])
+  for (const name of ["Plate_Rim", "Plate_Core", "Hanging_Loop"])
     assert.equal(plan.parts.find((p) => p.name === name)!.color, "#E7E8EC");
   assert.equal(
     plan.parts.find((p) => p.name === "Name")!.color,

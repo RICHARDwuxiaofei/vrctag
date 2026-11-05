@@ -11,6 +11,7 @@
     "test:review": "node --import tsx tests/review-matrix.ts"
   },
   "dependencies": {
+    "clipper-lib": "^6.4.2",
     "fflate": "^0.8.2",
     "opentype.js": "^1.3.4",
     "react": "^19.2.0",
@@ -18,6 +19,7 @@
     "three": "^0.180.0"
   },
   "devDependencies": {
+    "@types/clipper-lib": "^6.4.0",
     "@types/opentype.js": "^1.3.8",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",

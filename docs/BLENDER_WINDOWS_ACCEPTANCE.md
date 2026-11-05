@@ -78,3 +78,6 @@ PASS：127.0.0.1:9876 LISTEN；Codex 配置存在 blender-mcp；正规 get_addon
 复现顺序：先在 web 用隔离 Node 运行 check/test/review/build；node --import tsx tests/windows-blender-review.ts；回仓库根运行 windows_3mf_audit.py、Blender --background --factory-startup --disable-autoexec --python studio/scripts/windows_blender_review.py、windows_review_details.py、windows_candidate_regression.py、windows_review_gallery.py；最后 windows_static_audit.py 和 windows_browser_smoke.mjs。tools 下官方扩展、lib3mf、Node 和 Playwright 为本地隔离前置依赖；脚本路径固定以本仓库为准。切片器不在流程中。
 
 推荐下一步：用户授权并创建仅用于远程验收的 Pages Preview，按 CLOUDFLARE_PAGES_DEPLOY.md 的 Preview 章节操作；完整 GUI 验收后再决定合并。白芯候选参见 WHITE_CORE_PRINT_OPTIMIZATION.md，尚未选定最终可打印层厚，不进入当前网页。未部署、改 DNS、Release、连接打印机或打印。
+
+
+后续更新：用户要求正式集成白芯、参考式单边框/挂环和四语言状态；当前实现及新测试见 [CLASSIC_REFERENCE_REVISION.md](CLASSIC_REFERENCE_REVISION.md)。本文的候选状态保留为该次历史验收结论。

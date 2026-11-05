@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 RICHARDwuxiaofei
+import { statusLabels, type Language } from "./i18n";
 import { getStyle, defaultStyleId } from "./styles";
 import { sampledStroke } from "./printability";
 import { validateMesh } from "./mesh-validation";
 export { validateMesh } from "./mesh-validation";
+import ClipperLib from "clipper-lib";
 import * as THREE from "three";
 import type { Font } from "opentype.js";
 export type Vec3 = [number, number, number];
@@ -70,6 +72,9 @@ export const statuses = {
 export type Status = keyof typeof statuses;
 export interface Config {
   styleId?: string;
+  hangingLoop?: boolean;
+  language?: Language;
+  statusMode?: "preset" | "custom";
   printMode?: "cfs4" | "visual";
   filamentColors?: string[];
   materialSlots?: Record<string, number>;
@@ -82,6 +87,7 @@ export interface Config {
 }
 export const defaults: Config = {
   styleId: defaultStyleId,
+  hangingLoop: true,
   printMode: "cfs4",
   displayName: "Nagikokoro",
   friend: false,
@@ -90,6 +96,10 @@ export const defaults: Config = {
   customStatus: "无聊",
   pronouns: "",
 };
+export const statusText = (c: Config) =>
+  c.statusMode === "preset"
+    ? statusLabels[c.language ?? "zh"][c.status]
+    : c.customStatus;
 export const resolvedDot = (c: Config) =>
   c.dotColor === "auto" ? statuses[c.status] : c.dotColor;
 export interface Design {
@@ -118,6 +128,7 @@ function extrudeShapes(
   depth: number,
   name: string,
   color: string,
+  repairDepth = 0,
 ): Part {
   const result: Part = { name, color, vertices: [], triangles: [] };
   const clean = (points: THREE.Vector2[]) => {
@@ -150,6 +161,79 @@ function extrudeShapes(
     if (outer.length < 3) continue;
     if (THREE.ShapeUtils.isClockWise(outer)) outer.reverse();
     for (const h of holes) if (!THREE.ShapeUtils.isClockWise(h)) h.reverse();
+    // A contour pinch extrudes into a non-manifold edge (Noto 离).
+    // Repair only touching contours using an integer polygon union/offset.
+    // The 0.01 font-path-unit expansion scales with text size and is far below nozzle resolution.
+    const contours = [outer, ...holes];
+    const touching = contours.some((loop, li) =>
+      loop.some((p, k) =>
+        contours.some((other, oi) =>
+          other.some((a, i) => {
+            if (li === oi && (i === k || (i + 1) % other.length === k))
+              return false;
+            const b = other[(i + 1) % other.length],
+              dx = b.x - a.x,
+              dy = b.y - a.y,
+              len = dx * dx + dy * dy;
+            if (len < 1e-16) return false;
+            const u = ((p.x - a.x) * dx + (p.y - a.y) * dy) / len;
+            return (
+              u >= -1e-8 &&
+              u <= 1 + 1e-8 &&
+              Math.abs((p.x - a.x) * dy - (p.y - a.y) * dx) < 1e-8
+            );
+          }),
+        ),
+      ),
+    );
+    if (touching && repairDepth < 2) {
+      const scale = 100000;
+      const paths = contours.map((loop) =>
+        loop.map((p) => ({
+          X: Math.round(p.x * scale),
+          Y: Math.round(p.y * scale),
+        })),
+      );
+      const simple = ClipperLib.Clipper.SimplifyPolygons(
+        paths,
+        ClipperLib.PolyFillType.pftNonZero,
+      );
+      const offsetter = new ClipperLib.ClipperOffset(2, 0.25 * scale),
+        tree = new ClipperLib.PolyTree();
+      offsetter.AddPaths(
+        simple,
+        ClipperLib.JoinType.jtMiter,
+        ClipperLib.EndType.etClosedPolygon,
+      );
+      offsetter.Execute(tree, 1000);
+      const fixed: THREE.Shape[] = [];
+      const walk = (node: ClipperLib.PolyNode) => {
+        if (!node.IsHole() && node.Contour().length) {
+          const points = ClipperLib.Clipper.CleanPolygon(
+            node.Contour(),
+            100,
+          ).map((p) => new THREE.Vector2(p.X / scale, p.Y / scale));
+          const shape = new THREE.Shape(points);
+          shape.holes = node
+            .Childs()
+            .filter((c) => c.IsHole())
+            .map(
+              (c) =>
+                new THREE.Path(
+                  ClipperLib.Clipper.CleanPolygon(c.Contour(), 100).map(
+                    (p) => new THREE.Vector2(p.X / scale, p.Y / scale),
+                  ),
+                ),
+            );
+          fixed.push(shape);
+        }
+        for (const child of node.Childs()) walk(child);
+      };
+      walk(tree);
+      if (!fixed.length) throw Error("Cannot repair touching glyph contours");
+      append(result, extrudeShapes(fixed, depth, name, color, repairDepth + 1));
+      continue;
+    }
     const loops = [outer, ...holes],
       flat = loops.flat(),
       n = flat.length,
@@ -206,9 +290,36 @@ function extrudeShapes(
     let start = 0;
     for (const loop of loops) {
       for (let i = 0; i < loop.length; i++) {
-        const a = offset + start + i,
-          b = offset + start + ((i + 1) % loop.length);
-        result.triangles.push([a, b, b + n], [a, b + n, a + n]);
+        const ai = start + i,
+          bi = start + ((i + 1) % loop.length),
+          a = flat[ai],
+          b = flat[bi];
+        const dx = b.x - a.x,
+          dy = b.y - a.y,
+          len = dx * dx + dy * dy;
+        // A cap bridge can meet a different contour at a collinear point.
+        // Conform the wall to the same vertices; otherwise cap edges end in a T-junction.
+        const points = [
+          { index: ai, u: 0 },
+          { index: bi, u: 1 },
+        ];
+        for (let k = 0; k < flat.length; k++) {
+          if (k === ai || k === bi) continue;
+          const p = flat[k],
+            u = ((p.x - a.x) * dx + (p.y - a.y) * dy) / len;
+          if (
+            u > 1e-8 &&
+            u < 1 - 1e-8 &&
+            Math.abs((p.x - a.x) * dy - (p.y - a.y) * dx) < 1e-8
+          )
+            points.push({ index: k, u });
+        }
+        points.sort((a, b) => a.u - b.u);
+        for (let j = 0; j < points.length - 1; j++) {
+          const a = offset + points[j].index,
+            b = offset + points[j + 1].index;
+          result.triangles.push([a, b, b + n], [a, b + n, a + n]);
+        }
       }
       start += loop.length;
     }
@@ -332,6 +443,7 @@ export function buildDesign(
   font: Pick<Font, "charToGlyph" | "unitsPerEm">,
 ): Design {
   const style = getStyle(c.styleId);
+  const text = statusText(c);
   if (base.styleId && base.styleId !== style.id)
     throw Error("样式与基础模型不匹配，请等待加载完成");
   const palette: Record<string, string> = base.colors ?? style.colors;
@@ -352,10 +464,12 @@ export function buildDesign(
   )
     d.errors.push("单个文字字段最多 120 个字符。");
   if (d.errors.length) return d;
-  d.parts = base.parts.map((p) => ({
-    ...p,
-    color: p.name === "Status_Dot" ? resolvedDot(c) : palette[p.name],
-  }));
+  d.parts = base.parts
+    .filter((p) => p.name !== "Hanging_Loop" || c.hangingLoop !== false)
+    .map((p) => ({
+      ...p,
+      color: p.name === "Status_Dot" ? resolvedDot(c) : palette[p.name],
+    }));
   const hasPronouns = !!c.pronouns.trim();
   const rules = base.layout.textRules;
   const specs: [string, string, string, number, number][] = [
@@ -365,10 +479,10 @@ export function buildDesign(
       c.friend ? palette.Friend_Name : palette.Name,
       hasPronouns ? rules.name.heightWithPronouns : rules.name.height,
       hasPronouns
-        ? c.customStatus.trim()
+        ? text.trim()
           ? rules.name.centerYWithPronouns
           : (rules.name.centerYWithPronounsWithoutStatus ?? 5.5)
-        : c.customStatus.trim()
+        : text.trim()
           ? rules.name.centerY
           : (rules.name.centerYWithoutStatus ?? 0),
     ],
@@ -377,13 +491,13 @@ export function buildDesign(
       c.pronouns,
       palette.Pronouns,
       rules.pronouns.height,
-      c.customStatus.trim()
+      text.trim()
         ? rules.pronouns.centerY
         : (rules.pronouns.centerYWithoutStatus ?? -5.5),
     ],
     [
       "Status_Text",
-      c.customStatus,
+      text,
       palette.Status_Text,
       rules.status.height,
       hasPronouns

@@ -20,7 +20,8 @@ test("GLB loads with original parts and physical meter bounds", async () => {
     [
       "Plate_Rim",
       "Avatar_Back",
-      "Avatar_Frame",
+      "Hanging_Loop",
+      "Plate_Core",
       "Plate_Body",
       "Status_Dot",
     ].sort(),

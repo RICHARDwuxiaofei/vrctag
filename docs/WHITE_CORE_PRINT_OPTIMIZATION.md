@@ -38,3 +38,6 @@ D:\CODE\vrctag\evidence\windows-blender-review\index.html：真实 3MF 导入后
 不覆盖正式源、runtime JSON/GLB 或前端映射：最终膜厚尚不能按用户要求以真实层高、遮色和打印接合选定，B 的背面/侧面也确有可见变化。当前正式页面和下载仍一致使用 A。未来补齐层高/切片及遮色后再选方案，届时应同步生成正式 .blend、JSON、GLB、CFS4 preview 与 export 映射，加入生产契约测试；不能只把候选在 UI 上涂白。
 
 A 回滚检查点：1bcbfdd906a019e309b96b0a24dc5ccb5dece87b；本轮工具实现提交 71cbc7f750c00d8763ba151b654b9735f730c800，正式几何没有变。无需回滚正式模型。没有安装切片器、改用户插件配置、开放公网端口、连接打印机或打印。
+
+
+后续更新：用户要求正式集成白芯、参考式单边框/挂环和四语言状态；当前实现及新测试见 [CLASSIC_REFERENCE_REVISION.md](CLASSIC_REFERENCE_REVISION.md)。本文的候选状态保留为该次历史验收结论。

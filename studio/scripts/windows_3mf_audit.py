@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: MIT
 """Independent Windows Core 3MF and official lib3mf audit; evidence only."""
 from pathlib import Path
-import sys,json,zipfile
-ROOT=Path(__file__).resolve().parents[2];out=ROOT/'evidence/windows-blender-review'
-sys.path.insert(0,str(ROOT/'studio/scripts'));sys.path.insert(0,str(out/'tools/python'))
+import sys,json,zipfile,os
+ROOT=Path(__file__).resolve().parents[2];out=Path(os.environ.get('VRC_REVIEW_OUTPUT',ROOT/'evidence/windows-blender-review'))
+sys.path.insert(0,str(ROOT/'studio/scripts'));sys.path.insert(0,str(ROOT/'evidence/windows-blender-review/tools/python'))
 from validate_3mf import validate
 import lib3mf
 w=lib3mf.get_wrapper();results=[]

@@ -5,34 +5,41 @@
       "id": "classic",
       "name": "Classic",
       "label": "Large Avatar",
-      "description": "大头像圆盘 · 白色肩框与黑色分件底板",
+      "description": "单圈白边 · 圆弧右端 · 可选挂环 · 白芯黑面",
       "baseFile": "styles/classic/base.json",
       "thumbnail": "assets/styles/classic/front.png",
       "geometry": {
-        "family": "medallion-panel",
+        "family": "reference-round-panel",
         "leftCenter": -40,
-        "rightCenter": 59,
+        "rightCenter": 50,
         "leftRadius": 26,
-        "rightRadius": 9,
-        "panelHalfHeight": 17,
+        "rightRadius": 18,
+        "panelHalfHeight": 18,
         "rightEdge": 68,
-        "rimWidth": 1.7,
-        "rimTop": 3.0,
+        "rimWidth": 2.2,
+        "rimTop": 4,
         "bodyTop": 2.6,
-        "avatarTop": 3.5,
+        "avatarTop": 2.6,
         "frameTop": 4,
-        "dotTop": 3.4
+        "dotTop": 3.4,
+        "coreTop": 2.0,
+        "skinThickness": 0.6,
+        "hookCenter": -5,
+        "hookOuter": 7,
+        "hookInner": 4.8
       },
       "colors": {
         "Plate_Body": "#1c1d21",
-        "Avatar_Back": "#383a40",
+        "Avatar_Back": "#1c1d21",
         "Avatar_Frame": "#e7e8ec",
         "Name": "#edc448",
         "Friend_Name": "#ffd45d",
         "Pronouns": "#e7e8ec",
         "Status_Text": "#e7e8ec",
         "Avatar_Placeholder": "#b8bbc2",
-        "Plate_Rim": "#e7e8ec"
+        "Plate_Rim": "#e7e8ec",
+        "Plate_Core": "#e7e8ec",
+        "Hanging_Loop": "#e7e8ec"
       },
       "layout": {
         "unit": "millimeter",
@@ -42,8 +49,8 @@
           52,
           4
         ],
-        "textLeft": -12,
-        "textWidth": 70,
+        "textLeft": -10,
+        "textWidth": 69,
         "textZ": 2.6,
         "relief": 0.8,
         "avatar": {
@@ -51,10 +58,10 @@
             -40,
             0
           ],
-          "radius": 22,
-          "frameWidth": 1.5,
+          "radius": 23.8,
+          "frameWidth": 2.2,
           "dotCenter": [
-            -10,
+            -7,
             -8.4
           ],
           "dotRadius": 3
@@ -82,8 +89,8 @@
           "warningHeight": 4.5,
           "maxCharacters": 120
         },
-        "statusTextLeft": -4.5,
-        "statusTextWidth": 62.5
+        "statusTextLeft": -2.5,
+        "statusTextWidth": 61.5
       },
       "printing": {
         "palette": [
@@ -100,7 +107,9 @@
           "Status_Dot": 3,
           "Name": 2,
           "Pronouns": 1,
-          "Status_Text": 1
+          "Status_Text": 1,
+          "Plate_Core": 1,
+          "Hanging_Loop": 1
         },
         "friendNameSlot": 2
       }
@@ -120,7 +129,9 @@
         "bodyTop": 2.8,
         "avatarTop": 3.1,
         "frameTop": 3.15,
-        "dotTop": 3.6
+        "dotTop": 3.6,
+        "coreTop": 2.2,
+        "skinThickness": 0.6
       },
       "colors": {
         "Plate_Body": "#17181c",
@@ -130,7 +141,8 @@
         "Friend_Name": "#ffd45d",
         "Pronouns": "#c6c8ce",
         "Status_Text": "#b9bbc2",
-        "Avatar_Placeholder": "#aeb0b8"
+        "Avatar_Placeholder": "#aeb0b8",
+        "Plate_Core": "#f3f6ed"
       },
       "layout": {
         "unit": "millimeter",

@@ -103,3 +103,6 @@ The template contains only the base, rim and dot, with a packed font supporting 
 `upgrade_existing.py` creates multicolor copies of old 3MF files in model folders under the repository's parent directory, preserving originals.
 
 </details>
+
+
+当前参考式 Classic / 白芯黑面 / 可选挂环 / 四语言状态更新与测试边界见 [docs/CLASSIC_REFERENCE_REVISION.md](docs/CLASSIC_REFERENCE_REVISION.md)。

@@ -16,3 +16,5 @@ Noto fonts / renamed subsets: SIL OFL 1.1; see ../assets/OFL-Noto.txt.
 Third-party runtime libraries retain their own notices in this directory.
 Photos are local previews only; no photos are included in printable exports.
 Full path-level exclusions: repository LICENSE_SCOPE.md / THIRD_PARTY_NOTICES.md.
+
+Glyph contour repair: clipper-lib 6.4.2, Angus Johnson 2010-2017 and Javascript port contributors, Boost Software License 1.0. See Boost-Software-License-1.0.txt. https://github.com/junmer/clipper-lib

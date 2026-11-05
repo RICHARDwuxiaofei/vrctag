@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 RICHARDwuxiaofei
+import { assertPrintStructure } from "./print-structure";
 import { getStyle } from "./styles";
 import { materialPlan } from "./materials";
 import { strToU8, zipSync } from "fflate";
@@ -33,6 +34,7 @@ export function export3mf(d: Design, c: Config): Uint8Array {
   }));
   for (const p of parts)
     if (!validateMesh(p).valid) throw new Error(`拒绝导出无效网格：${p.name}`);
+  if (d.styleId) assertPrintStructure(parts, c);
   const plan = materialPlan(c, parts);
   const colors = plan.palette;
   if (colors.some((c) => !/^#[0-9A-F]{6}$/.test(c)))

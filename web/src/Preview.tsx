@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 RICHARDwuxiaofei
+import { translate, type Language } from "./i18n";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
@@ -9,11 +10,13 @@ export function Preview({
   avatar,
   view,
   avatarPreview = true,
+  language = "zh",
 }: {
   design: Design | null;
   avatar: string;
   view: number;
   avatarPreview?: boolean;
+  language?: Language;
 }) {
   const host = useRef<HTMLDivElement>(null);
   const width = design?.size?.[0] ?? 120;
@@ -238,7 +241,7 @@ export function Preview({
     <div ref={host} className="canvas-host">
       {failure && (
         <p role="alert" className="webgl-error">
-          {failure}
+          {translate(language, failure)}
         </p>
       )}
     </div>

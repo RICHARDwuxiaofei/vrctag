@@ -46,34 +46,46 @@ def build_model(project_root, style):
     if math.dist(clean[0],clean[-1])<1e-7:clean.pop()
     capsule=clean
     colors=style['colors']
-    if g.get('family')=='medallion-panel':
-        # Independently chosen circle-and-rectangular-shoulder outline. Never imports a reference mesh.
-        def shoulder(inset):
-            radius=g['leftRadius']-inset;half=g['panelHalfHeight']-inset
-            corner=g['rightRadius']-inset;right=g['rightEdge']-inset
-            alpha=math.asin(half/radius)
-            angles=sorted([alpha+(2*math.pi-2*alpha)*i/96 for i in range(97)]+[math.pi/2,math.pi,3*math.pi/2])
-            angles=[a for i,a in enumerate(angles) if i==0 or abs(a-angles[i-1])>1e-9]
-            path=[(g['leftCenter']+radius*math.cos(a),radius*math.sin(a)) for a in angles]
-            for cy,start in [(-half+corner,-math.pi/2),(half-corner,0)]:
-                path.extend([(right-corner+corner*math.cos(start+math.pi/2*i/24),cy+corner*math.sin(start+math.pi/2*i/24)) for i in range(25)])
-            return path
-        outer=shoulder(0);inside=shoulder(g['rimWidth'])
-        solid('Plate_Rim',outer,0,g['rimTop'],colors['Plate_Rim'],inside)
-        capsule=inside
-    solid('Plate_Body',capsule,0,g['bodyTop'],colors['Plate_Body'])
-    cx,cy=avatar['center'];radius=avatar['radius'];outer=radius+avatar['frameWidth'];dx,dy=avatar['dotCenter'];dot=avatar['dotRadius']
-    back=solid('Avatar_Back',circle(cx,cy,radius),g['bodyTop'],g['avatarTop'],colors['Avatar_Back'])
-    frame=solid('Avatar_Frame',circle(cx,cy,outer),g['bodyTop'],g['frameTop'],colors['Avatar_Frame'],circle(cx,cy,radius))
-    # No-op for the classic disjoint dot; subtract only when circles actually intersect.
-    if math.hypot(dx-cx,dy-cy) < outer+dot:
-        cutter=solid('Dot_Recess_Tool',circle(dx,dy,dot),g['bodyTop']-.2,max(g['dotTop'],g['frameTop'])+.2,'#000000')
-        for obj in(back,frame):
-            modifier=obj.modifiers.new('Status clearance','BOOLEAN');modifier.operation='DIFFERENCE';modifier.object=cutter
-            modifier.solver=next(i.identifier for i in modifier.bl_rna.properties['solver'].enum_items if i.identifier.lower()=='exact')
-            bpy.context.view_layer.objects.active=obj;bpy.ops.object.modifier_apply(modifier=modifier.name)
-        bpy.data.objects.remove(cutter,do_unlink=True)
-    solid('Status_Dot',circle(dx,dy,dot),g['bodyTop'],g['dotTop'],'#2ed319')
+    if g.get('family')=='reference-round-panel':
+        # Analytic reconstruction of the user's single-rim reference silhouette.
+        # No private reference mesh or text is embedded in runtime assets.
+        cx=g['leftCenter'];radius=g['leftRadius'];right=g['rightCenter'];half=g['panelHalfHeight'];rim=g['rimWidth']
+        alpha=math.asin(half/radius)
+        outer=[(cx+radius*math.cos(a),radius*math.sin(a)) for a in sorted(set([alpha+(2*math.pi-2*alpha)*i/128 for i in range(129)]+[math.pi/2,math.pi,3*math.pi/2]))]
+        outer += [(right+half*math.cos(a),half*math.sin(a)) for a in [-math.pi/2+math.pi*i/96 for i in range(97)]]
+        # Concave left boundary follows the avatar circle; right end is a semicircle.
+        innerHalf=half-rim;angle=math.asin(innerHalf/radius)
+        panel=[(cx+radius*math.cos(a),radius*math.sin(a)) for a in [angle-2*angle*i/64 for i in range(65)]]
+        panel += [(right+innerHalf*math.cos(a),innerHalf*math.sin(a)) for a in [-math.pi/2+math.pi*i/96 for i in range(97)]]
+        core=solid('Plate_Core',outer,0,g['coreTop'],colors['Plate_Core'])
+        body=solid('Plate_Body',panel,g['coreTop'],g['bodyTop'],colors['Plate_Body'])
+        back=solid('Avatar_Back',circle(cx,0,avatar['radius']),g['coreTop'],g['bodyTop'],colors['Avatar_Back'])
+        border=solid('Plate_Rim',outer,g['coreTop'],g['rimTop'],colors['Plate_Rim'])
+        for name,shape in [('AvatarHole',circle(cx,0,avatar['radius']+.0001)),('PanelHole',[(30+(x-30)*1.00001,y*1.00001)for x,y in panel])]:
+            cutter=solid(name,shape,g['coreTop']-.1,g['rimTop']+.1,'#000000')
+            mod=border.modifiers.new('Single rim openings','BOOLEAN');mod.operation='DIFFERENCE';mod.object=cutter
+            mod.solver=next(i.identifier for i in mod.bl_rna.properties['solver'].enum_items if i.identifier.lower()=='exact')
+            bpy.context.view_layer.objects.active=border;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(cutter,do_unlink=True)
+        # Half-annulus legs touch the top border at Y=half, with no overlap.
+        hx=g['hookCenter'];ro=g['hookOuter'];ri=g['hookInner']
+        hook=[(hx+ro*math.cos(a),half+ro*math.sin(a))for a in [math.pi*i/64 for i in range(65)]]
+        hook += [(hx+ri*math.cos(a),half+ri*math.sin(a))for a in [math.pi-math.pi*i/64 for i in range(65)]]
+        solid('Hanging_Loop',hook,0,g['rimTop'],colors['Hanging_Loop'])
+        dx,dy=avatar['dotCenter'];solid('Status_Dot',circle(dx,dy,avatar['dotRadius']),g['bodyTop'],g['dotTop'],'#2ed319')
+    else:
+        solid('Plate_Core',capsule,0,g['coreTop'],colors['Plate_Core'])
+        solid('Plate_Body',capsule,g['coreTop'],g['bodyTop'],colors['Plate_Body'])
+        cx,cy=avatar['center'];radius=avatar['radius'];outer=radius+avatar['frameWidth'];dx,dy=avatar['dotCenter'];dot=avatar['dotRadius']
+        back=solid('Avatar_Back',circle(cx,cy,radius),g['bodyTop'],g['avatarTop'],colors['Avatar_Back'])
+        frame=solid('Avatar_Frame',circle(cx,cy,outer),g['bodyTop'],g['frameTop'],colors['Avatar_Frame'],circle(cx,cy,radius))
+        if math.hypot(dx-cx,dy-cy) < outer+dot:
+            cutter=solid('Dot_Recess_Tool',circle(dx,dy,dot),g['bodyTop']-.2,max(g['dotTop'],g['frameTop'])+.2,'#000000')
+            for obj in(back,frame):
+                modifier=obj.modifiers.new('Status clearance','BOOLEAN');modifier.operation='DIFFERENCE';modifier.object=cutter
+                modifier.solver=next(i.identifier for i in modifier.bl_rna.properties['solver'].enum_items if i.identifier.lower()=='exact')
+                bpy.context.view_layer.objects.active=obj;bpy.ops.object.modifier_apply(modifier=modifier.name)
+            bpy.data.objects.remove(cutter,do_unlink=True)
+        solid('Status_Dot',circle(dx,dy,dot),g['bodyTop'],g['dotTop'],'#2ed319')
     for name,rule in [('Name_Anchor',layout['textRules']['name']),('Pronouns_Anchor',layout['textRules']['pronouns']),('Status_Anchor',layout['textRules']['status'])]:
         obj=bpy.data.objects.new(name,None);collection.objects.link(obj);obj.location=(layout.get('statusTextLeft',layout['textLeft']) if name=='Status_Anchor' else layout['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),layout['textZ']);obj.empty_display_size=2
     parts=[];report=[]

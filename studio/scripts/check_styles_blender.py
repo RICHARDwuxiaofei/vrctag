@@ -13,7 +13,7 @@ def check_styles(root,styles):
             rule=style['layout']['textRules'][key];expected=[style['layout'].get('statusTextLeft',style['layout']['textLeft']) if name=='Status_Anchor' else style['layout']['textLeft'],rule.get('centerYWithoutPronouns',rule['centerY']),style['layout']['textZ']]
             actual=list(bpy.data.objects[name].location);assert all(abs(a-b)<1e-6 for a,b in zip(actual,expected));report['anchors'][name]=actual
         objects=[o for o in bpy.data.objects if o.type=='MESH']
-        assert sorted(o.name for o in objects)==sorted(['Plate_Body','Avatar_Back','Avatar_Frame','Status_Dot']+(['Plate_Rim'] if style['geometry'].get('family')=='medallion-panel' else []))
+        assert sorted(o.name for o in objects)==sorted(['Plate_Core','Plate_Body','Avatar_Back','Status_Dot']+(['Plate_Rim','Hanging_Loop'] if style['id']=='classic' else ['Avatar_Frame']))
         assert not any(o.name.startswith('Demo_')for o in bpy.data.objects)
         for obj in objects:
             bm=bmesh.new();bm.from_mesh(obj.data)
@@ -35,6 +35,6 @@ def check_styles(root,styles):
             bm=bmesh.new();bm.from_mesh(mesh);volume=abs(bm.calc_volume(signed=True));bm.free();evaluated.to_mesh_clear()
             report['intersections'].append({'a':a.name,'b':b.name,'volumeMm3':volume})
             bpy.data.objects.remove(copy,do_unlink=True)
-            assert volume<0.00001
+            assert volume<0.00001,(style["id"],a.name,b.name,volume)
         reports.append(report)
     return reports

@@ -31,3 +31,6 @@ web/playwright-report/
 
 # Test output is disposable. Curated tracked 3MF fixtures remain tracked.
 studio/generated/
+
+# Local manual export acceptance files.
+/test-exports/

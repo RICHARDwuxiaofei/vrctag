@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: MIT
 """Official extension imports and real Cycles renders, isolated background only."""
 from pathlib import Path
-import bpy,bmesh,sys,json,importlib.util,zipfile,math
+import bpy,bmesh,sys,json,importlib.util,zipfile,math,os
 from mathutils import Vector
-ROOT=Path(__file__).resolve().parents[2];out=ROOT/'evidence/windows-blender-review';folder=out/'tools/threemf'
+ROOT=Path(__file__).resolve().parents[2];out=Path(os.environ.get('VRC_REVIEW_OUTPUT',ROOT/'evidence/windows-blender-review'));folder=ROOT/'evidence/windows-blender-review/tools/threemf'
 spec=importlib.util.spec_from_file_location('review_threemf',folder/'__init__.py',submodule_search_locations=[str(folder)])
 addon=importlib.util.module_from_spec(spec);sys.modules[spec.name]=addon;spec.loader.exec_module(addon);addon.register()
 from review_threemf.api import import_3mf
@@ -34,6 +34,9 @@ for path in sorted((out/'samples').glob('*.3mf')):
   assert core['boundsMm'][:2]==skin['boundsMm'][:2]
   contact={'gapMm':skin['boundsMm'][2][0]-core['boundsMm'][2][1],'skinMm':skin['boundsMm'][2][1]-skin['boundsMm'][2][0],'sameXYFootprint':True,'method':'Same original extrusion, split shared Z plane; full planar contact, no volumetric overlap'}
  report={'file':path.name,'status':'PASS','extension':'official threemf-io 2.7.8 API','sizeMm':size,'parts':parts,'contact':contact,'warnings':list(result.warnings),'images':[]};reports.append(report)
+ if os.environ.get('VRC_SAVE_DEMOS')=='1' and path.name.endswith('-default-A.3mf'):
+  text=bpy.data.texts.new('README_3MF_SOURCE');text.write('Actual exported 3MF mesh; current reference revision. Official threemf-io import. '+path.name)
+  bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'studio/demos'/(path.name.split('-')[0]+'-nagikokoro.blend')))
  # Normalize imported geometry into mm for consistent framing; render only this disposable scene.
  for obj in objs:
   matrix=obj.matrix_world.copy()

@@ -13,6 +13,22 @@ export function parseConfig(input: unknown): Config {
   )
     throw Error("不支持的配置版本");
   const c = { ...defaults };
+  if (
+    o.language !== undefined &&
+    !["zh", "ja", "ko", "en"].includes(o.language as string)
+  )
+    throw Error("无效语言");
+  if (
+    o.statusMode !== undefined &&
+    !["preset", "custom"].includes(o.statusMode as string)
+  )
+    throw Error("无效状态模式");
+  if (o.language !== undefined) c.language = o.language as Config["language"];
+  if (o.statusMode !== undefined)
+    c.statusMode = o.statusMode as Config["statusMode"];
+  if (o.hangingLoop !== undefined && typeof o.hangingLoop !== "boolean")
+    throw Error("无效挂环设置");
+  c.hangingLoop = (o.hangingLoop ?? true) as boolean;
   for (const field of ["displayName", "customStatus", "pronouns"] as const) {
     const value = o[field] ?? defaults[field];
     if (typeof value !== "string" || value.length > 120)
@@ -63,6 +79,8 @@ export function parseConfig(input: unknown): Config {
     for (const [name, slot] of Object.entries(o.materialSlots)) {
       if (
         ![
+          "Plate_Core",
+          "Hanging_Loop",
           "Plate_Body",
           "Plate_Rim",
           "Avatar_Back",
