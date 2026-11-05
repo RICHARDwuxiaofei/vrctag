@@ -415,10 +415,6 @@ function makeText(
   if (strokes.length) {
     const thin = Math.min(...strokes);
     (design.strokeScreening ??= {})[name] = thin;
-    if (thin < 0.4)
-      design.warnings.push(
-        `${name} 采样细笔画约 ${thin.toFixed(2)} mm，可能无法用 0.4 mm 喷嘴保留；请检查切片。这是轮廓采样，不是最小壁厚认证。`,
-      );
   }
   if (actual < base.layout.textRules.minimumHeight)
     design.errors.push(

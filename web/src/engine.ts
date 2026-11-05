@@ -13,6 +13,7 @@ export type StudioRequest = {
   id: number;
   type: "build" | "export";
   config: Config;
+  exportTarget?: "core"|"bambu";
 };
 export type StudioResponse = {
   id: number;
@@ -55,7 +56,7 @@ export function createEngine(deps: {
           cached?.key === key ? cached.design : buildDesign(config, base, font);
         cached = { key, design };
         if (type === "export")
-          deps.post({ id, type, key, data: export3mf(design, config) });
+          deps.post({ id, type, key, data: export3mf(design, config, request.exportTarget ?? "core") });
         else deps.post({ id, type, key, design });
       } catch (e) {
         deps.post({

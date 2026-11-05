@@ -17,11 +17,11 @@
         "panelHalfHeight": 18,
         "rightEdge": 68,
         "rimWidth": 2.2,
-        "rimTop": 4,
+        "rimTop": 2.6,
         "bodyTop": 2.6,
         "avatarTop": 2.6,
-        "frameTop": 4,
-        "dotTop": 3.4,
+        "frameTop": 2.6,
+        "dotTop": 3.0,
         "coreTop": 2.0,
         "skinThickness": 0.6,
         "hookCenter": -5,
@@ -47,12 +47,12 @@
         "size": [
           134,
           52,
-          4
+          3.0
         ],
         "textLeft": -10,
         "textWidth": 69,
         "textZ": 2.6,
-        "relief": 0.8,
+        "relief": 0.4,
         "avatar": {
           "center": [
             -40,
@@ -126,16 +126,16 @@
         "rightCenter": 40,
         "leftRadius": 20,
         "rightRadius": 18,
-        "bodyTop": 2.8,
-        "avatarTop": 3.1,
-        "frameTop": 3.15,
-        "dotTop": 3.6,
+        "bodyTop": 3.3,
+        "avatarTop": 3.6,
+        "frameTop": 3.65,
+        "dotTop": 3.7,
         "coreTop": 0,
         "skinThickness": 0,
         "hookCenter": -5,
         "hookOuter": 6.5,
         "hookInner": 4.3,
-        "hookTop": 2.8
+        "hookTop": 3.3
       },
       "colors": {
         "Plate_Body": "#17181c",
@@ -154,12 +154,12 @@
         "size": [
           118,
           45.630979,
-          3.6
+          3.7
         ],
         "textLeft": -18,
         "textWidth": 67,
-        "textZ": 2.8,
-        "relief": 0.8,
+        "textZ": 3.3,
+        "relief": 0.4,
         "avatar": {
           "center": [
             -40,

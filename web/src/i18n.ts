@@ -1,5 +1,11 @@
 // SPDX-License-Identifier: MIT
 export type Language = "zh" | "ja" | "ko" | "en";
+export function browserLanguage(): Language {
+  const preferred = (navigator.languages?.[0] || navigator.language || "en")
+    .toLowerCase().split(/[-_]/)[0];
+  return preferred === "zh" || preferred === "ja" || preferred === "ko"
+    ? preferred : "en";
+}
 export const languages: Record<Language, string> = {
   zh: "中文",
   ja: "日本語",
@@ -36,10 +42,23 @@ export const statusLabels: Record<Language, Record<string, string>> = {
     Offline: "Offline",
   },
 };
-// Product translations; the official English/Korean status terminology is source-checked.
+// Status terms: https://wiki.vrchat.com/wiki/Social/{zh-hans,ko}
+// Busy is the legacy API identifier for red Do Not Disturb; orange Ask Me is Chinese 忙碌.
+// Japanese wording is retained pending a current primary-source/client verification.
 const rows: Record<string, [string, string, string]> = {
+  "Bug 反馈联系": ["不具合のご連絡", "버그 제보", "Report a bug"],
   "隐藏状态文字": ["ステータス文字を非表示", "상태 문구 숨기기", "Hide status text"],
   "状态点颜色": ["ステータスの点の色", "상태 점 색상", "Status dot color"],
+  "导入 Bambu 工程模板": ["Bambuプロジェクトをテンプレートとして読み込む", "Bambu 프로젝트 템플릿 불러오기", "Load Bambu project template"],
+  "切回通用 3MF": ["汎用3MFに戻す", "일반 3MF로 전환", "Use generic 3MF"],
+  "已载入 Bambu 模板，下载将保留分色": ["Bambuテンプレートを読み込みました", "Bambu 템플릿을 불러왔습니다", "Bambu template loaded; exports include part colors"],
+  "导出格式": ["保存形式", "내보내기 형식", "Export format"],
+  "多色 3MF（保留颜色）": ["マルチカラー3MF（色を保持）", "다색 3MF (색상 유지)", "Multicolor 3MF (preserve colors)"],
+  "通用 3MF（需手动分配耗材）": ["汎用3MF（材料の手動割り当て）", "일반 3MF (필라멘트 수동 매핑)", "Generic 3MF (manual filament mapping)"],
+  "选择模板并下载 Bambu 3MF": ["テンプレートを選択してBambu 3MFを保存", "템플릿 선택 후 Bambu 3MF 다운로드", "Choose template and download Bambu 3MF"],
+  "下载通用 3MF": ["汎用3MFを保存", "일반 3MF 다운로드", "Download generic 3MF"],
+  "更换 Bambu 模板": ["Bambuテンプレートを変更", "Bambu 템플릿 변경", "Change Bambu template"],
+  "默认 A1 · 0.4 mm · PLA，请在切片软件中选择自己的打印机和耗材": ["標準 A1・0.4 mm・PLA。スライサーで使用するプリンターと材料を選択してください", "기본 A1 · 0.4 mm · PLA. 슬라이서에서 사용할 프린터와 재료를 선택하세요", "Default A1 · 0.4 mm · PLA; choose your printer and filament in your slicer"],
   "打印提示": ["印刷のヒント", "출력 참고", "Print notes"],
   语言: ["言語", "언어", "Language"],
   浏览器本地制作: [

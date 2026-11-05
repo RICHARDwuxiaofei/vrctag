@@ -1,0 +1,5 @@
+SPDX-License-Identifier: AGPL-3.0-or-later
+Flattened BambuStudio 02.02.02.56 system preset data (A1 0.4 nozzle / 0.20mm Standard / Bambu PLA Basic).
+Upstream: https://github.com/bambulab/BambuStudio/tree/master/resources/profiles/BBL
+Original preset JSON inputs: web/public/licenses/bambu-presets/ . License: web/public/licenses/BambuStudio-AGPL-3.0.txt .
+No private project template is used. This upstream data is not covered by the first-party MIT grant.

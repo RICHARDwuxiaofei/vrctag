@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 RICHARDwuxiaofei
 import {
-  languages,
+  browserLanguage,
   statusLabels,
   translate,
   type Language,
@@ -10,6 +10,7 @@ import { styles, getStyle } from "./styles";
 import { parseConfig, configDocument } from "./config";
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { LanguagePicker } from "./LanguagePicker";
 import { StyleThumbnail } from "./StyleThumbnail";
 import { Preview } from "./Preview";
 import {
@@ -31,11 +32,11 @@ function download(data: BlobPart, name: string, type: string) {
   setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
 function App() {
-  const [config, setConfig] = useState<Config>({
+  const [config, setConfig] = useState<Config>(() => ({
     ...defaults,
-    language: "zh",
+    language: browserLanguage(),
     statusMode: "preset",
-  });
+  }));
   const [design, setDesign] = useState<Design | null>(null);
   const [avatar, setAvatar] = useState("");
   const [pronounMode, setPronounMode] = useState("None");
@@ -56,8 +57,9 @@ function App() {
   const revision = useRef(0),
     sequence = useRef(0),
     avatarGeneration = useRef(0);
-  const exportRequest = useRef<{ id: number; config: Config } | null>(null);
+  const exportRequest = useRef<{ id: number; config: Config; target: "bambu"|"core" } | null>(null);
   const upload = useRef<HTMLInputElement>(null);
+  const [exportFormat,setExportFormat]=useState<"bambu"|"core">("bambu");
   const [avatarName, setAvatarName] = useState("未上传头像");
   const language = config.language ?? "zh";
   const t = (text: string) => translate(language, text);
@@ -96,7 +98,7 @@ function App() {
             .slice(0, 40);
           download(
             r.data,
-            `vrc-tag-${pending.config.styleId}-${name}.3mf`,
+            `vrc-tag-${pending.config.styleId}-${name}${pending.target === "bambu" ? "-color" : "-core"}.3mf`,
             "model/3mf",
           );
           setNotice("3MF ✓");
@@ -157,10 +159,10 @@ function App() {
       return;
     const id = ++sequence.current,
       snapshot = structuredClone(config);
-    exportRequest.current = { id, config: snapshot };
+    exportRequest.current = { id, config: snapshot, target: exportFormat };
     setExportError("");
     setExporting(true);
-    worker.current?.postMessage({ id, type: "export", config: snapshot });
+    worker.current?.postMessage({ id, type: "export", config: snapshot, exportTarget: exportFormat });
   };
   async function loadAvatar(file?: File) {
     if (!file) return;
@@ -274,21 +276,7 @@ function App() {
           </span>
         </a>
         <div className="header-controls">
-          <label className="language-picker">
-            <svg className="language-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg>
-            <select
-              id="language"
-              aria-label="Language"
-              value={language}
-              onChange={(e) => patch({ language: e.target.value as Language })}
-            >
-              {Object.entries(languages).map(([id, name]) => (
-                <option key={id} value={id}>
-                  {name}
-                </option>
-              ))}
-            </select>
-          </label>
+          <LanguagePicker language={language} onChange={language => patch({ language })} />
         </div>
       </header>
       <main>
@@ -553,16 +541,20 @@ function App() {
                 {!!design?.warnings.length && <details className="print-notes"><summary>{t("打印提示")}</summary>{design.warnings.map((s,i)=><p className="warning" key={i}>{t(s)}</p>)}</details>}
                 {notice && <p className="success">{t(notice)}</p>}
               </div>
+              <p className="field-note">{exportFormat==="bambu"?t("默认 A1 · 0.4 mm · PLA，请在切片软件中选择自己的打印机和耗材"):""}</p>
+              <select id="exportFormat" aria-label={t("导出格式")} value={exportFormat} onChange={e=>setExportFormat(e.target.value as "core"|"bambu")}><option value="bambu">{t("多色 3MF（保留颜色）")}</option><option value="core">{t("通用 3MF（需手动分配耗材）")}</option></select>
               <button
                 className="export-button"
                 disabled={busy || exporting || !valid}
-                onClick={beginExport}
+                onClick={()=>beginExport()}
                 data-export-key={configKey}
               >
-                <span>{t(exporting ? "正在本地打包…" : "下载多色 3MF")}</span>
+                <span>{t(exporting ? "正在本地打包…" : exportFormat === "bambu" ? "下载多色 3MF" : "下载通用 3MF")}</span>
                 <span>↓</span>
               </button>
               <div className="export-links">
+
+
                 <button
                   onClick={() =>
                     download(
@@ -613,6 +605,7 @@ function App() {
           </a>
         </footer>
         <div className="github-footer"><a href="https://github.com/RICHARDwuxiaofei/vrctag" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        <div className="feedback-footer">{t("Bug 反馈联系")} <a href="mailto:nagikokoro2006@gmail.com">nagikokoro2006@gmail.com</a></div>
       </main>
     </>
   );

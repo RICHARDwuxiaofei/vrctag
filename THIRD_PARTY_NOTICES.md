@@ -11,3 +11,5 @@ This project is unofficial and is not endorsed by VRChat or WiseWolf. For exact 
 ## Clipper / Javascript Clipper
 
 Runtime glyph contour repair uses clipper-lib 6.4.2 (Angus Johnson 2010-2017; Javascript port by Timo and contributors), under the Boost Software License 1.0. Source: https://github.com/junmer/clipper-lib . License text is distributed in web/public/licenses/Boost-Software-License-1.0.txt. Project MIT does not replace this license.
+
+Bambu default export preset data: upstream BambuStudio 02.02.02.56 system presets for A1 0.4 nozzle, 0.20mm Standard and Bambu PLA Basic. Inheritance flattened in web/src/bambu-default.json; no user template or private data is included. Upstream preset source JSON files are distributed under web/public/licenses/bambu-presets/ and the upstream AGPL license in BambuStudio-AGPL-3.0.txt. Source: https://github.com/bambulab/BambuStudio/tree/master/resources/profiles/BBL . These upstream data are not relicensed under the first-party software MIT grant. Output uses a standard starting profile; users must select their own printer and filaments in the slicer before printing.

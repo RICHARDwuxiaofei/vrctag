@@ -21,3 +21,5 @@ Full path-level scope: LICENSE_SCOPE.md / THIRD_PARTY_NOTICES.md in repository.
 Glyph contour repair: clipper-lib 6.4.2, Angus Johnson 2010-2017 and Javascript port contributors,
 Boost Software License 1.0; see Boost-Software-License-1.0.txt.
 https://github.com/junmer/clipper-lib
+
+Bambu-compatible export uses bundled BambuStudio system preset data, retained under upstream AGPL terms. See BambuStudio-AGPL-3.0.txt and bambu-presets/ for original preset JSON sources. No private project template is bundled.
