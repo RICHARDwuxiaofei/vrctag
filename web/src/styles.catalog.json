@@ -32,7 +32,7 @@
         "Plate_Body": "#1c1d21",
         "Avatar_Back": "#1c1d21",
         "Avatar_Frame": "#e7e8ec",
-        "Name": "#edc448",
+        "Name": "#e7e8ec",
         "Friend_Name": "#ffd45d",
         "Pronouns": "#e7e8ec",
         "Status_Text": "#e7e8ec",
@@ -96,7 +96,7 @@
         "palette": [
           "Plate_Body",
           "Avatar_Frame",
-          "NameColor",
+          "Friend_Name",
           "auto"
         ],
         "slots": {
@@ -105,7 +105,7 @@
           "Avatar_Back": 0,
           "Avatar_Frame": 1,
           "Status_Dot": 3,
-          "Name": 2,
+          "Name": 1,
           "Pronouns": 1,
           "Status_Text": 1,
           "Plate_Core": 1,
