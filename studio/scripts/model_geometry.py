@@ -85,6 +85,9 @@ def build_model(project_root, style):
                 bpy.context.view_layer.objects.active=obj;bpy.ops.object.modifier_apply(modifier=modifier.name)
             bpy.data.objects.remove(cutter,do_unlink=True)
         # Keep a photo surface only as preview metadata; it is not a printable part.
+        # Boolean caps contain n-gons; Three.js indices require explicit triangles.
+        bm=bmesh.new();bm.from_mesh(back.data)
+        bmesh.ops.triangulate(bm,faces=list(bm.faces));bm.to_mesh(back.data);bm.free()
         top=max(v.co.z for v in back.data.vertices)
         preview_avatar={'name':'Avatar_Preview','color':colors['Plate_Body'],'vertices':[[v.co.x,v.co.y,g['bodyTop']]for v in back.data.vertices],'triangles':[list(p.vertices)for p in back.data.polygons if all(abs(back.data.vertices[i].co.z-top)<1e-5 for i in p.vertices)]}
         bpy.data.objects.remove(back,do_unlink=True)

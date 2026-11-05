@@ -468,8 +468,9 @@ select + input {
   font-size: 10px;
 }
 .view-tools span {
-  font-size: 10px;
-  color: #6e8b79;
+  font-size: 12px;
+  font-weight: 500;
+  color: #18252b;
 }
 .preview-caption {
   display: flex;
@@ -938,3 +939,13 @@ footer a {
 
 
 .style-thumbnail{background:#929ba3;border-radius:8px}
+.avatar-thumb{padding:0;cursor:pointer;overflow:hidden}
+.avatar-thumb:hover,.avatar-thumb:focus-visible{border-color:#c9e2a7;outline:2px solid #c9e2a7;outline-offset:3px}
+.site-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin:28px 0 0;padding:24px 12px 30px;border-top:1px solid #293630;color:#a0afa7;font-size:12px;letter-spacing:0;text-align:center;line-height:1.7}
+.site-footer p{margin:0}
+.footer-brand{color:#d1d9d3;font-size:13px}
+.footer-brand span{margin-left:10px;color:#8fa097;font-size:11px}
+.footer-meta{font-size:11px}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;margin-top:4px}
+.site-footer a:hover{color:#d4eab8}
+@media(max-width:480px){.footer-brand span{display:block;margin:2px 0 0}.footer-meta>span{display:none}.footer-meta>a{display:block}.footer-links{flex-direction:column;gap:8px}}

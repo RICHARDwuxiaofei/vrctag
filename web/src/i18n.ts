@@ -46,6 +46,10 @@ export const statusLabels: Record<Language, Record<string, string>> = {
 // Busy is the legacy API identifier for red Do Not Disturb; orange Ask Me is Chinese 忙碌.
 // Japanese wording is retained pending a current primary-source/client verification.
 const rows: Record<string, [string, string, string]> = {
+  "Blender（GLB，含颜色与头像）": ["Blender（GLB・色と画像を含む）", "Blender (GLB, 색상과 이미지 포함)", "Blender (GLB, colors & avatar)"],
+  "下载 Blender GLB": ["Blender GLBを保存", "Blender GLB 다운로드", "Download Blender GLB"],
+  "Blender 导出失败，请重试。": ["Blender用の保存に失敗しました。再試行してください。", "Blender 내보내기에 실패했습니다. 다시 시도하세요.", "Blender export failed. Please retry."],
+  "在 Blender 中选择 文件 → 导入 → glTF 2.0，编辑后可另存为 .blend。": ["Blenderのファイル → インポート → glTF 2.0で開き、編集後に.blendで保存できます。", "Blender의 파일 → 가져오기 → glTF 2.0에서 열고 편집 후 .blend로 저장하세요.", "In Blender: File → Import → glTF 2.0. Save as .blend after editing."],
   "Bug 反馈联系": ["不具合のご連絡", "버그 제보", "Report a bug"],
   "隐藏状态文字": ["ステータス文字を非表示", "상태 문구 숨기기", "Hide status text"],
   "状态点颜色": ["ステータスの点の色", "상태 점 색상", "Status dot color"],

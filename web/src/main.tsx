@@ -59,7 +59,8 @@ function App() {
     avatarGeneration = useRef(0);
   const exportRequest = useRef<{ id: number; config: Config; target: "bambu"|"core" } | null>(null);
   const upload = useRef<HTMLInputElement>(null);
-  const [exportFormat,setExportFormat]=useState<"bambu"|"core">("bambu");
+  const [exportFormat,setExportFormat]=useState<"bambu"|"core"|"blender">("bambu");
+  const blenderExportBusy = useRef(false);
   const [avatarName, setAvatarName] = useState("未上传头像");
   const language = config.language ?? "zh";
   const t = (text: string) => translate(language, text);
@@ -146,8 +147,9 @@ function App() {
     );
     return () => clearTimeout(timer);
   }, [config, workerGeneration]);
-  const beginExport = () => {
+  const beginExport = async () => {
     if (
+      blenderExportBusy.current ||
       exportRequest.current ||
       completedRevision.current !== revision.current ||
       busy ||
@@ -157,6 +159,20 @@ function App() {
       modelError
     )
       return;
+    if (exportFormat === "blender") {
+      blenderExportBusy.current = true;
+      setExporting(true);
+      setExportError("");
+      const snapshot = structuredClone(design), photo = avatar;
+      const name = config.displayName.replace(/[^a-zA-Z0-9_\u4e00-\u9fff-]/g, "_") || "nameplate";
+      try {
+        const { exportBlender } = await import("./blender-export");
+        download(await exportBlender(snapshot, photo), `vrc-tag-${config.styleId}-${name}.glb`, "model/gltf-binary");
+      } catch {
+        setExportError("Blender 导出失败，请重试。");
+      } finally { blenderExportBusy.current = false; setExporting(false); }
+      return;
+    }
     const id = ++sequence.current,
       snapshot = structuredClone(config);
     exportRequest.current = { id, config: snapshot, target: exportFormat };
@@ -436,13 +452,13 @@ function App() {
                 <span>{t("头像")}</span>
               </div>
               <div className="upload-row">
-                <div className="avatar-thumb">
+                <button type="button" className="avatar-thumb" aria-label={t("选择本地图片")} onClick={() => upload.current?.click()}>
                   {avatar ? (
                     <img src={avatar} alt={t("本地头像")} />
                   ) : (
                     <span>＋</span>
                   )}
-                </div>
+                </button>
                 <div>
                   <button
                     className="secondary"
@@ -542,14 +558,15 @@ function App() {
                 {notice && <p className="success">{t(notice)}</p>}
               </div>
               <p className="field-note">{exportFormat==="bambu"?t("默认 A1 · 0.4 mm · PLA，请在切片软件中选择自己的打印机和耗材"):""}</p>
-              <select id="exportFormat" aria-label={t("导出格式")} value={exportFormat} onChange={e=>setExportFormat(e.target.value as "core"|"bambu")}><option value="bambu">{t("多色 3MF（保留颜色）")}</option><option value="core">{t("通用 3MF（需手动分配耗材）")}</option></select>
+              <select id="exportFormat" aria-label={t("导出格式")} value={exportFormat} onChange={e=>setExportFormat(e.target.value as "core"|"bambu"|"blender")}><option value="bambu">{t("多色 3MF（保留颜色）")}</option><option value="core">{t("通用 3MF（需手动分配耗材）")}</option><option value="blender">{t("Blender（GLB，含颜色与头像）")}</option></select>
+              {exportFormat === "blender" && <p className="field-note">{t("在 Blender 中选择 文件 → 导入 → glTF 2.0，编辑后可另存为 .blend。")}</p>}
               <button
                 className="export-button"
                 disabled={busy || exporting || !valid}
                 onClick={()=>beginExport()}
                 data-export-key={configKey}
               >
-                <span>{t(exporting ? "正在本地打包…" : exportFormat === "bambu" ? "下载多色 3MF" : "下载通用 3MF")}</span>
+                <span>{t(exporting ? "正在本地打包…" : exportFormat === "blender" ? "下载 Blender GLB" : exportFormat === "bambu" ? "下载多色 3MF" : "下载通用 3MF")}</span>
                 <span>↓</span>
               </button>
               <div className="export-links">
@@ -591,21 +608,11 @@ function App() {
             </div>
           </section>
         </div>
-        <footer>
-          <span>
-            VRC TAG STUDIO · © 2026 RICHARDwuxiaofei ·{" "}
-            {t("非 VRChat 官方产品")}
-          </span>
-          <a
-            href="licenses/PROJECT-NOTICE.txt"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t("代码 MIT · 两款模型 CC BY 4.0")}
-          </a>
+        <footer className="site-footer">
+          <p className="footer-brand">VRC Tag Studio <span>© 2026 RICHARDwuxiaofei</span></p>
+          <p className="footer-meta">{t("非 VRChat 官方产品")}<span aria-hidden="true"> · </span><a href="licenses/PROJECT-NOTICE.txt" target="_blank" rel="noreferrer">{t("代码 MIT · 两款模型 CC BY 4.0")}</a></p>
+          <div className="footer-links"><a href="https://github.com/RICHARDwuxiaofei/vrctag" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:nagikokoro2006@gmail.com">{t("Bug 反馈联系")} · nagikokoro2006@gmail.com</a></div>
         </footer>
-        <div className="github-footer"><a href="https://github.com/RICHARDwuxiaofei/vrctag" target="_blank" rel="noreferrer">GitHub ↗</a></div>
-        <div className="feedback-footer">{t("Bug 反馈联系")} <a href="mailto:nagikokoro2006@gmail.com">nagikokoro2006@gmail.com</a></div>
       </main>
     </>
   );
