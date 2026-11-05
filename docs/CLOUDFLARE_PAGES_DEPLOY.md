@@ -1,6 +1,6 @@
 # Cloudflare Pages 静态部署准备
 
-2026-11-05；PARTIAL：本地静态构建通过，未连接账号、创建项目、部署或修改 DNS。Windows GUI 与切片验收未完成；发布决定 NO-GO。
+2026-11-05 更新：Preview 技术准备 PASS。隔离 Node 22.23.4 构建、39/39、双样式 43/43、完整静态 HTTP 和真实 Chrome 无头冒烟通过。可以在用户授权后创建小范围 Preview；正式打印 NOT_TESTED、完整 GUI PARTIAL。未连接账号、创建项目、部署或修改 DNS。详见 BLENDER_WINDOWS_ACCEPTANCE.md。
 
 ## Dashboard 与 GitHub
 
@@ -16,7 +16,7 @@
 | Build output directory | dist |
 | Production / Preview environment | NODE_VERSION=22 |
 
-输出路径相对于 web，因此填写 dist，不能填写 web/dist。Pages 安装 package-lock 对应依赖；核对构建日志的 Node 版本、安装和构建退出码。源码附 web/.node-version。当前 Windows 实测 Node 25.8.1，Node 22 构建尚须 CI/Pages 验证。
+输出路径相对于 web，因此填写 dist，不能填写 web/dist。Pages 安装 package-lock 对应依赖；核对构建日志的 Node 版本、安装和构建退出码。源码附 web/.node-version。当前 Windows 已用隔离 Node 22.23.4 实测构建及测试通过；仍需核对实际 Pages 构建日志。
 
 不要配置 Functions、Workers 生成端点、R2、KV、D1、数据库、账号系统或服务端密钥。网页 Worker 是浏览器本地 Worker。仅分发 web/dist 内部文件。不要上传整个仓库、studio、历史证据或用户图片。
 
@@ -59,3 +59,17 @@ public/_headers 在构建时复制到 dist；所有响应 no-cache，允许存�
 - https://developers.cloudflare.com/pages/configuration/preview-deployments/
 - https://developers.cloudflare.com/pages/configuration/custom-domains/
 - https://developers.cloudflare.com/pages/configuration/rollbacks/
+
+## 仅 Preview 的下一步操作（需用户自行授权账号）
+
+本轮没有访问 Cloudflare Dashboard，以下是待应用方案，不是现有账号配置的实测结果。软件 Preview 不必等待实物打印，也不要求提前合并 PR。Production branch 仍为 main，Preview branch 为 codex/vrc-nameplate-web，禁止把开发分支改成生产分支。
+
+1. 用户登录 Cloudflare，在 Workers & Pages 的 Pages Git integration 中连接 GitHub，仅授权本仓库。不要在聊天或仓库粘贴 API token。
+2. 按上表设置 web / npm run build / dist / NODE_VERSION=22（Preview 与 Production 都设置）。保存前确认这是用户批准的创建/部署动作；Dashboard 的首次 Save and Deploy 可能立即触发 main 构建，不能声称绝不会部署生产。若 main 尚无 web，则首次构建可能失败，不要通过将生产分支改为开发分支来绕过。正式 main 内容仍须按原流程审查。
+3. 创建后进入 Settings → Builds & deployments → Branch control：关闭生产自动部署（保留 main），Preview 选择自定义包含 codex/vrc-nameplate-web。若界面名称变化，按官方 Branch deployment controls 文档查对应项。首次 main 构建与之后自动部署开关分别核对。
+4. 对开发分支触发一次新的 Preview 构建（可通过后续正常 push；若界面支持重试对应 Preview，可重试）。确认 deployment environment 是 Preview、commit 是本轮提交，构建日志 Node 22、npm 和静态检查均成功；不要点击生产提升或合并。
+5. 打开生成的 HTTPS Preview URL。Preview 地址可能任何知道 URL 的人都能访问，随机地址不等于访问控制；需要保密时再单独评估 Access，不上传私密头像和资料。无需自定义域名、DNS 或 VPS。
+6. 远程依次验证默认 Nagikokoro/无聊、Classic/Native 结构、Friend/Pronouns/状态、混排/长名、头像上传移除及坏图、四槽/视觉色、JSON 往返、快速修改与重复导出、旋转缩放、桌面/390/320。检查 DevTools 网络与错误，导出七组实际 3MF。重点确认 HTTPS Blob 下载、Worker 与字体分块 200，以及无第三方上传。
+7. 记录 Preview URL、commit、浏览器版本、截图和实际下载哈希。Preview 通过仅代表软件远程验收，不代表正式生产、切片或打印。需要新一轮明确批准才合并 main、启用生产自动部署或绑定域名。
+
+官方分支控制：https://developers.cloudflare.com/pages/configuration/branch-build-controls/ 。官方说明默认提交可触发 production/preview 部署，因此账号关联不能在本轮擅自执行。静态本地及无头浏览器通过不替代部署后的 HTTPS 验收。

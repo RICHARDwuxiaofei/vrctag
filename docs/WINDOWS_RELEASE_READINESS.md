@@ -54,3 +54,5 @@ PASS（声明一致性）：Footer、LICENSE_SCOPE、README 与 public 许可记
 NO-GO：当前不建议作为最终验收完成而合并 main，也不建议部署 Pages Beta。应先恢复真实桌面控制，补齐用户 20 项 GUI 和 7 组网页下载文件，在 Creality Print/Orca 完成真实切片；再用 Node 22 复核构建，记录 HTTPS 和缓存验收。通过后等待用户批准合并与部署。实际打印须由用户本人进行，重点确认中文/日文细字、字与底板接合、颜色及机械强度。不得自动打印、合并、Release、部署或强推。
 
 回滚代码使用正常 revert；没有更改正式 Blender 源和切片器配置。PR 更新后最终 SHA 以 git log -1 和 PR head 为准，避免报告自引用提交哈希。
+
+2026-11-05 后续无人值守验收更新：本文件保留为首轮历史记录；当前分项状态、Node 22、官方扩展导入、lib3mf、真实渲染和 Chrome 无头检查见 BLENDER_WINDOWS_ACCEPTANCE.md。Preview 技术准备现在 PASS，完整 GUI PARTIAL，切片/打印 NOT_TESTED；不再用首轮统一 NO-GO 否定后续通过的检查。
