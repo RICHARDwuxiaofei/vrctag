@@ -1,20 +1,21 @@
-# Path-level license scope
+# License scope — VRC Tag Studio
 
-This repository is **mixed-license**. Root `LICENSE` is the MIT license for the independently authored software listed below, not a blanket relicensing of every file. Copyright (c) 2026 RICHARDwuxiaofei. Third-party rights and previous grants remain in force. Effective additional grants: 2026-11-04.
+Copyright (c) 2026 RICHARDwuxiaofei. This repository has mixed-license content. The root `LICENSE` applies **MIT** to the author's original software, not indiscriminately to models or third-party files. On 2026-11-05, the owner also elected **CC BY 4.0** for the first-party contributions in **both current Classic and Native models**.
 
-| Paths / contents | Current terms |
+| Files or content | License and boundaries |
 | --- | --- |
-| Independently authored `web/src/*.{ts,tsx,css}`, `web/tests/`, build/config software in `web/`, `studio/scripts/` | MIT; see root LICENSE and SPDX headers. Model/design data and third-party packages are excluded. |
-| `studio/native.blend`, `studio/vrc-tag-original.blend`, `web/public/assets/styles/native/{base.json,base.glb,*.png}` | CC BY 4.0, attribution **RICHARDwuxiaofei — VRC Tag Studio**, repository https://github.com/RICHARDwuxiaofei/vrctag; indicate modifications. This is an additional grant by the first-party author. |
-| `studio/classic.blend`, `web/public/assets/styles/classic/`, default compatibility aliases `web/public/assets/base.json` and `base.glb` | Existing CC BY-NC-SA 4.0 terms retained conservatively pending review of Classic's similarity to WiseWolf's large-avatar design. **No CC BY 4.0 or unrestricted-commercial grant is made for Classic.** No copying of mesh data was found; that alone does not settle design rights. |
-| `web/src/styles.catalog.json` | Native design entry: CC BY 4.0. Classic design entry: existing CC BY-NC-SA 4.0 pending review. Mixed data file; not covered wholesale by software MIT. |
-| `studio/demos/native-nagikokoro.blend` and current Native rendered evidence | CC BY 4.0 for first-party model contributions; actual Noto-generated glyph provenance retained. No embedded font program or user photo. |
-| `studio/demos/classic-nagikokoro.blend`, Classic/mixed/legacy-reference renders and sample geometry | Existing CC BY-NC-SA 4.0 scope retained; do not infer a commercial grant from the MIT importer or generator. |
-| Root `name_tag_generator.py`, `upgrade_existing.py`, `start.cmd`, `nametag_template.blend`, ATTRIBUTION.md, retained legacy README section | Legacy CC BY-NC-SA 4.0 scope and original attribution retained, **not MIT**. Files remain at their compatible historical paths; see `legacy/README.md`. |
-| Noto OTF/font subsets and their manifest/derived font data | SIL OFL 1.1; original notices and renamed subset provenance retained. This migration does not relicense the font. |
-| Third-party runtime libraries and notices in `web/public/licenses/` | Their respective original licenses; never relicensed under the project's author credit. |
-| `studio/evidence/**` | Do not blanket relicense historical evidence. Native/initial-original model images retain author grants; Classic/legacy/mixed reference images retain the conservative NC-SA scope. Software test logs/report prose are MIT first-party documentation. Generated 3MF contains the respective model plus Noto-generated text; software MIT does not change those assets' rights. Orca-derived projects also contain upstream preset data; see their NOTICE. |
+| Original software in `web/src/` (excluding separately licensed design data), `web/tests/`, build tools and original `studio/scripts/` | **MIT**, root LICENSE |
+| Current original `studio/classic.blend`, `studio/native.blend`, `studio/vrc-tag-original.blend` | **CC BY 4.0**, to the extent of the author's own model and design rights |
+| Model contributions in `studio/demos/{classic,native}-nagikokoro.blend` | **CC BY 4.0**; Noto glyph/font provenance remains separate |
+| First-party model JSON/GLB, projection thumbnails and rendered assets in `web/public/assets/styles/{classic,native}/`; `web/public/assets/base.{json,glb}` compatibility aliases | **CC BY 4.0** |
+| First-party design entries in `web/src/styles.catalog.json` | **CC BY 4.0**; the editor and exporter software remain MIT |
+| Current first-party model contributions in example 3MF files and renders | **CC BY 4.0**; other incorporated rights are not changed |
+| Historical root `nametag_template.blend`, `name_tag_generator.py`, `upgrade_existing.py`, `start.cmd`, `ATTRIBUTION.md`, old README section, WiseWolf-origin reference images | Historical **CC BY-NC-SA 4.0** and original attribution; **not relicensed** |
+| Noto Sans CJK fonts and renamed subset fonts | **SIL OFL 1.1** |
+| Runtime dependencies, external slicer presets and other third-party materials | Their own licenses and notices |
 
-Model attribution should link the repository and CC BY 4.0 license and identify modifications. Neither VRChat nor WiseWolf endorses the project. Official logos/third-party textures are not bundled.
+**CC BY attribution:** RICHARDwuxiaofei — VRC Tag Studio; link to https://github.com/RICHARDwuxiaofei/vrctag and https://creativecommons.org/licenses/by/4.0/, and identify changes.
 
-`legacy/LICENSE-before-mit.txt` is a byte-for-byte copy of the previous repository-wide notice. Existing CC BY-NC-SA distributions cannot be retroactively revoked for recipients complying with their terms. The new MIT and CC BY grants only exercise rights the author controls; they do not cancel earlier grants, remove WiseWolf rights or clear uncertain Classic rights. License metadata is a scope record, not legal proof of ownership. See `docs/LICENSE_MIGRATION.md`.
+The owner independently reconstructed the current Classic mesh rather than importing the historical source mesh, as recorded in the repository. The CC BY 4.0 permission is a grant **only for rights owned by the author**, not a legal determination concerning any potentially protected third-party design expression, trademarks or fonts. Existing historical CC grants to compliant recipients remain effective and are not retroactively withdrawn. VRChat does not endorse this unofficial project.
+
+Legacy source files are preserved at the repository root for earlier desktop-version compatibility and history; **none are included in the deployed `web/dist`**. The historic renders and reference files remain subject to their original notices. See `web/NOTICE.md`, `THIRD_PARTY_NOTICES.md`, `docs/LICENSE_MIGRATION.md`, `legacy/LICENSE-before-mit.txt`.

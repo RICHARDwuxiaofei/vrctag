@@ -2,19 +2,22 @@ VRC Tag Studio — Copyright (c) 2026 RICHARDwuxiaofei
 Unofficial project, not affiliated with or endorsed by VRChat.
 Source: https://github.com/RICHARDwuxiaofei/vrctag
 
-Independent software: MIT; see VRC-Tag-Studio-MIT.txt.
-Native model / first independent original model: CC BY 4.0; see CC-BY-4.0.txt.
-Attribution: RICHARDwuxiaofei — VRC Tag Studio; link source/license and identify changes.
-Classic / Large Avatar: NOT included in the CC BY 4.0 grant. Existing
-CC BY-NC-SA 4.0 terms retained pending review of similarity to WiseWolf's design.
-Original legacy model: VRC名牌吊牌 by WiseWolf,
-https://makerworld.com.cn/zh/models/203011-vrcming-pai-diao-pai
-Classic design rights are not automatically cleared by independently generated meshes.
-Prior licensed distributions' compliant CC rights are not retroactively revoked.
+Independently authored software: MIT; see VRC-Tag-Studio-MIT.txt.
+First-party contributions to BOTH current Classic and Native model/design assets: CC BY 4.0;
+see CC-BY-4.0.txt. Attribution: RICHARDwuxiaofei — VRC Tag Studio.
+Link to the source and license; indicate modifications.
 
-Noto fonts / renamed subsets: SIL OFL 1.1; see ../assets/OFL-Noto.txt.
+Only rights owned by the author are granted. This does not relicense third-party
+design, font, trademark or reference-image rights.
+Historical WiseWolf-derived desktop resources remain subject to their original
+CC BY-NC-SA 4.0 attribution and license. They are not packaged in this static site.
+Previous compliant license grants cannot be retroactively withdrawn.
+
+Noto Sans CJK fonts and renamed subsets: SIL OFL 1.1; see ../assets/OFL-Noto.txt.
 Third-party runtime libraries retain their own notices in this directory.
-Photos are local previews only; no photos are included in printable exports.
-Full path-level exclusions: repository LICENSE_SCOPE.md / THIRD_PARTY_NOTICES.md.
+Uploaded photos are local previews only; no photos are included in 3MF exports.
+Full path-level scope: LICENSE_SCOPE.md / THIRD_PARTY_NOTICES.md in repository.
 
-Glyph contour repair: clipper-lib 6.4.2, Angus Johnson 2010-2017 and Javascript port contributors, Boost Software License 1.0. See Boost-Software-License-1.0.txt. https://github.com/junmer/clipper-lib
+Glyph contour repair: clipper-lib 6.4.2, Angus Johnson 2010-2017 and Javascript port contributors,
+Boost Software License 1.0; see Boost-Software-License-1.0.txt.
+https://github.com/junmer/clipper-lib
