@@ -18,7 +18,7 @@
 
 输出路径相对于 web，因此填写 dist，不能填写 web/dist。Pages 安装 package-lock 对应依赖；核对构建日志的 Node 版本、安装和构建退出码。源码附 web/.node-version。当前 Windows 已用隔离 Node 22.23.4 实测构建及测试通过；仍需核对实际 Pages 构建日志。
 
-不要配置 Functions、Workers 生成端点、R2、KV、D1、数据库、账号系统或服务端密钥。网页 Worker 是浏览器本地 Worker。仅分发 web/dist 内部文件。不要上传整个仓库、studio、历史证据或用户图片。
+Cloudflare Pages 的 GitHub 集成自带拉取代码、构建和部署流程；不需要 GitHub Actions。不要配置 Functions、Workers 生成端点、R2、KV、D1、数据库、账号系统或服务端密钥。网页 Worker 是浏览器本地 Worker。仅分发 web/dist 内部文件。不要上传整个仓库、studio、历史证据或用户图片。
 
 ## Preview 与 HTTPS
 
@@ -44,7 +44,7 @@ public/_headers 在构建时复制到 dist；所有响应 no-cache，允许存�
 
 ## 包与许可证门槛
 
-官方限制：Free 最多 20,000 文件，单个资源最多 25 MiB；每次构建扫描实际 dist，超限即失败，不引入 R2。构建内置检查完整字体块、两套模型、许可文件，禁止 blend/py/3mf 与 legacy/reference 文件。另保存文件列表、大小及 SHA256。人工确认无私密图片、测试数据、密钥。软件 MIT；Native CC BY 4.0；Classic CC BY-NC-SA 4.0；WiseWolf 原许可署名；Noto SIL OFL 1.1；依赖原许可。保留 licenses、OFL 与模型 .license。
+官方限制：Free 最多 20,000 文件，单个资源最多 25 MiB；每次构建扫描实际 dist，超限即失败，不引入 R2。构建内置检查完整字体块、两套模型、许可文件，禁止 blend/py/3mf 与 legacy/reference 文件。另保存文件列表、大小及 SHA256。人工确认无私密图片、测试数据、密钥。软件 MIT；Classic 与 Native 的第一方模型贡献 CC BY 4.0；旧 WiseWolf 资源及参考图保留历史原许可与署名；Noto SIL OFL 1.1；依赖各自原许可。保留 licenses、OFL 与模型 .license。
 
 ## 回滚
 

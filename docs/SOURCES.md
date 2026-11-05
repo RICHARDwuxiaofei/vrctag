@@ -1,6 +1,6 @@
 # 来源与许可证边界
 
-> 最新授权与验收：独立软件 MIT、Native/初版独立模型 CC BY 4.0；Classic 保留原 NC-SA 范围待确认。以下较早的“最终许可待定”记录只描述历史检查点。见 [许可证迁移](LICENSE_MIGRATION.md) 和根 LICENSE_SCOPE.md。
+> 2026-11-05 更新：软件 MIT；当前 Classic/Native 两款模型的第一方贡献 CC BY 4.0；历史第三方模板及参考图继续适用原许可。下面记录不同时期的来源调查及当时许可结论，不代表今天最新声明。以 `LICENSE_SCOPE.md` 为准。见 [许可证迁移](LICENSE_MIGRATION.md) 和根 LICENSE_SCOPE.md。
 
 ## 初版历史记录（不代表当前 Classic）
 

@@ -1,6 +1,6 @@
 # VRC Tag Studio
 
-> 最新授权与验收：独立软件 MIT、Native/初版独立模型 CC BY 4.0；Classic 保留原 NC-SA 范围待确认。以下较早的“最终许可待定”记录只描述历史检查点。见 [许可证迁移](../docs/LICENSE_MIGRATION.md) 和根 LICENSE_SCOPE.md。
+> 最新授权：原创软件 MIT；当前 Classic、Native 两款模型中第一方模型和设计贡献 CC BY 4.0。历史第三方模板及参考材料仍按原有许可证处理。早期验收日志保留其历史状态。见 [许可证迁移](../docs/LICENSE_MIGRATION.md) 和根 LICENSE_SCOPE.md。
 
 静态、浏览器本地的名牌设计工具。React + TypeScript + Vite + Three.js。新应用不读取仓库根目录的 Python 生成器或旧 Blender 模板。
 
@@ -39,7 +39,7 @@ Core 3MF，毫米单位：OPC 内容类型、根关系、模型、基材颜色�
 
 导入为一个对象的多个部件，检查尺寸，然后将各部件颜色映射到实际耗材。此文件不包含机器、温度、喷嘴或耗材槽位配置，不是已切片工程文件。Creality Print / OrcaSlicer 可能忽略通用基材颜色或需要手工分配；OrcaSlicer 2.4.2 的 18 例命令行导入/显式耗材分配/切片已通过；自动耗材映射仍为 **PARTIAL**，需要手工分配。Creality Print、切片器 GUI 逐层预览与实物打印 **NOT_TESTED**。见 [最终报告](../docs/FINAL_BETA_REVIEW.md) 与 [完整 Beta 证据](../docs/BETA_ACCEPTANCE.md)。
 
-默认四槽 CFS 配色允许逐部件共享耗材和四槽自定义 HEX；切片软件仍需手工对应实际槽位。“全部视觉颜色”保留原色，可能超过四种。勾选打印配色预览检查实际材料颜色；会隐藏不打印的头像照片/占位人物。
+当前网页采用简化的默认四槽 CFS 方案；以前的逐槽颜色和高级部件映射控件已按产品决定从界面移除，旧 JSON 的相关配置字段保留兼容。不同部件仍有独立材料引用；实际切片软件中可能需要手动映射耗材。照片仅用于预览，不会印在 3MF 上。
 
 独立校验：
 
@@ -61,6 +61,6 @@ python3 studio/scripts/validate_3mf.py studio/evidence/browser-custom.3mf
 - `../studio/classic.blend` / `native.blend`：两套无烘焙名字的源；此前 vrc-tag-original.blend 原样保留。
 - `../docs/STATIC_DEPLOY.md`、`SOURCES.md`：部署和许可证边界。
 
-Classic 的 CFS4 默认为黑、白、名称黄/金、状态色；外框与头像框共享白槽，名字保持独立。可自定耗材颜色和映射，切换样式时保留用户显式选择。旧模板只在仓库审核证据中作参考，不进入静态资源；新 Classic 相似设计的许可风险仍未消除，见来源说明。
+Classic 默认白芯、黑色正面、白色外缘、黄色或金色名字与状态颜色；Native 保留用户最新指定的深色全厚度主体。实际 3MF 部件与材料独立，切片端可能需要手动分配。旧模板不进入网站构建；新版两款模型的 CC BY 4.0 授权只覆盖作者拥有的权利，不为历史模板或第三方设计授予许可。
 
 测试默认输出到被忽略的 `web/test-results/`，不会改写历史证据。可通过 `VRC_TEST_EVIDENCE_URL=file:///绝对路径/` 指定独立输出目录（末尾保留 `/`）。诊断矩阵默认 Classic；用 `REVIEW_STYLE=native npm run test:review` 检查 Native。历史大型中间产物按 [证据索引](../studio/evidence/INDEX.md) 恢复。

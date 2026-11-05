@@ -217,10 +217,10 @@ const rows: Record<string, [string, string, string]> = {
     "VRChat 비공식 제품",
     "Not an official VRChat product",
   ],
-  "代码 MIT · Native CC BY 4.0 · Classic 许可例外": [
-    "コード MIT・Native CC BY 4.0・Classic は例外ライセンス",
-    "코드 MIT · Native CC BY 4.0 · Classic 별도 라이선스",
-    "Code MIT · Native CC BY 4.0 · Classic license exception",
+  "代码 MIT · 两款模型 CC BY 4.0": [
+    "コード MIT・両モデル CC BY 4.0",
+    "코드 MIT · 두 모델 CC BY 4.0",
+    "Code MIT · both models CC BY 4.0",
   ],
   "请选择 PNG、JPEG 或 WebP 图片。": [
     "PNG、JPEG、WebPを選択してください。",

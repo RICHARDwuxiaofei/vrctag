@@ -609,7 +609,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            {t("代码 MIT · Native CC BY 4.0 · Classic 许可例外")}
+            {t("代码 MIT · 两款模型 CC BY 4.0")}
           </a>
         </footer>
         <div className="github-footer"><a href="https://github.com/RICHARDwuxiaofei/vrctag" target="_blank" rel="noreferrer">GitHub ↗</a></div>

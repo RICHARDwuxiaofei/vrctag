@@ -4,7 +4,7 @@
 
 - **Classic / Large Avatar**：大头像、白框和黄色名字，134 × 52 × 4 mm。
 - **Native / VRChat Style**：深色胶囊、非好友白字 / 好友金字，118 × 40 × 3.6 mm。
-- 两种样式共享名字、Pronouns、状态文字、状态颜色、本地头像和四槽 CFS 配色；JSON 可保存与恢复配置。头像照片仅供预览，不转换为彩色打印。
+- 两种样式共享名字、Pronouns、状态文字、状态点颜色、本地头像与默认四槽 CFS 配色；JSON 可保存与恢复配置。头像照片仅供预览，不转换为彩色打印。
 
 ## 本地体验
 
@@ -34,11 +34,11 @@ npm exec vite preview -- --host 127.0.0.1 --port 5173
 
 [最终合并前验收](docs/FINAL_BETA_REVIEW.md) · [上一轮完整 Beta 报告](docs/BETA_ACCEPTANCE.md) · [证据索引与历史恢复](studio/evidence/INDEX.md) · [手工网页检查清单](docs/GUI_ACCEPTANCE_CHECKLIST.md)
 
-默认四槽方案将多个独立部件映射到四种耗材；全视觉配色可能超过四槽。**OrcaSlicer 2.4.2 已完成 18 例命令行切片，但必须手工为部件分配耗材。** Creality Print、GUI 逐层预览和实物打印仍未验证；请选自己的打印机/耗材并逐层检查细笔画与接合，勿直接执行证据工程里的 G-code。最新网页 GUI 受浏览器工具安全限制，需按清单人工确认。
+当前简化界面使用默认四槽方案，生成的多个实体分配到至多四种材料；旧配置的高级材料字段仍保留兼容，但不再提供逐槽高级编辑 UI。**OrcaSlicer 2.4.2 已完成 18 例命令行切片，但必须手工为部件分配耗材。** Creality Print、GUI 逐层预览和实物打印仍未验证；请选自己的打印机/耗材并逐层检查细笔画与接合，勿直接执行证据工程里的 G-code。最新网页 GUI 受浏览器工具安全限制，需按清单人工确认。
 
 ## 授权
 
-独立软件 **MIT**；Native 与初版独立模型 **CC BY 4.0**。**Classic 保留 CC BY-NC-SA 4.0 例外，不能按无条件商用模型分发**。WiseWolf 旧模板与旧 Python、Noto 字体和依赖继续各自许可；历史 CC 分发授权不能追溯撤销。本项目不是 VRChat 官方产品。
+原创软件 **MIT**；当前 Classic 与 Native 两款独立重建模型中作者拥有的模型和设计贡献 **CC BY 4.0**。旧 WiseWolf 模板、历史 Python 生成器和参考图仍按原有 CC BY-NC-SA 4.0 许可及署名处理；Noto 字体和其他依赖保留各自许可。新的授权不追溯撤销历史授权，也不构成对第三方设计或商标权利的保证。本项目不是 VRChat 官方产品。
 
 [路径级范围](LICENSE_SCOPE.md) · [第三方声明](THIRD_PARTY_NOTICES.md) · [许可证迁移报告](docs/LICENSE_MIGRATION.md) · [来源](docs/SOURCES.md)
 
