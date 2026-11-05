@@ -1,51 +1,96 @@
-# VRC Tag Studio
+<p align="center"><img src="web/public/assets/brand-icon.png" alt="VRC Tag Studio" width="92"></p>
+<h1 align="center">VRC Tag Studio</h1>
+<p align="center">Create VRChat-inspired nameplates in your browser — live 3D preview, multicolor 3MF printing exports and editable Blender GLB.</p>
+<p align="center">**English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)</p>
+<p align="center"><a href="https://tag.nagikokoro.best/"><strong>Launch VRC Tag Studio</strong></a> · <a href="web/README.md">Developer docs</a></p>
+<p align="center"><sub>Public beta · Open source · No account required · Unofficial VRChat fan project</sub></p>
 
-在自己的浏览器里设计、预览并下载多色 3MF 名牌。无需安装 Blender、登录 VRChat 或上传头像；服务器只提供静态文件。
+---
 
-- **Classic / Large Avatar**：大头像、白框和黄色名字，134 × 52 × 4 mm。
-- **Native / VRChat Style**：深色胶囊、非好友白字 / 好友金字，118 × 40 × 3.6 mm。
-- 两种样式共享名字、Pronouns、状态文字、状态点颜色、本地头像与默认四槽 CFS 配色；JSON 可保存与恢复配置。头像照片仅供预览，不转换为彩色打印。
+## Choose your style
 
-## 本地体验
+| Classic · Large Avatar | Native · VRChat Style |
+| :---: | :---: |
+| ![Classic](web/public/assets/styles/classic/default-front.png) | ![Native](web/public/assets/styles/native/default-front.png) |
+| Large avatar, white rim, white core with black face | Compact capsule and dark solid body |
+| **134 × 52 × 3.0 mm** | **118 × 45.6 × 3.7 mm** |
 
-需要 Node.js 22.12+ 和 npm。在仓库根目录执行：
+*Preview images are model renders. Colors and dimensions are subject to the selected configuration.*
 
-```sh
-cd web
+## Features
+
+- **Two styles:** Classic and Native, with optional hanging loop and customizable display name.
+- **Personalization:** White standard name / gold friend name, pronouns, status text and colored status dot.
+- **Real-time 3D:** Rotate, zoom and preview a local PNG/JPEG/WebP avatar.
+- **Multicolor 3MF:** Bambu Studio-compatible export with part/filament mapping, plus generic Core 3MF.
+- **Blender-ready GLB:** Export separate mesh parts, colors and an optional embedded avatar photo. Import through **Blender → File → Import → glTF 2.0**.
+- **Reusable configuration:** Save and restore a JSON design. Switch UI languages among English, 简体中文, 日本語 and 한국어.
+
+**Privacy:** Nameplate generation and avatar handling run in the browser. The avatar photo is not printable 3MF geometry, but can be embedded in GLB files. Take care when sharing exported GLBs.
+
+## Export options
+
+| Format | Use | Details |
+| --- | --- | --- |
+| **Multicolor 3MF (Bambu)** | Bambu Studio | Per-part filaments; starts from an **A1 / 0.4 mm / PLA** profile. Choose your own printer and material before slicing. |
+| **Generic Core 3MF** | Other slicers | Printable separate parts and colors; manual filament mapping may be needed. |
+| **Blender GLB** | Model editing/rendering | Editable parts and optional avatar texture; not sliced G-code. |
+| **JSON** | Save/restore | Design parameters only; no avatar picture. |
+
+**Printing is still beta.** Bambu Studio import/round-trip and limited slicing checks passed, but physical prints and broad printer compatibility are not fully verified. Check layer previews, thin text, connections and materials before printing. Do not run bundled test G-code.
+
+## Run locally
+
+Requires **Node.js 22.12+** and npm.
+
+```bash
+git clone https://github.com/RICHARDwuxiaofei/vrctag.git
+cd vrctag/web
 npm ci
 npm run dev
 ```
 
-打开终端显示的本地地址。默认示例为 **Nagikokoro / 无聊 / Online / 无 Pronouns**。
+Open Vite's local URL. Verify and build:
 
-```sh
-# 在 web 目录验证并构建
+```bash
 npm run check
 npm test
 npm run test:review
-REVIEW_STYLE=native npm run test:review
 npm run build
-npm exec vite preview -- --host 127.0.0.1 --port 5173
+npx vite preview --host 127.0.0.1
 ```
 
-部署只需 `web/dist/`，不需要 Python / Blender 后台。见 [完整使用说明](web/README.md) 和 [Caddy / Nginx / 子路径部署](docs/STATIC_DEPLOY.md)。
+Only `web/dist/` is needed for hosting; there is no backend, database or server-side Blender.
 
-## Beta 验收与打印
+## Deploy to Cloudflare Pages
 
-[最终合并前验收](docs/FINAL_BETA_REVIEW.md) · [上一轮完整 Beta 报告](docs/BETA_ACCEPTANCE.md) · [证据索引与历史恢复](studio/evidence/INDEX.md) · [手工网页检查清单](docs/GUI_ACCEPTANCE_CHECKLIST.md)
+Connect this repository through **Cloudflare Pages → Git integration**:
 
-当前简化界面使用默认四槽方案，生成的多个实体分配到至多四种材料；旧配置的高级材料字段仍保留兼容，但不再提供逐槽高级编辑 UI。**OrcaSlicer 2.4.2 已完成 18 例命令行切片，但必须手工为部件分配耗材。** Creality Print、GUI 逐层预览和实物打印仍未验证；请选自己的打印机/耗材并逐层检查细笔画与接合，勿直接执行证据工程里的 G-code。最新网页 GUI 受浏览器工具安全限制，需按清单人工确认。
+| Setting | Value |
+| --- | --- |
+| Production branch | `main` |
+| Root directory | `web` |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Environment variable | `NODE_VERSION=22` |
 
-## 授权
+Cloudflare handles builds and deployments after Git pushes. No GitHub Actions or backend Workers are required. See [deployment instructions](docs/CLOUDFLARE_PAGES_DEPLOY.md).
 
-原创软件 **MIT**；当前 Classic 与 Native 两款独立重建模型中作者拥有的模型和设计贡献 **CC BY 4.0**。旧 WiseWolf 模板、历史 Python 生成器和参考图仍按原有 CC BY-NC-SA 4.0 许可及署名处理；Noto 字体和其他依赖保留各自许可。新的授权不追溯撤销历史授权，也不构成对第三方设计或商标权利的保证。本项目不是 VRChat 官方产品。
+## Project structure
 
-[路径级范围](LICENSE_SCOPE.md) · [第三方声明](THIRD_PARTY_NOTICES.md) · [许可证迁移报告](docs/LICENSE_MIGRATION.md) · [来源](docs/SOURCES.md)
+`web/` contains React, TypeScript, Vite and Three.js; `studio/classic.blend` and `studio/native.blend` are model sources, with tools in `studio/scripts/`. The original Python/Blender desktop generator remains in the repository but is **not** included in the web deployment.
 
-正式源在 [studio/](studio/README.md)，可直接打开的真实文字示例在 `studio/demos/`。旧桌面生成器仍保留，新网页构建不读取它或 `nametag_template.blend`。
+## License & credits
 
-<details>
-<summary>历史 Python + Blender 桌面版文档（保留原有版权范围）</summary>
+Original code: **[MIT](LICENSE)**. Author-owned contributions to current Classic and Native models: **[CC BY 4.0](LICENSES/CC-BY-4.0.txt)**, credit **RICHARDwuxiaofei — VRC Tag Studio**. Noto fonts use SIL OFL 1.1; bundled Bambu Studio preset data retain upstream AGPL terms. Historical WiseWolf-origin resources retain their previous CC BY-NC-SA 4.0 attribution and license. These grants do not relicense third-party rights.
+
+[License scope](LICENSE_SCOPE.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [License migration](docs/LICENSE_MIGRATION.md)
+
+**Unofficial fan project; not affiliated with or endorsed by VRChat or Bambu Lab.**
+
+---
+
+<details><summary>Historical Python + Blender desktop documentation (original attribution retained)</summary>
 
 # vrctag
 
@@ -103,6 +148,3 @@ The template contains only the base, rim and dot, with a packed font supporting 
 `upgrade_existing.py` creates multicolor copies of old 3MF files in model folders under the repository's parent directory, preserving originals.
 
 </details>
-
-
-当前参考式 Classic / 白芯黑面 / 可选挂环 / 四语言状态更新与测试边界见 [docs/CLASSIC_REFERENCE_REVISION.md](docs/CLASSIC_REFERENCE_REVISION.md)。
