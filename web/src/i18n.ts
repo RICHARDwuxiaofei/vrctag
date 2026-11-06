@@ -51,6 +51,22 @@ const rows: Record<string, [string, string, string]> = {
   "Blender 导出失败，请重试。": ["Blender用の保存に失敗しました。再試行してください。", "Blender 내보내기에 실패했습니다. 다시 시도하세요.", "Blender export failed. Please retry."],
   "在 Blender 中选择 文件 → 导入 → glTF 2.0，编辑后可另存为 .blend。": ["Blenderのファイル → インポート → glTF 2.0で開き、編集後に.blendで保存できます。", "Blender의 파일 → 가져오기 → glTF 2.0에서 열고 편집 후 .blend로 저장하세요.", "In Blender: File → Import → glTF 2.0. Save as .blend after editing."],
   "Bug 反馈联系": ["不具合のご連絡", "버그 제보", "Report a bug"],
+  "调整模型尺寸": ["モデルのサイズ調整", "모델 크기 조절", "Model dimensions"],
+  "平面等比缩放": ["平面サイズ（縦横比固定）", "가로·세로 비율 유지", "Planar scale (locked X/Y)"],
+  "厚度缩放": ["厚さの倍率", "두께 배율", "Thickness scale"],
+  "长度": ["長さ", "길이", "Length"],
+  "宽度": ["幅", "너비", "Width"],
+  "实际厚度": ["実際の厚さ", "실제 두께", "Physical thickness"],
+  "缩小模型后请检查细字与挂环强度；导出为实际尺寸。": [
+    "小さくすると文字や吊り輪が弱くなる場合があります。実寸で書き出します。",
+    "크기를 줄이면 작은 글씨나 고리 강도가 약해질 수 있어요. 실제 크기로 내보냅니다.",
+    "Smaller sizes can weaken fine text and the hanging loop. Exports use the actual size.",
+  ],
+  "缩小后小字可能无法打印，请在切片软件检查细节。": [
+    "縮小した細かい文字は印刷できない場合があります。スライサーで確認してください。",
+    "축소한 작은 글자는 출력되지 않을 수 있으니 슬라이서에서 확인하세요.",
+    "Downscaled tiny text may not print; inspect the details in your slicer.",
+  ],
   "顺手给个 Star？": ["よかったら Star をお願いします！", "괜찮았다면 Star 하나 부탁해요!", "Enjoying this? Give it a Star!"],
   "文件已经开始下载啦！喜欢这个小工具的话，可以去 GitHub 点颗星支持一下（": [
     "ダウンロードを開始しました！気に入っていただけたら GitHub で Star を付けてもらえるとうれしいです。",
