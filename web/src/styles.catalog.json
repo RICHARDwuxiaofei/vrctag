@@ -21,8 +21,8 @@
         "bodyTop": 2.6,
         "avatarTop": 2.6,
         "frameTop": 2.6,
-        "dotTop": 3.0,
-        "coreTop": 2.0,
+        "dotTop": 3,
+        "coreTop": 2,
         "skinThickness": 0.6,
         "hookCenter": -5,
         "hookOuter": 7,
@@ -47,7 +47,7 @@
         "size": [
           134,
           52,
-          3.0
+          3
         ],
         "textLeft": -10,
         "textWidth": 69,
@@ -125,7 +125,7 @@
         "leftCenter": -40,
         "rightCenter": 40,
         "leftRadius": 20,
-        "rightRadius": 18,
+        "rightRadius": 20,
         "bodyTop": 3.3,
         "avatarTop": 3.6,
         "frameTop": 3.65,
@@ -152,8 +152,8 @@
         "unit": "millimeter",
         "front": "+Z",
         "size": [
-          118,
-          45.630979,
+          120,
+          46.5,
           3.7
         ],
         "textLeft": -18,
