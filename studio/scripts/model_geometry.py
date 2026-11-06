@@ -32,7 +32,7 @@ def build_model(project_root, style):
         node=next(n for n in mat.node_tree.nodes if n.type=='BSDF_PRINCIPLED');node.inputs['Base Color'].default_value=(*color,1);node.inputs['Roughness'].default_value=.72;mesh.materials.append(mat)
         return obj
     def circle(cx,cy,r):return[(cx+r*math.cos(2*math.pi*i/96),cy+r*math.sin(2*math.pi*i/96))for i in range(96)]
-    # Common external tangents join unequal end circles without a sharp shoulder.
+    # External tangents join both end circles. For Native, matched radii\n    # make the upper and lower sides horizontal (no left-to-right taper).
     lc,rc,lr,rr=[g[k] for k in ('leftCenter','rightCenter','leftRadius','rightRadius')]
     theta=math.acos((lr-rr)/(rc-lc))
     capsule=[]
