@@ -12,6 +12,7 @@ import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { LanguagePicker } from "./LanguagePicker";
 import { StyleThumbnail } from "./StyleThumbnail";
+import { takeStarPromptOpportunity } from "./star-prompt";
 import { Preview } from "./Preview";
 import {
   defaults,
@@ -49,6 +50,9 @@ function App() {
   const configImportGeneration = useRef(0);
   const [exportError, setExportError] = useState("");
   const [notice, setNotice] = useState("");
+  const [starPromptOpen, setStarPromptOpen] = useState(false);
+  const starPromptSeen = useRef(false);
+  const starDialogRef = useRef<HTMLDialogElement>(null);
   const [view, setView] = useState(0);
   const [workerGeneration, setWorkerGeneration] = useState(0);
   const [completedKey, setCompletedKey] = useState("");
@@ -67,6 +71,19 @@ function App() {
   useEffect(() => {
     document.documentElement.lang = language === "zh" ? "zh-CN" : language;
   }, [language]);
+  useEffect(() => {
+    const dialog = starDialogRef.current;
+    if (!dialog) return;
+    if (starPromptOpen && !dialog.open) dialog.showModal();
+    if (!starPromptOpen && dialog.open) dialog.close();
+  }, [starPromptOpen]);
+  const promptStarAfterExport = () => {
+    if (starPromptSeen.current) return;
+    starPromptSeen.current = true;
+    let storage: Storage | undefined;
+    try { storage = window.sessionStorage; } catch { /* Storage may be disabled. */ }
+    if (takeStarPromptOpportunity(storage)) setStarPromptOpen(true);
+  };
   const configKey = JSON.stringify(config);
   const patch = (next: Partial<Config>) => {
     configImportGeneration.current++;
@@ -103,6 +120,7 @@ function App() {
             "model/3mf",
           );
           setNotice("3MF ✓");
+          promptStarAfterExport();
         }
         return;
       }
@@ -168,6 +186,7 @@ function App() {
       try {
         const { exportBlender } = await import("./blender-export");
         download(await exportBlender(snapshot, photo), `vrc-tag-${config.styleId}-${name}.glb`, "model/gltf-binary");
+        promptStarAfterExport();
       } catch {
         setExportError("Blender 导出失败，请重试。");
       } finally { blenderExportBusy.current = false; setExporting(false); }
@@ -257,6 +276,10 @@ function App() {
         setConfigError(e instanceof Error ? e.message : "无法读取配置");
     }
   }
+  const exportConfig = () => {
+    download(JSON.stringify(configDocument(config), null, 2), "vrc-tag-config.json", "application/json");
+    promptStarAfterExport();
+  };
   const reset = () => {
     configImportGeneration.current++;
     setConfigError("");
@@ -573,13 +596,7 @@ function App() {
 
 
                 <button
-                  onClick={() =>
-                    download(
-                      JSON.stringify(configDocument(config), null, 2),
-                      "vrc-tag-config.json",
-                      "application/json",
-                    )
-                  }
+                  onClick={exportConfig}
                 >
                   {t("导出配置 JSON")} ↗
                 </button>
@@ -614,6 +631,34 @@ function App() {
           <div className="footer-links"><a href="https://github.com/RICHARDwuxiaofei/vrctag" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:nagikokoro2006@gmail.com">{t("Bug 反馈联系")} · nagikokoro2006@gmail.com</a></div>
         </footer>
       </main>
+      <dialog
+        className="star-prompt-dialog"
+        ref={starDialogRef}
+        aria-labelledby="star-prompt-title"
+        aria-describedby="star-prompt-description"
+        onCancel={() => setStarPromptOpen(false)}
+      >
+        <div className="star-prompt-glyph" aria-hidden="true">★</div>
+        <p className="star-prompt-kicker">VRC TAG STUDIO · GITHUB</p>
+        <h2 id="star-prompt-title">{t("顺手给个 Star？")}</h2>
+        <p className="star-prompt-description" id="star-prompt-description">
+          {t("文件已经开始下载啦！喜欢这个小工具的话，可以去 GitHub 点颗星支持一下（")}
+        </p>
+        <div className="star-prompt-actions">
+          <a
+            className="star-prompt-primary"
+            href="https://github.com/RICHARDwuxiaofei/vrctag"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setStarPromptOpen(false)}
+          >
+            {t("去 GitHub 点 Star ↗")}
+          </a>
+          <button className="star-prompt-later" type="button" onClick={() => setStarPromptOpen(false)}>
+            {t("下次再说")}
+          </button>
+        </div>
+      </dialog>
     </>
   );
 }

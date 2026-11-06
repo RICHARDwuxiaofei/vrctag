@@ -949,3 +949,19 @@ footer a {
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;margin-top:4px}
 .site-footer a:hover{color:#d4eab8}
 @media(max-width:480px){.footer-brand span{display:block;margin:2px 0 0}.footer-meta>span{display:none}.footer-meta>a{display:block}.footer-links{flex-direction:column;gap:8px}}
+
+/* A gentle, optional GitHub Star request after the first successful export. */
+.star-prompt-dialog{width:min(420px,calc(100% - 32px));max-height:calc(100dvh - 32px);padding:30px;border:1px solid #768f7d;border-radius:22px;background:linear-gradient(150deg,#1b2d28,#141f1f 75%);color:#e5ece6;box-shadow:0 28px 85px #000a;overflow-y:auto}
+.star-prompt-dialog::backdrop{background:#050a09b8;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.star-prompt-glyph{width:54px;height:54px;display:grid;place-items:center;border:1px solid #a8c49a80;border-radius:16px;background:#a8c49a1a;color:#d5e9b4;font-size:30px}
+.star-prompt-kicker{margin:24px 0 8px;color:#a8c6ac;font:600 11px ui-monospace,monospace;letter-spacing:.13em}
+.star-prompt-dialog h2{margin:0 0 12px;font-size:clamp(22px,5vw,27px);font-weight:650;line-height:1.35}
+.star-prompt-description{margin:0;color:#b9c9bf;font-size:14px;line-height:1.8}
+.star-prompt-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.star-prompt-primary,.star-prompt-later{min-height:45px;display:inline-flex;justify-content:center;align-items:center;padding:11px 16px;border-radius:11px;text-align:center;font-size:14px;font-weight:600}
+.star-prompt-primary{flex:1.25;background:#b9d49b;color:#15231a;border:1px solid #b9d49b}
+.star-prompt-primary:hover{background:#d0e5b5}
+.star-prompt-later{flex:1;background:transparent;color:#d4dfd6;border:1px solid #5a7164}
+.star-prompt-later:hover{background:#ffffff10}
+.star-prompt-actions :is(a,button):focus-visible{outline:2px solid #dbf5af;outline-offset:3px}
+@media(max-width:420px){.star-prompt-dialog{padding:23px}.star-prompt-actions{flex-direction:column}.star-prompt-primary,.star-prompt-later{width:100%;flex:none}}
