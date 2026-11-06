@@ -645,6 +645,9 @@ function App() {
           {t("文件已经开始下载啦！喜欢这个小工具的话，可以去 GitHub 点颗星支持一下（")}
         </p>
         <div className="star-prompt-actions">
+          <button className="star-prompt-later" type="button" onClick={() => setStarPromptOpen(false)}>
+            {t("下次再说")}
+          </button>
           <a
             className="star-prompt-primary"
             href="https://github.com/RICHARDwuxiaofei/vrctag"
@@ -654,9 +657,6 @@ function App() {
           >
             {t("去 GitHub 点 Star ↗")}
           </a>
-          <button className="star-prompt-later" type="button" onClick={() => setStarPromptOpen(false)}>
-            {t("下次再说")}
-          </button>
         </div>
       </dialog>
     </>
