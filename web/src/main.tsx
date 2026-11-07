@@ -12,6 +12,7 @@ import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { LanguagePicker } from "./LanguagePicker";
 import { StyleThumbnail } from "./StyleThumbnail";
+import { scaledDimensions } from "./size-scale";
 import { takeStarPromptOpportunity } from "./star-prompt";
 import { Preview } from "./Preview";
 import {
@@ -304,6 +305,12 @@ function App() {
     !errors.length &&
     !modelError &&
     completedKey === configKey;
+  // During a new build, show target dimensions instead of stale geometry.
+  const physicalSize =
+    !busy && valid && design?.size
+      ? design.size
+      : scaledDimensions(getStyle(config.styleId).layout.size, config);
+  const mm = (value: number) => value.toFixed(2);
   return (
     <>
       <header className="topbar">
@@ -552,11 +559,56 @@ function App() {
             </div>
             <div className="preview-caption">
               <span>{getStyle(config.styleId).name}</span>
-              <span>
-                {(design?.size ?? getStyle(config.styleId).layout.size).map(v=>v.toFixed(1)).join(" × ")}{" "}
-                mm
-              </span>
+              <span>{physicalSize.map(mm).join(" × ")} mm</span>
             </div>
+            <section className="size-scaling" aria-labelledby="size-scaling-title">
+              <div className="size-scaling-heading">
+                <h3 id="size-scaling-title">{t("调整模型尺寸")}</h3>
+                <span className="size-scaling-unit">mm</span>
+              </div>
+              <div className="size-scaling-field">
+                <div className="size-scaling-label">
+                  <label htmlFor="planar-scale">{t("平面等比缩放")}</label>
+                  <output htmlFor="planar-scale">{config.planarScale ?? 100}%</output>
+                </div>
+                <input
+                  id="planar-scale"
+                  className="size-range"
+                  type="range"
+                  min={50}
+                  max={150}
+                  step={1}
+                  value={config.planarScale ?? 100}
+                  aria-describedby="planar-size-value"
+                  onChange={(e) => patch({ planarScale: Number(e.target.value) })}
+                />
+                <div className="size-scaling-millimeters" id="planar-size-value" aria-live="polite">
+                  <span>{t("长度")} <strong>{mm(physicalSize[0])} mm</strong></span>
+                  <span>{t("宽度")} <strong>{mm(physicalSize[1])} mm</strong></span>
+                </div>
+              </div>
+              <div className="size-scaling-field">
+                <div className="size-scaling-label">
+                  <label htmlFor="thickness-scale">{t("厚度缩放")}</label>
+                  <output htmlFor="thickness-scale">{config.thicknessScale ?? 100}%</output>
+                </div>
+                <input
+                  id="thickness-scale"
+                  className="size-range"
+                  type="range"
+                  min={50}
+                  max={150}
+                  step={1}
+                  value={config.thicknessScale ?? 100}
+                  aria-describedby="thickness-size-value"
+                  onChange={(e) => patch({ thicknessScale: Number(e.target.value) })}
+                />
+                <div className="size-scaling-millimeters" id="thickness-size-value" aria-live="polite">
+                  <span>{t("实际厚度")} <strong>{mm(physicalSize[2])} mm</strong></span>
+                </div>
+              </div>
+              <p className="size-scaling-hint">{t("缩小模型后请检查细字与挂环强度；导出为实际尺寸。")}</p>
+            </section>
             <div className="export-panel">
               <div className="messages" aria-live="polite">
                 {[modelError, exportError, ...errors]

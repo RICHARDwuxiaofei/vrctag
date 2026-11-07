@@ -13,6 +13,18 @@ export function parseConfig(input: unknown): Config {
   )
     throw Error("不支持的配置版本");
   const c = { ...defaults };
+  // Backwards-compatible with schema v1/v2 files without size settings.
+  for (const key of ["planarScale", "thicknessScale"] as const) {
+    const value = o[key];
+    if (
+      value !== undefined &&
+      (typeof value !== "number" ||
+        !Number.isInteger(value) ||
+        value < 50 ||
+        value > 150)
+    ) throw Error("缩放比例必须是 50–150% 的整数");
+    c[key] = value === undefined ? 100 : value as number;
+  }
   if(o.hideStatus !== undefined && typeof o.hideStatus !== "boolean") throw Error("无效状态显示设置");
   if(o.hideStatus !== undefined) c.hideStatus = o.hideStatus as boolean;
   if (
