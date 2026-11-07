@@ -66,7 +66,7 @@ export function export3mf(d: Design, c: Config, target: "core" | "bambu" = "core
       // Bundled public starting settings are included below; no printer connection or sliced toolpath is created.
       ...(target === "bambu" ? {
       "Metadata/model_settings.config": xml(`<config><object id="${assembly}"><metadata key="name" value="${escape(c.displayName)}"/><metadata key="extruder" value="1"/>${parts.map((p,i)=>`<part id="${i+2}" subtype="normal_part"><metadata key="name" value="${escape(p.name)}"/><metadata key="extruder" value="${plan.parts[i].slot+1}"/></part>`).join("")}</object><plate><metadata key="plater_id" value="1"/><metadata key="plater_name" value="VRC Tag"/><metadata key="locked" value="false"/><model_instance><metadata key="object_id" value="${assembly}"/><metadata key="instance_id" value="0"/><metadata key="identify_id" value="1"/></model_instance></plate></config>`),
-      "Metadata/project_settings.config": strToU8(JSON.stringify({...bambuProfile,filament_colour:colors,filament_settings_id:colors.map((_,i)=>(bambuProfile!.filament_settings_id as string[])[i])},null,2)),
+      "Metadata/project_settings.config": strToU8(JSON.stringify({...bambuProfile,filament_colour:colors,filament_self_index:colors.map((_,i)=>String(i+1)),filament_settings_id:colors.map((_,i)=>(bambuProfile!.filament_settings_id as string[])[i])},null,2)),
       } : {}),
       "Metadata/printing.json": strToU8(
         JSON.stringify(
