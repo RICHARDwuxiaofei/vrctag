@@ -8,9 +8,40 @@ export const MAX_SIZE_PERCENT = 150;
 /** Old configs with missing fields are treated as 100%. */
 export function scaleRatio(percent: number | undefined): number {
   const value = percent ?? 100;
-  if (!Number.isInteger(value) || value < MIN_SIZE_PERCENT || value > MAX_SIZE_PERCENT)
-    throw Error("缩放比例必须是 50–150% 的整数");
+  if (!Number.isFinite(value) || value < MIN_SIZE_PERCENT || value > MAX_SIZE_PERCENT)
+    throw Error("缩放比例必须是 50–150% 的数字");
   return value / 100;
+}
+
+/** Keep saved ratios stable, including decimals needed for 0.01 mm input. */
+export function clampScale(percent: number): number {
+  if (!Number.isFinite(percent)) throw Error("比例必须是有效数字");
+  const bounded = Math.max(MIN_SIZE_PERCENT, Math.min(MAX_SIZE_PERCENT, percent));
+  return Math.round(bounded * 1_000_000) / 1_000_000;
+}
+
+/** Convert an exact millimeter input to a ratio; X/Y share one ratio. */
+export function percentFromMillimeters(mm: number, referenceMm: number): number {
+  if (!Number.isFinite(mm) || !Number.isFinite(referenceMm) || referenceMm <= 0)
+    throw Error("毫米尺寸必须是有效正数");
+  return clampScale(mm / referenceMm * 100);
+}
+
+/**
+ * Baseline outer bounding dimensions at 100%.
+ * Without the optional hook, both capsule/round-panel styles are bounded in Y
+ * by their left/right endpoint radii rather than the ring's top.
+ */
+export function referenceDimensions(
+  style: { layout: { size: readonly number[] }; geometry: { leftRadius: number; rightRadius: number } },
+  hangingLoop = true,
+): [number, number, number] {
+  const size = style.layout.size;
+  return [
+    size[0],
+    hangingLoop ? size[1] : 2 * Math.max(style.geometry.leftRadius, style.geometry.rightRadius),
+    size[2],
+  ];
 }
 
 export function scaledDimensions(

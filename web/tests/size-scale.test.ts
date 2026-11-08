@@ -9,7 +9,7 @@ import { styles } from "../src/styles.ts";
 import { buildDesign, defaults, validateMesh, type Base } from "../src/model.ts";
 import { export3mf } from "../src/export.ts";
 import { parseConfig, configDocument } from "../src/config.ts";
-import { scaleDesignGeometry, scaledDimensions } from "../src/size-scale.ts";
+import { scaleDesignGeometry, scaledDimensions, clampScale, percentFromMillimeters, referenceDimensions } from "../src/size-scale.ts";
 
 const source = readFileSync(new URL("../public/assets/NotoSansCJKsc-Bold.otf", import.meta.url));
 const font = opentype.parse(source.buffer.slice(source.byteOffset, source.byteOffset + source.byteLength));
@@ -37,11 +37,18 @@ test("size values persist through JSON and old configs default to 100%", () => {
     assert.equal(old.thicknessScale, 100);
   }
   for (const key of ["planarScale", "thicknessScale"]) {
-    for (const val of [49, 151, 75.5, "75", null, NaN, Infinity, -1]) {
+    for (const val of [49, 151, "75", null, NaN, Infinity, -1]) {
       assert.throws(() => parseConfig({ ...defaults, [key]: val }), `${key}: ${val}`);
     }
   }
-  assert.deepEqual(scaledDimensions([134, 52, 3], { planarScale: 50, thicknessScale: 150 }), [67, 26, 4.5]);
+  assert.deepEqual(scaledDimensions([134, 52, 3.2], { planarScale: 50, thicknessScale: 150 }), [67, 26, 4.800000000000001]);
+  assert.equal(parseConfig(configDocument({ ...defaults, planarScale: 75.5, thicknessScale: 128.125 })).planarScale, 75.5);
+  assert.equal(clampScale(32), 50);
+  assert.equal(clampScale(165), 150);
+  assert.equal(percentFromMillimeters(100.01, 134), 74.634328);
+  assert(Math.abs(134 * percentFromMillimeters(100.01, 134) / 100 - 100.01) < 0.00001);
+  assert.deepEqual(referenceDimensions(styles.find(s=>s.id==="native")!, false), [120, 40, 3.9]);
+  assert.deepEqual(referenceDimensions(styles.find(s=>s.id==="classic")!, false), [134, 52, 3.2]);
 });
 
 for (const style of styles) {

@@ -19,10 +19,10 @@ export function parseConfig(input: unknown): Config {
     if (
       value !== undefined &&
       (typeof value !== "number" ||
-        !Number.isInteger(value) ||
+        !Number.isFinite(value) ||
         value < 50 ||
         value > 150)
-    ) throw Error("缩放比例必须是 50–150% 的整数");
+    ) throw Error("缩放比例必须在 50–150% 之间");
     c[key] = value === undefined ? 100 : value as number;
   }
   if(o.hideStatus !== undefined && typeof o.hideStatus !== "boolean") throw Error("无效状态显示设置");
