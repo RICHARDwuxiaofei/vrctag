@@ -41,7 +41,10 @@ test("size values persist through JSON and old configs default to 100%", () => {
       assert.throws(() => parseConfig({ ...defaults, [key]: val }), `${key}: ${val}`);
     }
   }
-  assert.deepEqual(scaledDimensions([134, 52, 3.2], { planarScale: 50, thicknessScale: 150 }), [67, 26, 4.800000000000001]);
+  const scaled = scaledDimensions([134, 52, 3.2], { planarScale: 50, thicknessScale: 150 });
+  near(scaled[0], 67);
+  near(scaled[1], 26);
+  near(scaled[2], 4.8);
   assert.equal(parseConfig(configDocument({ ...defaults, planarScale: 75.5, thicknessScale: 128.125 })).planarScale, 75.5);
   assert.equal(clampScale(32), 50);
   assert.equal(clampScale(165), 150);
