@@ -34,7 +34,7 @@ for(const style of styles) {
     close(bottom,style.geometry.bodyTop);
     close(top,expectedTop);
     close(top-bottom,0.6);
-    const config={...defaults,styleId:style.id,pronouns:"They/Them"};
+    const config={...defaults,styleId:style.id,pronouns:"They/Them",hideStatus:false};
     const design=buildDesign(config,base,font);
     assert.deepEqual(design.errors,[]);
     for(const name of ["Name","Pronouns","Status_Text"]) {
