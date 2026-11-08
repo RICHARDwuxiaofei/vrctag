@@ -1,6 +1,6 @@
 # Cloudflare Pages 静态部署准备
 
-2026-11-09 PR #7 当前验收：隔离 Node 22.23.4、65/65 单元测试、17/17 指定测试、双样式各 43/43；32 GLB 下载及 Blender 导入、64 份 3MF 严格验证通过。175 个静态文件逐项 HTTP/哈希核对通过。公开 Beta 技术准备 GO，等待批准合并；未实际部署，线上 HTTPS/CDN 验收 NOT_TESTED。以 [PR7_FINAL_ACCEPTANCE.md](PR7_FINAL_ACCEPTANCE.md) 为本轮结果，下面较早测试数量仅为历史记录。
+2026-11-09 PR #7 当前验收：隔离 Node 22.23.4、65/65 单元测试、17/17 指定测试、双样式各 43/43；32 GLB 下载及 Blender 导入、64 份 3MF 严格验证通过。175 个静态文件逐项 HTTP/哈希核对通过。公开 Beta 技术准备 GO，等待批准合并；现有 Git 集成已自动发布 PR Preview，真实 HTTPS 六次下载、Worker/字体/模型和缓存检查 PASS，正式 main 未部署。以 [PR7_FINAL_ACCEPTANCE.md](PR7_FINAL_ACCEPTANCE.md) 为本轮结果，下面较早测试数量仅为历史记录。
 
 2026-11-05 更新：Preview 技术准备 PASS。隔离 Node 22.23.4 构建、39/39、双样式 43/43、完整静态 HTTP 和真实 Chrome 无头冒烟通过。可以在用户授权后创建小范围 Preview；正式打印 NOT_TESTED、完整 GUI PARTIAL。未连接账号、创建项目、部署或修改 DNS。详见 BLENDER_WINDOWS_ACCEPTANCE.md。
 

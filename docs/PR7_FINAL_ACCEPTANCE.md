@@ -1,6 +1,6 @@
 # PR #7 final acceptance — 2026-11-09
 
-Verdict: **GO for public Beta; ready for human-approved merge.** No main merge, Cloudflare account connection, deployment, DNS change or printer operation was performed.
+Verdict: **GO for public Beta; ready for human-approved merge.** No main merge, Cloudflare account connection, manual deployment, DNS change or printer operation was performed. The pre-existing Git integration automatically published a PR Preview after the authorized push.
 
 Tested implementation commit: `ac8849b8c0b7abeaa39067d0f1d97b0ab13bac09`, on `feat/integrate-relief-and-precise-sizing`, based on `fb9160c`. The follow-up commit only adds acceptance and diagnostic documentation. PR #3 and #6 were not merged separately. See the per-file results in [acceptance/PR7_2026-11-09.json](acceptance/PR7_2026-11-09.json).
 
@@ -45,7 +45,7 @@ The original user's unspecified “cannot export” report remains **NOT_REPRODU
 
 Cloudflare Git integration: repo `RICHARDwuxiaofei/vrctag`; production branch main **after approved merge**; root `web`; build `npm run build`; output `dist`; `NODE_VERSION=22`. Keep `_headers` no-cache policy for unhashed model/font catalogs and normal browser Worker. No GitHub Actions, backend model generation, VPS, Functions, R2, KV or D1 added. The package passes the current 20,000-file / 25MiB-file limits at https://developers.cloudflare.com/pages/platform/limits/ .
 
-Actual hosted HTTPS/CDN cache and download behavior is **NOT_TESTED**, because deployment was explicitly excluded. This is an environmental verification boundary, not a known code blocker. No broad cross-browser or printer certification is claimed. Public Preview links can be publicly accessible. See CLOUDFLARE_PAGES_DEPLOY.md for dashboard configuration and rollback.
+Post-push verification: the existing Cloudflare Pages integration successfully published commit `6f30c69` at https://9e6f5e52.vrctag.pages.dev . Real Chrome HTTPS checks **PASS** for both styles and all three formats (six additional Blob downloads), Worker/font/model requests, no Console/network errors, exact Native model identity and no-cache response policy. This was an automatic PR Preview, not main production deployment. No broad cross-browser or printer certification is claimed. Public Preview links can be publicly accessible. See CLOUDFLARE_PAGES_DEPLOY.md for dashboard configuration and rollback.
 
 First-party software MIT; current first-party Classic/Native models CC BY 4.0. Third-party Bambu preset data retains its separate upstream license and shipped notices; fonts/dependencies/history retain their own notices. No license boundary changed in this work.
 
@@ -55,4 +55,4 @@ Full logs: `D:/CODE/vrctag/test-exports/pr7-final/` (npm-ci.log, final-check.log
 
 Curated counts, dimensions and final-log SHA256 hashes are checked in under docs/acceptance; large local evidence is ignored. Earlier failed exploratory logs are retained, superseded by the final passing artifacts above. All software test commands were rerun after the code fixes.
 
-**Known code blockers to this defined public Beta: 0.** PR #7 may be merged after owner approval. Original reporter reproduction, deployed HTTPS behavior and physical printing remain explicitly separate validation boundaries. Do not merge PR #3/#6 independently or call this universal printing certification.
+**Known code blockers to this defined public Beta: 0.** PR #7 may be merged after owner approval. Original reporter reproduction, production/custom-domain behavior and physical printing remain explicitly separate validation boundaries. Do not merge PR #3/#6 independently or call this universal printing certification.

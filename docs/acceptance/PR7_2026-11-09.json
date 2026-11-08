@@ -802,5 +802,51 @@
     "final-test.log": "c512812f18b0fdaa59614df4426319e3edfd78fb7e6633c1d0863b94d5308d53",
     "npm-ci.log": "f30977aa474a4fabd5a5ce087b829d4552a0e1a05399ac9a6b1d904125492b1a",
     "render.log": "f9c01cd90944f320909b08fab08e3fda385c600eae308cb434441daa347b8c67"
+  },
+  "httpsPreview": {
+    "url": "https://9e6f5e52.vrctag.pages.dev",
+    "status": "PASS",
+    "rows": [
+      {
+        "styleId": "classic",
+        "fmt": "blender",
+        "bytes": 182168,
+        "status": "PASS"
+      },
+      {
+        "styleId": "classic",
+        "fmt": "core",
+        "bytes": 104843,
+        "status": "PASS"
+      },
+      {
+        "styleId": "classic",
+        "fmt": "bambu",
+        "bytes": 114139,
+        "status": "PASS"
+      },
+      {
+        "styleId": "native",
+        "fmt": "blender",
+        "bytes": 91020,
+        "status": "PASS"
+      },
+      {
+        "styleId": "native",
+        "fmt": "core",
+        "bytes": 50410,
+        "status": "PASS"
+      },
+      {
+        "styleId": "native",
+        "fmt": "bambu",
+        "bytes": 59670,
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "modelMatches": true,
+    "cacheControl": "no-cache",
+    "verifiedCommit": "6f30c69e2b1755eceb36cb5b39ea41f445196df9"
   }
 }
