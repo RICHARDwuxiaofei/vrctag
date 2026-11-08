@@ -9,6 +9,8 @@ export async function exportBlender(design: Design, avatar: string): Promise<Arr
   const tag = new THREE.Group();
   tag.name = "VRC_Tag";
   tag.scale.setScalar(0.001);
+  // Model is Z-up; glTF is Y-up. Blender restores this to an XY print bed.
+  tag.rotation.x = -Math.PI / 2;
   scene.add(tag);
   try {
     for (const part of design.parts) {

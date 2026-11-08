@@ -46,6 +46,7 @@ export const statusLabels: Record<Language, Record<string, string>> = {
 // Busy is the legacy API identifier for red Do Not Disturb; orange Ask Me is Chinese 忙碌.
 // Japanese wording is retained pending a current primary-source/client verification.
 const rows: Record<string, [string, string, string]> = {
+  "厚度缩小会同时降低文字和状态灯浮雕；50% 时为 0.3 mm，请按实际层高检查切片。缩放不保证可打印。": ["厚さを縮小すると文字とステータス点の高さも低下します。50%では0.3 mmです。レイヤー高さを確認してください。印刷を保証するものではありません。", "두께를 줄이면 글자와 상태 점의 돌출도 낮아집니다. 50%에서는 0.3 mm입니다. 레이어 높이를 확인하세요. 출력 가능성을 보장하지 않습니다.", "Reducing thickness also lowers text and status relief: 0.3 mm at 50%. Check your layer height and slicing. Scaling does not guarantee printability."],
   "Blender（GLB，含颜色与头像）": ["Blender（GLB・色と画像を含む）", "Blender (GLB, 색상과 이미지 포함)", "Blender (GLB, colors & avatar)"],
   "下载 Blender GLB": ["Blender GLBを保存", "Blender GLB 다운로드", "Download Blender GLB"],
   "Blender 导出失败，请重试。": ["Blender用の保存に失敗しました。再試行してください。", "Blender 내보내기에 실패했습니다. 다시 시도하세요.", "Blender export failed. Please retry."],

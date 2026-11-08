@@ -7,13 +7,15 @@
 
 ---
 
+At 100% scale, text and status-dot relief is 0.6 mm. Native measures 120 × 46.5 × 3.9 mm with its loop and 120 × 40 × 3.9 mm without it. XY scales together; Z scales independently (50–150%). GLB includes mesh colors and an optional avatar texture; import via Blender File → Import → glTF 2.0, then save as .blend. 3MF contains geometry/material assignments and still requires slicing for your own printer.
+
 ## Choose your style
 
 | Classic · Large Avatar | Native · VRChat Style |
 | :---: | :---: |
 | ![Classic](web/public/assets/styles/classic/default-front.png) | ![Native](web/public/assets/styles/native/default-front.png) |
 | Large avatar, white rim, white core with black face | Compact capsule and dark solid body |
-| **134 × 52 × 3.0 mm** | **118 × 45.6 × 3.7 mm** |
+| **134 × 52 × 3.2 mm** | **120 × 46.5 × 3.9 mm** |
 
 *Preview images are model renders. Colors and dimensions are subject to the selected configuration.*
 

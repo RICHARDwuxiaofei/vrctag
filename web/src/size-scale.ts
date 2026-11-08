@@ -72,6 +72,8 @@ export function scaleDesignGeometry(
     Object.entries(design.textHeights).map(([name, mm]) => [name, mm * xy]),
   );
   const warnings = [...design.warnings];
+  if (z < 1)
+    warnings.push("厚度缩小会同时降低文字和状态灯浮雕；50% 时为 0.3 mm，请按实际层高检查切片。缩放不保证可打印。");
   // Shrinking can make glyphs unprintable without making the 3D mesh invalid.
   if (xy < 1 && Object.values(textHeights).some((mm) => mm < minimumTextHeight))
     warnings.push("缩小后小字可能无法打印，请在切片软件检查细节。");

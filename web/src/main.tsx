@@ -31,8 +31,10 @@ function download(data: BlobPart, name: string, type: string) {
   const a = document.createElement("a");
   a.href = url;
   a.download = name;
+  document.body.appendChild(a);
   a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
 }
 function App() {
   const [config, setConfig] = useState<Config>(() => ({
@@ -189,7 +191,8 @@ function App() {
         const { exportBlender } = await import("./blender-export");
         download(await exportBlender(snapshot, photo), `vrc-tag-${config.styleId}-${name}.glb`, "model/gltf-binary");
         promptStarAfterExport();
-      } catch {
+      } catch (error) {
+        console.error("VRC Tag Studio Blender GLB export failed", error);
         setExportError("Blender 导出失败，请重试。");
       } finally { blenderExportBusy.current = false; setExporting(false); }
       return;

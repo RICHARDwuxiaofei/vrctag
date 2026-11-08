@@ -18,7 +18,7 @@ import { export3mf } from "../src/export.ts";
 const reviewStyle = process.env.REVIEW_STYLE ?? "classic";
 if (!["classic", "native"].includes(reviewStyle))
   throw Error("Unknown diagnostic style");
-const expectedName = reviewStyle === "classic" ? "#edc448" : "#f3f6ed";
+const expectedName = reviewStyle === "classic" ? "#e7e8ec" : "#ffffff";
 const out = new URL(
   process.env.VRC_TEST_EVIDENCE_URL ?? "../test-results/",
   import.meta.url,

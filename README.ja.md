@@ -7,13 +7,15 @@
 
 ---
 
+100%では文字とステータス点のレリーフは0.6 mmです。Nativeはループ付き120 × 46.5 × 3.9 mm、なし120 × 40 × 3.9 mmです。XYは等比、Zは独立して50–150%に調整できます。GLBは色と任意の画像を含み、Blenderのファイル → インポート → glTF 2.0から開いて.blendとして保存できます。3MFは使用するプリンターに合わせたスライスが必要です。
+
 ## スタイルを選ぶ
 
 | Classic · Large Avatar | Native · VRChat Style |
 | :---: | :---: |
 | ![Classic](web/public/assets/styles/classic/default-front.png) | ![Native](web/public/assets/styles/native/default-front.png) |
 | 大きなアバター、白い縁、白い芯と黒い表面 | コンパクトなカプセル形状、暗色の本体 |
-| **134 × 52 × 3.0 mm** | **118 × 45.6 × 3.7 mm** |
+| **134 × 52 × 3.2 mm** | **120 × 46.5 × 3.9 mm** |
 
 *画像はモデルの参考レンダリングです。色や寸法は設定によって変わる場合があります。*
 

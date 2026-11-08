@@ -1,0 +1,806 @@
+{
+  "date": "2026-11-09",
+  "baseline": "fb9160c",
+  "node": "22.23.4 (isolated)",
+  "blender": "5.2.3",
+  "lib3mf": "2.5.0",
+  "unit": {
+    "pass": 65,
+    "total": 65
+  },
+  "targeted": {
+    "pass": 17,
+    "total": 17
+  },
+  "classicReview": "43/43",
+  "nativeReview": "43/43",
+  "python": "12/12",
+  "GLB": [
+    {
+      "id": "classic-avatar0-hook0-s50",
+      "status": "PASS",
+      "expectedMm": [
+        67.0,
+        26.0,
+        1.6
+      ],
+      "GLBbytes": 200436,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar0-hook0-s100",
+      "status": "PASS",
+      "expectedMm": [
+        134.0,
+        52.0,
+        3.2
+      ],
+      "GLBbytes": 200440,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar0-hook0-s150",
+      "status": "PASS",
+      "expectedMm": [
+        201.0,
+        78.0,
+        4.800000000000001
+      ],
+      "GLBbytes": 200440,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar0-hook1-s50",
+      "status": "PASS",
+      "expectedMm": [
+        67.0,
+        26.0,
+        1.6
+      ],
+      "GLBbytes": 210684,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar0-hook1-s100",
+      "status": "PASS",
+      "expectedMm": [
+        134.0,
+        52.0,
+        3.2
+      ],
+      "GLBbytes": 210688,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar0-hook1-s150",
+      "status": "PASS",
+      "expectedMm": [
+        201.0,
+        78.0,
+        4.800000000000001
+      ],
+      "GLBbytes": 210688,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar1-hook0-s50",
+      "status": "PASS",
+      "expectedMm": [
+        67.0,
+        26.0,
+        1.6
+      ],
+      "GLBbytes": 234212,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar1-hook0-s100",
+      "status": "PASS",
+      "expectedMm": [
+        134.0,
+        52.0,
+        3.2
+      ],
+      "GLBbytes": 234220,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar1-hook0-s150",
+      "status": "PASS",
+      "expectedMm": [
+        201.0,
+        78.0,
+        4.800000000000001
+      ],
+      "GLBbytes": 234208,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar1-hook1-s50",
+      "status": "PASS",
+      "expectedMm": [
+        67.0,
+        26.0,
+        1.6
+      ],
+      "GLBbytes": 244460,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar1-hook1-s100",
+      "status": "PASS",
+      "expectedMm": [
+        134.0,
+        52.0,
+        3.2
+      ],
+      "GLBbytes": 244468,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-avatar1-hook1-s150",
+      "status": "PASS",
+      "expectedMm": [
+        201.0,
+        78.0,
+        4.800000000000001
+      ],
+      "GLBbytes": 244460,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar0-hook0-s50",
+      "status": "PASS",
+      "expectedMm": [
+        60.0,
+        20.0,
+        1.95
+      ],
+      "GLBbytes": 127692,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar0-hook0-s100",
+      "status": "PASS",
+      "expectedMm": [
+        120.0,
+        40.0,
+        3.9
+      ],
+      "GLBbytes": 127700,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar0-hook0-s150",
+      "status": "PASS",
+      "expectedMm": [
+        180.0,
+        60.0,
+        5.85
+      ],
+      "GLBbytes": 127692,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar0-hook1-s50",
+      "status": "PASS",
+      "expectedMm": [
+        60.0,
+        23.25,
+        1.95
+      ],
+      "GLBbytes": 137948,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar0-hook1-s100",
+      "status": "PASS",
+      "expectedMm": [
+        120.0,
+        46.5,
+        3.9
+      ],
+      "GLBbytes": 137952,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar0-hook1-s150",
+      "status": "PASS",
+      "expectedMm": [
+        180.0,
+        69.75,
+        5.85
+      ],
+      "GLBbytes": 137948,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar1-hook0-s50",
+      "status": "PASS",
+      "expectedMm": [
+        60.0,
+        20.0,
+        1.95
+      ],
+      "GLBbytes": 167380,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar1-hook0-s100",
+      "status": "PASS",
+      "expectedMm": [
+        120.0,
+        40.0,
+        3.9
+      ],
+      "GLBbytes": 167388,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar1-hook0-s150",
+      "status": "PASS",
+      "expectedMm": [
+        180.0,
+        60.0,
+        5.85
+      ],
+      "GLBbytes": 167380,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar1-hook1-s50",
+      "status": "PASS",
+      "expectedMm": [
+        60.0,
+        23.25,
+        1.95
+      ],
+      "GLBbytes": 177636,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar1-hook1-s100",
+      "status": "PASS",
+      "expectedMm": [
+        120.0,
+        46.5,
+        3.9
+      ],
+      "GLBbytes": 177644,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-avatar1-hook1-s150",
+      "status": "PASS",
+      "expectedMm": [
+        180.0,
+        69.75,
+        5.85
+      ],
+      "GLBbytes": 177636,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-xy75-z100",
+      "status": "PASS",
+      "expectedMm": [
+        100.5,
+        39.0,
+        3.2
+      ],
+      "GLBbytes": 210160,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-xy125-z100",
+      "status": "PASS",
+      "expectedMm": [
+        167.5,
+        65.0,
+        3.2
+      ],
+      "GLBbytes": 209972,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-xy75-z100",
+      "status": "PASS",
+      "expectedMm": [
+        90.0,
+        34.875,
+        3.9
+      ],
+      "GLBbytes": 124904,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-xy125-z100",
+      "status": "PASS",
+      "expectedMm": [
+        150.0,
+        58.125,
+        3.9
+      ],
+      "GLBbytes": 124772,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-exact-length",
+      "status": "PASS",
+      "expectedMm": [
+        100.00999952,
+        38.809850559999994,
+        2.1100000000000003
+      ],
+      "GLBbytes": 176688,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "classic-exact-width",
+      "status": "PASS",
+      "expectedMm": [
+        77.33346092,
+        30.00999976,
+        2.1100000000000003
+      ],
+      "GLBbytes": 176700,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-exact-length",
+      "status": "PASS",
+      "expectedMm": [
+        100.0100004,
+        38.753875154999996,
+        2.109999996
+      ],
+      "GLBbytes": 85360,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    },
+    {
+      "id": "native-exact-width",
+      "status": "PASS",
+      "expectedMm": [
+        77.4451608,
+        30.00999981,
+        2.109999996
+      ],
+      "GLBbytes": 85352,
+      "core": "PASS",
+      "bambu": "PASS",
+      "lib3mf": "PASS"
+    }
+  ],
+  "blenderImports": [
+    {
+      "id": "classic-avatar0-hook0-s50",
+      "status": "PASS",
+      "sizeMm": [
+        67.00000166893005,
+        26.0000042617321,
+        1.6000028703989644
+      ],
+      "meshCount": 8,
+      "avatarTexture": false
+    },
+    {
+      "id": "classic-avatar0-hook0-s100",
+      "status": "PASS",
+      "sizeMm": [
+        134.0000033378601,
+        52.0000085234642,
+        3.2000057407979288
+      ],
+      "meshCount": 8,
+      "avatarTexture": false
+    },
+    {
+      "id": "classic-avatar0-hook0-s150",
+      "status": "PASS",
+      "sizeMm": [
+        201.00001245737076,
+        78.000009059906,
+        4.800008727612326
+      ],
+      "meshCount": 8,
+      "avatarTexture": false
+    },
+    {
+      "id": "classic-avatar0-hook1-s50",
+      "status": "PASS",
+      "sizeMm": [
+        67.00000166893005,
+        26.0000042617321,
+        1.6000028703989644
+      ],
+      "meshCount": 9,
+      "avatarTexture": false
+    },
+    {
+      "id": "classic-avatar0-hook1-s100",
+      "status": "PASS",
+      "sizeMm": [
+        134.0000033378601,
+        52.0000085234642,
+        3.2000057407979288
+      ],
+      "meshCount": 9,
+      "avatarTexture": false
+    },
+    {
+      "id": "classic-avatar0-hook1-s150",
+      "status": "PASS",
+      "sizeMm": [
+        201.00001245737076,
+        78.000009059906,
+        4.800008727612326
+      ],
+      "meshCount": 9,
+      "avatarTexture": false
+    },
+    {
+      "id": "classic-avatar1-hook0-s50",
+      "status": "PASS",
+      "sizeMm": [
+        67.00000166893005,
+        26.0000042617321,
+        1.6000028703989644
+      ],
+      "meshCount": 8,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-avatar1-hook0-s100",
+      "status": "PASS",
+      "sizeMm": [
+        134.0000033378601,
+        52.0000085234642,
+        3.2000057407979288
+      ],
+      "meshCount": 8,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-avatar1-hook0-s150",
+      "status": "PASS",
+      "sizeMm": [
+        201.00001245737076,
+        78.000009059906,
+        4.800008727612326
+      ],
+      "meshCount": 8,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-avatar1-hook1-s50",
+      "status": "PASS",
+      "sizeMm": [
+        67.00000166893005,
+        26.0000042617321,
+        1.6000028703989644
+      ],
+      "meshCount": 9,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-avatar1-hook1-s100",
+      "status": "PASS",
+      "sizeMm": [
+        134.0000033378601,
+        52.0000085234642,
+        3.2000057407979288
+      ],
+      "meshCount": 9,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-avatar1-hook1-s150",
+      "status": "PASS",
+      "sizeMm": [
+        201.00001245737076,
+        78.000009059906,
+        4.800008727612326
+      ],
+      "meshCount": 9,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-avatar0-hook0-s50",
+      "status": "PASS",
+      "sizeMm": [
+        60.00000238418579,
+        20.000003278255463,
+        1.9500026876733134
+      ],
+      "meshCount": 6,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-avatar0-hook0-s100",
+      "status": "PASS",
+      "sizeMm": [
+        120.00000476837158,
+        40.000006556510925,
+        3.900005375346627
+      ],
+      "meshCount": 6,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-avatar0-hook0-s150",
+      "status": "PASS",
+      "sizeMm": [
+        180.00000715255737,
+        60.00000983476639,
+        5.850008063020162
+      ],
+      "meshCount": 6,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-avatar0-hook1-s50",
+      "status": "PASS",
+      "sizeMm": [
+        60.00000238418579,
+        23.250004276633263,
+        1.9500031243395721
+      ],
+      "meshCount": 7,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-avatar0-hook1-s100",
+      "status": "PASS",
+      "sizeMm": [
+        120.00000476837158,
+        46.500008553266525,
+        3.9000062486791442
+      ],
+      "meshCount": 7,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-avatar0-hook1-s150",
+      "status": "PASS",
+      "sizeMm": [
+        180.00000715255737,
+        69.75001096725464,
+        5.850009373018938
+      ],
+      "meshCount": 7,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-avatar1-hook0-s50",
+      "status": "PASS",
+      "sizeMm": [
+        60.00000238418579,
+        20.000003278255463,
+        1.9500026876733134
+      ],
+      "meshCount": 6,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-avatar1-hook0-s100",
+      "status": "PASS",
+      "sizeMm": [
+        120.00000476837158,
+        40.000006556510925,
+        3.900005375346627
+      ],
+      "meshCount": 6,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-avatar1-hook0-s150",
+      "status": "PASS",
+      "sizeMm": [
+        180.00000715255737,
+        60.00000983476639,
+        5.850008063020162
+      ],
+      "meshCount": 6,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-avatar1-hook1-s50",
+      "status": "PASS",
+      "sizeMm": [
+        60.00000238418579,
+        23.250004276633263,
+        1.9500031243395721
+      ],
+      "meshCount": 7,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-avatar1-hook1-s100",
+      "status": "PASS",
+      "sizeMm": [
+        120.00000476837158,
+        46.500008553266525,
+        3.9000062486791442
+      ],
+      "meshCount": 7,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-avatar1-hook1-s150",
+      "status": "PASS",
+      "sizeMm": [
+        180.00000715255737,
+        69.75001096725464,
+        5.850009373018938
+      ],
+      "meshCount": 7,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-xy75-z100",
+      "status": "PASS",
+      "sizeMm": [
+        100.50000622868538,
+        39.000004529953,
+        3.200004401804124
+      ],
+      "meshCount": 8,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-xy125-z100",
+      "status": "PASS",
+      "sizeMm": [
+        167.50000417232513,
+        65.0000125169754,
+        3.200006846961312
+      ],
+      "meshCount": 8,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-xy75-z100",
+      "status": "PASS",
+      "sizeMm": [
+        90.00000357627869,
+        34.87500548362732,
+        3.9000048928905517
+      ],
+      "meshCount": 5,
+      "avatarTexture": true
+    },
+    {
+      "id": "native-xy125-z100",
+      "status": "PASS",
+      "sizeMm": [
+        150.00000596046448,
+        58.12500976026058,
+        3.900007604467959
+      ],
+      "meshCount": 5,
+      "avatarTexture": true
+    },
+    {
+      "id": "classic-exact-length",
+      "status": "PASS",
+      "sizeMm": [
+        100.01000016927719,
+        38.80985453724861,
+        2.1100042383046524
+      ],
+      "meshCount": 8,
+      "avatarTexture": false
+    },
+    {
+      "id": "classic-exact-width",
+      "status": "PASS",
+      "sizeMm": [
+        77.333465218544,
+        30.010005459189415,
+        2.110003414305117
+      ],
+      "meshCount": 8,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-exact-length",
+      "status": "PASS",
+      "sizeMm": [
+        100.01000761985779,
+        38.75388205051422,
+        2.1100050641307266
+      ],
+      "meshCount": 5,
+      "avatarTexture": false
+    },
+    {
+      "id": "native-exact-width",
+      "status": "PASS",
+      "sizeMm": [
+        77.44516432285309,
+        30.010003596544266,
+        2.1100039289496664
+      ],
+      "meshCount": 5,
+      "avatarTexture": false
+    }
+  ],
+  "lib3mfStrictFiles": 64,
+  "lib3mfWarnings": 0,
+  "staticHTTPFiles": 175,
+  "maxStaticBytes": 1199625,
+  "logHashes": {
+    "blender-import.log": "c011712ba5f6e219e03088d991b3b5c8aac9e5460bd244a79c8543d83c2629d1",
+    "file-audit-extra.log": "b652d9bddd01ced585231310dbb25c952a640bd32f1f4228c62abaf5a6ecbeea",
+    "final-build.log": "e9177cfd851dd9bf2b30a01dd135aafd5f6aee5c61027309909098c79f24e628",
+    "final-check.log": "5303bcba38f76668038288101a4c88f560b407dcd07a09a69f54aa23dcbe0172",
+    "final-review-native.log": "2835da2980d4514993f1f15895671887595eb49f791b257d90757fdac0e9aad7",
+    "final-targeted.log": "3b1ca105437c6b4c27b59166f8352f8328bd3b7168db9a77165f142f2725dab5",
+    "final-test-review.log": "727537123fc23c7d54ef8aca8e68205b789e768486b7b7d14e622879e8e7eb5b",
+    "final-test.log": "c512812f18b0fdaa59614df4426319e3edfd78fb7e6633c1d0863b94d5308d53",
+    "npm-ci.log": "f30977aa474a4fabd5a5ce087b829d4552a0e1a05399ac9a6b1d904125492b1a",
+    "render.log": "f9c01cd90944f320909b08fab08e3fda385c600eae308cb434441daa347b8c67"
+  }
+}
