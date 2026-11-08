@@ -981,3 +981,15 @@ footer a {
 .size-scaling-millimeters strong{margin-left:5px;color:#e0eae2;font:600 12px ui-monospace,monospace;font-variant-numeric:tabular-nums}
 .size-scaling-hint{margin:18px 0 0;color:#81988c;font-size:11px;line-height:1.65}
 @media(max-width:600px){.size-scaling{padding:20px 19px}.size-scaling-millimeters{gap:6px 16px}}
+
+/* Direct numeric size controls — paired millimeter fields share the XY ratio. */
+.size-numeric{display:inline-flex;align-items:center;min-width:0;max-width:100%;overflow:hidden;white-space:nowrap;border-radius:10px;border:1px solid #486355;background:#101b1a;color:#bbceb9}
+.size-numeric:focus-within{border-color:#bddca1;box-shadow:0 0 0 2px #bddca126}
+.size-numeric input[type="number"]{font:600 13px ui-monospace,monospace;font-variant-numeric:tabular-nums;color:#e5f0dc;background:transparent;border:0;min-width:0;width:104px;max-width:100%;padding:9px 4px 9px 12px;outline:none;text-align:right}
+.size-numeric>span{flex:none;padding:0 11px 0 5px;font-size:11px;color:#9fb8a5}
+.size-measure{display:flex;align-items:center;gap:10px;min-width:0}
+.size-measure label{font-size:12px;color:#afc4b3;flex:none}
+.size-scaling-millimeters{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px}
+.size-scaling-label>.size-numeric{flex:none}
+.size-scaling-hint+.size-scaling-hint{margin-top:6px}
+@media(max-width:420px){.size-scaling-unit{font-size:10px}.size-numeric input[type="number"]{width:88px;padding-left:7px}.size-measure{gap:7px}.size-scaling-millimeters{gap:10px}}
