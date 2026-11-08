@@ -18,7 +18,7 @@ const near = (actual: number, expected: number, tolerance = 1e-4) =>
 test("Native has equal 40 mm end heights, parallel sides and matching bounds", () => {
   assert.equal(style.geometry.leftRadius, 20);
   assert.equal(style.geometry.rightRadius, 20);
-  assert.deepEqual(style.layout.size, [120, 46.5, 3.7]);
+  assert.deepEqual(style.layout.size, [120, 46.5, 3.9]);
   assert.deepEqual(base.layout.size, style.layout.size);
   const body = base.parts.find((p) => p.name === "Plate_Body")!;
   const ys = (left: boolean) =>
@@ -30,7 +30,7 @@ test("Native has equal 40 mm end heights, parallel sides and matching bounds", (
   const all = base.parts.flatMap((p) => p.vertices);
   const dimension = (axis: number) =>
     Math.max(...all.map((p) => p[axis])) - Math.min(...all.map((p) => p[axis]));
-  [120, 46.5, 3.7].forEach((mm, axis) => near(dimension(axis), mm));
+  [120, 46.5, 3.9].forEach((mm, axis) => near(dimension(axis), mm));
   for (const part of base.parts) assert(validateMesh(part).valid, part.name);
 });
 
@@ -42,7 +42,7 @@ test("Native thumbnail, Blender GLB and 3MF use the corrected outline", async ()
   const glb = await new GLTFLoader().parseAsync(f.buffer.slice(f.byteOffset, f.byteOffset + f.byteLength), "");
   const extent = new THREE.Box3().setFromObject(glb.scene).getSize(new THREE.Vector3());
   near(extent.x * 1000, 120);
-  near(extent.y * 1000, 3.7);
+  near(extent.y * 1000, 3.9);
   near(extent.z * 1000, 46.5);
   const fontFile = readFileSync(new URL("../public/assets/NotoSansCJKsc-Bold.otf", import.meta.url));
   const font = opentype.parse(fontFile.buffer.slice(fontFile.byteOffset,fontFile.byteOffset+fontFile.byteLength));
