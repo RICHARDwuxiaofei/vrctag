@@ -4,6 +4,7 @@ import { statusLabels, type Language } from "./i18n";
 import { getStyle, defaultStyleId } from "./styles";
 import { sampledStroke } from "./printability";
 import { validateMesh } from "./mesh-validation";
+import { scaleDesignGeometry } from "./size-scale";
 export { validateMesh } from "./mesh-validation";
 import ClipperLib from "clipper-lib";
 import * as THREE from "three";
@@ -78,6 +79,10 @@ export interface Config {
   statusMode?: "preset" | "custom";
   hideStatus?: boolean;
   printMode?: "cfs4" | "visual";
+  /** Locked X/Y size as a percent of the original. */
+  planarScale?: number;
+  /** Separate Z thickness percent. */
+  thicknessScale?: number;
   filamentColors?: string[];
   materialSlots?: Record<string, number>;
   displayName: string;
@@ -91,6 +96,8 @@ export const defaults: Config = {
   styleId: defaultStyleId,
   hangingLoop: true,
   printMode: "cfs4",
+  planarScale: 100,
+  thicknessScale: 100,
   displayName: "Nagikokoro",
   friend: false,
   status: "Online",
@@ -510,12 +517,15 @@ export function buildDesign(
     if (part) d.parts.push(part);
   }
   if (d.errors.length) return d;
-  for (const p of d.parts) {
+  // The complete generated mesh is scaled once. Preview, 3MF and GLB all
+  // consume these same real-world millimeter coordinates.
+  const scaled = scaleDesignGeometry(d, c, base.layout.textRules.minimumHeight);
+  for (const p of scaled.parts) {
     const report = validateMesh(p);
     if (!report.valid)
-      d.errors.push(
+      scaled.errors.push(
         `${p.name}: 网格无效 (${report.badEdges} 条异常边，${report.degenerate} 个退化面；${report.issues.join("; ")})。`,
       );
   }
-  return d;
+  return scaled;
 }
