@@ -7,13 +7,15 @@
 
 ---
 
+100% 时文字和状态灯浮雕均为 0.6 mm。Native 带挂环 120 × 46.5 × 3.9 mm，不带挂环 120 × 40 × 3.9 mm。长宽联动、厚度独立缩放（50–150%）。GLB 包含网格颜色和可选头像贴图，在 Blender 中通过“文件 → 导入 → glTF 2.0”打开后可另存 .blend。3MF 仍须按自己的打印机和耗材切片。
+
 ## 选择名牌样式
 
 | Classic · Large Avatar | Native · VRChat Style |
 | :---: | :---: |
 | ![Classic](web/public/assets/styles/classic/default-front.png) | ![Native](web/public/assets/styles/native/default-front.png) |
 | 大头像、白色边框、白芯黑面 | 紧凑胶囊造型、深色实体底板 |
-| **134 × 52 × 3.0 mm** | **118 × 45.6 × 3.7 mm** |
+| **134 × 52 × 3.2 mm** | **120 × 46.5 × 3.9 mm** |
 
 *图片是模型参考渲染，实际颜色和尺寸以当前设计配置为准。*
 

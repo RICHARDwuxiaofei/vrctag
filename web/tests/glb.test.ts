@@ -5,6 +5,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import * as THREE from "three";
+import { getStyle } from "../src/styles.ts";
 test("GLB loads with original parts and physical meter bounds", async () => {
   const b = readFileSync(new URL("../public/assets/base.glb", import.meta.url));
   const gltf = await new GLTFLoader().parseAsync(
@@ -31,5 +32,5 @@ test("GLB loads with original parts and physical meter bounds", async () => {
     .getSize(new THREE.Vector3());
   assert(Math.abs(bounds.x - 0.134) < 1e-6);
   assert(Math.abs(bounds.z - 0.052) < 1e-6);
-  assert(Math.abs(bounds.y - 0.004) < 1e-6);
+  assert(Math.abs(bounds.y - getStyle("classic").layout.size[2] / 1000) < 1e-6);
 });

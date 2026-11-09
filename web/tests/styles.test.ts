@@ -287,14 +287,14 @@ test("Native two-line centers match the manually calibrated 30% plate-height rhy
     { pronouns: "They/Them", customStatus: "", row: "Pronouns" },
   ]) {
     const d = buildDesign(
-      { ...defaults, styleId: style.id, ...patch },
+      { ...defaults, styleId: style.id, ...patch, hideStatus: false },
       base,
       font,
     );
     assert.deepEqual(d.errors, []);
     assert(
       Math.abs(
-        (center(d, "Name") - center(d, patch.row)) / base.layout.size[1] - 0.3,
+        (center(d, "Name") - center(d, patch.row)) / (style.geometry.leftRadius * 2) - 0.3,
       ) < 1e-6,
     );
   }

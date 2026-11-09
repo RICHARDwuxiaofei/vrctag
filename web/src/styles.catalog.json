@@ -21,7 +21,7 @@
         "bodyTop": 2.6,
         "avatarTop": 2.6,
         "frameTop": 2.6,
-        "dotTop": 3,
+        "dotTop": 3.2,
         "coreTop": 2,
         "skinThickness": 0.6,
         "hookCenter": -5,
@@ -47,12 +47,12 @@
         "size": [
           134,
           52,
-          3
+          3.2
         ],
         "textLeft": -10,
         "textWidth": 69,
         "textZ": 2.6,
-        "relief": 0.4,
+        "relief": 0.6,
         "avatar": {
           "center": [
             -40,
@@ -129,7 +129,7 @@
         "bodyTop": 3.3,
         "avatarTop": 3.6,
         "frameTop": 3.65,
-        "dotTop": 3.7,
+        "dotTop": 3.9,
         "coreTop": 0,
         "skinThickness": 0,
         "hookCenter": -5,
@@ -154,12 +154,12 @@
         "size": [
           120,
           46.5,
-          3.7
+          3.9
         ],
         "textLeft": -18,
         "textWidth": 67,
         "textZ": 3.3,
-        "relief": 0.4,
+        "relief": 0.6,
         "avatar": {
           "center": [
             -40,

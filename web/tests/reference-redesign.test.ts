@@ -28,7 +28,7 @@ const bases = new Map(
   ]),
 );
 for (const styleId of ["classic", "native"])
-  test(`${styleId}: actual white core, .6mm face, shared contact and exported four-slot references`, () => {
+  test(`${styleId}: current body structure, Z contact and exported four-slot references`, () => {
     const config = { ...defaults, styleId };
     const d = buildDesign(config, bases.get(styleId)!, font);
     assert.deepEqual(d.errors, []);
@@ -39,6 +39,24 @@ for (const styleId of ["classic", "native"])
         Math.max(...vs.map((v) => v[2])),
       ];
     };
+    if (styleId === "native") {
+      assert(!d.parts.some(p => p.name === "Plate_Core" || p.name === "Avatar_Back"));
+      assert(Math.abs(range("Plate_Body")[0]) < 1e-6);
+      assert(Math.abs(range("Plate_Body")[1] - 3.3) < 1e-5);
+      const plan = materialPlan(config, d.parts);
+      assert.equal(plan.palette.length, 4);
+      assert.equal(plan.parts.find(p => p.name === "Plate_Body")!.slot, 0);
+      assert(export3mf(d, config).length > 0);
+      for (const offset of [-0.1, 0.1]) {
+        const copy = structuredClone(d);
+        copy.parts.find(p => p.name === "Plate_Body")!.vertices.forEach(v => v[2] += offset);
+        assert.throws(() => export3mf(copy, config));
+      }
+      const missing = structuredClone(d);
+      missing.parts = missing.parts.filter(p => p.name !== "Plate_Body");
+      assert.throws(() => export3mf(missing, config));
+      return;
+    }
     const core = range("Plate_Core"),
       skin = range("Plate_Body");
     assert.equal(core[0], 0);
@@ -103,6 +121,7 @@ test("all four languages produce real preset glyph meshes and preserve custom te
           language,
           status,
           statusMode: "preset" as const,
+          hideStatus: false,
         };
         assert.equal(statusText(c), statusLabels[language][status]);
         const d = buildDesign(c, bases.get(styleId)!, font);

@@ -12,6 +12,8 @@ import { StrictMode, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { LanguagePicker } from "./LanguagePicker";
 import { StyleThumbnail } from "./StyleThumbnail";
+import { scaledDimensions, referenceDimensions, clampScale, percentFromMillimeters } from "./size-scale";
+import { SizeNumberInput } from "./SizeNumberInput";
 import { takeStarPromptOpportunity } from "./star-prompt";
 import { Preview } from "./Preview";
 import {
@@ -29,8 +31,10 @@ function download(data: BlobPart, name: string, type: string) {
   const a = document.createElement("a");
   a.href = url;
   a.download = name;
+  document.body.appendChild(a);
   a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
 }
 function App() {
   const [config, setConfig] = useState<Config>(() => ({
@@ -187,7 +191,8 @@ function App() {
         const { exportBlender } = await import("./blender-export");
         download(await exportBlender(snapshot, photo), `vrc-tag-${config.styleId}-${name}.glb`, "model/gltf-binary");
         promptStarAfterExport();
-      } catch {
+      } catch (error) {
+        console.error("VRC Tag Studio Blender GLB export failed", error);
         setExportError("Blender 导出失败，请重试。");
       } finally { blenderExportBusy.current = false; setExporting(false); }
       return;
@@ -304,6 +309,29 @@ function App() {
     !errors.length &&
     !modelError &&
     completedKey === configKey;
+  // Always use the active style + optional hanging loop for exact reference
+  // dimensions, even while the worker is rebuilding the geometry.
+  const style = getStyle(config.styleId);
+  const referenceSize = referenceDimensions(style, config.hangingLoop !== false);
+  const physicalSize =
+    !busy && valid && design?.size
+      ? design.size
+      : scaledDimensions(referenceSize, config);
+  const mm = (value: number) => value.toFixed(2);
+  const updatePlanarPercent = (raw: number) => {
+    const value = clampScale(raw);
+    if (Math.abs(value - (config.planarScale ?? 100)) > 0.0000001)
+      patch({ planarScale: value });
+  };
+  const updateThicknessPercent = (raw: number) => {
+    const value = clampScale(raw);
+    if (Math.abs(value - (config.thicknessScale ?? 100)) > 0.0000001)
+      patch({ thicknessScale: value });
+  };
+  const updatePlanarMillimeters = (millimeters: number, axis: 0 | 1) =>
+    updatePlanarPercent(percentFromMillimeters(millimeters, referenceSize[axis]));
+  const updateThicknessMillimeters = (millimeters: number) =>
+    updateThicknessPercent(percentFromMillimeters(millimeters, referenceSize[2]));
   return (
     <>
       <header className="topbar">
@@ -552,11 +580,106 @@ function App() {
             </div>
             <div className="preview-caption">
               <span>{getStyle(config.styleId).name}</span>
-              <span>
-                {(design?.size ?? getStyle(config.styleId).layout.size).map(v=>v.toFixed(1)).join(" × ")}{" "}
-                mm
-              </span>
+              <span>{physicalSize.map(mm).join(" × ")} mm</span>
             </div>
+            <section className="size-scaling" aria-labelledby="size-scaling-title">
+              <div className="size-scaling-heading">
+                <h3 id="size-scaling-title">{t("调整模型尺寸")}</h3>
+                <span className="size-scaling-unit">{t("百分比或毫米数均可输入")}</span>
+              </div>
+              <div className="size-scaling-field">
+                <div className="size-scaling-label">
+                  <label htmlFor="planar-scale">{t("平面等比缩放")}</label>
+                  <SizeNumberInput
+                    id="planar-percent"
+                    label={t("长宽比例百分比")}
+                    value={config.planarScale ?? 100}
+                    min={50}
+                    max={150}
+                    unit="%"
+                    onCommit={updatePlanarPercent}
+                  />
+                </div>
+                <input
+                  id="planar-scale"
+                  className="size-range"
+                  type="range"
+                  min={50}
+                  max={150}
+                  step={0.01}
+                  value={config.planarScale ?? 100}
+                  aria-describedby="planar-size-value"
+                  onChange={(e) => updatePlanarPercent(Number(e.target.value))}
+                />
+                <div className="size-scaling-millimeters" id="planar-size-value">
+                  <div className="size-measure">
+                    <label htmlFor="planar-mm-length">{t("长度")}</label>
+                    <SizeNumberInput
+                      id="planar-mm-length"
+                      label={t("长度（毫米）")}
+                      value={physicalSize[0]}
+                      min={referenceSize[0] * 0.5}
+                      max={referenceSize[0] * 1.5}
+                      unit="mm"
+                      onCommit={(value) => updatePlanarMillimeters(value, 0)}
+                    />
+                  </div>
+                  <div className="size-measure">
+                    <label htmlFor="planar-mm-width">{t("宽度")}</label>
+                    <SizeNumberInput
+                      id="planar-mm-width"
+                      label={t("宽度（毫米）")}
+                      value={physicalSize[1]}
+                      min={referenceSize[1] * 0.5}
+                      max={referenceSize[1] * 1.5}
+                      unit="mm"
+                      onCommit={(value) => updatePlanarMillimeters(value, 1)}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="size-scaling-field">
+                <div className="size-scaling-label">
+                  <label htmlFor="thickness-scale">{t("厚度缩放")}</label>
+                  <SizeNumberInput
+                    id="thickness-percent"
+                    label={t("厚度比例百分比")}
+                    value={config.thicknessScale ?? 100}
+                    min={50}
+                    max={150}
+                    unit="%"
+                    onCommit={updateThicknessPercent}
+                  />
+                </div>
+                <input
+                  id="thickness-scale"
+                  className="size-range"
+                  type="range"
+                  min={50}
+                  max={150}
+                  step={0.01}
+                  value={config.thicknessScale ?? 100}
+                  aria-describedby="thickness-size-value"
+                  onChange={(e) => updateThicknessPercent(Number(e.target.value))}
+                />
+                <div className="size-scaling-millimeters" id="thickness-size-value">
+                  <div className="size-measure">
+                    <label htmlFor="thickness-mm">{t("实际厚度")}</label>
+                    <SizeNumberInput
+                      id="thickness-mm"
+                      label={t("厚度（毫米）")}
+                      value={physicalSize[2]}
+                      min={referenceSize[2] * 0.5}
+                      max={referenceSize[2] * 1.5}
+                      unit="mm"
+                      onCommit={updateThicknessMillimeters}
+                    />
+                  </div>
+                </div>
+              </div>
+              <p className="size-scaling-hint">{t("修改长度或宽度，另一项会等比例跟随；厚度独立调整。")}</p>
+              <p className="size-scaling-hint">{t("缩小模型后请检查细字与挂环强度；导出为实际尺寸。")}</p>
+            </section>
             <div className="export-panel">
               <div className="messages" aria-live="polite">
                 {[modelError, exportError, ...errors]

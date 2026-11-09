@@ -7,13 +7,15 @@
 
 ---
 
+100%에서 글자와 상태 점의 돌출 높이는 0.6 mm입니다. Native 크기는 고리 포함 120 × 46.5 × 3.9 mm, 고리 제외 120 × 40 × 3.9 mm입니다. XY는 비율을 유지하고 Z는 독립적으로 50–150% 조절합니다. GLB는 색상과 선택한 아바타 이미지를 포함하며 Blender의 파일 → 가져오기 → glTF 2.0에서 열고 .blend로 저장할 수 있습니다. 3MF는 실제 프린터에 맞게 슬라이싱해야 합니다.
+
 ## 스타일 선택
 
 | Classic · Large Avatar | Native · VRChat Style |
 | :---: | :---: |
 | ![Classic](web/public/assets/styles/classic/default-front.png) | ![Native](web/public/assets/styles/native/default-front.png) |
 | 큰 아바타, 흰색 테두리, 흰색 코어와 검은 앞면 | 컴팩트한 캡슐 디자인과 어두운 본체 |
-| **134 × 52 × 3.0 mm** | **118 × 45.6 × 3.7 mm** |
+| **134 × 52 × 3.2 mm** | **120 × 46.5 × 3.9 mm** |
 
 *이미지는 참고 렌더링이며 색상과 크기는 선택한 모델 설정에 따라 달라질 수 있습니다.*
 

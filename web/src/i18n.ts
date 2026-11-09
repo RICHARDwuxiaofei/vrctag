@@ -46,11 +46,39 @@ export const statusLabels: Record<Language, Record<string, string>> = {
 // Busy is the legacy API identifier for red Do Not Disturb; orange Ask Me is Chinese 忙碌.
 // Japanese wording is retained pending a current primary-source/client verification.
 const rows: Record<string, [string, string, string]> = {
+  "厚度缩小会同时降低文字和状态灯浮雕；50% 时为 0.3 mm，请按实际层高检查切片。缩放不保证可打印。": ["厚さを縮小すると文字とステータス点の高さも低下します。50%では0.3 mmです。レイヤー高さを確認してください。印刷を保証するものではありません。", "두께를 줄이면 글자와 상태 점의 돌출도 낮아집니다. 50%에서는 0.3 mm입니다. 레이어 높이를 확인하세요. 출력 가능성을 보장하지 않습니다.", "Reducing thickness also lowers text and status relief: 0.3 mm at 50%. Check your layer height and slicing. Scaling does not guarantee printability."],
   "Blender（GLB，含颜色与头像）": ["Blender（GLB・色と画像を含む）", "Blender (GLB, 색상과 이미지 포함)", "Blender (GLB, colors & avatar)"],
   "下载 Blender GLB": ["Blender GLBを保存", "Blender GLB 다운로드", "Download Blender GLB"],
   "Blender 导出失败，请重试。": ["Blender用の保存に失敗しました。再試行してください。", "Blender 내보내기에 실패했습니다. 다시 시도하세요.", "Blender export failed. Please retry."],
   "在 Blender 中选择 文件 → 导入 → glTF 2.0，编辑后可另存为 .blend。": ["Blenderのファイル → インポート → glTF 2.0で開き、編集後に.blendで保存できます。", "Blender의 파일 → 가져오기 → glTF 2.0에서 열고 편집 후 .blend로 저장하세요.", "In Blender: File → Import → glTF 2.0. Save as .blend after editing."],
   "Bug 反馈联系": ["不具合のご連絡", "버그 제보", "Report a bug"],
+  "调整模型尺寸": ["モデルのサイズ調整", "모델 크기 조절", "Model dimensions"],
+  "百分比或毫米数均可输入": ["% または mm で入力可能", "% 또는 mm 직접 입력", "Enter % or mm"],
+  "长宽比例百分比": ["縦横倍率（%）", "가로·세로 배율 (%)", "Planar scale (%)"],
+  "厚度比例百分比": ["厚さの倍率（%）", "두께 배율 (%)", "Thickness scale (%)"],
+  "长度（毫米）": ["長さ（mm）", "길이 (mm)", "Length (mm)"],
+  "宽度（毫米）": ["幅（mm）", "너비 (mm)", "Width (mm)"],
+  "厚度（毫米）": ["厚さ（mm）", "두께 (mm)", "Thickness (mm)"],
+  "修改长度或宽度，另一项会等比例跟随；厚度独立调整。": [
+    "長さか幅を変更すると縦横比は保たれます。厚さは別に変更できます。",
+    "길이나 너비를 바꾸면 나머지도 비율에 맞게 변합니다. 두께는 독립적입니다.",
+    "Changing length or width keeps the same aspect ratio; thickness is independent.",
+  ],
+  "平面等比缩放": ["平面サイズ（縦横比固定）", "가로·세로 비율 유지", "Planar scale (locked X/Y)"],
+  "厚度缩放": ["厚さの倍率", "두께 배율", "Thickness scale"],
+  "长度": ["長さ", "길이", "Length"],
+  "宽度": ["幅", "너비", "Width"],
+  "实际厚度": ["実際の厚さ", "실제 두께", "Physical thickness"],
+  "缩小模型后请检查细字与挂环强度；导出为实际尺寸。": [
+    "小さくすると文字や吊り輪が弱くなる場合があります。実寸で書き出します。",
+    "크기를 줄이면 작은 글씨나 고리 강도가 약해질 수 있어요. 실제 크기로 내보냅니다.",
+    "Smaller sizes can weaken fine text and the hanging loop. Exports use the actual size.",
+  ],
+  "缩小后小字可能无法打印，请在切片软件检查细节。": [
+    "縮小した細かい文字は印刷できない場合があります。スライサーで確認してください。",
+    "축소한 작은 글자는 출력되지 않을 수 있으니 슬라이서에서 확인하세요.",
+    "Downscaled tiny text may not print; inspect the details in your slicer.",
+  ],
   "顺手给个 Star？": ["よかったら Star をお願いします！", "괜찮았다면 Star 하나 부탁해요!", "Enjoying this? Give it a Star!"],
   "文件已经开始下载啦！喜欢这个小工具的话，可以去 GitHub 点颗星支持一下（": [
     "ダウンロードを開始しました！気に入っていただけたら GitHub で Star を付けてもらえるとうれしいです。",
