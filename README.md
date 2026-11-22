@@ -23,7 +23,8 @@ At 100% scale, text and status-dot relief is 0.6 mm. Classic measures 107.2 × 4
 
 - **Two styles:** Classic and Native, with optional hanging loop and customizable display name.
 - **Personalization:** White standard name / gold friend name, pronouns, status text and colored status dot.
-- **Real-time 3D:** Rotate, zoom and preview a local PNG/JPEG/WebP avatar.
+- **Real-time 3D:** Rotate, zoom and preview local PNG/JPEG/WebP avatars; crop multiple uploaded portraits one by one.
+- **True-size photo PDF:** Print one centered portrait with a 20 mm calibration bar, repeat one portrait across a sheet, or arrange different uploaded portraits once each across pages. Choose A4, 5/6/7-inch photo paper; the PDF matches the configured model XY size.
 - **Multicolor 3MF:** Bambu Studio-compatible export with part/filament mapping, plus generic Core 3MF.
 - **Blender-ready GLB:** Export separate mesh parts, colors and an optional embedded avatar photo. Import through **Blender → File → Import → glTF 2.0**.
 - **Reusable configuration:** Save and restore a JSON design. Switch UI languages among English, 简体中文, 日本語 and 한국어.
@@ -38,6 +39,8 @@ At 100% scale, text and status-dot relief is 0.6 mm. Classic measures 107.2 × 4
 | **Generic Core 3MF** | Other slicers | Printable separate parts and colors; manual filament mapping may be needed. |
 | **Blender GLB** | Model editing/rendering | Editable parts and optional avatar texture; not sliced G-code. |
 | **JSON** | Save/restore | Design parameters only; no avatar picture. |
+
+**Sizing note:** The current 100% model baseline is the older design's 80% XY size; Z thickness and 0.6 mm raised text/status-dot relief stay at their original values. Old JSON configs keep their percentage values, so always recheck real millimeter dimensions after restoring a design saved before this change.
 
 **Printing is still beta.** Bambu Studio import/round-trip and limited slicing checks passed, but physical prints and broad printer compatibility are not fully verified. Check layer previews, thin text, connections and materials before printing. Do not run bundled test G-code.
 
