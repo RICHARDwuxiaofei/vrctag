@@ -10,13 +10,13 @@
       "thumbnail": "assets/styles/classic/front.png",
       "geometry": {
         "family": "reference-round-panel",
-        "leftCenter": -40,
-        "rightCenter": 50,
-        "leftRadius": 26,
-        "rightRadius": 18,
-        "panelHalfHeight": 18,
-        "rightEdge": 68,
-        "rimWidth": 2.2,
+        "leftCenter": -32,
+        "rightCenter": 40,
+        "leftRadius": 20.8,
+        "rightRadius": 14.4,
+        "panelHalfHeight": 14.4,
+        "rightEdge": 54.4,
+        "rimWidth": 1.76,
         "rimTop": 2.6,
         "bodyTop": 2.6,
         "avatarTop": 2.6,
@@ -24,9 +24,9 @@
         "dotTop": 3.2,
         "coreTop": 2,
         "skinThickness": 0.6,
-        "hookCenter": -5,
-        "hookOuter": 7,
-        "hookInner": 4.8
+        "hookCenter": -4,
+        "hookOuter": 5.6,
+        "hookInner": 3.84
       },
       "colors": {
         "Plate_Body": "#1c1d21",
@@ -45,52 +45,52 @@
         "unit": "millimeter",
         "front": "+Z",
         "size": [
-          134,
-          52,
+          107.2,
+          41.6,
           3.2
         ],
-        "textLeft": -10,
-        "textWidth": 69,
+        "textLeft": -8,
+        "textWidth": 55.2,
         "textZ": 2.6,
         "relief": 0.6,
         "avatar": {
           "center": [
-            -40,
+            -32,
             0
           ],
-          "radius": 23.8,
-          "frameWidth": 2.2,
+          "radius": 19.04,
+          "frameWidth": 1.76,
           "dotCenter": [
-            -7,
-            -8.4
+            -5.6,
+            -6.72
           ],
-          "dotRadius": 3
+          "dotRadius": 2.4
         },
         "textRules": {
           "alignment": "left",
           "name": {
-            "height": 10.5,
-            "centerY": 4.5,
-            "heightWithPronouns": 9.5,
-            "centerYWithPronouns": 8.5,
+            "height": 8.4,
+            "centerY": 3.6,
+            "heightWithPronouns": 7.6,
+            "centerYWithPronouns": 6.8,
             "centerYWithoutStatus": 0,
-            "centerYWithPronounsWithoutStatus": 6
+            "centerYWithPronounsWithoutStatus": 4.8
           },
           "pronouns": {
-            "height": 4.8,
-            "centerY": 0.8,
-            "centerYWithoutStatus": -2
+            "height": 3.84,
+            "centerY": 0.64,
+            "centerYWithoutStatus": -1.6
           },
           "status": {
-            "height": 4.5,
-            "centerY": -8.4
+            "height": 3.6,
+            "centerY": -6.72
           },
-          "minimumHeight": 2.4,
-          "warningHeight": 4.5,
+          "minimumHeight": 1.92,
+          "warningHeight": 3.6,
           "maxCharacters": 120
         },
-        "statusTextLeft": -2.5,
-        "statusTextWidth": 61.5
+        "statusTextLeft": -2,
+        "statusTextWidth": 49.2
       },
       "printing": {
         "palette": [
@@ -122,19 +122,19 @@
       "baseFile": "styles/native/base.json",
       "thumbnail": "assets/styles/native/front.png",
       "geometry": {
-        "leftCenter": -40,
-        "rightCenter": 40,
-        "leftRadius": 20,
-        "rightRadius": 20,
+        "leftCenter": -32,
+        "rightCenter": 32,
+        "leftRadius": 16,
+        "rightRadius": 16,
         "bodyTop": 3.3,
         "avatarTop": 3.6,
         "frameTop": 3.65,
         "dotTop": 3.9,
         "coreTop": 0,
         "skinThickness": 0,
-        "hookCenter": -5,
-        "hookOuter": 6.5,
-        "hookInner": 4.3,
+        "hookCenter": -4,
+        "hookOuter": 5.2,
+        "hookInner": 3.44,
         "hookTop": 3.3
       },
       "colors": {
@@ -152,49 +152,49 @@
         "unit": "millimeter",
         "front": "+Z",
         "size": [
-          120,
-          46.5,
+          96,
+          37.2,
           3.9
         ],
-        "textLeft": -18,
-        "textWidth": 67,
+        "textLeft": -14.4,
+        "textWidth": 53.6,
         "textZ": 3.3,
         "relief": 0.6,
         "avatar": {
           "center": [
-            -40,
+            -32,
             0
           ],
-          "radius": 16,
-          "frameWidth": 0.7,
+          "radius": 12.8,
+          "frameWidth": 0.56,
           "dotCenter": [
-            -27,
-            -10
+            -21.6,
+            -8
           ],
-          "dotRadius": 4.4
+          "dotRadius": 3.52
         },
         "textRules": {
           "alignment": "left",
           "name": {
-            "height": 11.2,
-            "centerY": 4.5,
-            "heightWithPronouns": 9.4,
-            "centerYWithPronouns": 9,
+            "height": 8.96,
+            "centerY": 3.6,
+            "heightWithPronouns": 7.52,
+            "centerYWithPronouns": 7.2,
             "centerYWithoutStatus": 0,
-            "centerYWithPronounsWithoutStatus": 4.5
+            "centerYWithPronounsWithoutStatus": 3.6
           },
           "pronouns": {
-            "height": 5.2,
-            "centerY": 0.8,
-            "centerYWithoutStatus": -7.5
+            "height": 4.16,
+            "centerY": 0.64,
+            "centerYWithoutStatus": -6
           },
           "status": {
-            "height": 4.6,
-            "centerY": -10.5,
-            "centerYWithoutPronouns": -7.5
+            "height": 3.68,
+            "centerY": -8.4,
+            "centerYWithoutPronouns": -6
           },
-          "minimumHeight": 2.4,
-          "warningHeight": 4.5,
+          "minimumHeight": 1.92,
+          "warningHeight": 3.6,
           "maxCharacters": 120
         }
       }

@@ -16,17 +16,17 @@ Updated 2026-11-19. The website creates a one-photo-per-page PDF locally from th
 
 | XY percent | Classic diameter | Native nominal full-circle diameter |
 | --- | ---: | ---: |
-| 50% | 23.8 mm | 16 mm |
-| 100% | **47.6 mm** | **32 mm** |
-| 150% | 71.4 mm | 48 mm |
+| 50% | 19.04 mm | 12.8 mm |
+| 100% | **38.08 mm** | **25.6 mm** |
+| 150% | 57.12 mm | 38.4 mm |
 
-The exact-length example 100.01 mm has nominal photo diameters about 35.52594 mm (Classic) and 26.66933 mm (Native); the UI rounds them to 35.53/26.67 mm. **Classic's 52mm outer white rim is not the photo size.**
+The exact-length example 80.01 mm has nominal photo diameters about 28.42 mm (Classic) and 21.34 mm (Native). **Classic's 41.6mm outer white rim is not the photo size.**
 
 ## Shape and cutting
 
 Classic prints a circular photo. Its photo top and white rim are nominally flush at Z=2.6mm; attach paper using thin adhesive. There is no paper slot.
 
-Native's status dot overlaps the lower right of the circle. At 100%, the dot center relative to photo center is `(13, -10) mm`, radius `4.4 mm`; its inward intersection is about 4mm. The PDF cuts out exactly the circle-minus-dot contour in vector form and draws a dashed cut guide. The notch is not merely a visual annotation. Default Native photo surface Z=3.3mm, rim top Z=3.65mm: **0.35mm** nominal clearance, or 0.175/0.35/0.525mm at 50/100/150% Z.
+Native's status dot overlaps the lower right of the circle. At 100%, the dot center relative to photo center is `(10.4, -8) mm`, radius `3.52 mm`; its inward intersection is about 3.2mm. The PDF cuts out exactly the circle-minus-dot contour in vector form and draws a dashed cut guide. The notch is not merely a visual annotation. Default Native photo surface Z=3.3mm, rim top Z=3.65mm: **0.35mm** nominal clearance, or 0.175/0.35/0.525mm at 50/100/150% Z.
 
 ## Paper material and actual printing
 
@@ -54,7 +54,7 @@ Reference for photo paper sizes: Epson's printer paper support documentation, wh
 - 单张：页面中央放 1 张，保留 20 mm 校准线、头像直径以及 100% 打印提示；沿用此前向下兼容的默认生成 API。
 - 多张：在同一页按矩形网格自动重复当前头像，所有格子共用一个 JPEG PDF 图像资源，不会重复写入 N 份图片。每张保留原始尺寸、Native 状态点缺口和裁剪虚线。
 - 密排基准：最小 **1.5 mm** 页边距、头像之间 **0.5 mm** 间隙。按纸张和直径计算可排的最大完整矩形网格；将整个网格居中。如果边距不足 11 mm，为避免校准线压在照片上，则自动省略校准线，请先用单张版校准。
-- 4R (101.6 × 152.4 mm)、XY 100%：Classic **2列×3行 = 6张**，各直径47.6 mm；Native **3列×4行 = 12张**，各直径32 mm。100×150mm 的 6 寸纸，默认也分别为 6、12 张。其他纸张及50–150%比例自动重新计算，网页实时显示预计张数。
+- 4R (101.6 × 152.4 mm)、XY 100%：Classic **2列×3行 = 6张**，各直径38.08 mm；Native **3列×5行 = 15张**，各直径25.6 mm。100×150mm 的 6 寸纸，默认也分别为 6、15 张。其他纸张及50–150%比例自动重新计算，网页实时显示预计张数。
 - **注意**：紧凑模式的最外侧头像可能距离纸边只有1.5mm。不能保证所有冲印机的不可打印边距都小于这一数值。印刷必须使用真实尺寸100%，关闭填充/适应页面/无边距自动扩展；先用普通纸验证最外侧是否被裁掉。如被裁掉，改用更大纸张或单张模式。
 
 多张是「相同头像重复排版」，不是选择多张不同头像拼图；源图仍只在浏览器本地处理。

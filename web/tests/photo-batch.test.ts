@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { planPhotoPages, buildPhotoPdf, toPdfPoints } from "../src/photo-pdf";
-const layout = {radiusMm:23.8,dotOffsetXmm:33,dotOffsetYmm:-8.4,dotRadiusMm:3};
+const layout = {radiusMm:19.04,dotOffsetXmm:26.4,dotOffsetYmm:-6.72,dotRadiusMm:2.4};
 const jpeg = Uint8Array.from([255,216,255,217]);
 const image = {imageJpeg:jpeg,imageWidth:1,imageHeight:1};
 test("single image repeats or centers, while batches paginate without losing images", () => {

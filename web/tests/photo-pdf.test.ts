@@ -6,8 +6,8 @@ import { PHOTO_PAPERS, buildPhotoPdf, photoDiameterMm, planPhotoPdf, toPdfPoints
 const decoder = new TextDecoder();
 const jpegHeader = Uint8Array.from([0xff, 0xd8, 0xff, 0xd9]); // structural tests only; render QA used a real JPEG
 const layouts = {
-  classic: { radiusMm: 23.8, dotOffsetXmm: 33, dotOffsetYmm: -8.4, dotRadiusMm: 3 },
-  native: { radiusMm: 16, dotOffsetXmm: 13, dotOffsetYmm: -10, dotRadiusMm: 4.4 },
+  classic: { radiusMm: 19.04, dotOffsetXmm: 26.4, dotOffsetYmm: -6.72, dotRadiusMm: 2.4 },
+  native: { radiusMm: 12.8, dotOffsetXmm: 10.4, dotOffsetYmm: -8, dotRadiusMm: 3.52 },
 };
 for (const paper of PHOTO_PAPERS) {
   for (const [style, layout] of Object.entries(layouts)) {
@@ -69,10 +69,10 @@ for (const paper of PHOTO_PAPERS) {
     }
   }
 }
-test("4R default sheet exactly fits 6 Classic or 12 Native", () => {
+test("4R default sheet exactly fits 6 Classic or 15 Native", () => {
   assert.equal(planPhotoPdf("4r", layouts.classic, 100, "multiple").positions.length, 6);
-  assert.equal(planPhotoPdf("4r", layouts.native, 100, "multiple").positions.length, 12);
-  assert.equal(planPhotoPdf("4r100", layouts.native, 100, "multiple").positions.length, 12);
+  assert.equal(planPhotoPdf("4r", layouts.native, 100, "multiple").positions.length, 15);
+  assert.equal(planPhotoPdf("4r100", layouts.native, 100, "multiple").positions.length, 15);
 });
 test("single export remains backward compatible", () => {
   assert.equal(planPhotoPdf("4r", layouts.classic, 100).positions.length, 1);

@@ -30,7 +30,7 @@ test("GLB loads with original parts and physical meter bounds", async () => {
   const bounds = new THREE.Box3()
     .setFromObject(gltf.scene)
     .getSize(new THREE.Vector3());
-  assert(Math.abs(bounds.x - 0.134) < 1e-6);
-  assert(Math.abs(bounds.z - 0.052) < 1e-6);
+  assert(Math.abs(bounds.x - 0.1072) < 1e-6);
+  assert(Math.abs(bounds.z - 0.0416) < 1e-6);
   assert(Math.abs(bounds.y - getStyle("classic").layout.size[2] / 1000) < 1e-6);
 });

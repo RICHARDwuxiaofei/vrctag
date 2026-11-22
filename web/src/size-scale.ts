@@ -76,7 +76,7 @@ export function scaledDimensions(
 export function scaleDesignGeometry(
   design: Design,
   config: Pick<Config, "planarScale" | "thicknessScale">,
-  minimumTextHeight = 2.4,
+  minimumTextHeight = 1.92,
 ): Design {
   const xy = scaleRatio(config.planarScale);
   const z = scaleRatio(config.thicknessScale);

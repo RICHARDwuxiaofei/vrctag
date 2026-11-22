@@ -243,8 +243,8 @@ test("Classic uniform name font sizing unifies batch scale, adds 4 mm margin, an
   );
   assert.equal(defaultDesign.nameFontClamped, false);
   assert(
-    Math.abs(defaultDesign.textHeights.Name - 10.5) < 0.01,
-    `Expected default Nagikokoro height ~10.50 mm, got ${defaultDesign.textHeights.Name}`,
+    Math.abs(defaultDesign.textHeights.Name - 8.4) < 0.01,
+    `Expected default Nagikokoro height ~8.40 mm, got ${defaultDesign.textHeights.Name}`,
   );
   const baselineScale =
     (() => {
@@ -255,7 +255,7 @@ test("Classic uniform name font sizing unifies batch scale, adds 4 mm margin, an
     })();
 
   const expectedMaxRightX =
-    classicBase.layout.textLeft + classicBase.layout.textWidth - 4;
+    classicBase.layout.textLeft + classicBase.layout.textWidth - 3.2;
   const unclampedCustomerNames = [
     "Ezyooooo",
     "ShADe_sITz9",
@@ -312,8 +312,8 @@ test("Classic uniform name font sizing unifies batch scale, adds 4 mm margin, an
   );
   assert.deepEqual(lower.errors, []);
   assert(
-    lower.textHeights.Name > 5.0 && lower.textHeights.Name < 6.5,
-    `Expected lowercase "ooo" to stay at x-height (~5.86 mm), got ${lower.textHeights.Name}`,
+    lower.textHeights.Name > 4.0 && lower.textHeights.Name < 5.5,
+    `Expected lowercase "ooo" to stay at x-height (~4.69 mm), got ${lower.textHeights.Name}`,
   );
 });
 

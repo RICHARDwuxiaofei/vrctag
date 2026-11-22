@@ -77,8 +77,8 @@ test("optional pronouns, centering, friend material isolation, independent color
       .vertices.map((v) => v[1]);
     return (Math.min(...ys) + Math.max(...ys)) / 2;
   };
-  assert.equal(nameY(d), base.layout.textRules.name.centerY);
-  assert.equal(nameY(custom), base.layout.textRules.name.centerYWithPronouns);
+  assert(Math.abs(nameY(d) - base.layout.textRules.name.centerY) < 1e-12);
+  assert(Math.abs(nameY(custom) - base.layout.textRules.name.centerYWithPronouns) < 1e-12);
   for (const status of Object.keys(statuses))
     assert.equal(
       buildDesign(

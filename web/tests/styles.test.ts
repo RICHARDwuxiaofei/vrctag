@@ -304,8 +304,8 @@ test("Classic single reference rim, round panel and aligned status lane differ f
   const c = getStyle("classic"),
     n = getStyle("native"),
     b = bases.get(c.id)!;
-  assert.equal(c.layout.avatar.radius, 23.8);
-  assert.equal(n.layout.avatar.radius, 16);
+  assert.equal(c.layout.avatar.radius, 19.04);
+  assert.equal(n.layout.avatar.radius, 12.8);
   assert((c.layout.avatar.radius * 2) / c.layout.size[1] > 0.84);
   assert(b.parts.some((p) => p.name === "Plate_Rim"));
   assert(!bases.get(n.id)!.parts.some((p) => p.name === "Plate_Rim"));

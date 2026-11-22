@@ -133,8 +133,8 @@ export function geometry(p: Part) {
 }
 // Reference height of the default title ("Nagikokoro" at font size 100) in Noto Sans CJK SC Bold.
 const REFERENCE_NAME_BOX = 105.4;
-// Reserve 4 mm inside the right end curve for Name text without mutating base.layout.
-const NAME_RIGHT_MARGIN = 4;
+// Reserve 3.2 mm inside the right end curve for Name text without mutating base.layout.
+const NAME_RIGHT_MARGIN = 3.2;
 
 /** Convert a Clipper PolyTree back into Three.js Shapes while preserving nested islands. */
 function polyTreeToShapes(

@@ -41,17 +41,17 @@ test("size values persist through JSON and old configs default to 100%", () => {
       assert.throws(() => parseConfig({ ...defaults, [key]: val }), `${key}: ${val}`);
     }
   }
-  const scaled = scaledDimensions([134, 52, 3.2], { planarScale: 50, thicknessScale: 150 });
-  near(scaled[0], 67);
-  near(scaled[1], 26);
+  const scaled = scaledDimensions([107.2, 41.6, 3.2], { planarScale: 50, thicknessScale: 150 });
+  near(scaled[0], 53.6);
+  near(scaled[1], 20.8);
   near(scaled[2], 4.8);
   assert.equal(parseConfig(configDocument({ ...defaults, planarScale: 75.5, thicknessScale: 128.125 })).planarScale, 75.5);
   assert.equal(clampScale(32), 50);
   assert.equal(clampScale(165), 150);
-  assert.equal(percentFromMillimeters(100.01, 134), 74.634328);
-  assert(Math.abs(134 * percentFromMillimeters(100.01, 134) / 100 - 100.01) < 0.00001);
-  assert.deepEqual(referenceDimensions(styles.find(s=>s.id==="native")!, false), [120, 40, 3.9]);
-  assert.deepEqual(referenceDimensions(styles.find(s=>s.id==="classic")!, false), [134, 52, 3.2]);
+  assert.equal(percentFromMillimeters(80.01, 107.2), 74.636194);
+  assert(Math.abs(107.2 * percentFromMillimeters(80.01, 107.2) / 100 - 80.01) < 0.00001);
+  assert.deepEqual(referenceDimensions(styles.find(s=>s.id==="native")!, false), [96, 32, 3.9]);
+  assert.deepEqual(referenceDimensions(styles.find(s=>s.id==="classic")!, false), [107.2, 41.6, 3.2]);
 });
 
 for (const style of styles) {
