@@ -197,7 +197,7 @@ const rows: Record<string, [string, string, string]> = {
   "选择模板并下载 Bambu 3MF": ["テンプレートを選択してBambu 3MFを保存", "템플릿 선택 후 Bambu 3MF 다운로드", "Choose template and download Bambu 3MF"],
   "下载通用 3MF": ["汎用3MFを保存", "일반 3MF 다운로드", "Download generic 3MF"],
   "更换 Bambu 模板": ["Bambuテンプレートを変更", "Bambu 템플릿 변경", "Change Bambu template"],
-  "默认 A1 · 0.4 mm · PLA，请在切片软件中选择自己的打印机和耗材": ["標準 A1・0.4 mm・PLA。スライサーで使用するプリンターと材料を選択してください", "기본 A1 · 0.4 mm · PLA. 슬라이서에서 사용할 프린터와 재료를 선택하세요", "Default A1 · 0.4 mm · PLA; choose your printer and filament in your slicer"],
+  "默认 A1 · 0.4 mm · PLA（精细小字建议 0.2 mm 喷嘴），请在切片软件中选择自己的打印机和耗材": ["標準 A1・0.4 mm・PLA（細かい文字は 0.2 mm ノズル推奨）。スライサーで使用するプリンターと材料を選択してください", "기본 A1 · 0.4 mm · PLA (세밀한 글자는 0.2 mm 노즐 권장). 슬라이서에서 사용할 프린터와 재료를 선택하세요", "Default A1 · 0.4 mm · PLA (0.2 mm nozzle recommended for fine text); choose your printer and filament in your slicer"],
   "打印提示": ["印刷のヒント", "출력 참고", "Print notes"],
   语言: ["言語", "언어", "Language"],
   浏览器本地制作: [

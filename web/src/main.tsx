@@ -853,7 +853,7 @@ function App() {
                 {!!design?.warnings.length && <details className="print-notes"><summary>{t("打印提示")}</summary>{design.warnings.map((s,i)=><p className="warning" key={i}>{t(s)}</p>)}</details>}
                 {notice && <p className="success">{t(notice)}</p>}
               </div>
-              <p className="field-note">{exportFormat==="bambu"?t("默认 A1 · 0.4 mm · PLA，请在切片软件中选择自己的打印机和耗材"):""}</p>
+              <p className="field-note">{exportFormat==="bambu"?t("默认 A1 · 0.4 mm · PLA（精细小字建议 0.2 mm 喷嘴），请在切片软件中选择自己的打印机和耗材"):""}</p>
               <select id="exportFormat" aria-label={t("导出格式")} value={exportFormat} onChange={e=>setExportFormat(e.target.value as "core"|"bambu"|"blender")}><option value="bambu">{t("多色 3MF（保留颜色）")}</option><option value="core">{t("通用 3MF（需手动分配耗材）")}</option><option value="blender">{t("Blender（GLB，含颜色与头像）")}</option></select>
               {exportFormat === "blender" && <p className="field-note">{t("在 Blender 中选择 文件 → 导入 → glTF 2.0，编辑后可另存为 .blend。")}</p>}
               <button

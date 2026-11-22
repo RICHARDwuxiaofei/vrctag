@@ -35,7 +35,7 @@ At 100% scale, text and status-dot relief is 0.6 mm. Classic measures 107.2 × 4
 
 | Format | Use | Details |
 | --- | --- | --- |
-| **Multicolor 3MF (Bambu)** | Bambu Studio | Per-part filaments; starts from an **A1 / 0.4 mm / PLA** profile. Choose your own printer and material before slicing. |
+| **Multicolor 3MF (Bambu)** | Bambu Studio | Per-part filaments; starts from an **A1 / 0.4 mm / PLA** profile (a **0.2 mm nozzle** is recommended for finer text and small subtext). Choose your own printer, nozzle and material before slicing. |
 | **Generic Core 3MF** | Other slicers | Printable separate parts and colors; manual filament mapping may be needed. |
 | **Blender GLB** | Model editing/rendering | Editable parts and optional avatar texture; not sliced G-code. |
 | **JSON** | Save/restore | Design parameters only; no avatar picture. |
